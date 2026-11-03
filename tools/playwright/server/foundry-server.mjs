@@ -67,6 +67,7 @@ export async function startFoundry({
   }
 
   const mainJs = resolveMainJs(resolved.appDir);
+  const nodePath = resolved.nodePath ?? "node";
   let stdio = "inherit";
   let logFd;
   if (silent) {
@@ -78,14 +79,19 @@ export async function startFoundry({
   let child;
   try {
     child = spawn(
-      "node",
+      nodePath,
       [
         mainJs,
         `--dataPath=${resolved.dataPath}`,
         `--port=${resolved.port}`,
         "--noupnp",
       ],
-      { stdio },
+      {
+        stdio,
+        ...(nodePath !== "node"
+          ? { env: { ...process.env, ELECTRON_RUN_AS_NODE: "1" } }
+          : {}),
+      },
     );
   } finally {
     if (logFd != null) fs.closeSync(logFd);

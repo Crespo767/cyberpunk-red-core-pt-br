@@ -204,6 +204,8 @@ export function resolveHarnessConfig({
     dataPathMode: explicitDataPath ? "override" : selectedDataPathMode,
     mode,
     port,
+    browserChannel: process.env.PLAYWRIGHT_BROWSER_CHANNEL || undefined,
+    nodePath: process.env.FOUNDRY_NODE_PATH || "node",
     runStateDir: RUN_STATE_DIR,
     sessionState: SESSION_STATE,
     storageState: STORAGE_STATE,

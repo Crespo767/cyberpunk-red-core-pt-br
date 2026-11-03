@@ -1,7 +1,7 @@
 import { defineConfig, devices } from "@playwright/test";
 import { resolveHarnessConfig, STORAGE_STATE } from "./harness-config.mjs";
 
-const { url } = resolveHarnessConfig({
+const { url, browserChannel } = resolveHarnessConfig({
   mode: "test",
   dataPathMode: "isolated",
 });
@@ -30,6 +30,7 @@ export default defineConfig({
       name: "chromium",
       use: {
         ...devices["Desktop Chrome"],
+        ...(browserChannel ? { channel: browserChannel } : {}),
         viewport: { width: 1920, height: 1080 },
       },
     },
