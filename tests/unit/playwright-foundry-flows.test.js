@@ -1,4 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
+import { chromium } from "@playwright/test";
 
 const state = vi.hoisted(() => ({
   buildStatus: 0,
@@ -14,6 +15,7 @@ const state = vi.hoisted(() => ({
   removeWorldCalls: [],
   clearRunStateCalls: 0,
   sessions: [],
+  browserChannel: undefined,
 }));
 
 vi.mock("@playwright/test", () => ({
@@ -36,25 +38,30 @@ vi.mock("@playwright/test", () => ({
   },
 }));
 
-vi.mock("../../tools/playwright/config/harness-config.mjs", () => ({
-  clearRunState: () => {
-    state.clearRunStateCalls += 1;
-  },
-  newWorldId: () => "fresh-world",
-  removeWorld: async (dataPath, worldId) => {
-    state.removeWorldCalls.push({ dataPath, worldId });
-  },
-  resolveHarnessConfig: () => ({
-    url: "http://localhost:30001",
-    dataPath: "/tmp/foundry-data",
-    port: 30001,
-    dataPathMode: "configured",
-    storageState: "/tmp/gm.json",
+vi.mock(
+  "../../tools/playwright/config/harness-config.mjs",
+  async (importOriginal) => ({
+    ...(await importOriginal()),
+    clearRunState: () => {
+      state.clearRunStateCalls += 1;
+    },
+    newWorldId: () => "fresh-world",
+    removeWorld: async (dataPath, worldId) => {
+      state.removeWorldCalls.push({ dataPath, worldId });
+    },
+    resolveHarnessConfig: () => ({
+      url: "http://localhost:30001",
+      dataPath: "/tmp/foundry-data",
+      port: 30001,
+      dataPathMode: "configured",
+      storageState: "/tmp/gm.json",
+      browserChannel: state.browserChannel,
+    }),
+    writeSession: (session) => {
+      state.sessions.push(session);
+    },
   }),
-  writeSession: (session) => {
-    state.sessions.push(session);
-  },
-}));
+);
 
 vi.mock("../../tools/playwright/session/archive-import.mjs", () => ({
   importWorldArchive: async () => ({
@@ -113,9 +120,26 @@ beforeEach(() => {
   state.removeWorldCalls = [];
   state.clearRunStateCalls = 0;
   state.sessions = [];
+  state.browserChannel = undefined;
+  vi.mocked(chromium.launch).mockClear();
 });
 
 describe("playwright serve live sessions", () => {
+  it("passes the configured browser channel to each world flow", async () => {
+    state.browserChannel = "chrome";
+
+    await flows.launchLiveWorld();
+    await flows.launchTestWorld();
+    await flows.buildAndLaunchLiveWorld({ worldId: "night-city" });
+
+    expect(chromium.launch).toHaveBeenNthCalledWith(1, { channel: "chrome" });
+    expect(chromium.launch).toHaveBeenNthCalledWith(2, {
+      args: ["--no-sandbox"],
+      channel: "chrome",
+    });
+    expect(chromium.launch).toHaveBeenNthCalledWith(3, { channel: "chrome" });
+  });
+
   it("leaves fresh live worlds at the login screen", async () => {
     const session = await flows.launchLiveWorld();
 

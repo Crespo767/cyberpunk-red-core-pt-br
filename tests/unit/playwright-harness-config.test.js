@@ -4,6 +4,36 @@ import { mkdtemp, rm } from "node:fs/promises";
 import path from "node:path";
 import { tmpdir } from "node:os";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { browserLaunchOptions } from "../../tools/playwright/config/harness-config.mjs";
+
+describe("browser launch options", () => {
+  it("returns default options without a channel", () => {
+    expect(browserLaunchOptions({})).toEqual({});
+  });
+
+  it("preserves options without a channel", () => {
+    const options = { args: ["--no-sandbox"] };
+    expect(browserLaunchOptions({}, options)).toEqual(options);
+    expect(browserLaunchOptions({}, options)).not.toHaveProperty("channel");
+  });
+
+  it("adds a channel to default options", () => {
+    expect(browserLaunchOptions({ browserChannel: "chrome" })).toEqual({
+      channel: "chrome",
+    });
+  });
+
+  it("adds a channel without mutating existing options", () => {
+    const options = { args: ["--no-sandbox"] };
+    expect(browserLaunchOptions({ browserChannel: "chrome" }, options)).toEqual(
+      {
+        args: ["--no-sandbox"],
+        channel: "chrome",
+      },
+    );
+    expect(options).not.toHaveProperty("channel");
+  });
+});
 
 const HARNESS_CONFIG_SOURCE = fileURLToPath(
   new URL("../../tools/playwright/config/harness-config.mjs", import.meta.url),
@@ -99,22 +129,21 @@ function foundryConfig(root) {
   };
 }
 
-afterEach(async () => {
-  process.chdir(ORIGINAL_CWD);
-  for (const key of TRACKED_ENV_KEYS) {
-    if (ORIGINAL_ENV[key] === undefined) {
-      delete process.env[key];
-    } else {
-      process.env[key] = ORIGINAL_ENV[key];
-    }
-  }
-  await Promise.all(
-    tempDirs.map((dir) => rm(dir, { recursive: true, force: true })),
-  );
-  tempDirs = [];
-});
-
 describe("playwright harness config", () => {
+  afterEach(async () => {
+    process.chdir(ORIGINAL_CWD);
+    for (const key of TRACKED_ENV_KEYS) {
+      if (ORIGINAL_ENV[key] === undefined) {
+        delete process.env[key];
+      } else {
+        process.env[key] = ORIGINAL_ENV[key];
+      }
+    }
+    await Promise.all(
+      tempDirs.map((dir) => rm(dir, { recursive: true, force: true })),
+    );
+    tempDirs = [];
+  });
   it("defaults to the bundled browser and node on PATH", async () => {
     clearTrackedEnv();
 
