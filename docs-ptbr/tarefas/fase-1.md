@@ -166,3 +166,68 @@ RELATÓRIO (devolva exatamente isto)
 3. Duas mensagens de commit em português: uma para os testes (vai primeiro) e uma para a mudança no harness. No corpo
    da segunda, registre o motivo: rodar no Windows sem npx playwright install e com o Node do Foundry.
 ```
+
+### Resultado da Tarefa 1.2 (diretor, 2026-11-03)
+
+- Commits `d2caa28` (testes) e `d9c216c` (mudança). Os 3 testes novos falham sem a mudança; com ela, `test:unit`
+  167/167. Lint e prettier com código 0.
+- `FOUNDRY_NODE_PATH` com o executável do Foundry **não funciona**: com `ELECTRON_RUN_AS_NODE=1`, o Foundry 13.350 para
+  na inicialização com `TypeError ... Cannot read properties of undefined (reading 'exports')` em
+  `cjsPreparseModuleExports`. A licença passa antes do erro.
+- Com o Node 24.21.0 do sistema, o Foundry sobe em cerca de 3 s, passa na licença e redireciona para `/setup`. Os
+  testes passam a usar o Node do sistema. O código do sistema roda no navegador; o Node só serve o Foundry. A variável
+  `FOUNDRY_NODE_PATH` continua útil para um Node 22 portátil, se for preciso.
+- `PLAYWRIGHT_BROWSER_CHANNEL` só valia para os specs. O setup global e os fluxos abrem o Chromium direto com
+  `chromium.launch()` e pedem o navegador baixado (`chrome-headless-shell`). Isso vira a Tarefa 1.2b.
+
+## Tarefa 1.2b: canal do navegador em todos os pontos que abrem o Chromium
+
+```text
+Você é o executor do projeto de migração do Cyberpunk RED Core para Foundry VTT v13 com tradução PT-BR. Trabalhe só em
+%USERPROFILE%\Documents\Cyberpunk RED - PTBR (branch main). Leia antes: CLAUDE.md (seção Testing),
+tools/playwright/config/harness-config.mjs, tests/playwright/setup.mjs, tools/playwright/flows/foundry-flows.mjs,
+tools/playwright/bin/generate-schemas.mjs, tests/unit/playwright-harness-config.test.js e
+tests/unit/playwright-foundry-flows.test.js.
+
+CONTEXTO (verificado pelo diretor)
+- O commit d9c216c criou o campo browserChannel em resolveHarnessConfig (PLAYWRIGHT_BROWSER_CHANNEL) e o usa em
+  playwright.config.mjs. Mas o setup global e os fluxos abrem o navegador direto e ignoram o canal:
+    tests/playwright/setup.mjs:41          chromium.launch({ args: ["--no-sandbox"] })
+    tools/playwright/flows/foundry-flows.mjs:77   chromium.launch(mode === "test" ? { args: [...] } : undefined)
+    tools/playwright/flows/foundry-flows.mjs:150  chromium.launch()
+    tools/playwright/bin/generate-schemas.mjs:90  chromium.launch()
+  Rodando npm run test:playwright com PLAYWRIGHT_BROWSER_CHANNEL=chrome, o setup global falha com:
+  "browserType.launch: Executable doesn't exist at ...\ms-playwright\chromium_headless_shell-1228\...".
+
+MUDANÇA PEDIDA
+1. Crie em tools/playwright/config/harness-config.mjs um helper exportado e puro, por exemplo
+   browserLaunchOptions(config, options = {}), que devolve options acrescido de channel: config.browserChannel quando
+   ele estiver definido, e devolve options sem alteração (mesma forma, sem chave channel) quando não estiver.
+   Atenção ao caso de foundry-flows.mjs:77, que hoje passa undefined no modo live: o resultado sem canal deve
+   continuar equivalente ao atual.
+2. Use o helper nos quatro pontos acima. Em cada um, o config já está disponível (resolvido ou devolvido por
+   startFoundry).
+3. Testes: adicione casos para o helper em tests/unit/playwright-harness-config.test.js (com e sem canal, com e sem
+   options) e, se o mock de chromium.launch em tests/unit/playwright-foundry-flows.test.js permitir, um caso que prove
+   que os fluxos passam o canal. O diretor commita os testes antes da mudança: eles devem falhar sem a mudança.
+4. Sem PLAYWRIGHT_BROWSER_CHANNEL, o comportamento não muda. Siga o estilo dos arquivos, sem dependências novas.
+
+SANDBOX
+- .git é somente leitura: não rode git add nem git commit.
+- Não rode npm run test:unit nem npm run test:playwright (spawn EPERM). Use npx vitest run --pool=threads; as falhas de
+  "process.chdir() is not supported in workers" em playwright-harness-config.test.js são do sandbox e o diretor roda
+  esse arquivo fora dele.
+- Rode npm run lint e npm run prettier (esperado: código 0).
+- Não crie arquivos de log no projeto nem em node_modules. Não toque em %USERPROFILE%\Documents\FoundryVTT.
+
+CRITÉRIO DE ACEITE
+- Diff restrito a harness-config.mjs, setup.mjs, foundry-flows.mjs, generate-schemas.mjs e aos dois arquivos de teste.
+- Nenhuma chamada a chromium.launch fora do helper sem passar por ele (confirme com uma busca).
+- lint e prettier com código 0.
+
+RELATÓRIO (devolva exatamente isto)
+1. git status e git diff completo.
+2. Resultado da busca por "chromium.launch" no repositório (fora de node_modules).
+3. Saídas resumidas de npm run lint, npm run prettier e npx vitest run --pool=threads.
+4. Duas mensagens de commit em português: testes (primeiro) e mudança.
+```
