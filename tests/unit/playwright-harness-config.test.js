@@ -13,10 +13,12 @@ const TRACKED_ENV_KEYS = [
   "FOUNDRY_APP_PATH",
   "FOUNDRY_DATA_PATH",
   "FOUNDRY_VERSION",
+  "FOUNDRY_NODE_PATH",
   "FOUNDRY_KEY",
   "FOUNDRY_ADMIN_PASS",
   "FOUNDRY_WORLD_PASS",
   "PLAYWRIGHT_FOUNDRY_PORT",
+  "PLAYWRIGHT_BROWSER_CHANNEL",
   "PLAYWRIGHT_RUN_STATE_DIR",
 ];
 const ORIGINAL_ENV = Object.fromEntries(
@@ -113,6 +115,40 @@ afterEach(async () => {
 });
 
 describe("playwright harness config", () => {
+  it("defaults to the bundled browser and node on PATH", async () => {
+    clearTrackedEnv();
+
+    const root = await writeHarnessFixture({ foundry: foundryConfig });
+    const config = await resolveHarnessConfig(root);
+
+    expect(config.browserChannel).toBeUndefined();
+    expect(config.nodePath).toBe("node");
+  });
+
+  it("treats empty browser channel and node path as defaults", async () => {
+    clearTrackedEnv();
+    process.env.PLAYWRIGHT_BROWSER_CHANNEL = "";
+    process.env.FOUNDRY_NODE_PATH = "";
+
+    const root = await writeHarnessFixture({ foundry: foundryConfig });
+    const config = await resolveHarnessConfig(root);
+
+    expect(config.browserChannel).toBeUndefined();
+    expect(config.nodePath).toBe("node");
+  });
+
+  it("uses the browser channel and node path from environment", async () => {
+    clearTrackedEnv();
+    process.env.PLAYWRIGHT_BROWSER_CHANNEL = "msedge";
+    process.env.FOUNDRY_NODE_PATH = "custom-foundry-executable";
+
+    const root = await writeHarnessFixture({ foundry: foundryConfig });
+    const config = await resolveHarnessConfig(root);
+
+    expect(config.browserChannel).toBe("msedge");
+    expect(config.nodePath).toBe("custom-foundry-executable");
+  });
+
   it("resolves required secrets from explicit environment", async () => {
     clearTrackedEnv();
     process.env.FOUNDRY_KEY = "env-license";
