@@ -1,9 +1,32 @@
 # Fase 1: tarefas do executor
 
 Tarefas da Fase 1 (validação técnica v13) para o executor GPT-6.1 Terra (Codex, raciocínio alto). Cada tarefa é um
-prompt completo; cole uma por vez no Codex e devolva o relatório ao diretor antes da próxima.
+prompt completo; o diretor envia uma por vez pela CLI e revisa o resultado antes da próxima.
 
 A verificação manual no console do Foundry (fichas, itens, chat) fica com o diretor, depois da Tarefa 1.2.
+
+## Como o executor roda
+
+O diretor chama o Codex assim (Git Bash, na raiz do projeto, prompt num arquivo):
+
+```bash
+codex exec -m gpt-6.1-terra -c model_reasoning_effort="high" -c 'windows.sandbox="unelevated"' \
+  -s workspace-write -C "%USERPROFILE%/Documents/Cyberpunk RED - PTBR" \
+  --add-dir "%USERPROFILE%/Documents/FoundryVTT-test-data" -o relatorio.md "$(cat prompt.txt)" < /dev/null
+```
+
+Limites do sandbox verificados em 2026-11-03:
+
+- O modo `elevated` (padrão na config do dono) falha em `codex exec` com
+  `helper_unknown_error: setup refresh had errors`. O `unelevated` funciona e bloqueia escrita fora do projeto e da
+  pasta de teste (`Acesso negado`).
+- `.git` é somente leitura: o executor não faz `git add` nem commit. O diretor revisa e commita.
+- Criar processos filhos falha com `spawn EPERM`: `npm run test:unit` (pool de forks do Vitest) e
+  `npm run test:playwright` (Foundry e Chrome) não rodam no sandbox. `npx gulp build` roda.
+- `npx vitest run --pool=threads` roda, exceto `tests/unit/playwright-harness-config.test.js`, que usa
+  `process.chdir()` (não suportado em worker threads). O diretor roda esse arquivo e o Playwright fora do sandbox.
+- Resultado da Tarefa 1.1 (verificado pelo diretor fora do sandbox): build 0, lint 0 (6 avisos de TODO do upstream),
+  prettier 0, stylelint 0 depois do commit `47deae7`, `test:unit` 164/164.
 
 ## Licença do Foundry (antes da Tarefa 1.2)
 
@@ -74,7 +97,7 @@ RELATÓRIO (devolva exatamente isto)
 
 ## Tarefa 1.2: Playwright no Windows
 
-Só envie depois de o diretor aprovar a Tarefa 1.1.
+Enviada depois de o diretor aceitar a Tarefa 1.1. O executor só altera código e testes; o diretor roda o Playwright.
 
 ```text
 Você é o executor do projeto de migração do Cyberpunk RED Core para Foundry VTT v13 com tradução PT-BR. Trabalhe só em
@@ -94,60 +117,52 @@ CONTEXTO (verificado pelo diretor)
   %USERPROFILE%\Documents\FoundryVTT\App\Foundry Virtual Tabletop.exe
 - foundryconfig.json: appPath = "%USERPROFILE%/Documents/FoundryVTT/App/{VERSION}/..", que o harness resolve para
   App\resources\app\main.js.
-- Licença: não há chave e não há .env. A instalação já passa na verificação de licença ("Software license verification
-  succeeded" no log). Não defina FOUNDRY_KEY. Se a tela de licença aparecer, PARE e devolva a screenshot. Não procure,
-  não leia, não copie e não contorne arquivos de licença ou de configuração do Foundry (Config\, App\ ou Data\ reais).
+
+SEU SANDBOX (verificado pelo diretor)
+- .git é somente leitura: não rode git add nem git commit. O diretor commita depois de revisar.
+- Criar processos filhos falha (spawn EPERM). Por isso NÃO rode npm run test:unit nem npm run test:playwright.
+- Para testes unitários use: npx vitest run --pool=threads
+  Nesse modo, tests/unit/playwright-harness-config.test.js falha com "process.chdir() is not supported in workers".
+  Isso é limitação do sandbox, não do seu código. O diretor roda esse arquivo fora do sandbox.
+- npm run lint e npm run prettier funcionam.
 
 OBJETIVO
-Fazer npm run test:playwright rodar no Windows sem baixar navegador e com o runtime Node do próprio Foundry, sem mudar o
-comportamento em Linux/NixOS, e rodar a suíte completa.
+Permitir que npm run test:playwright rode no Windows sem baixar navegador e com o runtime Node do próprio Foundry, sem
+mudar o comportamento em Linux/NixOS.
 
 MUDANÇAS PEDIDAS (opt-in por variável de ambiente; sem a variável, o comportamento atual não muda)
 1. PLAYWRIGHT_BROWSER_CHANNEL: quando definida (ex.: "chrome" ou "msedge"), o projeto "chromium" do
-   playwright.config.mjs usa use.channel com esse valor. Resolva o valor em resolveHarnessConfig (novo campo,
-   ex.: browserChannel) e use-o no playwright.config.mjs.
+   playwright.config.mjs usa use.channel com esse valor. Resolva o valor em resolveHarnessConfig (novo campo
+   browserChannel; undefined quando a variável não existe ou está vazia) e use-o no playwright.config.mjs.
 2. FOUNDRY_NODE_PATH: quando definida, foundry-server.mjs inicia o Foundry com esse executável em vez de "node" e passa
-   ELECTRON_RUN_AS_NODE=1 só no env do processo filho (não altere process.env do pai). Resolva o caminho em
-   resolveHarnessConfig (novo campo, ex.: nodePath; padrão "node").
-3. Testes primeiro: em um commit separado e anterior, adicione em tests/unit/playwright-harness-config.test.js casos
-   para os dois campos novos (com e sem a variável). Esse commit pode falhar sozinho; o commit seguinte faz passar.
-4. Siga o estilo dos arquivos (comentários curtos, nomes em inglês, sem dependências novas).
+   ELECTRON_RUN_AS_NODE=1 só no env do processo filho (env: { ...process.env, ELECTRON_RUN_AS_NODE: "1" }; não altere
+   process.env do pai). Sem a variável, o spawn fica como hoje (sem opção env nova). Resolva o caminho em
+   resolveHarnessConfig (novo campo nodePath; padrão "node").
+3. Testes: adicione em tests/unit/playwright-harness-config.test.js casos para os dois campos novos, com e sem a
+   variável, seguindo o padrão dos testes existentes no arquivo (inclusive como eles salvam e restauram process.env).
+   O diretor vai commitar os testes antes da mudança, então os testes precisam falhar sem a mudança e passar com ela.
+4. Siga o estilo dos arquivos (comentários curtos, nomes em inglês, sem dependências novas). Não mexa em outros
+   arquivos além destes quatro: harness-config.mjs, playwright.config.mjs, foundry-server.mjs e o teste.
 
-EXECUÇÃO
-5. Com as mudanças feitas, no PowerShell:
-     $env:PLAYWRIGHT_BROWSER_CHANNEL = "chrome"
-     $env:FOUNDRY_NODE_PATH = "%USERPROFILE%\Documents\FoundryVTT\App\Foundry Virtual Tabletop.exe"
-     npm run test:playwright
-   Confirme no log do Foundry a linha "Running on Node.js - Version 20.18.3".
-6. Se a etapa de setup falhar (tela de licença, EULA, criação do mundo ou seletor diferente na build 350), pare e
-   devolva o erro, a screenshot e o trace de .playwright/test-results. Não ajuste seletores sem aprovação do diretor.
-7. Se a suíte rodar, classifique cada teste que falhou:
-   (W) específico do Windows (caminho, atalho de teclado, tempo, processo);
-   (F) quebra real do sistema no Foundry v13 (erro de JS, ficha não abre, dado errado);
-   (I) instabilidade (passa ao repetir só esse arquivo com npm run test:playwright -- <arquivo>).
-   Não corrija falhas (F) nem (W) nesta tarefa; só proponha.
+VERIFICAÇÃO NO SANDBOX
+5. Rode npm run lint, npm run prettier e npx vitest run --pool=threads. Esperado: lint e prettier com código 0; no
+   vitest, só as falhas de process.chdir no arquivo playwright-harness-config.test.js. Qualquer outra falha deve ser
+   corrigida ou relatada.
 
 REGRAS
-- Não rode npx playwright install, não use shell.nix, não edite gulp/, dist/ ou src/.
-- Não toque em %USERPROFILE%\Documents\FoundryVTT\Data, nem com o harness: o modo "test" usa .playwright/foundry-data.
-- Não feche nem reinicie o Foundry do dono se estiver aberto. A porta do harness é 30001; se estiver ocupada, pare e
-  avise.
-- Rode npm run lint, npm run prettier e npm run test:unit antes de cada commit.
-- Um assunto por commit. Mensagens em português. No corpo do commit da mudança, registre que o motivo é rodar no
-  Windows sem npx playwright install e com o Node do Foundry.
-- Arquivos .md criados ou alterados: npx prettier --write <arquivo> e npx markdownlint --fix <arquivo>.
+- Não rode npx playwright install, não use shell.nix, não edite gulp/, dist/, src/ nem package.json.
+- Não toque em %USERPROFILE%\Documents\FoundryVTT (App, Config, Data). Não procure arquivos de licença.
+- Não crie arquivos de log dentro do projeto nem em node_modules. Se precisar salvar saídas, use $env:TEMP.
 
 CRITÉRIO DE ACEITE
-- Dois commits: testes unitários novos e, depois, a mudança no harness. npm run test:unit verde no segundo.
-- Sem as variáveis de ambiente, resolveHarnessConfig devolve channel indefinido e nodePath "node" (provado por teste).
-- npm run test:playwright executado até o fim com Chrome do sistema e Node 20.18.3 do Foundry.
-- Lista de falhas classificadas (W)/(F)/(I), ou "0 falhas".
-- git status limpo; .playwright/ fora do git.
+- Diff restrito aos quatro arquivos citados.
+- Sem as variáveis, resolveHarnessConfig devolve browserChannel undefined e nodePath "node" (coberto por teste).
+- Com as variáveis, devolve os valores definidos (coberto por teste).
+- lint e prettier com código 0.
 
 RELATÓRIO (devolva exatamente isto)
-1. git log --oneline -5 e git show --stat das duas novas mudanças, com o diff completo.
-2. Saída de npm run test:unit, npm run lint e npm run prettier.
-3. Resumo do Playwright: total, passou, falhou, pulou, tempo. Linha do Node encontrada no log.
-4. Para cada falha: arquivo do spec, nome do teste, mensagem de erro, classificação e caminho do trace.
-5. git status.
+1. git status e git diff completo.
+2. Saídas resumidas de npm run lint, npm run prettier e npx vitest run --pool=threads (totais e lista de falhas).
+3. Duas mensagens de commit em português: uma para os testes (vai primeiro) e uma para a mudança no harness. No corpo
+   da segunda, registre o motivo: rodar no Windows sem npx playwright install e com o Node do Foundry.
 ```
