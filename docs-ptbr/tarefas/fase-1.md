@@ -231,3 +231,19 @@ RELATÓRIO (devolva exatamente isto)
 3. Saídas resumidas de npm run lint, npm run prettier e npx vitest run --pool=threads.
 4. Duas mensagens de commit em português: testes (primeiro) e mudança.
 ```
+
+### Resultado da Tarefa 1.2b e da suíte Playwright (diretor, 2026-11-03)
+
+- Commits `f49f1fe` (testes) e `3b678aa` (mudança). Os 5 testes novos falham sem a mudança; com ela, `test:unit`
+  172/172. Lint e prettier com código 0.
+- `npm run test:playwright` no Windows, com `PLAYWRIGHT_BROWSER_CHANNEL=chrome` e o Node 24.21.0 do sistema (sem
+  `FOUNDRY_NODE_PATH`): **413 passed (55,9 min)**, 0 falhas, 0 flaky. Nenhuma falha a classificar em (W), (F) ou (I).
+  O harness de console dos specs reprova qualquer erro de console, então não houve erro de JS nesses fluxos. Avisos
+  (inclusive de depreciação) são só registrados; a verificação manual do diretor cobre esse ponto.
+
+Como rodar no Windows:
+
+```powershell
+$env:PLAYWRIGHT_BROWSER_CHANNEL = "chrome"
+npm run test:playwright
+```
