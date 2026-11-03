@@ -1,5 +1,6 @@
 import { chromium } from "@playwright/test";
 import {
+  browserLaunchOptions,
   clearRunState,
   newWorldId,
   removeWorld,
@@ -75,7 +76,10 @@ async function launchWorld({
   let session;
   try {
     browser = await chromium.launch(
-      mode === "test" ? { args: ["--no-sandbox"] } : undefined,
+      browserLaunchOptions(
+        config,
+        mode === "test" ? { args: ["--no-sandbox"] } : undefined,
+      ),
     );
     page = await browser.newPage(
       mode === "test" ? { viewport: { width: 1920, height: 1080 } } : undefined,
@@ -147,7 +151,7 @@ async function launchBughuntWorld({
   let browser;
   let page;
   try {
-    browser = await chromium.launch();
+    browser = await chromium.launch(browserLaunchOptions(config));
     page = await browser.newPage();
     await resetWorldUserPasswords(page, {
       config,

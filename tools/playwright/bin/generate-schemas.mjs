@@ -12,6 +12,7 @@ import { resolve, join, dirname } from "node:path";
 import { startFoundry, stopFoundry } from "../server/foundry-server.mjs";
 import { driveSetup, joinAsGM } from "../setup/foundry-setup.mjs";
 import {
+  browserLaunchOptions,
   clearRunState,
   newWorldId,
   removeWorld,
@@ -87,7 +88,7 @@ async function walkModels() {
       mode: "schema",
       silent: true,
     }));
-    browser = await chromium.launch();
+    browser = await chromium.launch(browserLaunchOptions(config));
     const page = await browser.newPage();
     await driveSetup(page, { config, worldId });
     await joinAsGM(page, config);

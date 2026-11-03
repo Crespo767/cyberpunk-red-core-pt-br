@@ -1,5 +1,6 @@
 import { chromium } from "@playwright/test";
 import {
+  browserLaunchOptions,
   clearRunState,
   newWorldId,
   PLAYER_CHARACTER_NAME,
@@ -38,7 +39,9 @@ export default async function globalSetup() {
     ephemeral: true,
   });
 
-  const browser = await chromium.launch({ args: ["--no-sandbox"] });
+  const browser = await chromium.launch(
+    browserLaunchOptions(config, { args: ["--no-sandbox"] }),
+  );
   try {
     const page = await browser.newPage();
     await driveSetup(page, { config, worldId });

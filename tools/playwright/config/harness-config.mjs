@@ -142,6 +142,12 @@ export function newWorldId() {
   return `${EPHEMERAL_PREFIX}${crypto.randomBytes(4).toString("hex")}`;
 }
 
+export function browserLaunchOptions(config, options = {}) {
+  return config.browserChannel
+    ? { ...options, channel: config.browserChannel }
+    : options;
+}
+
 export function resolveHarnessConfig({
   mode = "test",
   dataPathMode,
