@@ -5,13 +5,15 @@ prompt completo; cole uma por vez no Codex e devolva o relatório ao diretor ant
 
 A verificação manual no console do Foundry (fichas, itens, chat) fica com o diretor, depois da Tarefa 1.2.
 
-## Pré-requisitos do dono (antes da Tarefa 1.2)
+## Licença do Foundry (antes da Tarefa 1.2)
 
-1. Criar o arquivo `.env` na raiz do projeto (já ignorado pelo git) com a linha `FOUNDRY_KEY=<sua chave>`. O harness do
-   Playwright usa a chave para ativar o Foundry na pasta isolada `.playwright/foundry-data`. O executor não deve ler
-   a licença em `%USERPROFILE%\Documents\FoundryVTT\Data`.
-2. Estar ciente de que o harness aceita automaticamente o EULA do Foundry nessa pasta isolada, porque ela começa vazia
-   a cada execução.
+- Não há chave de licença para colocar no `.env`. A instalação local registra no log
+  `Software license verification succeeded` (Logs\debug.2026-11-03.log, 11:03) sem `license.json` em `Config\`. Os testes
+  usam o mesmo executável, então a expectativa é que a pasta isolada `.playwright/foundry-data` também passe na
+  verificação. O harness só preenche a chave se a tela de licença aparecer.
+- Se a tela de licença aparecer na pasta de teste, o executor para e devolve o erro. A decisão volta ao dono. Ninguém
+  procura, copia ou contorna arquivos de licença.
+- O harness aceita automaticamente o EULA do Foundry na pasta isolada, porque ela começa vazia a cada execução.
 
 ## Tarefa 1.1: build, lint, formatação e testes unitários no Windows
 
@@ -72,7 +74,7 @@ RELATÓRIO (devolva exatamente isto)
 
 ## Tarefa 1.2: Playwright no Windows
 
-Só envie depois de o diretor aprovar a Tarefa 1.1 e de o dono criar o `.env`.
+Só envie depois de o diretor aprovar a Tarefa 1.1.
 
 ```text
 Você é o executor do projeto de migração do Cyberpunk RED Core para Foundry VTT v13 com tradução PT-BR. Trabalhe só em
@@ -91,7 +93,10 @@ CONTEXTO (verificado pelo diretor)
   Node 20.18.3 (Electron 34.4.0):
   %USERPROFILE%\Documents\FoundryVTT\App\Foundry Virtual Tabletop.exe
 - foundryconfig.json: appPath = "%USERPROFILE%/Documents/FoundryVTT/App/{VERSION}/..", que o harness resolve para
-  App\resources\app\main.js. A chave de licença está em .env (FOUNDRY_KEY). Não leia, não imprima e não copie a chave.
+  App\resources\app\main.js.
+- Licença: não há chave e não há .env. A instalação já passa na verificação de licença ("Software license verification
+  succeeded" no log). Não defina FOUNDRY_KEY. Se a tela de licença aparecer, PARE e devolva a screenshot. Não procure,
+  não leia, não copie e não contorne arquivos de licença ou de configuração do Foundry (Config\, App\ ou Data\ reais).
 
 OBJETIVO
 Fazer npm run test:playwright rodar no Windows sem baixar navegador e com o runtime Node do próprio Foundry, sem mudar o
@@ -114,8 +119,8 @@ EXECUÇÃO
      $env:FOUNDRY_NODE_PATH = "%USERPROFILE%\Documents\FoundryVTT\App\Foundry Virtual Tabletop.exe"
      npm run test:playwright
    Confirme no log do Foundry a linha "Running on Node.js - Version 20.18.3".
-6. Se a etapa de setup (licença, EULA, criação do mundo) falhar por seletor diferente na build 350, pare e devolva o
-   erro, a screenshot e o trace de .playwright/test-results. Não ajuste seletores sem aprovação do diretor.
+6. Se a etapa de setup falhar (tela de licença, EULA, criação do mundo ou seletor diferente na build 350), pare e
+   devolva o erro, a screenshot e o trace de .playwright/test-results. Não ajuste seletores sem aprovação do diretor.
 7. Se a suíte rodar, classifique cada teste que falhou:
    (W) específico do Windows (caminho, atalho de teclado, tempo, processo);
    (F) quebra real do sistema no Foundry v13 (erro de JS, ficha não abre, dado errado);
@@ -137,7 +142,7 @@ CRITÉRIO DE ACEITE
 - Sem as variáveis de ambiente, resolveHarnessConfig devolve channel indefinido e nodePath "node" (provado por teste).
 - npm run test:playwright executado até o fim com Chrome do sistema e Node 20.18.3 do Foundry.
 - Lista de falhas classificadas (W)/(F)/(I), ou "0 falhas".
-- git status limpo; .playwright/ e .env fora do git.
+- git status limpo; .playwright/ fora do git.
 
 RELATÓRIO (devolva exatamente isto)
 1. git log --oneline -5 e git show --stat das duas novas mudanças, com o diff completo.
