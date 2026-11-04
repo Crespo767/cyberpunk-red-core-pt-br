@@ -36,4 +36,10 @@ pendentes, e publicar como 1.0.1 (pedir o ok do dono antes de publicar).
 - [x] 8.2 traduções
 - [x] versão, changelogs, suíte (464/464), pacote
 - [x] release 1.0.1 publicado (ok do dono em 2026-11-04)
-- [ ] Mão-Ferramenta no mundo do dono
+- [x] Mão-Ferramenta no braço de carne do Anderson e do Torch (perda de Humanidade "Nenhuma": os valores do PDF já
+      incluíam a perda). Anderson 45/66 bate com o PDF; Torch ficou 58/64 (o PDF dizia 70, sem o -2 por peça).
+
+## Pendência encontrada
+
+- Mundos criados do zero nunca gravam `dataModelVersion` (fica "newCprWorld"), então migrações novas, como a 050,
+  não rodam neles. O 050 não rodou no mundo do dono; a Mão-Ferramenta do Anderson foi marcada à mão.
