@@ -37,3 +37,14 @@ Tarefa 6.1 (fechamento). Leia CLAUDE.md, o topo de CHANGELOG.md e docs-ptbr/plan
 SANDBOX: .git é somente leitura (sem git add/commit). Não crie arquivos.
 RELATÓRIO: git diff dos dois arquivos, códigos de saída e duas mensagens de commit em português (versão; changelog).
 ```
+
+## Resultado da Fase 6 (diretor, 2026-11-04)
+
+- Commits `1f686eb` (versão `0.93.0-ptbr.1` no `src/system.json`) e `d6bb4bd` (seção 0.93.0-ptbr.1 no `CHANGELOG.md`).
+- Build: `npx gulp build` 0; manifesto gerado com versão `0.93.0-ptbr.1` e compatibilidade 13/13/13.
+- Pacote: `dist/cyberpunk-red-core-0.93.0-ptbr.1.zip` (62 MB, 1969 entradas, inclui `lang/pt-BR.json` e os arquivos
+  Babele PT-BR). `dist/` fica fora do git. Não instalado no Foundry real.
+- Verificação final: lint 0, prettier 0, markdownlint 0, `test:unit` 172/172, `test:playwright` **453/453 (1,1 h)**
+  no Windows.
+- O `CHANGELOG.pt-BR.md` não foi alterado (era do Crowdin; sem Crowdin pela D4). Pendente para o dono decidir se o
+  fork mantém um changelog em PT-BR.

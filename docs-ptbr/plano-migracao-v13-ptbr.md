@@ -166,6 +166,7 @@ Cada fase tem um critério de aceite. O diretor Opus só aprova a fase quando o 
 - Atualizar `CHANGELOG.md` (en) com as mudanças. O `CHANGELOG.pt-BR.md` fica para o Crowdin, salvo decisão D4 diferente.
 - Gerar o pacote do sistema com o build e guardar em `dist/` (nunca em cima da instalação real sem o dono pedir).
 - **Aceite:** build final, testes verdes, relatório de cobertura entregue e checklist do `CLAUDE.md` respeitado.
+- **Status: CONCLUÍDA (2026-11-04).** Build e pacote `0.93.0-ptbr.1` em `dist/`; Playwright 453/453; pendências do dono em `docs-ptbr/relatorio-execucao-autonoma.md`.
 
 ## 6. Livros (referência, não fonte de texto)
 
