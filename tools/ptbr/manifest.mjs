@@ -1,0 +1,23 @@
+export const FORK_OWNER = "Crespo767";
+export const FORK_REPO = "cyberpunk-red-core-pt-br";
+
+export function forkManifest(manifest, { owner, repo }) {
+  for (const field of ["id", "version"]) {
+    const value = manifest[field];
+    if (
+      typeof value !== "string" ||
+      !value.trim() ||
+      value.trim() === "DUMMY_VALUE"
+    ) {
+      throw new Error(`Manifesto com ${field} inválido`);
+    }
+  }
+
+  const url = `https://github.com/${owner}/${repo}`;
+  return {
+    ...manifest,
+    url,
+    manifest: `${url}/releases/latest/download/system.json`,
+    download: `${url}/releases/download/${manifest.version}/${manifest.id}-${manifest.version}.zip`,
+  };
+}
