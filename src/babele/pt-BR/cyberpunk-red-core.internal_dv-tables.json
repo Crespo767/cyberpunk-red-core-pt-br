@@ -1,9 +1,9 @@
 {
-  "label": "DV Rolltables",
+  "label": "Tabelas de Rolagem de VD",
   "mapping": {},
   "entries": {
     "DV Assault Rifle": {
-      "name": "DV Rifle de Assalto",
+      "name": "VD Rifle de Assalto",
       "results": [
         {
           "0-6": "17",
@@ -18,7 +18,7 @@
       ]
     },
     "DV Assault Rifle (Autofire)": {
-      "name": "DV Rifle de Assalto (Auto)",
+      "name": "VD Rifle de Assalto (Autofire)",
       "results": [
         {
           "0-6": "22",
@@ -33,7 +33,7 @@
       ]
     },
     "DV Bows & Crossbows": {
-      "name": "DV Arcos e Balestras",
+      "name": "VD Arcos e Balestras",
       "results": [
         {
           "0-6": "15",
@@ -48,7 +48,7 @@
       ]
     },
     "DV Generic": {
-      "name": "DV Básica",
+      "name": "VD Genérico",
       "results": [
         {
           "0-6": "",
@@ -63,7 +63,7 @@
       ]
     },
     "DV Grenade Launcher": {
-      "name": "DV Lançador de Granadas",
+      "name": "VD Lançador de Granadas",
       "results": [
         {
           "0-6": "16",
@@ -78,7 +78,7 @@
       ]
     },
     "DV Long-Barrel Pistol": {
-      "name": "DV Long-Barrel Pistol",
+      "name": "VD Pistola de Cano Longo",
       "results": [
         {
           "0-6": "14",
@@ -93,7 +93,7 @@
       ]
     },
     "DV Pistol": {
-      "name": "DV Pistola",
+      "name": "VD Pistola",
       "results": [
         {
           "0-6": "13",
@@ -108,7 +108,7 @@
       ]
     },
     "DV Rocket Launcher": {
-      "name": "DV Lança-foguetes",
+      "name": "VD Lança-foguetes",
       "results": [
         {
           "0-6": "17",
@@ -123,7 +123,7 @@
       ]
     },
     "DV Shotgun (Slug)": {
-      "name": "DV Espingarda (Cartuchos de Espingarda)",
+      "name": "VD Espingarda (Cartuchos de Espingarda)",
       "results": [
         {
           "0-6": "13",
@@ -138,7 +138,7 @@
       ]
     },
     "DV SMG": {
-      "name": "DV SMG",
+      "name": "VD SMG",
       "results": [
         {
           "0-6": "15",
@@ -153,7 +153,7 @@
       ]
     },
     "DV SMG (Autofire)": {
-      "name": "DV SMG (Auto)",
+      "name": "VD SMG (Autofire)",
       "results": [
         {
           "0-6": "20",
@@ -168,7 +168,7 @@
       ]
     },
     "DV Sniper Rifle": {
-      "name": "DV Fuzil de Precisão",
+      "name": "VD Rifle de Precisão",
       "results": [
         {
           "0-6": "30",
@@ -183,7 +183,7 @@
       ]
     },
     "DV Thrown Weapon": {
-      "name": "DV Arma de Arremesso",
+      "name": "VD Arma de Arremesso",
       "results": [
         {
           "0-6": "16",
