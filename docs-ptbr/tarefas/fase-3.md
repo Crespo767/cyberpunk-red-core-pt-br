@@ -153,3 +153,26 @@ RELATÓRIO (devolva exatamente isto)
 3. Saída da checagem de placeholders/tags.
 4. Termos novos que não estavam no glossário e como você os traduziu.
 ```
+
+## Resultado da Fase 3 (diretor, 2026-11-04)
+
+- Tarefa 3.1: rascunho do glossário (`1d34cee`). Tarefa 3.2: glossário final com a D8 (`7849032`) e 22 valores
+  existentes alinhados à D8 (`1c8cb1b`).
+- Tarefa 3.3: 5 lotes (A a E) em paralelo, cada um num patch em `tmp-traducao/`, validados e aplicados pelo diretor.
+  O validador conferiu, em todas as 667 chaves, placeholders, tags HTML, espaços nas pontas e "??": 0 problemas.
+  Commit `f673ed4` (623 valores traduzidos). Lote Z: 3 erros de sentido corrigidos (`0c057d8`). Ajustes finais:
+  SDP padronizado como "PV Estrutural" (`29bf902`) e glossário completo (`c27dca2`).
+- Estado final: 1426 chaves; 41 valores iguais ao inglês, todos listados no glossário (siglas, nomes de papéis,
+  nomes próprios, Base/Total/Mod/Tokens).
+- Validação: `npm run prettier` 0; `test:unit` 172/172; mundo novo no Foundry 13.350 com idioma PT-BR: fichas de
+  character, mook, container, blackIce, demon, weapon, cyberware, armor, program e role abrem sem erros nem avisos no
+  console, e nenhuma linha das fichas tem termos em inglês da lista de checagem.
+- Não rodado: a suíte Playwright completa, porque os specs usam o idioma inglês e a mudança é só no `pt-BR.json`.
+
+### Decisões do diretor durante a execução autônoma (revisar)
+
+- Corrigidos 3 erros claros de sentido (lote Z): "preto ICE" → "Black ICE"; aviso de função de Netrunner aponta para
+  a seção NET da aba de combate; "Nível + Status" → "Nível + Atributo".
+- SDP traduzido como "PV Estrutural" em todas as chaves, seguindo o que o sistema já usava.
+- Nas divergências não cobertas pela D8 (Role = Função, Role Ability = Talento da Função, Skill = Habilidade,
+  Cyberdeck = Console, Upgrade = Melhoria, Ablation = Avariar), ficou o termo do sistema.

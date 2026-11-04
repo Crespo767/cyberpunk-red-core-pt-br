@@ -143,6 +143,7 @@ Cada fase tem um critério de aceite. O diretor Opus só aprova a fase quando o 
 - Revisar as 316 strings idênticas com 1 ou 2 palavras caso a caso.
 - Criar um **glossário PT-BR** (arquivo em `docs-ptbr/glossario-ptbr.md`) com os termos de Cyberpunk RED. Usar referências de terminologia em PT-BR já usadas pela comunidade como apoio, e pedir aprovação do dono para os termos ambíguos.
 - **Aceite:** nenhuma chave com valor igual ao inglês, exceto itens listados no glossário; chaves e JSON válidos (`npm run prettier` passa).
+- **Status: CONCLUÍDA (2026-11-04), execução autônoma autorizada pelo dono.** 41 valores iguais ao inglês, todos no glossário; `npm run prettier` 0; fichas em PT-BR sem erros no Foundry. Detalhes e decisões do diretor para revisar em `docs-ptbr/tarefas/fase-3.md`.
 
 ### Fase 4: Compêndios (Babele PT-BR)
 
