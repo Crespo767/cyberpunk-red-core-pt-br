@@ -121,3 +121,27 @@ RELATÓRIO (devolva exatamente isto)
 4. Saídas resumidas de npm run lint e npx prettier --check.
 5. Uma mensagem de commit em português para o lote.
 ```
+
+## Resultado da Fase 2 (diretor, 2026-11-03)
+
+- Tarefa 2.0: spec `902d344` (3 falhas sem a correção) e correção `e2af96d` (`DragDrop` do namespace). Spec novo 3/3;
+  specs de atores com arrastar e soltar 118/118.
+- Tarefa 2.1: commits `d4af574` (lote A), `d4f8c6b` (B), `191314a` (C) e `fd2ed1e` (D). 20 specs novos: **30 passed,
+  7 skipped** (`test.fixme`). Lint e prettier com código 0.
+- Na revisão: o spec da 030 tinha nomes não-ASCII perdidos na gravação do sandbox (corrigido com escapes `\u`); o
+  `fixme` da 034 foi removido, porque a remoção da flag antiga é da 041 por design.
+- Com os specs anteriores (039, 042, 044, 046), todas as 24 migrações de 025 a 048 têm teste.
+
+### Achados (F) nas migrações, confirmados pelo diretor no código e sem correção
+
+| Migração | Problema                                                                                             | Efeito em mundos antigos                        |
+| -------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| 027      | Prefixos `localexpert`, `martialart`, `playinstrument` sem espaço; "Local Expert (…)" vira `generic` | Tipo de perícia errado                          |
+| 031      | `tile.update(...)` sem `await`                                                                       | A migração pode terminar antes das atualizações |
+| 036      | `["program", allowedTypes.filter(...)]` cria array aninhado                                          | `allowedTypes` malformado                       |
+| 037      | `actorData ? actorDataItem : gameItem` ignora o item do mundo                                        | Remove upgrades válidos do mundo                |
+| 038      | Habilidade de Medtech com nome desconhecido perde o nome                                             | Habilidade personalizada sem nome               |
+| 041      | Recursão lê `flags.cprInstallTree`, não a árvore no escopo do sistema                                | Sobra flag antiga em níveis profundos           |
+| 047      | Compara só `doc.name`; nomes traduzidos (Babele) não casam                                           | Papel traduzido mantém o ícone antigo           |
+
+Todas afetam só mundos que ainda vão migrar de versões antigas do sistema. O dono não tem mundos do sistema.
