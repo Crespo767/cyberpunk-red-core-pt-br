@@ -6,41 +6,41 @@ consolidado pelo diretor. Só nomes, páginas e números; nenhum trecho do livro
 
 ## Resumo
 
-O sistema cobre todo o conteúdo listado do livro básico nas seções verificadas, com uma exceção: **os 12 Black ICE e
-os 3 demônios** não existem como itens ou atores prontos nos compêndios.
+O sistema cobre todo o conteúdo listado do livro básico nas seções verificadas. A única ausência, **os 12 Black ICE e
+os 3 demônios**, é intencional (ver abaixo).
 
-| Seção                                              |  Livro | No sistema | Faltando |
-| -------------------------------------------------- | -----: | ---------: | -------: |
-| Armas (corpo a corpo, à distância, exóticas)       |     42 |         42 |        0 |
-| Munições (tipos)                                   |     13 |         13 |        0 |
-| Munições (combinações tipo × variedade permitidas) |     52 |         52 |        0 |
-| Armaduras                                          |      9 |          9 |        0 |
-| Cibernética (todas as categorias e opções)         |     96 |         96 |        0 |
-| Programas comuns                                   |     15 |         15 |        0 |
-| **Black ICE**                                      | **12** |      **0** |   **12** |
-| **Demônios**                                       |  **3** |      **0** |    **3** |
-| Tabelas de andares da arquitetura NET              |      5 |          5 |        0 |
-| Cyberdecks e hardware                              |      9 |          9 |        0 |
-| Upgrades diversos de cyberdeck                     |      2 |          2 |        0 |
-| Papéis e habilidades de papel                      |     20 |         20 |        0 |
-| Perícias (categorias)                              |     66 |         66 |        0 |
-| Lesões críticas (corpo e cabeça)                   |     22 |         22 |        0 |
-| Equipamento geral                                  |     55 |         55 |        0 |
-| Drogas e medicamentos                              |     10 |         10 |        0 |
-| Roupas e moda (estilo × peça)                      |     90 |         90 |        0 |
-| Veículos                                           |     14 |         14 |        0 |
-| Acessórios de armas e upgrades de veículos         |     27 |         27 |        0 |
+| Seção                                              | Livro | No sistema | Faltando |
+| -------------------------------------------------- | ----: | ---------: | -------: |
+| Armas (corpo a corpo, à distância, exóticas)       |    42 |         42 |        0 |
+| Munições (tipos)                                   |    13 |         13 |        0 |
+| Munições (combinações tipo × variedade permitidas) |    52 |         52 |        0 |
+| Armaduras                                          |     9 |          9 |        0 |
+| Cibernética (todas as categorias e opções)         |    96 |         96 |        0 |
+| Programas comuns                                   |    15 |         15 |        0 |
+| Black ICE (não distribuível, ver abaixo)           |    12 |          0 |        — |
+| Demônios (não distribuível, ver abaixo)            |     3 |          0 |        — |
+| Tabelas de andares da arquitetura NET              |     5 |          5 |        0 |
+| Cyberdecks e hardware                              |     9 |          9 |        0 |
+| Upgrades diversos de cyberdeck                     |     2 |          2 |        0 |
+| Papéis e habilidades de papel                      |    20 |         20 |        0 |
+| Perícias (categorias)                              |    66 |         66 |        0 |
+| Lesões críticas (corpo e cabeça)                   |    22 |         22 |        0 |
+| Equipamento geral                                  |    55 |         55 |        0 |
+| Drogas e medicamentos                              |    10 |         10 |        0 |
+| Roupas e moda (estilo × peça)                      |    90 |         90 |        0 |
+| Veículos                                           |    14 |         14 |        0 |
+| Acessórios de armas e upgrades de veículos         |    27 |         27 |        0 |
 
-## Lacuna: Black ICE e demônios
+## Ausência intencional: Black ICE e demônios
 
 - Black ICE do livro (págs. 206–207): Asp, Giant, Hellhound, Kraken, Liche, Raven, Scorpion, Skunk, Wisp, Dragon,
   Killer, Sabertooth. Demônios (pág. 212): Imp, Efreet, Balron.
-- No sistema, eles só aparecem como resultados das tabelas de andares (`src/packs/internal/net-rolltables/`). Um
-  Black ICE é montado como ator a partir de um programa de classe Black ICE, mas `core_programs` só tem os 15
-  programas comuns. A instalação antiga (0.92.4) também não tinha esses itens no sistema.
-- Para completar: criar 12 programas de classe Black ICE e 3 atores de demônio (ou programas, conforme o modelo do
-  sistema), com as estatísticas do livro e descrições escritas por nós. **Depende de decisão do dono** (amplia o
-  escopo da etapa).
+- O upstream não os distribui de propósito. O `CHANGELOG.md` registra que os compêndios seguem a "Homebrew Content
+  Policy" da R. Talsorian, pela qual atores e programas de Black ICE contam como NPCs e não podem ser distribuídos.
+  Por isso o sistema traz só os ícones (`icons/compendium/blackice/`, `icons/compendium/programs/`) e os nomes nas
+  tabelas de andares.
+- Decisão do diretor (2026-11-04): não adicionar esses itens ao fork público. Quem tem o livro pode criá-los no
+  próprio mundo: um programa de classe Black ICE configura um ator de Black ICE pela ficha.
 
 ## Divergências para conferir
 

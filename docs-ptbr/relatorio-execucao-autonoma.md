@@ -29,7 +29,7 @@ Verificação final: lint, prettier e markdownlint 0; testes unitários 172/172;
 1. **Babele em sessão real:** no ambiente de teste, o Babele 2.9.1 traduziu índices e rótulos, mas não aplicou a
    tradução aos documentos abertos. Abrir um compêndio numa sessão normal e conferir.
 2. **Manifesto: RESOLVIDO (D9, 2026-11-04).** O diagnóstico da noite estava errado: o gulp sobrescreve as URLs no build (sem CI, `example.com`). Agora `npm run package:ptbr` gera o pacote com as URLs do GitHub Releases de `Crespo767/cyberpunk-red-core-pt-br`. Publicado em 2026-11-04: repositório público <https://github.com/Crespo767/cyberpunk-red-core-pt-br> e release `0.93.0-ptbr.1` (zip e `system.json`); manifesto e download conferidos por download.
-3. **Black ICE e demônios:** criar ou não os 12 programas de Black ICE e os 3 demônios do livro.
+3. **Black ICE e demônios: NÃO ADICIONAR.** O upstream os exclui de propósito (Homebrew Content Policy da R. Talsorian: contam como NPCs e não podem ser distribuídos). Ver `docs-ptbr/relatorio-cobertura-livros.md`.
 4. **6 divergências de estatística** em `docs-ptbr/relatorio-cobertura-livros.md` (algumas podem ser errata).
 5. **Babele.get depreciado** em `src/modules/hooks/external/babele.js`.
 6. **Compêndios marcados 13.351** (Foundry instalado é 13.350): atualizar o Foundry ou ignorar.
