@@ -2,6 +2,18 @@
 
 # Changelog
 
+## Versão 0.93.0-ptbr.2
+
+### Novidades
+
+- A migração 049 repara mundos já migrados pelas migrações 027, 031, 036, 041 e 047 com bugs; dados perdidos pelas migrações 037 e 038 não podem ser restaurados
+
+### Correções de bugs
+
+- Corrigir Vampyres para ser ocultável e ter Qualidade Excelente (+1 no ataque)
+- Corrigir o número mínimo de quartos do Yacht para 4
+- Registrar traduções do Babele no hook `babele.init` em vez de usar o `Babele.get` obsoleto
+
 ## Versão 0.93.0-ptbr.1
 
 ### Novidades

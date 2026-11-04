@@ -2,6 +2,18 @@
 
 # Changelog
 
+## Version 0.93.0-ptbr.2
+
+### New Features
+
+- Migration 049 repairs worlds already migrated by the buggy 027, 031, 036, 041, and 047 migrations; data lost by migrations 037 and 038 cannot be restored
+
+### Bug Fixes
+
+- Correct Vampyres to be concealable and have Excellent Quality (+1 to attack)
+- Correct the Yacht minimum number of rooms to 4
+- Register Babele translations on the `babele.init` hook instead of using the deprecated `Babele.get`
+
 ## Version 0.93.0-ptbr.1
 
 ### New Features
