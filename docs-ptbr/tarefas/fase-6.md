@@ -97,3 +97,8 @@ SANDBOX
 RELATÓRIO: git status, diff completo (arquivos novos inteiros), saídas de vitest/lint/prettier e três mensagens de
 commit em português (teste; código; package.json) — ou duas, se o package.json fizer sentido junto com o código.
 ```
+
+## Resultado da Tarefa 6.2 (diretor, 2026-11-04)
+
+- Commits do teste (`forkManifest`) e do script `npm run package:ptbr`. O teste falha sem o código; `test:unit` 175/175; lint 0.
+- `npm run package:ptbr` gera `dist/cyberpunk-red-core-0.93.0-ptbr.1.zip` (system.json na raiz, 1969 entradas) e `dist/system.json`, com `manifest` e `download` do GitHub Releases. Para publicar: criar o repositório, criar o release `0.93.0-ptbr.1` e anexar os dois arquivos.
