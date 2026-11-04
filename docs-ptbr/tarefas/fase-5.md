@@ -47,3 +47,10 @@ SANDBOX: .git é somente leitura. Não crie arquivos fora de tmp-cobertura/. Gra
 
 RELATÓRIO: totais por seção e os itens faltando (resumido).
 ```
+
+## Resultado da Fase 5 (diretor, 2026-11-04)
+
+- 5 lotes em paralelo; relatório consolidado em `docs-ptbr/relatorio-cobertura-livros.md`.
+- Cobertura completa em todas as seções verificadas, exceto 12 Black ICE e 3 demônios (lacuna real; completar depende
+  de decisão do dono).
+- 6 divergências de estatística listadas para conferência humana, sem alteração nos dados.

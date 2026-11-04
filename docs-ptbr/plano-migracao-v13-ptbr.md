@@ -159,6 +159,7 @@ Cada fase tem um critério de aceite. O diretor Opus só aprova a fase quando o 
 - Montar uma lista de conferência por seção: armas, munições, armaduras, roupas, cibernética, programas de netrunner, papéis, perícias, lesões críticas, veículos, drogas, equipamento, regras de combate e de netrun.
 - Para cada seção, comparar a lista do livro com os YAML de `src/packs/`.
 - **Aceite:** relatório `docs-ptbr/relatorio-cobertura-livros.md` com lacunas (conteúdo no livro que não está no sistema), ou a confirmação de que não há lacunas nas seções verificadas.
+- **Status: CONCLUÍDA (2026-11-04).** Relatório entregue: tudo coberto, exceto 12 Black ICE e 3 demônios; 6 divergências para conferir.
 
 ### Fase 6: Fechamento
 
