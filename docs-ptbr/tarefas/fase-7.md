@@ -144,3 +144,17 @@ libWrapper. Feito a pedido do dono, como Gamemaster e como Player2 (jogador).
   "EMP Threading" = "Revestimento contra EMP" (são filamentos decorativos: Filamentos EMP).
 - Equipamento: "Agent" = "Representante" (Agente).
 - Rótulos de compêndio sem tradução: "Skills", "Changelog", "Macros", "Scenes".
+
+## Release 1.0.0 (diretor, 2026-11-04)
+
+- Numeração própria (D10): o que seria a `0.93.0-ptbr.4` saiu como `1.0.0`. Inclui o título "Cyberpunk RED v13 - PTBR",
+  as pastas de compêndio em PT-BR, o Babele obrigatório, o módulo pt-BR recomendado e as correções de tradução da
+  Tarefa 7.5 (armaduras, cibernética, equipamento e rótulos).
+- Limpeza do repositório: saíram do GitHub a infraestrutura do projeto original (CI, Crowdin, NixOS, agentes de IA),
+  os changelogs de outros idiomas, `.vscode`, `schema/` e `jsdoc.json` (com o script `api-docs` e os pacotes `jsdoc` e
+  `docdash`). README reescrito em PT-BR.
+- Verificação: `test:playwright` **460/460 (1,1 h)**; `test:unit` 186/186; lint, prettier, stylelint e build com código 0.
+  Uma rodada anterior teve 420 falhas por um processo órfão da suíte travada que apagou a pasta de sessão
+  compartilhada; não era problema do código.
+- Publicação: release `1.0.0` marcado como mais recente. Manifesto latest responde `1.0.0`, com `requires: babele` e
+  `recommends: pt-BR`; zip baixado idêntico ao local.
