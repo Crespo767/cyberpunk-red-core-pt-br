@@ -1,5 +1,15 @@
 # Cyberpunk RED - Welcome to The Street!
 
+> **Fork PT-BR (versão modificada).** Este repositório é um fork não oficial do
+> [fvtt-cyberpunk-red-core](https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core) (branch `dev`, 0.93),
+> modificado a partir de 2026-11-03 para o Foundry VTT v13 com a tradução para português do Brasil completa
+> (interface e compêndios via Babele) e correções. As mudanças estão na seção `0.93.0-ptbr.1` do
+> [CHANGELOG](CHANGELOG.md) e em `docs-ptbr/`. Problemas deste fork devem ser relatados aqui, não ao time oficial.
+> Licença: GPLv3, a mesma do original ([LICENCE.md](LICENCE.md)).
+>
+> Instalação no Foundry: use a URL de manifesto
+> `https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases/latest/download/system.json`.
+
 ![Logo](src/images/Repo-Header.webp)
 
 <!-- markdownlint-disable-next-line MD033 -->
