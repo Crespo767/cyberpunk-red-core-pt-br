@@ -1,5 +1,12 @@
 export const FORK_OWNER = "Crespo767";
 export const FORK_REPO = "cyberpunk-red-core-pt-br";
+export const BABELE_REQUIREMENT = {
+  id: "babele",
+  type: "module",
+  manifest:
+    "https://gitlab.com/riccisi/foundryvtt-babele/-/jobs/artifacts/2.9.1/raw/module/module.json?job=build",
+  compatibility: { minimum: "2.9.1" },
+};
 
 export function forkManifest(manifest, { owner, repo }) {
   for (const field of ["id", "version"]) {
@@ -19,5 +26,14 @@ export function forkManifest(manifest, { owner, repo }) {
     url,
     manifest: `${url}/releases/latest/download/system.json`,
     download: `${url}/releases/download/${manifest.version}/${manifest.id}-${manifest.version}.zip`,
+    relationships: {
+      ...manifest.relationships,
+      requires: [
+        ...(manifest.relationships?.requires ?? []).filter(
+          (requirement) => requirement.id !== BABELE_REQUIREMENT.id,
+        ),
+        BABELE_REQUIREMENT,
+      ],
+    },
   };
 }
