@@ -1,20 +1,20 @@
 {
-  "label": "Engrenagem",
+  "label": "Equipamento",
   "mapping": {
     "dvTable": "system.dvTable"
   },
   "entries": {
     "Cyberdeck": {
       "name": "Console",
-      "description": "<p>Console de Trilha Rede. 7 espaços.</p>"
+      "description": "<p>Console de Netrunner. 7 espaços.</p>"
     },
     "Cyberdeck (Excellent)": {
-      "name": "Cyberdeck (Excellent)",
-      "description": "<p>Netrunner deck. 9 slots.</p>"
+      "name": "Console (Excelente)",
+      "description": "<p>Console de Netrunner. 9 espaços.</p>"
     },
     "Cyberdeck (Poor)": {
-      "name": "Cyberdeck (Poor)",
-      "description": "<p>Netrunner deck. 5 slots.</p>"
+      "name": "Console (Ruim)",
+      "description": "<p>Console de Netrunner. 5 espaços.</p>"
     },
     "Battleglove": {
       "name": "Luva de Batalha",
@@ -31,7 +31,7 @@
       "description": "<p>AI Smartphone. +2 Pesquisa na Biblioteca, +2 Wardrobe & Estilo, dependendo da circunstância.</p>"
     },
     "Airhypo": {
-      "name": "Airhypo",
+      "name": "Seringa pneumática",
       "description": "<p>Sapa Hipodermica.</p>"
     },
     "Anti-Smog Breathing Mask": {
@@ -47,8 +47,8 @@
       "description": "<p>O usuário fica imune a sons altos.</p>"
     },
     "Binoculars": {
-      "name": "Binoculars",
-      "description": "<p>Ampliação: x2 or x3.</p>"
+      "name": "Binóculos",
+      "description": "<p>Ampliação: x2 ou x3.</p>"
     },
     "Braindance Viewer": {
       "name": "Visualizador de Neuro Dança",
@@ -71,7 +71,7 @@
       "description": "<p>Desktop ou laptop.</p>"
     },
     "Cryopump": {
-      "name": "Cryopump",
+      "name": "Criobomba",
       "description": "<p>Maleta que vira uma maca. Coloca uma pessoa ferida em estase.</p>"
     },
     "Cryotank": {
@@ -92,7 +92,7 @@
     },
     "Electric Guitar/Other Instrument": {
       "name": "Guitarra/Outros Instrumentos",
-      "description": "<p>Musical instrument. Electric instruments requires an amplifier.</p>"
+      "description": "<p>Instrumento musical. Instrumentos elétricos exigem um amplificador.</p>"
     },
     "Flashlight": {
       "name": "Lanterna",
@@ -160,7 +160,7 @@
     },
     "Personal CarePak": {
       "name": "Cuidados pessoais",
-      "description": "<p>Toothbrush etc.</p>"
+      "description": "<p>Escova de dentes etc.</p>"
     },
     "Pocket Amplifier": {
       "name": "Amplificador de bolso",
@@ -199,11 +199,11 @@
       "description": "<p>Bolsa de ferramentas.</p>"
     },
     "Techscanner": {
-      "name": "Techscanner",
+      "name": "Escâner técnico",
       "description": "<p>+2 para várias habilidades baseadas em TECH.</p>"
     },
     "Techtool": {
-      "name": "Techtool",
+      "name": "Ferramenta técnica",
       "description": "<p>Ferramenta multipropósito.</p>"
     },
     "Tent and Camping Equipment": {
@@ -228,7 +228,7 @@
     },
     "Virtuality Goggles": {
       "name": "Óculos de Virtualidade",
-      "description": "<p>Overlay cyberspace imagery onto vision.</p>"
+      "description": "<p>Sobrepõe imagens do ciberespaço à visão.</p>"
     }
   }
 }

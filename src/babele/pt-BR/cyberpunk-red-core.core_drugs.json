@@ -1,9 +1,9 @@
 {
-  "label": "Drugs",
+  "label": "Drogas",
   "mapping": {},
   "entries": {
     "Antibiotic": {
-      "name": "Antibiotic",
+      "name": "Antibiótico",
       "description": "<p>If a target has started the natural healing process injecting them with Antibiotic will cause them to heal an additional 2 Hit Points per day for a week. This effect does not stack.</p>"
     },
     "Black Lace": {

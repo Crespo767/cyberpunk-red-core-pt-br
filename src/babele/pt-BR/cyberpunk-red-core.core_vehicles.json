@@ -3,60 +3,60 @@
   "mapping": {},
   "entries": {
     "Aerozep": {
-      "name": "Aerozep",
-      "description": "<p>Um relâmpago de carga de dias modernos. Requer um mínimo de duas salas. O preço é para cada quarto abaixo do deck. </p>"
+      "name": "Dirigível de carga",
+      "description": "<p>\n  Um dirigível de carga moderno. Exige ao menos dois cômodos. O preço é por\n  cômodo abaixo do convés.\n</p>\n"
     },
     "AV-4 Multipurpose Aerodyne": {
-      "name": "AV-4 Multipurpose Aerodyne",
-      "description": "<p>Uma aeronave multiuso capaz de inserção rápida graças aos propulsores verticais. Usada comumente por equipes de Trauma. </p>"
+      "name": "Aerodino Multiuso AV-4",
+      "description": "<p>\n  Aeronave multiuso capaz de realizar inserções rápidas graças aos\n  propulsores verticais. É usada com frequência pelas equipes Trauma.\n</p>\n"
     },
     "AV-9 Super Aerodyne": {
-      "name": "AV-9 Super Aerodyne",
-      "description": "<p>Um AV altamente avançado com assentos limitados. Pode viajar até 300 milhas por hora. </p>"
+      "name": "Super Aerodino AV-9",
+      "description": "<p>\n  Um AV avançado com lugares limitados. Pode atingir 300 milhas por hora.\n</p>\n"
     },
     "Cabin Cruiser": {
-      "name": "Cruzador de Cabana",
-      "description": "<p>Um barco de velocidade muito rápido. Requer um mínimo de dois quartos. O preço é para cada quarto abaixo do deck. </p>"
+      "name": "Lancha com Cabine",
+      "description": "<p>\n  Uma lancha muito rápida. Exige ao menos dois cômodos. O preço é por\n  cômodo abaixo do convés.\n</p>\n"
     },
     "Compact Groundcar": {
-      "name": "Compactar o Chão",
-      "description": "<p>Um carro de terra movido a CHOOH2. Muito comum com algumas dezenas de fabricantes produzindo modelos semelhantes. </p>"
+      "name": "Carro Terrestre Compacto",
+      "description": "<p>\n  Um carro terrestre movido a CHOOH<sup>2</sup>. Muito comum, com algumas dezenas de\n  fabricantes produzindo modelos semelhantes.\n</p>\n"
     },
     "Gyrocopter": {
-      "name": "Gyrocopter",
-      "description": "<p>Um pequeno rotorcraft de dois lugares. </p>"
+      "name": "Girocóptero",
+      "description": "<p>Uma pequena aeronave de rotor com dois lugares.</p>\n"
     },
     "Helicopter": {
       "name": "Helicóptero",
-      "description": "<p>Um helicóptero de quatro lugares capaz de altas velocidades e voos longos. </p>"
+      "description": "<p>Um helicóptero de quatro lugares capaz de atingir altas velocidades e fazer voos longos.</p>\n"
     },
     "High Performance Groundcar": {
-      "name": "Ciclo de Alta Performance",
-      "description": "<p>Um groundcar especializado projetado para desempenho esportivo. </p>"
+      "name": "Carro Terrestre de Alto Desempenho",
+      "description": "<p>Um carro terrestre especializado, projetado para desempenho esportivo.</p>\n"
     },
     "Jetski": {
-      "name": "Jetski",
-      "description": "<p>Um jetski comum baseado em CHOOOH que pode posicionar dois jogadores. </p>"
+      "name": "Moto Aquática",
+      "description": "<p>Uma moto aquática comum movida a CHOOH<sup>2</sup>, com dois lugares.</p>\n"
     },
     "Roadbike": {
-      "name": "Estrada",
-      "description": "<p>Uma bicicleta voltada a CHOOH2 comum vista durante o tempo do renderizador.</p>"
+      "name": "Motocicleta",
+      "description": "<p>\n  Uma motocicleta comum movida a CHOOH<sup>2</sup>, encontrada no tempo do Red.\n</p>\n"
     },
     "Speedboat": {
-      "name": "Barco Veloz",
-      "description": "<p>Um barco rápido de velocidade baseado em CHOH2. </p>"
+      "name": "Lancha",
+      "description": "<p>Uma lancha rápida movida a CHOOH<sup>2</sup>.</p>\n"
     },
     "Super Groundcar": {
-      "name": "Super Chão",
-      "description": "<p>Um esporte fortalecido de CHOOH2, caro e exótico. Ele é capaz de alta velocidade. </p>"
+      "name": "Supercarro Terrestre",
+      "description": "<p>\n  Um carro esportivo caro e exótico movido a CHOOH<sup>2</sup>, capaz de atingir\n  velocidades muito altas.\n</p>\n"
     },
     "Superbike": {
-      "name": "Superbicicleta",
-      "description": "<p>Uma versão efetiva de uma bicicleta rodoviária, capaz de velocidades muito altas. </p>"
+      "name": "Supermoto",
+      "description": "<p>Uma versão reforçada de uma motocicleta, capaz de atingir velocidades muito altas.</p>\n"
     },
     "Yacht": {
-      "name": "Yaques",
-      "description": "<p>Um barco de velocidade de luxo. Requer um mínimo de dois quartos. O preço é para cada quarto abaixo ou acima do deck. </p>"
+      "name": "Iate",
+      "description": "<p>\n  Uma lancha de luxo. Exige ao menos dois cômodos. O preço é por cômodo\n  abaixo ou acima do convés.\n</p>\n"
     }
   }
 }

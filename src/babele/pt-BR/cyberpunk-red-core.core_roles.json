@@ -1,46 +1,46 @@
 {
-  "label": "Papéis",
+  "label": "Funções",
   "mapping": {},
   "entries": {
     "Exec": {
-      "name": "Sec",
-      "description": "<p>Executivos empresariais e defensores de fat-cat prontos para arriscar tudo para elevar a escada corporativa e realizar o novo sonho americano.</p>"
+      "name": "Exec",
+      "description": "<p>\n  Executivos e defensores dos poderosos, dispostos a arriscar tudo para subir\n  na hierarquia corporativa e realizar o Novo Sonho Americano.\n</p>\n"
     },
     "Fixer": {
-      "name": "Reparador",
-      "description": "<p>Eles podem obter qualquer coisa, desde que o preço esteja certo. Usando seu charme e suas habilidades de comércio, eles fazem os negócios que mantêm a economia do futuro das Trevas fluindo.</p>"
+      "name": "Fixer",
+      "description": "<p>\n  Conseguem qualquer coisa para qualquer pessoa pelo preço certo. Com charme\n  e habilidades de negociação, fecham os negócios que mantêm a economia do\n  Futuro Sombrio em movimento.\n</p>\n"
     },
     "Lawman": {
-      "name": "Advogado",
-      "description": "<p>Embaixadores Renegados, equipes de ataque corporativo, ou os últimos vestígios de uma força policial do governo, patrulham as ruas para impor alguma ordem num mundo sem lei de outra forma.</p>"
+      "name": "Lawman",
+      "description": "<p>\n  Defensores renegados, equipes de ataque corporativo ou os últimos membros\n  de uma força policial governamental patrulham as ruas para impor alguma ordem\n  em um mundo sem lei.\n</p>\n"
     },
     "Media": {
-      "name": "Multimídia",
-      "description": "<p>Newspeople, influentes e fenômenos culturais, eles estão prontos para expor a verdade de qualquer forma necessário.</p>"
+      "name": "Media",
+      "description": "<p>\n  Jornalistas, influenciadores e fenômenos culturais, dispostos a expor a\n  verdade por todos os meios necessários.\n</p>\n"
     },
     "Medtech": {
       "name": "Medtech",
-      "description": "<p>Médicos cobertos e mecânicas de ciberware, usando suas habilidades para manter os colegas edgeruneiros em boa forma e cilindrados, muitas vezes com um preço.</p>"
+      "description": "<p>\n  Médicos clandestinos e mecânicos de cibernética que usam suas habilidades para\n  manter outros edgerunners saudáveis e equipados, muitas vezes por um preço.\n</p>\n"
     },
     "Netrunner": {
-      "name": "Trilha Rede",
-      "description": "<p>Hackers habilidosos que se colocam em risco se ligando diretamente com o ciberespaço, invadindo redes e roubando dados.</p>"
+      "name": "Netrunner",
+      "description": "<p>\n  Hackers experientes que se arriscam ao conectar-se ao ciberespaço para\n  baixar segredos e infiltrar-se em redes.\n</p>\n"
     },
     "Nomad": {
       "name": "Nomad",
-      "description": "<p>Rostos, caminhões, transportadores afficionados, air-pirates, São as únicas transportadoras de produtos de todo o mundo, mantendo os transportes e as cadeias de abastecimento no tempo do Reno.</p>"
+      "description": "<p>\n  Apaixonados por carros, caminhoneiros, entusiastas do transporte e piratas\n  aéreos são os únicos a levar produtos pelo mundo, mantendo o transporte e as\n  cadeias de abastecimento no tempo do Red.\n</p>\n"
     },
     "Rockerboy": {
       "name": "Rockerboy",
-      "description": "<p>Artistas de desempenho rebeldes que usam seu artesanato para influenciar fãs/multidões e retorno</p>"
+      "description": "<p>\n  Artistas rebeldes que usam sua arte para influenciar fãs e multidões\n  e lutar contra o sistema.\n</p>\n"
     },
     "Solo": {
       "name": "Solo",
-      "description": "<p>Especialistas em combate que usam sua capacidade de luta para dominar em tempos sem lei do Red.</p>"
+      "description": "<p>\n  Especialistas em combate que usam sua habilidade de luta para dominar\n  os tempos sem lei do Red.\n</p>\n"
     },
     "Tech": {
-      "name": "Tecnologia",
-      "description": "<p>Compreensão superior de tudo o que é tecnologia permite que eles inventem, melhorem e reparem para manter o Dark Future functioning.</p>"
+      "name": "Tech",
+      "description": "<p>\n  Seu conhecimento superior de tecnologia permite inventar, melhorar e\n  consertar para manter o Futuro Sombrio funcionando.\n</p>\n"
     }
   }
 }
