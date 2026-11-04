@@ -5,7 +5,7 @@
   },
   "entries": {
     "Amplified Hearing": {
-      "name": "Aparelho Ampliado",
+      "name": "Audição Amplificada",
       "description": "<p>Concede +2 em testes de Percepção que usam a audição.</p>",
       "dvTable": ""
     },
@@ -15,7 +15,7 @@
       "dvTable": ""
     },
     "Artificial Shoulder Mount": {
-      "name": "Montaria Ombro artificial",
+      "name": "Suporte de Ombro Artificial",
       "description": "<p>\n  Permite instalar um par extra de braços cibernéticos. Os braços adicionais são\n  vendidos &amp; instalados separadamente.\n</p>\n<blockquote>\n  <p>\n    * Instale o par extra de braços cibernéticos básicos normalmente; não\n    instale os braços extras neste item.\n  </p>\n</blockquote>\n",
       "dvTable": ""
     },
@@ -30,7 +30,7 @@
       "dvTable": ""
     },
     "Big Knucks": {
-      "name": "Patinhos Grandes",
+      "name": "Soco Inglês Grande",
       "description": "<p>Ciclos blindados que funcionam como um inimigo de briga. </p>",
       "dvTable": ""
     },
@@ -70,7 +70,7 @@
       "dvTable": ""
     },
     "Color Shift": {
-      "name": "Cor do Shift",
+      "name": "Mudança de Cor",
       "description": "<p>Permite que você desvie os olhos para um número ilimitado de cores e padrões. </p>",
       "dvTable": ""
     },
@@ -120,7 +120,7 @@
       "dvTable": ""
     },
     "EMP Threading": {
-      "name": "Edifício do PEM",
+      "name": "Revestimento contra EMP",
       "description": "<p>PCB efeito na pele.</p>",
       "dvTable": ""
     },
@@ -200,7 +200,7 @@
       "dvTable": ""
     },
     "Interface Plugs": {
-      "name": "Plugins de interface",
+      "name": "Conectores de Interface",
       "description": "<p>Plugs no pulso ou cabeça para permitir que você se conecte a máquinas e sistemas sem mãos. </p>",
       "dvTable": ""
     },
@@ -220,7 +220,7 @@
       "dvTable": ""
     },
     "Level Damper": {
-      "name": "Damor de Nível",
+      "name": "Amortecedor de Nível",
       "description": "<p>Fornece imunidade a surdez ou ruídos repentinos. </p>",
       "dvTable": ""
     },
@@ -325,7 +325,7 @@
       "dvTable": ""
     },
     "Plastic Covering (Cyber Leg)": {
-      "name": "Cobertura Plástica (Lada Ciber)",
+      "name": "Cobertura Plástica (Perna Ciber)",
       "description": "<p>Um tipo de revestimento de plástico para sua perna. </p>",
       "dvTable": ""
     },
@@ -435,8 +435,8 @@
       "dvTable": ""
     },
     "Skin Weave": {
-      "name": "Trenó de Pele",
-      "description": "<p>\n  Cibernética corporal externa*. Armadura de cabeça e corpo com PP7, recupera 1 PP/dia.\n  Armaduras não se acumulam.\n</p>\n<p>\n  <em\n    >* A armadura cibernética não funciona como armadura no sistema; adicione o\n    item \"Trenó de Pele\" ao personagem/capanga para controlá-la</em\n  >\n</p>\n",
+      "name": "Trama de Pele",
+      "description": "<p>\n  Cibernética corporal externa*. Armadura de cabeça e corpo com PP7, recupera 1 PP/dia.\n  Armaduras não se acumulam.\n</p>\n<p>\n  <em\n    >* A armadura cibernética não funciona como armadura no sistema; adicione o\n    item \"Trama de Pele\" ao personagem/capanga para controlá-la</em\n  >\n</p>\n",
       "dvTable": ""
     },
     "Skinwatch": {
@@ -485,7 +485,7 @@
       "dvTable": ""
     },
     "Tactile Boost": {
-      "name": "Impulso Tático",
+      "name": "Tato Aguçado",
       "description": "<p>Chipware. Pode detectar movimento até 20m/yd de distância através de superfícies.</p>",
       "dvTable": ""
     },
@@ -535,7 +535,7 @@
       "dvTable": ""
     },
     "Voice Stress Analyzer": {
-      "name": "Analisador de Guarnição de Voz",
+      "name": "Analisador de Estresse Vocal",
       "description": "<p>+2 em Percepção Humana e Interrogação. Pode ativar um modo especial de \"detecção de mentira\".</p>",
       "dvTable": ""
     },

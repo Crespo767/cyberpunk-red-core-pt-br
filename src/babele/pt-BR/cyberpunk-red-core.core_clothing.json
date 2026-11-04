@@ -31,7 +31,7 @@
       "description": "<p>Seguindo as últimas tendências da moda asiática, o Asia Pop chama a atenção com suas cores vibrantes e seu estilo extravagante.</p>"
     },
     "Asia Pop Mirrorshades": {
-      "name": "Espelhos pop asiáticos",
+      "name": "Óculos Espelhados Asia Pop",
       "description": "<p>Seguindo as últimas tendências da moda asiática, o Asia Pop chama a atenção com suas cores vibrantes e seu estilo extravagante.</p>"
     },
     "Asia Pop Top": {
@@ -47,7 +47,7 @@
       "description": "<p>Siga as últimas tendências da moda de quem vasculha lixeiras! Roupas rasgadas e gastas, perfeitas para quem quer parecer uma pessoa em situação de rua.</p>"
     },
     "Bag Lady Chic Footwear": {
-      "name": "Bolsa Lady Chic Calçado",
+      "name": "Calçado Bag Lady Chic",
       "description": "<p>Siga as últimas tendências da moda de quem vasculha lixeiras! Roupas rasgadas e gastas, perfeitas para quem quer parecer uma pessoa em situação de rua.</p>"
     },
     "Bag Lady Chic Glasses": {
@@ -55,7 +55,7 @@
       "description": "<p>Siga as últimas tendências da moda de quem vasculha lixeiras! Roupas rasgadas e gastas, perfeitas para quem quer parecer uma pessoa em situação de rua.</p>"
     },
     "Bag Lady Chic Hat": {
-      "name": "Bolsa Lady Chic Chapéu",
+      "name": "Chapéu Bag Lady Chic",
       "description": "<p>Siga as últimas tendências da moda de quem vasculha lixeiras! Roupas rasgadas e gastas, perfeitas para quem quer parecer uma pessoa em situação de rua.</p>"
     },
     "Bag Lady Chic Jacket": {
@@ -63,15 +63,15 @@
       "description": "<p>Siga as últimas tendências da moda de quem vasculha lixeiras! Roupas rasgadas e gastas, perfeitas para quem quer parecer uma pessoa em situação de rua.</p>"
     },
     "Bag Lady Chic Jewelry": {
-      "name": "Bolsa Lady Chic Jóias",
+      "name": "Joias Bag Lady Chic",
       "description": "<p>Siga as últimas tendências da moda de quem vasculha lixeiras! Roupas rasgadas e gastas, perfeitas para quem quer parecer uma pessoa em situação de rua.</p>"
     },
     "Bag Lady Chic Mirrorshades": {
-      "name": "Bag Lady Chic Abajures",
+      "name": "Óculos Espelhados Bag Lady Chic",
       "description": "<p>Siga as últimas tendências da moda de quem vasculha lixeiras! Roupas rasgadas e gastas, perfeitas para quem quer parecer uma pessoa em situação de rua.</p>"
     },
     "Bag Lady Chic Top": {
-      "name": "Bolsa Lady Chic Top",
+      "name": "Top Bag Lady Chic",
       "description": "<p>Siga as últimas tendências da moda de quem vasculha lixeiras! Roupas rasgadas e gastas, perfeitas para quem quer parecer uma pessoa em situação de rua.</p>"
     },
     "Bohemian Bottoms": {
@@ -103,7 +103,7 @@
       "description": "<p>Deixe aflorar o hippie dos anos 70 que existe em você! Mostre a todos como você tem um espírito livre com estas roupas.</p>"
     },
     "Bohemian Mirrorshades": {
-      "name": "Espelhos Boêmios",
+      "name": "Óculos Espelhados Boêmios",
       "description": "<p>Deixe aflorar o hippie dos anos 70 que existe em você! Mostre a todos como você tem um espírito livre com estas roupas.</p>"
     },
     "Bohemian Top": {
@@ -139,7 +139,7 @@
       "description": "<p>O típico vestuário corporativo. Mostre a todos que você veio para fazer negócios.</p>"
     },
     "Businesswear Mirrorshades": {
-      "name": "Espelhos para roupas de negócios",
+      "name": "Óculos Espelhados de Negócios",
       "description": "<p>O típico vestuário corporativo. Mostre a todos que você veio para fazer negócios.</p>"
     },
     "Businesswear Top": {
@@ -175,7 +175,7 @@
       "description": "<p>Mostre sua lealdade com as cores da gangue!</p>\n"
     },
     "Gang Colors Mirrorshades": {
-      "name": "Cores de gangues espelhadas",
+      "name": "Óculos Espelhados com Cores de Gangue",
       "description": "<p>Mostre sua lealdade com as cores da gangue!</p>\n"
     },
     "Gang Colors Top": {
@@ -211,7 +211,7 @@
       "description": "<p>O tipo de roupa que você encontra nos Mega-Plexes do Futuro Sombrio. Perfeita para quem não quer se destacar na multidão.</p>"
     },
     "Generic Chic Mirrorshades": {
-      "name": "Espelhos Chiques Genéricos",
+      "name": "Óculos Espelhados Chiques Genéricos",
       "description": "<p>O tipo de roupa que você encontra nos Mega-Plexes do Futuro Sombrio. Perfeita para quem não quer se destacar na multidão.</p>"
     },
     "Generic Chic Top": {
@@ -247,7 +247,7 @@
       "description": "<p>Feitas com os materiais de qualidade mais caros e pelos fabricantes mais exclusivos, estas roupas são para quem alcançou o sucesso. O tipo de moda que você vê em supermodelos nos vídeos da Citinet.</p>"
     },
     "High Fashion Mirrorshades": {
-      "name": "Espelhos de alta moda",
+      "name": "Óculos Espelhados de Alta Moda",
       "description": "<p>Feitas com os materiais de qualidade mais caros e pelos fabricantes mais exclusivos, estas roupas são para quem alcançou o sucesso. O tipo de moda que você vê em supermodelos nos vídeos da Citinet.</p>"
     },
     "High Fashion Top": {
@@ -283,7 +283,7 @@
       "description": "<p>Roupas esportivas comuns. Perfeitas para correr ou relaxar em casa.</p>"
     },
     "Leisurewear Mirrorshades": {
-      "name": "Espelhos de lazer",
+      "name": "Óculos Espelhados de Lazer",
       "description": "<p>Roupas esportivas comuns. Perfeitas para correr ou relaxar em casa.</p>"
     },
     "Leisurewear Top": {
@@ -319,7 +319,7 @@
       "description": "<p>Se você quer parecer um caubói cheio de implantes cromados, esta é a escolha perfeita.</p>"
     },
     "Nomad Leathers Mirrorshades": {
-      "name": "Abajur de couro nômade",
+      "name": "Óculos Espelhados de Couro Nômade",
       "description": "<p>Se você quer parecer um caubói cheio de implantes cromados, esta é a escolha perfeita.</p>"
     },
     "Nomad Leathers Top": {
@@ -355,7 +355,7 @@
       "description": "<p>As roupas mais tecnológicas e chamativas que você pode encontrar na Era do Vermelho.</p>"
     },
     "Urban Flash Mirrorshades": {
-      "name": "Espelhos de flash urbano",
+      "name": "Óculos Espelhados Urban Flash",
       "description": "<p>As roupas mais tecnológicas e chamativas que você pode encontrar na Era do Vermelho.</p>"
     },
     "Urban Flash Top": {

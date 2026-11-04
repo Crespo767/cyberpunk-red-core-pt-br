@@ -20,7 +20,7 @@
       "dvTable": "VD Rifle de Assalto"
     },
     "Assault Rifle (Poor)": {
-      "name": "Rifle de Assalto (Pobre)",
+      "name": "Rifle de Assalto (Inferior)",
       "description": "<p>Um fuzil de assalto padrão. Se você rolar 1 no Ataque (falha crítica), a arma emperra e requer o uso de uma ação para ser eliminada.</p>",
       "dvTable": "VD Rifle de Assalto"
     },
@@ -30,12 +30,12 @@
       "dvTable": ""
     },
     "Baseball Bat (Excellent)": {
-      "name": "Taco de beisebol (excelente)",
+      "name": "Taco de beisebol (Excelente)",
       "description": "<p>Um bastão com peso firme. Uma arma favorita das Fúrias do Beisebol. +1 para Ataque.</p>",
       "dvTable": ""
     },
     "Baseball Bat (Poor)": {
-      "name": "Taco de beisebol (ruim)",
+      "name": "Taco de beisebol (Inferior)",
       "description": "<p>Um bastão com peso firme. Uma arma favorita das Fúrias do Beisebol. Se você rolar 1 no Ataque (Falha Crítica), a arma falha de alguma forma e requer uma ação para ser usada novamente.</p>",
       "dvTable": ""
     },
@@ -50,7 +50,7 @@
       "dvTable": "VD Arcos e Balestras"
     },
     "Bow (Poor)": {
-      "name": "Arco (pobre)",
+      "name": "Arco (Inferior)",
       "description": "<p>Um arco de qualidade ruim, recarregado como parte de uma ação de Ataque.</p> <p> Se você rolar 1 no Ataque (falha crítica), a arma emperra e exige uma ação para ser desobstruída. </p> ",
       "dvTable": "VD Arcos e Balestras"
     },
@@ -65,7 +65,7 @@
       "dvTable": ""
     },
     "Chainsaw (Poor)": {
-      "name": "Motosserra (ruim)",
+      "name": "Motosserra (Inferior)",
       "description": "<p>Uma serra portátil e recarregável que funciona com CHOOH<sup>2</sup>. Dura cerca de 2-3 horas em um tanque. Se você rolar 1 no Ataque (Falha Crítica), a arma falha de alguma forma e requer uma ação para ser usada novamente.</p>",
       "dvTable": ""
     },
@@ -80,7 +80,7 @@
       "dvTable": ""
     },
     "Combat Knife (Poor)": {
-      "name": "Faca de Combate (ruim)",
+      "name": "Faca de Combate (Inferior)",
       "description": "<p>Uma faca digna das ruas. Se você rolar 1 no Ataque (Falha Crítica), a arma falha de alguma forma e requer uma ação para ser usada novamente.</p>",
       "dvTable": ""
     },
@@ -100,7 +100,7 @@
       "dvTable": "VD Arcos e Balestras"
     },
     "Crossbow (Poor)": {
-      "name": "Besta (pobre)",
+      "name": "Besta (Inferior)",
       "description": "<p>Uma balestra de qualidade ruim, recarregada como parte de uma ação de Ataque.</p> <p> Se você rolar 1 no Ataque (falha crítica), a arma emperra e exige uma ação para ser desobstruída. </p> ",
       "dvTable": "VD Arcos e Balestras"
     },
@@ -110,12 +110,12 @@
       "dvTable": ""
     },
     "Crowbar (Excellent)": {
-      "name": "Pé de cabra (excelente)",
+      "name": "Pé de cabra (Excelente)",
       "description": "<p>Útil como uma ferramenta e uma arma. Uma haste de ferro com cunhas divididas nas extremidades. +1 para Ataque.</p>",
       "dvTable": ""
     },
     "Crowbar (Poor)": {
-      "name": "Pé de cabra (pobre)",
+      "name": "Pé de cabra (Inferior)",
       "description": "<p>Útil como uma ferramenta e uma arma. Uma haste de ferro com cunhas divididas nas extremidades. Se você rolar 1 no Ataque (Falha Crítica), a arma falha de alguma forma e requer uma ação para ser usada novamente.</p>",
       "dvTable": ""
     },
@@ -135,12 +135,12 @@
       "dvTable": "VD Lançador de Granadas"
     },
     "Grenade Launcher (Excellent)": {
-      "name": "Lança-granadas (Excelente)",
+      "name": "Lançador de granada (Excelente)",
       "description": "<p>Um lançador de granadas de alto impacto. Você pode usar uma variedade de granadas com isso. +1 para Ataque.</p>",
       "dvTable": "VD Lançador de Granadas"
     },
     "Grenade Launcher (Poor)": {
-      "name": "Lança-granadas (ruim)",
+      "name": "Lançador de granada (Inferior)",
       "description": "<p>Um lançador de granadas de alto impacto. Você pode usar uma variedade de granadas com isso. Se você rolar 1 no Ataque (falha crítica), a arma emperra e requer o uso de uma ação para ser eliminada.</p>",
       "dvTable": "VD Lançador de Granadas"
     },
@@ -155,7 +155,7 @@
       "dvTable": ""
     },
     "Heavy Melee (Poor)": {
-      "name": "Arma Corpo a Corpo Pesada (Ruim)",
+      "name": "Arma Corpo a Corpo Pesada (Inferior)",
       "description": "<p>Arma Corpo a Corpo Pesada genérica de qualidade ruim.</p>\n<p> Se você rolar 1 no Ataque (falha crítica), a arma falha e exige uma ação para voltar a funcionar.&nbsp; </p>\n",
       "dvTable": ""
     },
@@ -170,7 +170,7 @@
       "dvTable": "VD Pistola"
     },
     "Heavy Pistol (Poor)": {
-      "name": "Pistola Pesada (Pobre)",
+      "name": "Pistola Pesada (Inferior)",
       "description": "<p>Uma pistola pesada e ocultável. Se você rolar 1 no Ataque (falha crítica), a arma emperra e requer o uso de uma ação para ser eliminada.</p>",
       "dvTable": "VD Pistola"
     },
@@ -185,7 +185,7 @@
       "dvTable": "VD SMG"
     },
     "Heavy SMG (Poor)": {
-      "name": "SMG Pesado (Pobre)",
+      "name": "SMG Pesado (Inferior)",
       "description": "<p>Uma SMG pesada. Devido ao seu tamanho não pode ser escondido. Se você rolar 1 no Ataque (falha crítica), a arma emperra e requer o uso de uma ação para ser eliminada.</p>",
       "dvTable": "VD SMG"
     },
@@ -200,7 +200,7 @@
       "dvTable": ""
     },
     "Helicopter Blades (Poor)": {
-      "name": "Lâminas de helicóptero (ruim)",
+      "name": "Lâminas de Helicóptero (Inferior)",
       "description": "<p>Tiradas de uma aeronave abandonada, essas lâminas são capazes de cortar a maioria das coisas facilmente. Se você rolar 1 no Ataque (Falha Crítica), a arma falha de alguma forma e requer uma ação para ser usada novamente.</p>",
       "dvTable": ""
     },
@@ -215,12 +215,12 @@
       "dvTable": ""
     },
     "Lead Pipe (Excellent)": {
-      "name": "Tubo de chumbo (excelente)",
+      "name": "Tubo de chumbo (Excelente)",
       "description": "<p>Um cilindro oco, normalmente feito de metal ou fibra de vidro. Pode ter transportado fluidos uma vez. +1 para Ataque.</p>",
       "dvTable": ""
     },
     "Lead Pipe (Poor)": {
-      "name": "Tubo de chumbo (ruim)",
+      "name": "Tubo de chumbo (Inferior)",
       "description": "<p> Um cilindro oco, geralmente feito de metal ou fibra de vidro, que pode ter transportado fluidos. Se você rolar 1 no Ataque (falha crítica), a arma falha e exige uma ação para voltar a funcionar. </p> ",
       "dvTable": ""
     },
@@ -235,7 +235,7 @@
       "dvTable": ""
     },
     "Light Melee (Poor)": {
-      "name": "Arma Corpo a Corpo Leve (Ruim)",
+      "name": "Arma Corpo a Corpo Leve (Inferior)",
       "description": "<p>Arma Corpo a Corpo Leve genérica de qualidade ruim.</p>\n<p> Se você rolar 1 no Ataque (falha crítica), a arma falha e exige uma ação para voltar a funcionar. </p> ",
       "dvTable": ""
     },
@@ -250,12 +250,12 @@
       "dvTable": ""
     },
     "Machete (Poor)": {
-      "name": "Facão (Ruim)",
+      "name": "Facão (Inferior)",
       "description": "<p>Uma faca de lâmina longa com uma variedade de usos. Conhecido por ser o favorito de algumas gangues de Night City. Se você rolar 1 no Ataque (Falha Crítica), a arma falha de alguma forma e requer uma ação para ser usada novamente.</p>",
       "dvTable": ""
     },
     "Malorian Arms 3516": {
-      "name": "Armas malorianas 3516",
+      "name": "Malorian Arms 3516",
       "description": "<p>\n  Uma Pistola Muito Pesada Exótica de excelente qualidade. Vem com um elo de\n  arma inteligente que não pode ser desinstalado.\n</p>\n",
       "dvTable": "VD Pistola"
     },
@@ -275,7 +275,7 @@
       "dvTable": ""
     },
     "Medium Melee (Poor)": {
-      "name": "Arma Corpo a Corpo Média (Ruim)",
+      "name": "Arma Corpo a Corpo Média (Inferior)",
       "description": "<p>Arma Corpo a Corpo Média genérica de qualidade ruim.</p>\n<p> Se você rolar 1 no Ataque (falha crítica), a arma falha e exige uma ação para voltar a funcionar. </p> ",
       "dvTable": ""
     },
@@ -290,7 +290,7 @@
       "dvTable": "VD Pistola"
     },
     "Medium Pistol (Poor)": {
-      "name": "Pistola Média (Ruim)",
+      "name": "Pistola Média (Inferior)",
       "description": "<p>Uma pistola ocultável de tamanho médio. Se você rolar 1 no Ataque (falha crítica), a arma emperra e requer o uso de uma ação para ser eliminada.</p>",
       "dvTable": "VD Pistola"
     },
@@ -315,7 +315,7 @@
       "dvTable": ""
     },
     "Naginata (Poor)": {
-      "name": "Lança japonesa (naginata) (Ruim)",
+      "name": "Lança japonesa (naginata) (Inferior)",
       "description": "<p>Um poste de madeira japonês com uma lâmina curva de um lado. Favorecido pelas equipes táticas Arasaka para combates próximos. Se você rolar 1 no Ataque (Falha Crítica), a arma falha de alguma forma e requer uma ação para ser usada novamente.</p>",
       "dvTable": ""
     },
@@ -335,7 +335,7 @@
       "dvTable": "VD Lança-foguetes"
     },
     "Rocket Launcher (Poor)": {
-      "name": "Lança-foguetes (ruim)",
+      "name": "Lança-foguetes (Inferior)",
       "description": "<p>Tragam as grandes armas. Este lançador de foguetes causará algum dano. Se você rolar 1 no Ataque (falha crítica), a arma emperra e requer o uso de uma ação para ser eliminada.</p>",
       "dvTable": "VD Lança-foguetes"
     },
@@ -350,7 +350,7 @@
       "dvTable": "VD Espingarda (Cartuchos de Espingarda)"
     },
     "Shotgun (Poor)": {
-      "name": "Espingarda (ruim)",
+      "name": "Espingarda (Inferior)",
       "description": "<p>Uma espingarda para todos os fins. Se você rolar 1 no Ataque (falha crítica), a arma emperra e requer o uso de uma ação para ser eliminada.</p>",
       "dvTable": "VD Espingarda (Cartuchos de Espingarda)"
     },
@@ -370,7 +370,7 @@
       "dvTable": ""
     },
     "Sledgehammer (Poor)": {
-      "name": "Marreta (pobre)",
+      "name": "Marreta (Inferior)",
       "description": "<p>Um grande objeto semelhante a um martelo com uma cabeça de metal plana que distribui a força impactada por uma ampla área. Se você rolar 1 no Ataque (Falha Crítica), a arma falha de alguma forma e requer uma ação para ser usada novamente.</p>",
       "dvTable": ""
     },
@@ -385,7 +385,7 @@
       "dvTable": "VD SMG"
     },
     "SMG (Poor)": {
-      "name": "SMG (pobre)",
+      "name": "SMG (Inferior)",
       "description": "<p>Uma SMG ocultável. Se você rolar 1 no Ataque (falha crítica), a arma emperra e requer o uso de uma ação para ser eliminada.</p>",
       "dvTable": "VD SMG"
     },
@@ -400,22 +400,22 @@
       "dvTable": "VD Rifle de Precisão"
     },
     "Sniper Rifle (Poor)": {
-      "name": "Rifle de precisão (pobre)",
+      "name": "Rifle de Precisão (Inferior)",
       "description": "<p>Um rifle sniper de longa distância. Detém 4 balas em uma revista. Se você rolar 1 no Ataque (falha crítica), a arma emperra e requer o uso de uma ação para ser eliminada.</p>",
       "dvTable": "VD Rifle de Precisão"
     },
     "Spiked Bat": {
-      "name": "Morcego cravado",
+      "name": "Taco com Pregos",
       "description": "<p>Um avanço sobre um bastão regular. Vários pregos foram martelados em direção à ponta.</p>",
       "dvTable": ""
     },
     "Spiked Bat (Excellent)": {
-      "name": "Morcego cravado (excelente)",
+      "name": "Taco com Pregos (Excelente)",
       "description": "<p>Um avanço sobre um bastão regular. Vários pregos foram martelados em direção à ponta. +1 para Ataque.</p>",
       "dvTable": ""
     },
     "Spiked Bat (Poor)": {
-      "name": "Morcego cravado (pobre)",
+      "name": "Taco com Pregos (Inferior)",
       "description": "<p>Um avanço sobre um bastão regular. Vários pregos foram martelados em direção à ponta. Se você rolar 1 no Ataque (Falha Crítica), a arma falha de alguma forma e requer uma ação para ser usada novamente.</p>",
       "dvTable": ""
     },
@@ -440,7 +440,7 @@
       "dvTable": ""
     },
     "Sword (Poor)": {
-      "name": "Espada (pobre)",
+      "name": "Espada (Inferior)",
       "description": "<p>Uma arma com lâmina e punho. Projetado especificamente para cortar ou empurrar. Se você rolar 1 no Ataque (Falha Crítica), a arma falha de alguma forma e requer uma ação para ser usada novamente.</p>",
       "dvTable": ""
     },
@@ -450,7 +450,7 @@
       "dvTable": "VD Arma de Arremesso"
     },
     "Tomahawk": {
-      "name": "Malhawk",
+      "name": "Tomahawk",
       "description": "<p>Um machado leve que pode ser arremessado.</p>",
       "dvTable": ""
     },
@@ -460,7 +460,7 @@
       "dvTable": ""
     },
     "Tomahawk (Poor)": {
-      "name": "Tomahawk (pobre)",
+      "name": "Tomahawk (Inferior)",
       "description": "<p>Um machado leve que pode ser arremessado. Se você rolar 1 no Ataque (Falha Crítica), a arma falha de alguma forma e requer uma ação para ser usada novamente.</p>",
       "dvTable": ""
     },
@@ -485,7 +485,7 @@
       "dvTable": ""
     },
     "Very Heavy Melee (Poor)": {
-      "name": "Arma Corpo a Corpo Muito Pesada (Ruim)",
+      "name": "Arma Corpo a Corpo Muito Pesada (Inferior)",
       "description": "<p>Arma Corpo a Corpo Muito Pesada genérica de qualidade ruim.</p>\n<p> Se você rolar 1 no Ataque (falha crítica), a arma falha e exige uma ação para voltar a funcionar. </p> ",
       "dvTable": ""
     },
@@ -495,12 +495,12 @@
       "dvTable": "VD Pistola"
     },
     "Very Heavy Pistol (Excellent)": {
-      "name": "Pistola muito pesada (excelente)",
+      "name": "Pistola muito pesada (Excelente)",
       "description": "<p>Uma pistola muito pesada. Não pode ser escondido. +1 para Ataque.</p>",
       "dvTable": "VD Pistola"
     },
     "Very Heavy Pistol (Poor)": {
-      "name": "Pistola muito pesada (pobre)",
+      "name": "Pistola muito pesada (Inferior)",
       "description": "<p>Uma pistola muito pesada. Não pode ser escondido. Se você rolar 1 no Ataque (falha crítica), a arma emperra e requer o uso de uma ação para ser eliminada.</p>",
       "dvTable": "VD Pistola"
     }
