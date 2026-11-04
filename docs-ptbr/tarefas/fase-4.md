@@ -82,3 +82,48 @@ Regras específicas por lote (o diretor insere em `<REGRAS_DO_LOTE>`):
 - Lote D: o nome das perícias segue o padrão do pt-BR.json (ex.: o mesmo termo usado em
   CPR.global.itemType.skill.\*). Ex.: "Language (Arabic)" -> "Idioma (Árabe)" se o pt-BR.json usar "Idioma" para
   Language.
+
+## Resultado da Tarefa 4.1 (diretor, 2026-11-04)
+
+- Commits `eab2819` (A), `ce9ddc6` (B), `211d25e` (C), `f230090` (D) e `acea622` (E). Strings iguais ao `en`: de 460
+  para 176 (sobram números e "N/A" das tabelas DV, nomes próprios das tabelas NET, papéis em inglês e marcas).
+- Checagem do diretor: estrutura igual ao HEAD; links `@UUID`/`@Compendium` preservados; sem "??". As 2 tabelas de
+  autofire terminam em " (Autofire)"; nenhuma arma com `dvTable` sem tabela correspondente.
+- Achado: 140 descrições continuam em inglês numa versão antiga do texto (o `en` foi atualizado depois, então a
+  comparação exata não as detectou): `core_clothing` 81, `core_ammo` 28, `core_upgrades` 19, `core_drugs` 10,
+  `core_cyberware` 1, `core_gear` 1. Vira a Tarefa 4.2.
+
+## Tarefa 4.2: traduzir as descrições antigas que ficaram em inglês
+
+```text
+Você é o executor do projeto de migração do Cyberpunk RED Core para Foundry VTT v13 com tradução PT-BR. Trabalhe só em
+%USERPROFILE%\Documents\Cyberpunk RED - PTBR (branch main). Lote <LOTE> da Tarefa 4.2.
+
+CONTEXTO
+O diretor detectou descrições em src/babele/pt-BR/ que ainda estão em INGLÊS, numa versão antiga do texto. A lista
+exata está em tmp-traducao/babele-ingles.json ({ "arquivo.json": ["Nome da entrada.campo", ...] }). Use só as chaves
+dos arquivos deste lote.
+
+ARQUIVOS DESTE LOTE (os únicos que você pode alterar)
+<ARQUIVOS>
+
+PEDIDO
+1. Para cada chave listada, traduza para PT-BR o texto ATUAL do src/babele/en/<mesmo arquivo> (não o texto antigo do
+   pt-BR), seguindo docs-ptbr/glossario-ptbr.md e a D8.
+2. Use a mesma marcação HTML do en atual (tags, <strong>, parágrafos), os mesmos links @UUID/@Compendium e as mesmas
+   referências de página ("pg. 187" -> "pág. 187").
+3. Não altere as chaves de "entries", os outros campos nem outras entradas.
+4. Não copie texto do livro.
+
+SANDBOX
+- .git é somente leitura: não rode git add nem git commit.
+- Valide com node (sem gravar o script no projeto): JSON válido; estrutura igual ao HEAD; para cada chave listada, o
+  conjunto de tags HTML e de links é igual ao do en atual. Grave em UTF-8 e confira que não há "??".
+- Não crie arquivos novos. Não toque em %USERPROFILE%\Documents\FoundryVTT.
+
+RELATÓRIO
+1. Chaves traduzidas por arquivo.
+2. Saída da checagem.
+3. Termos novos fora do glossário e como você os traduziu.
+4. Uma mensagem de commit em português.
+```
