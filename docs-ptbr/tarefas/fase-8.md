@@ -35,5 +35,5 @@ pendentes, e publicar como 1.0.1 (pedir o ok do dono antes de publicar).
 - [x] 8.1 braço de carne (testes provados: falham sem a correção, passam com ela)
 - [x] 8.2 traduções
 - [x] versão, changelogs, suíte (464/464), pacote
-- [ ] release 1.0.1 (ok do dono)
+- [x] release 1.0.1 publicado (ok do dono em 2026-11-04)
 - [ ] Mão-Ferramenta no mundo do dono
