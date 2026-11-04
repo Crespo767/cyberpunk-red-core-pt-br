@@ -1,10 +1,10 @@
 {
-  "version": "0.93.0-ptbr.3",
+  "version": "0.93.0-ptbr.4",
   "flags": {
     "featureVideoURL": ""
   },
   "id": "cyberpunk-red-core",
-  "title": "Cyberpunk RED - CORE",
+  "title": "Cyberpunk RED v13 - PTBR",
   "description": "Implementation of the Cyberpunk RED, Core Rules, for FVTT",
   "compatibility": {
     "minimum": "13.350",
