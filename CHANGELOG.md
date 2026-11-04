@@ -2,7 +2,9 @@
 
 # Changelog
 
-## Version 0.93.0-ptbr.4
+## Version 1.0.0
+
+First release under the fork's own version numbers (previously 0.93.0-ptbr.N). Based on the official system 0.93.
 
 ### Changes
 

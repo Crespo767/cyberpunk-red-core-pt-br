@@ -2,7 +2,9 @@
 
 # Changelog
 
-## Versão 0.93.0-ptbr.4
+## Versão 1.0.0
+
+Primeira versão com numeração própria do fork (antes, 0.93.0-ptbr.N). Baseada no sistema oficial 0.93.
 
 ### Mudanças
 
