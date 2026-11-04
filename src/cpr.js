@@ -17,6 +17,7 @@ import CPRMacro from "./modules/utils/cpr-macros.js";
 import SystemUtils from "./modules/utils/cpr-systemUtils.js";
 import MigrationRunner from "./modules/system/migrate/migration.js";
 import MigrationApp from "./modules/system/migrate/migration-app.js";
+import { resolveDataModelVersion } from "./modules/system/migrate/untracked-world.js";
 
 // Function imports
 import registerHooks from "./modules/system/hooks.js";
@@ -334,6 +335,18 @@ Hooks.once("ready", async () => {
     MigrationApp.showChangelog();
     // Set justMigrated back to false.
     settings.set(game.system.id, "justMigrated", false);
+  }
+
+  // Record a real data model version for worlds still on the "newCprWorld"
+  // default, otherwise later migrations never run on them.
+  const storedVersion = settings.get(game.system.id, "dataModelVersion");
+  const resolvedVersion = resolveDataModelVersion(storedVersion, {
+    hasDocuments: game.actors.size > 0 || game.items.size > 0,
+    latest: game.cpr.MigrationRunner.newDataModelVersion,
+  });
+  if (resolvedVersion !== storedVersion) {
+    await settings.set(game.system.id, "dataModelVersion", resolvedVersion);
+    MigrationRunner.instantiate();
   }
 
   // Handle Migration.
