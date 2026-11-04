@@ -192,3 +192,14 @@ RELATÓRIO (devolva exatamente isto)
 4. Códigos de saída de lint e prettier.
 5. Duas mensagens de commit em português: spec (primeiro) e correção.
 ```
+
+## Resultado da Tarefa 2.2 (diretor, 2026-11-03)
+
+- 14 commits, de `e60918a` a `50a98ed`: para cada migração (027, 031, 036, 037, 038, 041, 047), o spec com o teste
+  ativado e depois a correção no script.
+- Prova: com só os specs, 7 failed e 10 passed (exatamente os testes ativados); com as correções, 17 passed.
+- Regressão: lint e prettier com código 0; `test:unit` 172/172; `npm run test:playwright` completo **453 passed
+  (57,7 min)** no Windows.
+- Pendência para quem distribuir o sistema: as correções valem só para mundos que ainda vão passar por essas versões.
+  Mundos que já migraram com o bug mantêm os dados afetados e precisariam de uma migração de reparo nova. Nas
+  migrações 037 e 038 os dados perdidos não podem ser recuperados automaticamente.

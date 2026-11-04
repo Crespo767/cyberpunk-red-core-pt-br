@@ -134,7 +134,7 @@ Cada fase tem um critério de aceite. O diretor Opus só aprova a fase quando o 
 - **Aceite:** mundo migrado abre, personagens e itens mantêm dados, não há erro de migração.
 - **Status: CONCLUÍDA COM ESCOPO AJUSTADO (2026-11-03), aguardando aprovação do dono.** Nenhum mundo real usa o
   sistema, então não houve mundo v12 para copiar. Decisão do dono: cobrir com testes. As 24 migrações de 025 a 048 têm
-  spec Playwright (30 passed, 7 `fixme` para 7 achados confirmados). Também corrigido o `DragDrop` depreciado. Detalhes
+  spec Playwright, e os 7 achados confirmados foram corrigidos a pedido do dono (suíte completa 453/453). Também corrigido o `DragDrop` depreciado. Detalhes
   em `docs-ptbr/tarefas/fase-2.md`.
 
 ### Fase 3: Tradução da interface (`src/lang/pt-BR.json`)
