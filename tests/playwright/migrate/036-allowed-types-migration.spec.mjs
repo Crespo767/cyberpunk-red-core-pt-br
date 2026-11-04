@@ -9,7 +9,7 @@ test.beforeEach(async ({ page }) => {
   await gotoReadyWorld(page);
 });
 
-test.fixme("036 replaces programs with a flat list on actors and items", async ({
+test("036 replaces programs with a flat list on actors and items", async ({
   page,
 }) => {
   const result = await page.evaluate(async () => {
