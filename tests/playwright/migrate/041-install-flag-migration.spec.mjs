@@ -33,7 +33,7 @@ test("041 removes the old flag and preserves unrelated flags idempotently", asyn
   expect(result.untouched).toEqual({ flags: { other: { value: 1 } } });
 });
 
-test.fixme("041 recursively cleans and records items in the scoped install tree", async ({
+test("041 recursively cleans and records items in the scoped install tree", async ({
   page,
 }) => {
   const result = await page.evaluate(async () => {
