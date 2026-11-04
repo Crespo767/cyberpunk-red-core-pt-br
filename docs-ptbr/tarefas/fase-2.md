@@ -145,3 +145,50 @@ RELATÓRIO (devolva exatamente isto)
 | 047      | Compara só `doc.name`; nomes traduzidos (Babele) não casam                                           | Papel traduzido mantém o ícone antigo           |
 
 Todas afetam só mundos que ainda vão migrar de versões antigas do sistema. O dono não tem mundos do sistema.
+
+## Decisão do dono (2026-11-03): corrigir os 7 achados antes da Fase 3
+
+Uma tarefa por migração, em paralelo (cada uma mexe só no próprio script e no próprio spec). Para cada uma, o diretor
+faz dois commits: primeiro o spec com o `test.fixme` trocado por `test` (o teste falha), depois a correção (o teste
+passa). As correções ficam no próprio script, sem migração nova: só valem para mundos que ainda vão passar por aquela
+versão. O dono não tem mundos do sistema.
+
+## Tarefa 2.2: corrigir uma migração (um prompt por migração)
+
+O diretor troca `<NNN>`, `<SCRIPT>`, `<SPEC>`, `<TESTE>` e `<PROBLEMA>`.
+
+```text
+Você é o executor do projeto de migração do Cyberpunk RED Core para Foundry VTT v13 com tradução PT-BR. Trabalhe só em
+%USERPROFILE%\Documents\Cyberpunk RED - PTBR (branch main). Tarefa: corrigir a migração <NNN>.
+
+ARQUIVOS (os únicos que você pode alterar)
+- Script: src/modules/system/migrate/scripts/<SCRIPT>
+- Spec:   tests/playwright/migrate/<SPEC>
+
+PROBLEMA (confirmado pelo diretor no código)
+<PROBLEMA>
+O spec já tem o teste test.fixme("<TESTE>", ...), que descreve o comportamento esperado.
+
+PEDIDO
+1. No spec, troque test.fixme por test nesse teste. Não mude a expectativa dele, salvo se ela estiver errada em
+   relação ao comentário do script; nesse caso, explique no relatório.
+2. Corrija o script com a menor mudança possível, no estilo do arquivo. Não crie migração nova nem mude o número da
+   versão. Não altere os outros testes do spec: eles têm de continuar passando.
+3. Leia CLAUDE.md (seção Migrations) e a classe base em src/modules/system/migrate/base-migration-script.js antes de
+   mexer.
+
+SANDBOX
+- .git é somente leitura: não rode git add nem git commit.
+- Não rode npm run test:playwright nem npm run test:unit (spawn EPERM). O diretor roda o spec fora do sandbox, antes e
+  depois da correção.
+- Rode npm run lint e npx prettier --check nos dois arquivos (esperado: código 0). Grave em UTF-8.
+- Não crie arquivos de log no projeto nem em node_modules. Não toque em %USERPROFILE%\Documents\FoundryVTT.
+
+RELATÓRIO (devolva exatamente isto)
+1. git diff dos dois arquivos.
+2. Por que a correção resolve o problema, em até 3 linhas.
+3. Se mundos que já passaram por esta migração com o bug precisariam de uma migração de reparo (sim/não e por quê,
+   em até 2 linhas). Não crie a migração.
+4. Códigos de saída de lint e prettier.
+5. Duas mensagens de commit em português: spec (primeiro) e correção.
+```
