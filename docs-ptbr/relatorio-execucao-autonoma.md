@@ -34,6 +34,5 @@ Verificação final: lint, prettier e markdownlint 0; testes unitários 172/172;
 5. **Babele.get depreciado: RESOLVIDO (2026-11-04).** O sistema escuta o hook `babele.init` (teste unitário incluso).
 6. **Compêndios marcados 13.351** (Foundry instalado é 13.350): atualizar o Foundry ou ignorar.
 7. **CHANGELOG em PT-BR: RESOLVIDO (2026-11-04).** Seção 0.93.0-ptbr.1 no `CHANGELOG.pt-BR.md`.
-8. **Migrações de reparo** para mundos que já passaram pelas 7 migrações com bug (só importa se o projeto for
-   distribuído).
+8. **Migrações de reparo: RESOLVIDO (2026-11-04).** Migração 049, publicada no release `0.93.0-ptbr.2`.
 9. Instalar no Foundry real e testar com um mundo cópia (não foi feito, por regra).

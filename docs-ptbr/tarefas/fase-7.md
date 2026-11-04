@@ -72,3 +72,10 @@ Tarefa 7.2: preparar a versão 0.93.0-ptbr.2.
 SANDBOX: .git é somente leitura (sem git add/commit). Não altere outros arquivos.
 RELATÓRIO: git diff e duas mensagens de commit em português (versão; changelogs).
 ```
+
+## Resultado da Fase 7 (diretor, 2026-11-04)
+
+- Tarefa 7.1: migração 049 com spec (`2613978` e `988b0e5`). Na revisão: retirada a checagem de tipo que impedia o reparo de `allowedTypes` em atores `container`, e trocado um caso artificial do teste de dados intactos. Specs de migração 52/52.
+- Tarefa 7.2: versão `0.93.0-ptbr.2` e changelogs em inglês e PT-BR (`e23129a`, `5ad2b0b`).
+- Verificação: `test:unit` 177/177; lint 0; `test:playwright` **460/460 (59 min)**.
+- Publicação: release `0.93.0-ptbr.2` marcado como mais recente, com zip e `system.json`. O manifesto `releases/latest/download/system.json` já responde com `0.93.0-ptbr.2` e o zip baixado é idêntico ao local. Pela regra de versões do Foundry, `0.93.0-ptbr.2` é mais nova que `0.93.0-ptbr.1`, então quem instalou a primeira recebe a atualização.
