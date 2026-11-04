@@ -10,7 +10,7 @@ flags:
       - _id: bxa6F7fNvkFKy20y
         _stats:
           compendiumSource: Compendium.cyberpunk-red-core.core_cyberware.Item.QsssoeIdaueepWxp
-          coreVersion: "13.351"
+          coreVersion: "13.350"
           createdTime: 1785101138109
           duplicateSource: null
           exportSource: null
