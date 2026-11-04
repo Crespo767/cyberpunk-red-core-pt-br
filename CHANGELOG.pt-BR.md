@@ -2,6 +2,19 @@
 
 # Changelog
 
+## Versão 1.0.1
+
+### Novidades
+
+- Soco Inglês Grande, Estripadores, Arranhadores, Fatiar e Cortar, Empunhadura Subdermal, Mão-Ferramenta e Wolvers podem ser instalados num braço de carne, como a única cibernética desse braço (pág. 115): o diálogo de instalação oferece `Braço de carne`, até dois por personagem. A nova opção de item `Compatível com braço de carne` libera isso para outras cibernéticas
+- A migração 050 marca as cópias já existentes desses sete itens como compatíveis com braço de carne
+
+### Correções de bugs
+
+- Corrigir nomes de munição em PT-BR: Shotgun Shell é `Cartucho de Espingarda` e Shotgun Slug é `Balote de Espingarda`
+- Corrigir outros nomes dos compêndios em PT-BR (Besta, Lançador de Gancho, Mira de Precisão, Codificador/Decodificador, Neutralizadores de Toxinas, Synthcoke, Escudo, Poison Flatline, Cobertura Realskinn, Wolvers)
+- Armas embutidas e melhorias de veículo agora apontam para as tabelas de VD traduzidas de Pistola e Lançador de Granadas
+
 ## Versão 1.0.0
 
 Primeira versão com numeração própria do fork (antes, 0.93.0-ptbr.N). Baseada no sistema oficial 0.93.

@@ -2,6 +2,19 @@
 
 # Changelog
 
+## Version 1.0.1
+
+### New Features
+
+- Big Knucks, Rippers, Scratchers, Slice 'N Dice, Subdermal Grip, Tool Hand and Wolvers can be installed in a meat arm, as the only cyberware in that arm (pg. 115): the install dialog offers `Meat Arm`, up to two per character. The new `Compatible with Meat Arm` item setting enables this for other cyberware
+- Migration 050 marks existing copies of those seven items as meat-arm compatible
+
+### Bug Fixes
+
+- Fix Brazilian Portuguese ammo names: Shotgun Shell is `Cartucho de Espingarda` and Shotgun Slug is `Balote de Espingarda`
+- Fix other Brazilian Portuguese compendium names (Crossbow, Grapple Gun, Sniping Scope, Scrambler/Descrambler, Toxin Binders, Synthcoke, Shield, Poison Flatline, Realskinn Covering, Wolvers)
+- Popup weapons and vehicle upgrades now point to the translated Pistol and Grenade Launcher DV tables
+
 ## Version 1.0.0
 
 First release under the fork's own version numbers (previously 0.93.0-ptbr.N). Based on the official system 0.93.
