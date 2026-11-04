@@ -42,22 +42,18 @@ os 3 demônios**, é intencional (ver abaixo).
 - Decisão do diretor (2026-11-04): não adicionar esses itens ao fork público. Quem tem o livro pode criá-los no
   próprio mundo: um programa de classe Black ICE configura um ator de Black ICE pela ficha.
 
-## Divergências para conferir
+## Divergências conferidas (2026-11-04)
 
-Não foram alteradas: podem ser erratas oficiais já aplicadas pelo upstream ou leitura ambígua do livro.
+| Item                                         | Conferência                                                                       | Decisão                                                          |
+| -------------------------------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Tabela VD SMG (Autofire), pág. 173           | Livro impresso: valores menores; errata oficial: 20, 17, 20, 25, 30               | Mantido: o sistema segue a errata                                |
+| Tabela VD Assault Rifle (Autofire), pág. 173 | Errata oficial: 22, 20, 17, 20, 25                                                | Mantido: o sistema segue a errata                                |
+| Vampyres                                     | Livro: qualidade Excelente (+1 no ataque), ocultável                              | Corrigido: `attackmod` 1, `concealable` true, descrição en/pt-BR |
+| Yacht, pág. 190                              | Livro: mínimo de 4 quartos                                                        | Corrigido na descrição (YAML, Babele en e pt-BR)                 |
+| Linear Frame ∑ (Sigma), pág. 354             | O próprio livro cita 2 e 1 Interface Plugs                                        | Mantido (1): texto ambíguo                                       |
+| High Fashion Jewelry, pág. 356               | Tabela imprime 50.000 eb com a categoria Luxury, que o livro define como 5.000 eb | Mantido (5.000 eb), coerente com a categoria                     |
 
-| Item                                         | Livro                              | Sistema             | Arquivo                                                             |
-| -------------------------------------------- | ---------------------------------- | ------------------- | ------------------------------------------------------------------- |
-| Tabela VD SMG (Autofire), pág. 173           | 15, 13, 15, 20, 25                 | 20, 17, 20, 25, 30  | `src/packs/internal/dv-tables/table.dv_smg_autofire.yaml`           |
-| Tabela VD Assault Rifle (Autofire), pág. 173 | 17, 16, 15, 13, 15                 | 22, 20, 17, 20, 25  | `src/packs/internal/dv-tables/table.dv_assault_rifle_autofire.yaml` |
-| Vampyres (qualidade Excellent)               | +1 no ataque                       | `attackmod: 0`      | `src/packs/core/cyberware/cyberware.vampyres.yaml`                  |
-| Linear Frame ∑ (Sigma), pág. 354             | o texto cita 2 e 1 Interface Plugs | 1                   | `src/packs/core/gear/gear.linear_frame___sigma.yaml`                |
-| High Fashion Jewelry, pág. 356               | leitura do executor: 50.000 eb     | 5.000 eb            | `src/packs/core/clothing/clothing.high_fashion_jewelry.yaml`        |
-| Yacht, pág. 190                              | mínimo de 4 quartos                | mínimo de 2 quartos | `src/packs/core/vehicles/vehicle.yacht.yaml`                        |
-
-As tabelas VD de autofire podem refletir uma errata oficial adotada pelo upstream; confirmar com a errata antes de
-mexer. O preço de joias de alta moda parece leitura errada do executor (a categoria de preço
-"Luxury" do jogo é 5.000 eb).
+Fonte da errata das tabelas de autofire: errata oficial do Cyberpunk RED e a issue #486 do upstream.
 
 ## Método
 
