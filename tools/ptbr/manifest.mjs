@@ -8,6 +8,12 @@ export const BABELE_REQUIREMENT = {
   compatibility: { minimum: "2.9.1" },
 };
 
+export const PTBR_CORE_RECOMMENDATION = {
+  id: "pt-BR",
+  type: "module",
+  compatibility: { minimum: "13" },
+};
+
 export function forkManifest(manifest, { owner, repo }) {
   for (const field of ["id", "version"]) {
     const value = manifest[field];
@@ -33,6 +39,12 @@ export function forkManifest(manifest, { owner, repo }) {
           (requirement) => requirement.id !== BABELE_REQUIREMENT.id,
         ),
         BABELE_REQUIREMENT,
+      ],
+      recommends: [
+        ...(manifest.relationships?.recommends ?? []).filter(
+          (recommendation) => recommendation.id !== PTBR_CORE_RECOMMENDATION.id,
+        ),
+        PTBR_CORE_RECOMMENDATION,
       ],
     },
   };
