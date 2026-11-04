@@ -1,5 +1,9 @@
 {{#each actor.system.installedItems.list as |id| }}
   {{#if (cprCompare (cprGetProp (cprGetOwnedItem ../actor id) "system.type") "===" ../cyberwareType) }}
-    {{> "systems/cyberpunk-red-core/templates/actor/character/right-pane/tabs/cyberware/cpr-cyberware-foundational-content.hbs" (cprMergeForPartialArg "actor,cyberware" ../actor (cprGetOwnedItem ../actor id))}}
+    {{#if (cprGetProp (cprGetOwnedItem ../actor id) "system.isFoundational")}}
+      {{> "systems/cyberpunk-red-core/templates/actor/character/right-pane/tabs/cyberware/cpr-cyberware-foundational-content.hbs" (cprMergeForPartialArg "actor,cyberware" ../actor (cprGetOwnedItem ../actor id))}}
+    {{else}}
+      {{> "systems/cyberpunk-red-core/templates/actor/character/right-pane/tabs/cyberware/cpr-cyberware-optional-content.hbs" (cprMergeForPartialArg "actor,cyberware,depth" ../actor (cprGetOwnedItem ../actor id) 0)}}
+    {{/if}}
   {{/if}}
 {{/each}}

@@ -517,9 +517,21 @@ export default class CPRActor extends Actor {
         cw.system.type === item.system.type,
     );
 
+    const hasMeatArmSpace = () =>
+      item.system.type === "cyberArm" &&
+      item.system.meatArmCompatible &&
+      this.itemTypes.cyberware.filter(
+        (cw) =>
+          cw.system.isInstalled &&
+          !cw.system.isFoundational &&
+          cw.system.type === "cyberArm" &&
+          cw.system.installedIn[0] === this.id,
+      ).length < 2;
+
     if (
       baseCompatibleFoundationalCyberware.length < 1 &&
-      !item.system.isFoundational
+      !item.system.isFoundational &&
+      !hasMeatArmSpace()
     ) {
       Rules.lawyer(
         false,
@@ -557,6 +569,12 @@ export default class CPRActor extends Actor {
         }
       }
     });
+    if (!item.system.isFoundational && hasMeatArmSpace()) {
+      compatibleTargetCyberware.push({
+        _id: this.id,
+        name: SystemUtils.Localize("CPR.dialog.installCyberware.meatArm"),
+      });
+    }
     // Get all other cyberware installed in this one.
     const installedCyberware = item
       .recursiveGetAllInstalledItems()
@@ -607,9 +625,17 @@ export default class CPRActor extends Actor {
       return false;
     }
 
-    const target = item.system.isFoundational
-      ? this
-      : this.getOwnedItem(formData.foundationalId);
+    if (formData.foundationalId === this.id && !hasMeatArmSpace()) {
+      Rules.lawyer(
+        false,
+        "CPR.messages.warnNoFoundationalCyberwareOfCorrectType",
+      );
+      return false;
+    }
+    const target =
+      item.system.isFoundational || formData.foundationalId === this.id
+        ? this
+        : this.getOwnedItem(formData.foundationalId);
 
     const installationSuccess = await target.installItems([item]);
     if (installationSuccess)

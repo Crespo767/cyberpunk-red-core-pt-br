@@ -38,6 +38,7 @@ export default class CyberwareDataModel extends CPRSystemDataModel.mixin(
         }),
         isWeapon: new fields.BooleanField({ initial: false }),
         isFoundational: new fields.BooleanField({ initial: true }),
+        meatArmCompatible: new fields.BooleanField({ initial: false }),
         core: new fields.BooleanField({ initial: false }),
         humanityLoss: new fields.SchemaField({
           static: new fields.NumberField({

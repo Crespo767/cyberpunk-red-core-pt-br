@@ -50,6 +50,7 @@ system:
     usedSlots: 0
   isElectronic: true
   isFoundational: false
+  meatArmCompatible: true
   isRanged: false
   isWeapon: true
   magazine:

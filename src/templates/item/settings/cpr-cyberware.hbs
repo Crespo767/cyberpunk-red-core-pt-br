@@ -132,6 +132,20 @@
   </li>
 {{/if}}
 {{/unless}}
+{{#unless item.system.isFoundational}}
+<li class="item flexrow">
+  <div class="item flexrow setting-name text-nowrap">
+    {{localize "CPR.itemSheet.cyberware.meatArmCompatible"}}
+  </div>
+  <div class="item flexrow setting-value text-nowrap item-end">
+    {{#if this.editable}}
+      <a class="item-checkbox" data-target="system.meatArmCompatible"><i class="far {{#if item.system.meatArmCompatible}}fa-circle-check{{else}}fa-circle{{/if}}"></i></a>
+    {{else}}
+      <i class="far {{#if item.system.meatArmCompatible}}fa-circle-check{{else}}fa-circle{{/if}}"></i>
+    {{/if}}
+  </div>
+</li>
+{{/unless}}
 {{!- Is A Weapon Settings --}}
 <li class="item flexrow">
   <div class="item flexrow setting-name text-nowrap">

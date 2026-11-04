@@ -52,7 +52,7 @@
     "armor": {},
     "clothing": {},
     "criticalInjury": {},
-    "cyberware": {},
+    "cyberware": { "meatArmCompatible": false },
     "cyberdeck": {},
     "drug": {},
     "gear": {},
