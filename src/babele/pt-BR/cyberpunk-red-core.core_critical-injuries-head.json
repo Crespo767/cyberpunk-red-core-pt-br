@@ -1,50 +1,50 @@
 {
-  "label": "Ferimento Crítico (Cabeça)",
+  "label": "Ferimentos Críticos (Cabeça)",
   "mapping": {},
   "entries": {
     "Brain Injury": {
       "name": "Lesão no cérebro",
-      "description": "<p>-2 para ações.</p>"
+      "description": "<p>-2 em ações.</p>\n"
     },
     "Broken Jaw": {
-      "name": "Geleia Quebrada",
-      "description": "<p>-4 a fala das ações.</p>"
+      "name": "Mandíbula Quebrada",
+      "description": "<p>-4 em ações de fala.</p>\n"
     },
     "Concussion": {
       "name": "Concussão",
-      "description": "<p>-2 to every action.</p>"
+      "description": "<p>-2 em todas as ações.</p>\n"
     },
     "Cracked Skull": {
       "name": "Crânio Rachado",
-      "description": "<p>Triples damage to HP on aimed headshots (rather than the normal double damage).</p>"
+      "description": "<p>\n  Triplica o dano aos PV em tiros mirados na cabeça (em vez de dobrar\n  o dano normalmente).\n</p>\n"
     },
     "Crushed Windpipe": {
-      "name": "Pipe de Vento Esmagado",
-      "description": "<p>Não fala.</p>"
+      "name": "Traqueia Esmagada",
+      "description": "<p>Não pode falar.</p>\n"
     },
     "Damaged Ear": {
       "name": "Orelha Danificada",
-      "description": "<p>If move more than 4m/yds in a Turn, cannot move next turn. -2 to hearing based Perception.</p>"
+      "description": "<p>\n  Se você se mover mais de 4 m/jardas em um turno, não poderá se mover no próximo turno. -2\n  em Percepção baseada na audição.\n</p>\n"
     },
     "Damaged Eye": {
       "name": "Olho Danificado",
-      "description": "<p>-2 to Ranged and Perception (Sight).</p>"
+      "description": "<p>-2 em ataques à distância e Percepção (Visão).</p>\n"
     },
     "Foreign Object (H)": {
-      "name": "Objeto Estrangeiro (H)",
-      "description": "<p>Recebe dano crítico no final do turno se andou mais de 4m/jardas.</p>"
+      "name": "Objeto Estranho (H)",
+      "description": "<p>Sofra dano crítico no fim do turno se você se mover a pé mais de 4 m/jardas.</p>\n"
     },
     "Lost Ear": {
       "name": "Orelha Perdida",
-      "description": "<p>Ear is removed. If move more than 4m/yds in a Turn, cannot move next turn. -4 to hearing based Perception.</p>"
+      "description": "<p>\n  Orelha removida. Se você se mover mais de 4 m/jardas em um turno, não poderá se mover no próximo turno. -4\n  em Percepção baseada na audição.\n</p>\n"
     },
     "Lost Eye": {
       "name": "Olho Perdido",
-      "description": "<p>Eye is removed. -4 to Ranged Attacks and vision based Perception.</p>"
+      "description": "<p>Olho removido. -4 em ataques à distância e Percepção baseada na visão.</p>\n"
     },
     "Whiplash": {
-      "name": "Chicote",
-      "description": "<p>No other effects beyond increasing the base Death Save Penalty by 1.</p>"
+      "name": "Lesão Cervical",
+      "description": "<p>Nenhum outro efeito além de aumentar em 1 a penalidade base da Salva de Morte.</p>\n"
     }
   }
 }

@@ -1,9 +1,9 @@
 {
-  "label": "Critical Injury Tables",
+  "label": "Tabelas de Ferimentos Críticos",
   "mapping": {},
   "entries": {
     "Critical Injuries (Body)": {
-      "name": "Ferimento Crítico (Corpo)",
+      "name": "Ferimentos Críticos (Corpo)",
       "results": [
         {
           "2-2": "Braço Desmembrado",
@@ -21,19 +21,19 @@
       ]
     },
     "Critical Injuries (Head)": {
-      "name": "Ferimento Crítico (Cabeça)",
+      "name": "Ferimentos Críticos (Cabeça)",
       "results": [
         {
           "2-2": "Olho Perdido",
           "3-3": "Lesão no cérebro",
           "4-4": "Olho Danificado",
           "5-5": "Concussão",
-          "6-6": "Geleia Quebrada",
-          "7-7": "Objeto Estrangeiro (H)",
-          "8-8": "Chicote",
+          "6-6": "Mandíbula Quebrada",
+          "7-7": "Objeto Estranho (H)",
+          "8-8": "Lesão Cervical",
           "9-9": "Crânio Rachado",
           "10-10": "Orelha Danificada",
-          "11-11": "Pipe de Vento Esmagado",
+          "11-11": "Traqueia Esmagada",
           "12-12": "Orelha Perdida"
         }
       ]
