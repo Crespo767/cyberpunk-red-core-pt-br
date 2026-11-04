@@ -54,9 +54,7 @@ test("031 migrates Net Architecture tiles and preserves other tiles on repeated 
   expect(out.second).toEqual(out.first);
 });
 
-test.fixme("031 waits for tile updates before resolving", async ({
-  page: game,
-}) => {
+test("031 waits for tile updates before resolving", async ({ page: game }) => {
   const completed = await game.evaluate(async () => {
     const M = await import(
       `/systems/${game.system.id}/modules/system/migrate/scripts/031-netarch-tiles.js`
