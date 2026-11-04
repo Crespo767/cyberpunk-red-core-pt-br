@@ -3,6 +3,13 @@ import { forkManifest } from "../../tools/ptbr/manifest.mjs";
 
 describe("forkManifest", () => {
   const repository = { owner: "Crespo767", repo: "cyberpunk-red-core-pt-br" };
+  const babele = {
+    id: "babele",
+    type: "module",
+    manifest:
+      "https://gitlab.com/riccisi/foundryvtt-babele/-/jobs/artifacts/2.9.1/raw/module/module.json?job=build",
+    compatibility: { minimum: "2.9.1" },
+  };
 
   it("atualiza as URLs sem alterar os outros campos nem a entrada", () => {
     const manifest = {
@@ -24,8 +31,35 @@ describe("forkManifest", () => {
         "https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases/latest/download/system.json",
       download:
         "https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases/download/0.93.0-ptbr.1/cyberpunk-red-core-0.93.0-ptbr.1.zip",
+      relationships: { requires: [babele] },
     });
     expect(result).not.toBe(manifest);
+    expect(manifest).toEqual(original);
+  });
+
+  it("preserva outras relações e não duplica o Babele", () => {
+    const manifest = {
+      id: "sistema",
+      version: "1.0",
+      relationships: {
+        requires: [{ id: "outro", type: "module" }, { id: "babele" }],
+        recommends: [
+          { id: "recomendado", type: "module" },
+          { id: "pt-BR", manifest: "https://example.com/old.json" },
+          { id: "pt-BR" },
+        ],
+        conflicts: [{ id: "incompatível", type: "module" }],
+      },
+    };
+    const original = structuredClone(manifest);
+
+    const result = forkManifest(manifest, repository);
+
+    expect(result.relationships).toEqual({
+      requires: [{ id: "outro", type: "module" }, babele],
+      recommends: original.relationships.recommends,
+      conflicts: original.relationships.conflicts,
+    });
     expect(manifest).toEqual(original);
   });
 
