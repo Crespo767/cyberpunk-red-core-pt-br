@@ -2,6 +2,32 @@
 
 # Changelog
 
+## Version 0.93.0-ptbr.1
+
+### New Features
+
+- Complete the Brazilian Portuguese interface translation in `src/lang/pt-BR.json`
+- Keep role names in English and REZ as REZ; translate Mook as Capanga
+- Complete and correct the Brazilian Portuguese Babele compendium translations
+
+### Bug Fixes
+
+- Fix autofire DV table lookup by aligning translated Babele table and weapon names
+- Replace the deprecated global `DragDrop` in actor sheets with the Foundry namespaced API
+- Migration 027: recognize skill type prefixes containing spaces
+- Migration 031: wait for NET architecture tile updates to finish
+- Migration 036: keep allowed item types in a flat list
+- Migration 037: preserve valid world item upgrades
+- Migration 038: preserve custom Medtech ability names
+- Migration 041: remove obsolete install flags from nested system-scoped trees
+- Migration 047: update role icons for translated names
+
+### Plumbing
+
+- Add Playwright specs for all migrations from 025 through 048
+- Support Windows in the Playwright harness with `PLAYWRIGHT_BROWSER_CHANNEL` and `FOUNDRY_NODE_PATH`
+- Fix the stylelint glob for Windows cmd.exe
+
 ## Version 0.93
 
 ### Action Needed
