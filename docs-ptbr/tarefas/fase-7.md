@@ -108,3 +108,10 @@ npx vitest run --pool=threads tests/unit/pack-core-version.test.js. Rode npm run
 RELATÓRIO: git status, diff do system.json e dos changelogs, contagem de YAML alterados, teste inteiro, saídas das
 checagens e mensagens de commit em português (teste; marcas dos compêndios; minimum; versão; changelogs).
 ```
+
+## Resultado da Tarefa 7.3 (diretor, 2026-11-04)
+
+- Commits do teste (`9046f4a`), das marcas (`117591c`), do minimum com a versão (`ac73925`) e dos changelogs (`29210c5`). O teste falha com as marcas 13.351 e passa com 13.350; `test:unit` 184/184; lint 0.
+- Foundry 13.350 (Build 350): mundo novo sobe com 0 erros "newer than the running version" (antes, 71) e nenhum outro erro no log.
+- `test:playwright` **460/460 (59,4 min)**.
+- Release `0.93.0-ptbr.3` publicado (mais recente) com aprovação explícita do dono, depois de o modo Auto bloquear a primeira tentativa. Manifesto latest responde `0.93.0-ptbr.3` com `minimum: "13.350"`; zip baixado idêntico ao local.

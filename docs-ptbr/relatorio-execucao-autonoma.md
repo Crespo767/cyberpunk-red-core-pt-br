@@ -32,7 +32,7 @@ Verificação final: lint, prettier e markdownlint 0; testes unitários 172/172;
 3. **Black ICE e demônios: NÃO ADICIONAR.** O upstream os exclui de propósito (Homebrew Content Policy da R. Talsorian: contam como NPCs e não podem ser distribuídos). Ver `docs-ptbr/relatorio-cobertura-livros.md`.
 4. **6 divergências de estatística: RESOLVIDO (2026-11-04).** Vampyres e Yacht corrigidos; tabelas de autofire seguem a errata; Sigma e joias mantidos por ambiguidade do livro.
 5. **Babele.get depreciado: RESOLVIDO (2026-11-04).** O sistema escuta o hook `babele.init` (teste unitário incluso).
-6. **Compêndios marcados 13.351** (Foundry instalado é 13.350): atualizar o Foundry ou ignorar.
+6. **Compêndios marcados 13.351: RESOLVIDO (2026-11-04).** Marcas trocadas para 13.350, `minimum: "13.350"`, publicado no release `0.93.0-ptbr.3`.
 7. **CHANGELOG em PT-BR: RESOLVIDO (2026-11-04).** Seção 0.93.0-ptbr.1 no `CHANGELOG.pt-BR.md`.
 8. **Migrações de reparo: RESOLVIDO (2026-11-04).** Migração 049, publicada no release `0.93.0-ptbr.2`.
 9. Instalar no Foundry real e testar com um mundo cópia (não foi feito, por regra).
