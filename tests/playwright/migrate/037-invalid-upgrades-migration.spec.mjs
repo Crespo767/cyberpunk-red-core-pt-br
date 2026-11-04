@@ -49,7 +49,7 @@ test("037 filters invalid inventory references and preserves unrelated items ide
   expect(result.twice).toEqual(result.once);
 });
 
-test.fixme("037 preserves valid world-item references", async ({ page }) => {
+test("037 preserves valid world-item references", async ({ page }) => {
   const result = await page.evaluate(async () => {
     const item = await Item.create({
       name: "Migration 037 world ammo",
