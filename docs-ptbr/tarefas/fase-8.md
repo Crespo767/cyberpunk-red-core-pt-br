@@ -15,14 +15,25 @@ pendentes, e publicar como 1.0.1 (pedir o ok do dono antes de publicar).
    and Furriest), sem itens faltando; munição básica, especialidades e sub-habilidades de Medtech completadas;
    corrigido o CORPO base do Fin Diesel (o PDF já incluía o +2 de Grafted Muscle & Bone Lace). Rolagens e cálculos
    conferidos ao vivo.
-4. **Fechamento.** Versão 1.0.1, changelogs en e pt-BR, `test:unit`, `test:playwright` completo, `npm run
-package:ptbr`, release (com o ok do dono), conferência do manifesto. Depois, instalar a Mão-Ferramenta do Anderson e
-   do Torch no mundo do dono.
+4. **Fechamento.** Versão 1.0.1, changelogs en e pt-BR, suíte unitária e Playwright completa, pacote (`npm run package:ptbr`), release (com o ok do dono) e conferência do manifesto. Depois, instalar a Mão-Ferramenta do Anderson e do Torch no mundo do dono.
+
+## Decisões do diretor
+
+- Item instalado em braço de carne fica direto no ator (como os fundacionais), no máximo 2 por personagem. Campo novo
+  `meatArmCompatible`, editável na ficha do item; migração 050 marca cópias antigas pela origem no compêndio ou pelo
+  nome em inglês.
+- Exigência de Neural Link do Subdermal Grip: não automatizada (fica com o mestre).
+- Shotgun Slug vira "Balote de Espingarda" (termo usado no Brasil), não "Projétil Único". Crossbow fica "Besta" (não
+  "Balestra"). Wolvers fica em inglês (nome próprio). Os sufixos "(Autofire)" das tabelas de VD não são traduzidos:
+  o código monta o nome da tabela de fogo automático acrescentando " (Autofire)".
+- Achado extra: cibernética e melhorias apontavam para "DV Pistola" e "DV Lançador de Granadas", tabelas que não
+  existem em PT-BR ("VD ..."). Corrigido.
+- Dúvidas deixadas como estão: Flak/Armadura, couro nômade, nomes de drogas e programas (Boost, Smash...).
 
 ## Estado
 
-- [ ] 8.1 braço de carne
-- [ ] 8.2 traduções
-- [ ] versão, changelogs, suíte, pacote
+- [x] 8.1 braço de carne (testes provados: falham sem a correção, passam com ela)
+- [x] 8.2 traduções
+- [x] versão, changelogs, suíte (464/464), pacote
 - [ ] release 1.0.1 (ok do dono)
 - [ ] Mão-Ferramenta no mundo do dono
