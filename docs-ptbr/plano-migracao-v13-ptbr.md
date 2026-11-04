@@ -151,6 +151,7 @@ Cada fase tem um critério de aceite. O diretor Opus só aprova a fase quando o 
 - Criar os arquivos Babele PT-BR faltantes para os packs que forem mantidos (`dlc_*`, `black-chrome_*`), se a decisão D3 mantiver esses packs.
 - Usar `npm run generateBabele` / `extractPacks` apenas se o fluxo ainda estiver correto. **Verificar antes**, porque `extractPacks` converte compilado em YAML e pode sobrescrever edições manuais.
 - **Aceite:** em um mundo de teste com idioma PT-BR, nomes de itens e descrições principais aparecem traduzidos nos compêndios `core`.
+- **Status: CONCLUÍDA NOS DADOS (2026-11-04), com pendência de verificação.** Arquivos Babele PT-BR completos e consistentes; rótulos e índices em PT-BR; corrigido o bug das tabelas DV de autofire. Pendente: no ambiente de teste, o Babele 2.9.1 não aplicou a tradução aos documentos abertos (só o índice). Conferir numa sessão real. Detalhes em `docs-ptbr/tarefas/fase-4.md`.
 
 ### Fase 5: Cobertura dos livros
 

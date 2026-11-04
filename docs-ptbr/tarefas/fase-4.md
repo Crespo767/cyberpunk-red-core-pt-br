@@ -127,3 +127,22 @@ RELATÓRIO
 3. Termos novos fora do glossário e como você os traduziu.
 4. Uma mensagem de commit em português.
 ```
+
+## Resultado da Fase 4 (diretor, 2026-11-04)
+
+- Tarefa 4.2: commit `70c4176`. 162 descrições antigas em inglês traduzidas a partir do `en` atual. Detecção do diretor
+  por igualdade com o `en` e por sobreposição de palavras (>= 60%); restam só nomes próprios.
+- Tarefa 4.3: commit da padronização de nomes (qualidade "(Inferior)"/"(Excelente)", "Estrutura Linear β/∑", "Taco com
+  Pregos" e erros de tradução automática em roupas e cibernética).
+- Cobertura final: fora de `core-branded-weapons` (sem pack), nenhum texto em inglês detectado; o que fica igual ao
+  `en` são números, "N/A", siglas, papéis (D8) e nomes próprios.
+- Teste em execução (mundo novo na pasta de teste, Babele 2.9.1 copiado da instalação real, idioma PT-BR):
+  - o Babele carrega os 25 arquivos ("translation ... successfully loaded") e `game.babele.translate()` devolve o
+    documento traduzido (ex.: "Rifle de Assalto (Excelente)" com descrição em PT-BR);
+  - os rótulos dos compêndios aparecem em PT-BR e o índice aparece traduzido depois de `refreshTranslationSources()`;
+  - **pendente:** documentos abertos por `getDocument`, pela janela do compêndio ou importados continuaram em inglês
+    neste ambiente. É o comportamento de aplicação do Babele 2.9.1 no Foundry 13.350 (o módulo declara verified 14),
+    não dos arquivos. Conferir numa sessão real do dono.
+  - a troca para a tabela DV de autofire funciona (nomes de tabela consistentes); sem erros no console.
+- Achado de código: `src/modules/hooks/external/babele.js` usa `Babele.get()`, depreciado no Babele 2.5.5 (aviso no
+  console). Trocar por `game.babele` exige confirmar que ele existe no hook `init`; fica para o dono decidir.
