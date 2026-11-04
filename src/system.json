@@ -26,7 +26,7 @@
   ],
   "packFolders": [
     {
-      "name": "Cyberpunk RED: Core",
+      "name": "Cyberpunk RED: Básico",
       "sorting": "m",
       "packs": [
         "core_ammo",
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "name": "Cyberpunk RED: Other",
+      "name": "Cyberpunk RED: Outros",
       "sorting": "m",
       "packs": ["other_macros", "other_scenes", "other_changelog"]
     }
