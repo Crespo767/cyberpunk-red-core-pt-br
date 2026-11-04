@@ -115,3 +115,32 @@ checagens e mensagens de commit em português (teste; marcas dos compêndios; mi
 - Foundry 13.350 (Build 350): mundo novo sobe com 0 erros "newer than the running version" (antes, 71) e nenhum outro erro no log.
 - `test:playwright` **460/460 (59,4 min)**.
 - Release `0.93.0-ptbr.3` publicado (mais recente) com aprovação explícita do dono, depois de o modo Auto bloquear a primeira tentativa. Manifesto latest responde `0.93.0-ptbr.3` com `minimum: "13.350"`; zip baixado idêntico ao local.
+
+## Teste na instalação real do dono (diretor, 2026-11-04)
+
+Mundo "Cyberpunk Testes", Foundry 13.350, sistema `0.93.0-ptbr.3`, módulos Babele 2.9.1, pt-BR v13.451 (core) e
+libWrapper. Feito a pedido do dono, como Gamemaster e como Player2 (jogador).
+
+- Gamemaster: interface do Foundry em PT-BR (módulo pt-BR); fichas dos 5 atores e 15 itens sem texto em inglês; Babele
+  traduz índice, janela do compêndio, documento aberto e item importado (resolve a pendência da Fase 4); tabela VD de
+  autofire funciona com nomes traduzidos; rolagem de perícia pela ficha com diálogo e cartão em PT-BR; sem erros no
+  console.
+- Player2: vê só o próprio personagem; aviso de permissão em PT-BR ao tentar abrir outra ficha; não cria atores; rola
+  pela própria ficha; compêndios traduzidos; navegador de documentos em PT-BR; menu sem opções de Mestre.
+- Personagem do dono criado a partir de `Anderson.pdf`: "Anderson “Sucata” Andreias", do Player2 e definido como o
+  personagem dele. Atributos, 21 perícias, papel Netrunner (Interface 4), PV 35, Humanidade 45/66, pistola pesada,
+  munição, Armorjack leve na cabeça e no corpo (SP 11), cyberdeck com 3 programas, agente, roupas e cibernética
+  instalada. A Mão-Ferramenta ficou sem instalar: no sistema ela exige um ciberbraço, que a ficha não marca.
+- Achado: personagens criados por `Actor.create` (API) não recebem perícias nem cibernética base; o sistema só faz isso
+  em `CPRActor.create`, usado pela interface. Sem efeito para quem cria pela interface.
+
+### Traduções a corrigir nos compêndios (Babele PT-BR)
+
+- Armaduras: "Light/Medium/Heavy Armorjack (Head/Body)" saem como "Capacete Leve", "Colete Leve", "Capacete Médio
+  (cabeça)"... e a descrição do Light Armorjack (Head) fala em "capacete"; padronizar como "Jaqueta Blindada Leve/Média/
+  Pesada (Cabeça/Corpo)". "Flak" sai como "Armadura (cabeça/corpo)". "Leathers" sai como "Couro (Corpo)" e
+  "Couros (Cabeça)".
+- Cibernética: "Tool Hand" = "Mão da Ferramenta" (Mão-Ferramenta); "Techhair" = "Tecnológico" (Cabelo Tecnológico);
+  "EMP Threading" = "Revestimento contra EMP" (são filamentos decorativos: Filamentos EMP).
+- Equipamento: "Agent" = "Representante" (Agente).
+- Rótulos de compêndio sem tradução: "Skills", "Changelog", "Macros", "Scenes".
