@@ -5,18 +5,18 @@
   },
   "entries": {
     "Armored Chassis": {
-      "name": "Armored Chassis",
+      "name": "Chassi Blindado",
       "description": "<p>Can be applied to all vehicles. Armors the vehicle to SP13. Doesn't affect the glass.</p>",
       "dvTable": ""
     },
     "AV-4 Engine Upgrade": {
-      "name": "AV-4 Engine Upgrade",
+      "name": "Melhoria de Motor AV-4",
       "description": "<p>Can be applied to all land vehicles. Adds Aerodyne thrusters to the vehicle, allowing flight. While flying the vehicle has a narrative speed of 200MPH / 322KPH, and a combat speed of 40. The vehicle must be piloted using the Pilot Air Vehicle skill while mid-air.</p>",
       "dvTable": ""
     },
     "Backup Drive": {
       "name": "Unidade de backup",
-      "description": "<p>\n  Saves Non-Black ICE programs when destroyed. These programs can be\n  re-installed by a Netrunner as a meat action.\n</p>\n",
+      "description": "<p>\n  Salva programas que não sejam Black ICE quando são destruídos. Esses programas podem ser\n  reinstalados por um Netrunner como uma ação física.\n</p>\n",
       "dvTable": ""
     },
     "Bayonet": {
@@ -25,133 +25,133 @@
       "dvTable": ""
     },
     "Bulletproof Glass": {
-      "name": "Bulletproof Glass",
-      "description": "<p>Can be applied to all vehicles. All glass on the vehicle is now considered cover with 15 HP. Can be taken a second time to upgrade to 30HP. All windows take damage individually.</p>",
+      "name": "Vidro à Prova de Balas",
+      "description": "<p>\n  Pode ser aplicado a todos os veículos. Todo vidro do veículo passa a ser\n  cobertura com 15 PV. Pode ser adquirido novamente para aumentar a 30 PV. As janelas\n  sofrem dano individualmente.\n</p>\n<p>Consulte as regras de cobertura em CP:R, pág. 182.</p>\n",
       "dvTable": ""
     },
     "Combat Plow": {
-      "name": "Combat Plow",
+      "name": "Arado de Combate",
       "description": "<p>Can be applied to all land and sea vehicles, except Bikes and Jetskies. When you ram something with the front of your vehicle, your vehicle doesn't take damage and nobody inside suffers from the Whiplash critical injury. You deal 2d6 additional ramming damage if your vehicle was boosted by NOS on the turn you ram the object.&nbsp;</p>",
       "dvTable": ""
     },
     "Communications Center": {
-      "name": "Communications Center",
+      "name": "Central de Comunicações",
       "description": "<p>Can be applied to all vehicles. Touchscreen console that functions as an Agent, along with a storage unit containing 6 <strong>Radio Communicators</strong>, 6 <strong>Scrambler/Descramblers</strong>, a <strong>Radio Scanner/Music Player</strong>, a <strong>Homing tracer</strong> with 6 tracers, and an <strong>Audio Recorder</strong>.</p>",
       "dvTable": ""
     },
     "Deployable Spike Strip": {
-      "name": "Deployable Spike Strip",
+      "name": "Faixa de Pregos Retrátil",
       "description": "<p>Can be applied to all groundcars. As an Action, the driver can deploy a spike strip. While deployed, any closely trailing vehicles with tires must make a DV17 Drive Land Vehicle Check. On a failure, their vehicle takes 4d6 damage as if hitting a weak point. Replacement spike strips cost 10eb.&nbsp;</p>\n<p>You may install this upgrade multiple times, each upgrade increases the amount of spike strips that can be deployed before the system requires reloading, and it cannot be reloaded while the vehicle is moving.</p>",
       "dvTable": ""
     },
     "DNA Lock": {
       "name": "Fechadura de DNA",
-      "description": "<p>Utiliza dados biométricos para bloquear o deck cibernético. Requer a verificação VD17 de Eletrônicos/Segurança para decifrar.&nbsp;</p>",
+      "description": "<p>\n  Usa biometria para bloquear o Console. Exige um teste de\n  <strong>VD17 de Eletrônicos/Tecnologia de Segurança</strong> para ser violado.\n</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Assault Rifle)": {
-      "name": "Drum Magazine (Assault Rifle)",
-      "description": "<p>Increases magazine size to a massive 45 bullets.</p>",
+      "name": "Carregador Tambor (Rifle de Assalto)",
+      "description": "<p>Aumenta a capacidade do carregador para 45 balas.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Grenade Launcher)": {
-      "name": "Drum Magazine (Grenade Launcher)",
-      "description": "<p>Increases magazine size to a massive 6 grenades.</p>",
+      "name": "Carregador Tambor (Lançador de Granadas)",
+      "description": "<p>Aumenta a capacidade do carregador para 6 granadas.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Heavy Pistol)": {
-      "name": "Drum Magazine (Heavy Pistol)",
-      "description": "<p>Increases magazine size to a massive 28 bullets.</p>",
+      "name": "Carregador Tambor (Pistola Pesada)",
+      "description": "<p>Aumenta a capacidade do carregador para 28 balas.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Heavy SMG)": {
-      "name": "Drum Magazine (Heavy SMG)",
-      "description": "<p>Increases magazine size to a massive 60 bullets.</p>",
+      "name": "Carregador Tambor (Submetralhadora Pesada)",
+      "description": "<p>Aumenta a capacidade do carregador para 60 balas.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Medium Pistol)": {
-      "name": "Drum Magazine (Medium Pistol)",
-      "description": "<p>Increases magazine size to a massive 36 bullets.</p>",
+      "name": "Carregador Tambor (Pistola Média)",
+      "description": "<p>Aumenta a capacidade do carregador para 36 balas.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Rocket Launcher)": {
-      "name": "Drum Magazine (Rocket Launcher)",
-      "description": "<p>Increases magazine size to a massive 3 rockets. That's a lot of boom.</p>",
+      "name": "Carregador Tambor (Lançador de Foguetes)",
+      "description": "<p>Aumenta a capacidade do carregador para 3 foguetes. Isso dá uma bela explosão.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Shotgun)": {
-      "name": "Drum Magazine (Shotgun)",
-      "description": "<p>Increases magazine size to a massive 16 rounds.</p>",
+      "name": "Carregador Tambor (Espingarda)",
+      "description": "<p>Aumenta a capacidade do carregador para 16 cartuchos.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (SMG)": {
-      "name": "Drum Magazine (SMG)",
-      "description": "<p>Increases magazine size to a massive 50 bullets.</p>",
+      "name": "Carregador Tambor (Submetralhadora)",
+      "description": "<p>Aumenta a capacidade do carregador para 50 balas.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Sniper Rifle)": {
-      "name": "Drum Magazine (Sniper Rifle)",
-      "description": "<p>Increases magazine size to a massive 12 bullets.</p>",
+      "name": "Carregador Tambor (Rifle de Precisão)",
+      "description": "<p>Aumenta a capacidade do carregador para 12 balas.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Very Heavy Pistol)": {
-      "name": "Drum Magazine (Very Heavy Pistol)",
-      "description": "<p>Increases magazine size to a massive 28 bullets.</p>",
+      "name": "Carregador Tambor (Pistola Muito Pesada)",
+      "description": "<p>Aumenta a capacidade do carregador para 28 balas.</p>\n",
       "dvTable": ""
     },
     "Enhanced Interface Plug Integration": {
-      "name": "Enhanced Interface Plug Integration",
+      "name": "Integração Aprimorada de Conectores de Interface",
       "description": "<p>Can be applied to all bikes. While using Interface Plugs to drive this vehicle, if you have a REF 8 or higher and you, a passenger, or your bike are the target of an attack, you can attempt to dodge as you would on foot. If you dodge for a passenger, that becomes their defence.&nbsp;</p>",
       "dvTable": ""
     },
     "Extended Magazine (Assault Rifle)": {
-      "name": "Extended Magazine (Assault Rifle)",
-      "description": "<p>Increases magazine size to a hefty 35 bullets.</p>",
+      "name": "Carregador Estendido (Rifle de Assalto)",
+      "description": "<p>Aumenta a capacidade do carregador para 35 balas.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (Grenade Launcher)": {
-      "name": "Extended Magazine (Grenade Launcher)",
-      "description": "<p>Increases magazine size to a hefty 4 grenades.</p>",
+      "name": "Carregador Estendido (Lançador de Granadas)",
+      "description": "<p>Aumenta a capacidade do carregador para 4 granadas.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (Heavy Pistol)": {
-      "name": "Extended Magazine (Heavy Pistol)",
-      "description": "<p>Increases magazine size to a hefty 14 bullets.</p>",
+      "name": "Carregador Estendido (Pistola Pesada)",
+      "description": "<p>Aumenta a capacidade do carregador para 14 balas.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (Heavy SMG)": {
-      "name": "Extended Magazine (Heavy SMG)",
-      "description": "<p>Increases magazine size to a hefty 50 bullets.</p>",
+      "name": "Carregador Estendido (Submetralhadora Pesada)",
+      "description": "<p>Aumenta a capacidade do carregador para 50 balas.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (Medium Pistol)": {
-      "name": "Extended Magazine (Medium Pistol)",
-      "description": "<p>Increases magazine size to a hefty 18 bullets.</p>",
+      "name": "Carregador Estendido (Pistola Média)",
+      "description": "<p>Aumenta a capacidade do carregador para 18 balas.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (Rocket Launcher)": {
-      "name": "Extended Magazine (Rocket Launcher)",
-      "description": "<p>Increases magazine size to a hefty 2 rockets.</p>",
+      "name": "Carregador Estendido (Lançador de Foguetes)",
+      "description": "<p>Aumenta a capacidade do carregador para 2 foguetes.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (Shotgun)": {
-      "name": "Extended Magazine (Shotgun)",
-      "description": "<p>Increases magazine size to a hefty 8 rounds.</p>",
+      "name": "Carregador Estendido (Espingarda)",
+      "description": "<p>Aumenta a capacidade do carregador para 8 cartuchos.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (SMG)": {
-      "name": "Extended Magazine (SMG)",
-      "description": "<p>Increases magazine size to a hefty 40 bullets.</p>",
+      "name": "Carregador Estendido (Submetralhadora)",
+      "description": "<p>Aumenta a capacidade do carregador para 40 balas.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (Sniper Rifle)": {
-      "name": "Extended Magazine (Sniper Rifle)",
-      "description": "<p>Increases magazine size to a hefty 8 bullets.</p>",
+      "name": "Carregador Estendido (Rifle de Precisão)",
+      "description": "<p>Aumenta a capacidade do carregador para 8 balas.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (Very Heavy Pistol)": {
-      "name": "Extended Magazine (Very Heavy Pistol)",
-      "description": "<p>Increases magazine size to a hefty 14 bullets.</p>",
+      "name": "Carregador Estendido (Pistola Muito Pesada)",
+      "description": "<p>Aumenta a capacidade do carregador para 14 balas.</p>\n",
       "dvTable": ""
     },
     "Grenade Launcher Underbarrel": {
@@ -165,17 +165,17 @@
       "dvTable": ""
     },
     "Heavy Chassis": {
-      "name": "Heavy Chassis",
+      "name": "Chassi Pesado",
       "description": "<p>Can be applied to all vehicles except Bikes, Jetskis and Gyrocopters. Adds 20 SDP to the vehicle. This doesn't affect the glass, and vehicle can now tow up to 10 tons.&nbsp;</p>",
       "dvTable": ""
     },
     "Housing Capacity": {
-      "name": "Housing Capacity",
-      "description": "<p>Can be applied to Aerozep, AV-4, Cabin Cruiser, Groundcars and Yacht. When installed onto a Groundcar or AV-4, it adds a sleeping area with 1 bed, a toilet, a shower, and a small kitchen to the vehicle. When installed into a Cabin Cruiser, Yacht, or Aerozep, it adds one room to the vehicle.&nbsp;</p>\n<p><strong>Requires a Heavy Chassis on a Compact Groundcar and High Performance Groundcar</strong>.</p>",
+      "name": "Capacidade de Moradia",
+      "description": "<p>\n  Pode ser aplicada a Aerozep, AV-4, embarcação com cabine, carros e iate. Quando\n  instalada em carro ou AV-4, acrescenta uma área para dormir com 1 cama,\n  banheiro, chuveiro e cozinha pequena. Em embarcação com cabine, iate ou\n  Aerozep, acrescenta um cômodo ao veículo.\n</p>\n<p>\n  <strong\n    >Exige chassi pesado em carro compacto e carro de alto\n    desempenho</strong\n  >.\n</p>\n",
       "dvTable": ""
     },
     "Hover Upgrade": {
-      "name": "Hover Upgrade",
+      "name": "Melhoria de Flutuação",
       "description": "<p>Can be applied to all land vehicles. Adds fans onto the vehicle that allow it to traverse water at a narrative speed of 15 MPH/ 24KPH, and a combat speed of 10.</p>",
       "dvTable": ""
     },
@@ -186,7 +186,7 @@
     },
     "Insulated Wiring": {
       "name": "Fiação Isolada",
-      "description": "<p>Baralho virtual e roupas de usuário não podem pegar o fogo.&nbsp;</p>",
+      "description": "<p>O Console e as roupas do usuário não podem pegar fogo.&nbsp;</p>",
       "dvTable": ""
     },
     "KRASH Barrier": {
@@ -200,22 +200,22 @@
       "dvTable": ""
     },
     "Onboard Flamethrower": {
-      "name": "Onboard Flamethrower",
-      "description": "<p>Can be applied to all vehicles.<strong> </strong>A <strong>Flamethrower </strong>that can be mounted facing the front, side or back of the vehicle. The driver may fire it using an Action. It cannot be reloaded while driving, and cannot accept weapon attachments.</p>\n<p>You may install this upgrade multiple times.</p>",
+      "name": "Lança-chamas de Bordo",
+      "description": "<p>\n  Pode ser aplicado a todos os veículos. Um <strong>lança-chamas</strong> que pode ser\n  montado voltado para a frente, lateral ou traseira. O motorista pode dispará-lo\n  com uma Ação. Não pode ser recarregado enquanto o veículo se move nem aceitar\n  acessórios de arma.\n</p>\n<p>Você pode instalar esta melhoria várias vezes.</p>\n",
       "dvTable": ""
     },
     "Onboard Machine Gun": {
-      "name": "Onboard Machine Gun",
+      "name": "Metralhadora de Bordo",
       "description": "<p>Can be applied to all vehicles. An <strong>Assault Rifle </strong>with a 30 round capacity and only capable of Autofire, that can be mounted facing the front of the vehicle. The driver may fire it using an Action, cannot be reloaded while driving and cannot accept weapon attachments.&nbsp;</p>\n<p>You may install this upgrade multiple times.</p>",
       "dvTable": ""
     },
     "Onboard Melee Weapon": {
-      "name": "Onboard Melee Weapon",
+      "name": "Arma Corpo a Corpo de Bordo",
       "description": "<p>Can be applied to all land and sea vehicles. A <strong>Very Heavy Melee Weapon&nbsp;</strong>that can be mounted facing the front, side or back of the vehicle. The driver may attack with it using an Action. The weapon cannot be removed.&nbsp;</p>\n<p>You may install this upgrade multiple times.</p>",
       "dvTable": ""
     },
     "Onboard Rocket Pod": {
-      "name": "Onboard Rocket Pod",
+      "name": "Lançador de Foguetes de Bordo",
       "description": "<p>Can be applied to all vehicles except Bikes, Jetskis and Gyrocopters. A <strong>Rocket Launcher&nbsp;</strong>with a drum of three rockets, that can be mounted facing the front of the vehicle. The driver may fire it using an Action. It cannot be reloaded while driving, and cannot accept weapon attachments.&nbsp;</p>\n<p>You may install this upgrade multiple times. <strong>Requires Heavy Chassis</strong>.</p>",
       "dvTable": ""
     },
@@ -225,13 +225,13 @@
       "dvTable": ""
     },
     "Seating Upgrade": {
-      "name": "Seating Upgrade",
+      "name": "Melhoria de Assentos",
       "description": "<p>Can be applied to all vehicles. Adds two seats to the vehicle. These can be installed as an external sidecar, they may also be installed as ejector seats with removable parachutes.</p>\n<p>Can be taken multiple times with the exception of Bikes, Jetskis and Gyrocopters.</p>",
       "dvTable": ""
     },
     "Security Upgrade": {
-      "name": "Security Upgrade",
-      "description": "<p>Can be applied to all vehicles. Adds DNA Locks to the vehicle requring the correct biometrics or a DV 17 Electronics/Security Tech check to unlock. Failure to unlock the vehicle takes damage as if hit with a Stun Baton.</p>\n<p>In addition, while remaining still the vehicle is cloaked and requires a DV17 Perception check to spot. The vehicle must remain stationary for a minute before this activates.</p>",
+      "name": "Melhoria de Segurança",
+      "description": "<p>\n  Pode ser aplicada a todos os veículos. Adiciona fechaduras de DNA que exigem a\n  biometria correta ou um teste de VD 17 de Eletrônicos/Tecnologia de Segurança.\n  Se não for destravado, o veículo sofre dano como se atingido por um bastão de choque.\n</p>\n<p>\n  Além disso, enquanto parado, o veículo fica camuflado e exige um teste de\n  <strong>VD17 de Percepção</strong> para ser visto. O veículo deve permanecer\n  parado por um minuto para ativar a camuflagem.\n</p>\n",
       "dvTable": ""
     },
     "Shotgun Underbarrel": {
@@ -245,8 +245,8 @@
       "dvTable": ""
     },
     "Smuggling Upgrade": {
-      "name": "Smuggling Upgrade",
-      "description": "<p>Can be applied to all vehicles. Adds two <strong>Hidden Holsters</strong> to the vehicle, and a large hidden compartment for smuggling purposes. These can be discovered with a DV17 Conceal/Reveal Object check.&nbsp;<br><br>Can be taken multiple times with the exception of Bikes, Jetskis and Gyrocopters.</p>",
+      "name": "Melhoria de Contrabando",
+      "description": "<p>\n  Pode ser aplicada a todos os veículos. Adiciona dois <strong>coldres ocultos</strong> ao\n  veículo e um grande compartimento oculto para contrabando. Eles podem ser\n  descobertos com um teste de <strong>VD17 de Esconder/Revelar Objeto</strong>.\n</p>\n<p>\n  Pode ser adquirida várias vezes, exceto para motos, motos aquáticas e\n  girocópteros.\n</p>\n",
       "dvTable": ""
     },
     "Sniping Scope": {
@@ -255,7 +255,7 @@
       "dvTable": ""
     },
     "Vehicle Heavy Weapon Mount": {
-      "name": "Vehicle Heavy Weapon Mount",
+      "name": "Suporte Veicular para Arma Pesada",
       "description": "<p>Can be applied to all vehicles except Bikes, Jetskis and Gyrocopters. One of the vehicles seats becomes a swivel mount for any two-handed ranged weapon. A passenger may fire the weapon using an Action. The passenger can reload the weapon. The weapon can be removed or reinstalled using an Action.&nbsp;</p>\n<p>The first time this upgrade is taken, included is a <strong>Tsunami Arms Helix</strong>,&nbsp; <strong>Rhinemetall EMG-86 Railgun</strong>, or <strong>Militech \"Cowboy\" U-56 Grenade Launcher</strong>. If the vehicle has the Bulletproof Glass upgrade, the gunner is protected by the same glass.&nbsp;</p>\n<p>You may install this upgrade multiple times if the vehicle has the Housing Capacity upgrade. <strong>Requires Heavy Chassis</strong>.</p>",
       "dvTable": ""
     }
