@@ -247,3 +247,37 @@ Como rodar no Windows:
 $env:PLAYWRIGHT_BROWSER_CHANNEL = "chrome"
 npm run test:playwright
 ```
+
+### Verificação manual do console (diretor, 2026-11-03)
+
+Mundo novo em `FoundryVTT-test-data` com `npm run playwright:serve` (Chrome do sistema, Node 24.21.0), core 13.350,
+entrando como Gamemaster. Os avisos e erros foram coletados envolvendo `console.warn`, `console.error`, `error` e
+`unhandledrejection`.
+
+- Fichas de ator, criadas, abertas e apagadas: `blackIce`, `character`, `container`, `demon`, `mook`. Todas
+  renderizam.
+- Fichas de item (`CPRItemSheet`): `ammo`, `armor`, `clothing`, `criticalInjury`, `cyberdeck`, `cyberware`, `drug`,
+  `gear`, `itemUpgrade`, `netarch`, `program`, `role`, `skill`, `vehicle`, `weapon`. Todas renderizam.
+- Compêndio: `core_cyberware` "Targeting Scope" (um dos registros marcados 13.351) abre normalmente.
+- Chat: mensagem simples e rolagem `1d10` renderizadas.
+- Erros: nenhum. O único erro do console é o aviso de resolução 0×0 do Foundry, causado pelo painel do navegador
+  oculto.
+- Avisos: 1 tipo, 3 ocorrências. Global `DragDrop` depreciado no v13, removido no v15, em
+  `src/modules/actor/sheet/cpr-actor-sheet.js:1480` (`new DragDrop(d)`). Correção:
+  `foundry.applications.ux.DragDrop.implementation`.
+
+Outros achados:
+
+- 260 entradas YAML em `src/packs/` têm `_stats.coreVersion: "13.351"`, mais novo que o Foundry instalado (13.350). Ao
+  iniciar o mundo, o Foundry registra 71 erros "Documents from a core version newer than the running version cannot be
+  migrated" (packs `core_cyberware`, `core_gear`, `core_drugs`, `core_programs`, `core_critical-injuries-*` e
+  `internal_*`). Os documentos carregam e abrem mesmo assim.
+- `npm run playwright:serve` parado pelo gerenciador de tarefas no Windows deixa o Foundry e o `serve.mjs` órfãos (não
+  recebem Ctrl-C) e o mundo efêmero fica na pasta de teste. Encerrar os processos e apagar
+  `Data/worlds/cprc-playwright-*` à mão.
+- O build gera `version: DUMMY_VALUE` (o upstream só define a versão no CI). Aplicar `0.93.0-ptbr.1` (D5) na Fase 6.
+
+### Fechamento da Fase 1
+
+Critério de aceite cumprido: build e unitários verdes (172/172); nenhum erro de console ao abrir fichas e itens;
+Playwright verde (413/413). Aprovada pelo diretor em 2026-11-03; falta a aprovação do dono para passar à Fase 2.

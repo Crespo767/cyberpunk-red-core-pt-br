@@ -123,6 +123,9 @@ Cada fase tem um critério de aceite. O diretor Opus só aprova a fase quando o 
 - Subir o sistema buildado e abrir um mundo novo de teste. Verificar console (erros e avisos de depreciação) e abertura de ficha de personagem, mook, veículo, item e chat.
 - Rodar `npm run test:playwright` adaptado a Windows.
 - **Aceite:** build e unitários verdes; nenhum erro no console ao abrir fichas e itens; Playwright verde ou falhas listadas e classificadas.
+- **Status: CONCLUÍDA (2026-11-03), aguardando aprovação do dono.** Build, lint, prettier, stylelint e `test:unit`
+  (172/172) verdes; Playwright 413/413 no Windows com o Chrome do sistema; console sem erros. Detalhes, achados e
+  comandos em `docs-ptbr/tarefas/fase-1.md`.
 
 ### Fase 2: Migração de dados existentes
 
