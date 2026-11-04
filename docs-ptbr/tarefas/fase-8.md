@@ -39,7 +39,9 @@ pendentes, e publicar como 1.0.1 (pedir o ok do dono antes de publicar).
 - [x] Mão-Ferramenta no braço de carne do Anderson e do Torch (perda de Humanidade "Nenhuma": os valores do PDF já
       incluíam a perda). Anderson 45/66 bate com o PDF; Torch ficou 58/64 (o PDF dizia 70, sem o -2 por peça).
 
-## Pendência encontrada
+## Release 1.0.2
 
-- Mundos criados do zero nunca gravam `dataModelVersion` (fica "newCprWorld"), então migrações novas, como a 050,
-  não rodam neles. O 050 não rodou no mundo do dono; a Mão-Ferramenta do Anderson foi marcada à mão.
+- Corrigido o bug do `dataModelVersion`: mundos criados do zero ficavam em "newCprWorld" e nunca rodavam migrações
+  novas. No ready, o mestre grava a versão mais nova num mundo vazio e 49 num mundo com documentos (a 050 roda uma
+  vez). Teste unitário provado antes da correção; suíte Playwright 464/464; release 1.0.2 publicado.
+- [ ] Conferir no mundo do dono, depois da atualização, que a versão de dados ficou 50.
