@@ -1,67 +1,57 @@
-# Cyberpunk RED - Welcome to The Street!
-
-> **Fork PT-BR (versão modificada).** Este repositório é um fork não oficial do
-> [fvtt-cyberpunk-red-core](https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core) (branch `dev`, 0.93),
-> modificado a partir de 2026-11-03 para o Foundry VTT v13 com a tradução para português do Brasil completa
-> (interface e compêndios via Babele) e correções. As mudanças estão na seção `0.93.0-ptbr.1` do
-> [CHANGELOG](CHANGELOG.md) e em `docs-ptbr/`. Problemas deste fork devem ser relatados aqui, não ao time oficial.
-> Licença: GPLv3, a mesma do original ([LICENCE.md](LICENCE.md)).
->
-> Instalação no Foundry: use a URL de manifesto
-> `https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases/latest/download/system.json`.
+# Cyberpunk RED v13 - PTBR
 
 ![Logo](src/images/Repo-Header.webp)
 
-<!-- markdownlint-disable-next-line MD033 -->
-<div align="center">
+Sistema de Cyberpunk RED (regras básicas) para o Foundry VTT v13, com interface e compêndios em português do Brasil.
 
-[![Latest Release](https://img.shields.io/gitlab/v/tag/22820629?label=Latest%20Release)](https://foundryvtt.com/packages/cyberpunk-red-core)
-[![Supported Foundry Versions](https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https://gitlab.com/api/v4/projects/22820629/packages/generic/fvtt-cyberpunk-red-core/v0.83.1/system.json)](https://foundryvtt.com/releases/)
-[![License](https://img.shields.io/gitlab/license/cyberpunk-red-team/fvtt-cyberpunk-red-core?label=License)](https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core/-/blob/dev/LICENCE.md)
-[![Contributors](https://img.shields.io/gitlab/contributors/22820629?logo=GitLab&label=Contributors)](https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core/-/graphs/dev?ref_type=heads)
-[![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&color=blueviolet&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Fcyberpunk-red-core&colorB=4aa94a)](https://forge-vtt.com/bazaar#package=cyberpunk-red-core)
+> Aviso: este sistema é conteúdo não oficial, disponibilizado sob a
+> [Homebrew Content Policy](https://rtalsoriangames.com/homebrew-content-policy/) da R. Talsorian Games, e não é
+> aprovado nem endossado pela RTG. Ele faz referência a materiais de propriedade da R. Talsorian Games e de seus
+> licenciados.
 
-<!-- markdownlint-disable-next-line MD033 -->
-</div>
+## O que vem traduzido
 
-An implementation of the Cyberpunk RED Core rules for Foundry VTT.
+- **Interface do sistema:** fichas, diálogos, rolagens, chat, configurações e navegador de documentos.
+- **Compêndios:** armas, munições, armaduras, roupas, cibernética, equipamento, drogas, programas, papéis, perícias,
+  veículos, melhorias, lesões críticas e tabelas (via módulo Babele).
+- **Glossário próprio:** papéis em inglês (Netrunner, Fixer, Solo...), siglas de atributos em português (INT, REF, DES,
+  TECH, FRIEZA, VONT, SORTE, MOVE, CORPO, EMP), REZ como REZ e Mook como Capanga.
 
-> Disclaimer: This game system is unofficial content provided under the [Homebrew Content Policy](https://rtalsoriangames.com/homebrew-content-policy/) of R. Talsorian Games and is not approved or endorsed by RTG. This content references materials that are the property of R. Talsorian Games and its licensees.
+## Requisitos
 
-This project is in ongoing development, so while we hope you have a bug free experience that is by no means guaranteed. If you do find any bugs or have any suggestions to improve the system please do get in [touch](https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core/-/issues/new); we aim to be responsive and hope we can make it even better with your help.
+- Foundry VTT v13, build **13.350 ou mais nova**.
+- Módulo **[Babele](https://foundryvtt.com/packages/babele)** (obrigatório): traduz o conteúdo dos compêndios. O
+  Foundry oferece instalá-lo junto com o sistema.
+- Módulo **[pt-BR](https://foundryvtt.com/packages/pt-BR)** (recomendado): traduz a interface do próprio Foundry
+  (menus, configurações, diretórios).
 
-## Getting Started
+## Instalação
 
-If you are a GM or player and curious about how Cyberpunk runs in Foundry VTT, why not check out our extensive [wiki](https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core/-/wikis/home), or Tales From Trantor's Cyberpunk RED [playlist](https://www.youtube.com/playlist?list=PL4-W5wKEr1fm57F9qnF8a7opYJ1pBt36X).
+1. No Foundry, abra **Sistemas de Jogo → Instalar Sistema**.
+2. No campo **URL do Manifesto**, cole:
 
-## Installing
+   ```text
+   https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases/latest/download/system.json
+   ```
 
-The recommended installation method is with the usual FoundryVTT installer. You can find a tutorial for using that [here](https://foundryvtt.com/article/tutorial/).
+3. Instale e, no mundo, ative o **Babele** e escolha o idioma **Português (Brasil)** nas configurações.
 
-Our system can be found [here](https://foundryvtt.com/packages/cyberpunk-red-core).
+As atualizações chegam pelo próprio Foundry. As versões publicadas ficam em
+[Releases](https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases).
 
-Alternatively you can grab the manifest directly [here](https://gitlab.com/api/v4/projects/22820629/packages/generic/fvtt-cyberpunk-red-core/latest/system.json).
+## Novidades
 
-## Release Notes
+As mudanças de cada versão estão no [CHANGELOG em português](CHANGELOG.pt-BR.md).
 
-Release notes for each release are available on our [Releases Page](https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core/-/releases).
+## Problemas e sugestões
 
-If you want a sneak peak of what is coming in the next update, you can check out the [development changelog](https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core/-/blob/dev/CHANGELOG.md).
+Abra uma [issue neste repositório](https://github.com/Crespo767/cyberpunk-red-core-pt-br/issues). Este é um projeto
+independente: não relate problemas desta versão ao time do sistema original.
 
-## Join the Community!
+## Créditos e licença
 
-You can find our main community on [Discord](https://discord.gg/p5zYEQTV2R), where GMs and players alike talk about the project and Cyberpunk RED more widely. We'd love to see you there!
+Baseado no sistema [fvtt-cyberpunk-red-core](https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core), do
+Cyberpunk RED Team (versão 0.93). Esta é uma versão modificada, a partir de 2026-11-03, com a tradução para português
+do Brasil e correções. Os créditos do projeto original estão em [CREDITS.md](CREDITS.md).
 
-If you'd like to get in touch with someone specific, our contact information can be found on the wiki [here](https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core/-/wikis/home#project-red-cast-of-characters).
-
-Interested in helping out? We would love to hear from you! We also coordinate our work on [Discord](https://discord.gg/p5zYEQTV2R), so head on over there and say hello.
-
-If you'd like to get a sense of the project's direction, the tools we use, and how we're organized, our [Development Documentation](https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core/-/wikis/home#development-documentation) is a great place to start.
-
----
-
-<!-- markdownlint-disable-next-line MD033 -->
-<div align="center"><b><i>
-Stay safe out there choom!
-<!-- markdownlint-disable-next-line MD033 -->
-</i><b></div>
+Licença: GPLv3, a mesma do original ([LICENCE.md](LICENCE.md)).
