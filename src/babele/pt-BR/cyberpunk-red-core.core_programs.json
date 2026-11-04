@@ -31,7 +31,7 @@
       "description": "<p>Por 1 hora, diminui o INT, REF e DES por 1d6 (min. 1).</p>"
     },
     "Poison Flatline": {
-      "name": "Alinhamento Venenoso",
+      "name": "Poison Flatline",
       "description": "<p>Destrui um gelo fora do preto no baralho inimigo aleAtoriamente.</p>"
     },
     "See Ya": {
@@ -39,7 +39,7 @@
       "description": "<p>+2 para os Verificadores de Descobridor enquanto Rezido.</p>"
     },
     "Shield": {
-      "name": "Escudos",
+      "name": "Escudo",
       "description": "<p>O primeiro ataque ao cérebro de um Programa ICE não Negro é interrompido. Apenas 1 cópia pode ser Rezada de cada vez. Cada cópia tem 1 uso por Invasão.</p>"
     },
     "Speedy Gonzalvez": {

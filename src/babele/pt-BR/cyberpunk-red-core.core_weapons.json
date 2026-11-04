@@ -42,17 +42,17 @@
     "Bow": {
       "name": "Arco",
       "description": "<p>Um arco revitalizado, recarregado como parte de uma ação de Ataque.</p> ",
-      "dvTable": "VD Arcos e Balestras"
+      "dvTable": "VD Arcos e Bestas"
     },
     "Bow (Excellent)": {
       "name": "Arco (Excelente)",
       "description": "<p>Um arco de excelente qualidade, recarregado como parte de uma ação de Ataque.</p>\n<p>+1 no teste de Ataque.</p> ",
-      "dvTable": "VD Arcos e Balestras"
+      "dvTable": "VD Arcos e Bestas"
     },
     "Bow (Poor)": {
       "name": "Arco (Inferior)",
       "description": "<p>Um arco de qualidade ruim, recarregado como parte de uma ação de Ataque.</p> <p> Se você rolar 1 no Ataque (falha crítica), a arma emperra e exige uma ação para ser desobstruída. </p> ",
-      "dvTable": "VD Arcos e Balestras"
+      "dvTable": "VD Arcos e Bestas"
     },
     "Chainsaw": {
       "name": "Motosserra",
@@ -87,22 +87,22 @@
     "Constitutional Arms Hurricane Assault Weapon": {
       "name": "Arma de Assalto Constitutional Arms Hurricane",
       "description": "<p>\n  Uma Espingarda Exótica com Cadência de Tiro 2. Não pode fazer disparos\n  direcionados e exige CORPO 11 ou mais (a menos que esteja montada).\n</p>\n",
-      "dvTable": "VD Espingarda (Cartuchos de Espingarda)"
+      "dvTable": "VD Espingarda (Balote)"
     },
     "Crossbow": {
       "name": "Besta",
-      "description": "<p>Uma balestra padrão, recarregada como parte de uma ação de Ataque.</p> ",
-      "dvTable": "VD Arcos e Balestras"
+      "description": "<p>Uma besta padrão, recarregada como parte de uma ação de Ataque.</p> ",
+      "dvTable": "VD Arcos e Bestas"
     },
     "Crossbow (Excellent)": {
       "name": "Besta (Excelente)",
-      "description": "<p>Uma balestra de excelente qualidade, recarregada como parte de uma ação de Ataque.</p>\n<p>+1 no teste de Ataque.</p> ",
-      "dvTable": "VD Arcos e Balestras"
+      "description": "<p>Uma besta de excelente qualidade, recarregada como parte de uma ação de Ataque.</p>\n<p>+1 no teste de Ataque.</p> ",
+      "dvTable": "VD Arcos e Bestas"
     },
     "Crossbow (Poor)": {
       "name": "Besta (Inferior)",
-      "description": "<p>Uma balestra de qualidade ruim, recarregada como parte de uma ação de Ataque.</p> <p> Se você rolar 1 no Ataque (falha crítica), a arma emperra e exige uma ação para ser desobstruída. </p> ",
-      "dvTable": "VD Arcos e Balestras"
+      "description": "<p>Uma besta de qualidade ruim, recarregada como parte de uma ação de Ataque.</p> <p> Se você rolar 1 no Ataque (falha crítica), a arma emperra e exige uma ação para ser desobstruída. </p> ",
+      "dvTable": "VD Arcos e Bestas"
     },
     "Crowbar": {
       "name": "Pé de cabra",
@@ -127,7 +127,7 @@
     "Flamethrower": {
       "name": "Lança-chamas",
       "description": "<p>Uma Espingarda Exótica que usa a Habilidade Armas Pesadas.</p> ",
-      "dvTable": "VD Espingarda (Cartuchos de Espingarda)"
+      "dvTable": "VD Espingarda (Balote)"
     },
     "Grenade Launcher": {
       "name": "Lançador de granada",
@@ -342,17 +342,17 @@
     "Shotgun": {
       "name": "Espingarda",
       "description": "<p>Uma espingarda para todos os fins.</p>",
-      "dvTable": "VD Espingarda (Cartuchos de Espingarda)"
+      "dvTable": "VD Espingarda (Balote)"
     },
     "Shotgun (Excellent)": {
       "name": "Espingarda (Excelente)",
       "description": "<p>Uma espingarda para todos os fins. +1 para Ataque.</p>",
-      "dvTable": "VD Espingarda (Cartuchos de Espingarda)"
+      "dvTable": "VD Espingarda (Balote)"
     },
     "Shotgun (Poor)": {
       "name": "Espingarda (Inferior)",
       "description": "<p>Uma espingarda para todos os fins. Se você rolar 1 no Ataque (falha crítica), a arma emperra e requer o uso de uma ação para ser eliminada.</p>",
-      "dvTable": "VD Espingarda (Cartuchos de Espingarda)"
+      "dvTable": "VD Espingarda (Balote)"
     },
     "Shrieker": {
       "name": "Gritador",

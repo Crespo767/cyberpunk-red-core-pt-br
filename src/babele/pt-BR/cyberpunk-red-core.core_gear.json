@@ -111,7 +111,7 @@
       "description": "<p>Duração: 10h. Intervalo: 4m/yds.</p>"
     },
     "Grapple Gun": {
-      "name": "Arma de Agarramento",
+      "name": "Lançador de Gancho",
       "description": "<p>Intervalo: 30m/yds. Não pode ser usado como arma.</p>"
     },
     "Handcuffs": {
@@ -191,7 +191,7 @@
       "description": "<p>Nylon.</p>"
     },
     "Scrambler/Descrambler": {
-      "name": "Embaralhamento/Descrambler",
+      "name": "Codificador/Decodificador",
       "description": "<p>Comm embaralhador/receptor.</p>"
     },
     "Tech Bag": {

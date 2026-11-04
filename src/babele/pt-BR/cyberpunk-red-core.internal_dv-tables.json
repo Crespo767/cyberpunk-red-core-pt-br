@@ -33,7 +33,7 @@
       ]
     },
     "DV Bows & Crossbows": {
-      "name": "VD Arcos e Balestras",
+      "name": "VD Arcos e Bestas",
       "results": [
         {
           "0-6": "15",
@@ -123,7 +123,7 @@
       ]
     },
     "DV Shotgun (Slug)": {
-      "name": "VD Espingarda (Cartuchos de Espingarda)",
+      "name": "VD Espingarda (Balote)",
       "results": [
         {
           "0-6": "13",

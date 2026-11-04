@@ -112,7 +112,7 @@
     "Dartgun": {
       "name": "Pistola de Dardos",
       "description": "<p>Uma arma única que pode ser escondida. </p>",
-      "dvTable": "DV Pistola"
+      "dvTable": "VD Pistola"
     },
     "Difficult Skill Chip": {
       "name": "Chip de Habilidade Difícil",
@@ -332,7 +332,7 @@
     "Popup Grenade Launcher": {
       "name": "Lançador de Granadas Popup",
       "description": "<p>\n  Um lançador de granadas ocultável de um disparo. Você não pode segurar nada com esta mão\n  enquanto estiver ativado. Incompatível com todas as melhorias, exceto\n  @UUID[Compendium.cyberpunk-red-core.core_upgrades.Item.BC8S1sdK0QGdyHNC]{Smartgun Link}.\n</p>\n",
-      "dvTable": "DV Lançador de Granadas"
+      "dvTable": "VD Lançador de Granadas"
     },
     "Popup Melee Weapon": {
       "name": "Popup Arma Corpo à Corpo",
@@ -342,7 +342,7 @@
     "Popup Ranged Weapon": {
       "name": "Arma de Distância Popup",
       "description": "<p>\n  Uma arma à distância ocultável de uma mão. Você não pode segurar nada com esta mão\n  enquanto estiver ativada.\n</p>\n<blockquote>\n  <p>Configure as opções para corresponder à arma instalada.</p>\n</blockquote>\n",
-      "dvTable": "DV Pistola"
+      "dvTable": "VD Pistola"
     },
     "Popup Shield": {
       "name": "Escudo Popup",
@@ -380,7 +380,7 @@
       "dvTable": ""
     },
     "Realskinn Covering (Cyber Arm)": {
-      "name": "Cobertura Realskinn (Cyber Arm)",
+      "name": "Cobertura Realskinn (Braço Cibernético)",
       "description": "<p>Um tipo de skin de armadura para seu braço. </p>",
       "dvTable": ""
     },
@@ -400,7 +400,7 @@
       "dvTable": ""
     },
     "Scrambler/Descrambler": {
-      "name": "Embaralhamento/Descrambler",
+      "name": "Codificador/Decodificador",
       "description": "<p>Codificação e decodificação.</p>",
       "dvTable": ""
     },
@@ -520,7 +520,7 @@
       "dvTable": ""
     },
     "Toxin Binders": {
-      "name": "Toxin binders",
+      "name": "Neutralizadores de Toxinas",
       "description": "<p>+2 em Resistir Tortura/Drogas.</p>",
       "dvTable": ""
     },
@@ -545,7 +545,7 @@
       "dvTable": ""
     },
     "Wolvers": {
-      "name": "Lobadores",
+      "name": "Wolvers",
       "description": "<p>Garras retráteis que saem dos nós dos dedos e constituem uma Arma Corpo a Corpo Pesada. Podem ser ocultadas.</p>\n",
       "dvTable": ""
     }

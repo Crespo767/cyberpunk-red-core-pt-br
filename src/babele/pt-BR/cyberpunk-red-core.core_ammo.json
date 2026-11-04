@@ -167,35 +167,35 @@
       "description": "<p>Requer a cibernética Escopo de Alvo; caso contrário, não dispara. Se errar um ataque único por 4 ou menos, faça uma segunda rolagem de ataque contra a mesma VD usando 1d10+10 (em vez do atributo normal). É possível adicionar SORTE. O alvo pode esquivar da segunda rolagem normalmente, se puder fazê-lo.</p>\n"
     },
     "Shotgun Shell (Basic)": {
-      "name": "Cápsula de Espingarda (Básica)",
-      "description": "<p>Basic ammo, nothing special.</p>"
-    },
-    "Shotgun Shell (Incendiary)": {
-      "name": "Cápsula de Espingarda (Incendiária)",
-      "description": "<p>Se causar dano ao alvo, ele pega fogo. O alvo sofre 2 de dano aos PV ao final de seu turno, a menos que use uma ação para apagar as chamas. O efeito não é cumulativo.</p>\n"
-    },
-    "Shotgun Slug (Armor-Piercing)": {
-      "name": "Cartucho de Espingarda (Perfurante)",
-      "description": "<p>Double ablation to armor. </p>"
-    },
-    "Shotgun Slug (Basic)": {
       "name": "Cartucho de Espingarda (Básico)",
       "description": "<p>Basic ammo, nothing special.</p>"
     },
+    "Shotgun Shell (Incendiary)": {
+      "name": "Cartucho de Espingarda (Incendiário)",
+      "description": "<p>Se causar dano ao alvo, ele pega fogo. O alvo sofre 2 de dano aos PV ao final de seu turno, a menos que use uma ação para apagar as chamas. O efeito não é cumulativo.</p>\n"
+    },
+    "Shotgun Slug (Armor-Piercing)": {
+      "name": "Balote de Espingarda (Perfurante)",
+      "description": "<p>Double ablation to armor. </p>"
+    },
+    "Shotgun Slug (Basic)": {
+      "name": "Balote de Espingarda (Básico)",
+      "description": "<p>Basic ammo, nothing special.</p>"
+    },
     "Shotgun Slug (Expansive)": {
-      "name": "Cartucho de Espingarda (Expansiva)",
+      "name": "Balote de Espingarda (Expansivo)",
       "description": "<p>Se a vítima tirar o Ferimento Crítico Objeto Estranho (veja pág. 187), ela também rola um segundo Ferimento Crítico diferente. O segundo Ferimento Crítico não causa dano adicional.</p>\n"
     },
     "Shotgun Slug (Incendiary)": {
-      "name": "Cartucho de Espingarda (Incendiária)",
+      "name": "Balote de Espingarda (Incendiário)",
       "description": "<p>Se causar dano ao alvo, ele pega fogo. O alvo sofre 2 de dano aos PV ao final de seu turno, a menos que use uma ação para apagar as chamas. O efeito não é cumulativo.</p>\n"
     },
     "Shotgun Slug (Rubber)": {
-      "name": "Cartucho de Espingarda (Borracha)",
+      "name": "Balote de Espingarda (Borracha)",
       "description": "<p>Não causa Ferimento Crítico nem avaria a armadura. Deixa o alvo com no mínimo 1 PV. Conta como munição Básica para armas exóticas.</p>\n"
     },
     "Shotgun Slug (Smart)": {
-      "name": "Cartucho de Espingarda (Inteligente)",
+      "name": "Balote de Espingarda (Inteligente)",
       "description": "<p>Requer a cibernética Escopo de Alvo; caso contrário, não dispara. Se errar um ataque único por 4 ou menos, faça uma segunda rolagem de ataque contra a mesma VD usando 1d10+10 (em vez do atributo normal). É possível adicionar SORTE. O alvo pode esquivar da segunda rolagem normalmente, se puder fazê-lo.</p>\n"
     },
     "Very Heavy Pistol (Armor-Piercing)": {

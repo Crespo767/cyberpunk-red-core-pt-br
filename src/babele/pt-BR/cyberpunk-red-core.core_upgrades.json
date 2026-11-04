@@ -157,7 +157,7 @@
     "Grenade Launcher Underbarrel": {
       "name": "Lançador de Granadas",
       "description": "<p>Funciona como um lançador de granadas padrão, mas com capacidade de carregador 1. Exige 2 mãos para uso e ocupa 2 espaços de acessórios. Enquanto estiver acoplado, a arma não pode ser escondida sob a roupa.</p>\n<p>Observe que a arma herda quaisquer modificadores da arma de fogo à qual está acoplada, como os de outros acessórios e de qualidade.</p>",
-      "dvTable": "DV Lançador de Granadas"
+      "dvTable": "VD Lançador de Granadas"
     },
     "Hardened Circuitry": {
       "name": "Circuito Endurecido",
@@ -237,7 +237,7 @@
     "Shotgun Underbarrel": {
       "name": "Espingarda Sob o Cano",
       "description": "<p>Funciona como uma espingarda padrão, mas com capacidade de carregador 2. Exige 2 mãos para uso e ocupa 2 espaços de acessórios. Enquanto estiver acoplada, a arma não pode ser escondida sob a roupa.</p>\n<p>Observe que a arma herda quaisquer modificadores da arma de fogo à qual está acoplada, como os de outros acessórios e de qualidade.</p>",
-      "dvTable": "DV Espingarda (Cartuchos de Espingarda)"
+      "dvTable": "VD Espingarda (Balote)"
     },
     "Smartgun Link": {
       "name": "Link Smartgun",
@@ -250,7 +250,7 @@
       "dvTable": ""
     },
     "Sniping Scope": {
-      "name": "Escopo Sniping",
+      "name": "Mira de Precisão",
       "description": "<p>Permite enxergar detalhes a até 800 m/jardas. Concede +1 a Tiros Únicos/Tiros Mirados contra alvos a mais de 50 m/jardas.</p>",
       "dvTable": ""
     },
