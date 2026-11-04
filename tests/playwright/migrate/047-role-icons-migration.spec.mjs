@@ -94,9 +94,7 @@ test("047 preserves other types, unknown roles and custom icons", async ({
   expect(out.items).toEqual(out.before);
 });
 
-test.fixme("047 assigns role icons using Babele original names", async ({
-  page,
-}) => {
+test("047 assigns role icons using Babele original names", async ({ page }) => {
   const out = await page.evaluate(async () => {
     const M = await import(
       `/systems/${game.system.id}/modules/system/migrate/scripts/047-update-role-icons.js`
