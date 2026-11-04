@@ -20,7 +20,7 @@ system:
   description:
     value: |
       <p>
-        A luxury speedboat. Requires a minimum of two rooms. The price is for each
+        A luxury speedboat. Requires a minimum of four rooms. The price is for each
         room below or above deck.
       </p>
   favorite: false

@@ -56,7 +56,7 @@
     },
     "Yacht": {
       "name": "Yacht",
-      "description": "<p>\n  A luxury speedboat. Requires a minimum of two rooms. The price is for each\n  room below or above deck.\n</p>\n"
+      "description": "<p>\n  A luxury speedboat. Requires a minimum of four rooms. The price is for each\n  room below or above deck.\n</p>\n"
     }
   }
 }

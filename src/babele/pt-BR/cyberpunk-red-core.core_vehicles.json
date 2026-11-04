@@ -56,7 +56,7 @@
     },
     "Yacht": {
       "name": "Iate",
-      "description": "<p>\n  Uma lancha de luxo. Exige ao menos dois cômodos. O preço é por cômodo\n  abaixo ou acima do convés.\n</p>\n"
+      "description": "<p>\n  Uma lancha de luxo. Exige ao menos quatro cômodos. O preço é por cômodo\n  abaixo ou acima do convés.\n</p>\n"
     }
   }
 }
