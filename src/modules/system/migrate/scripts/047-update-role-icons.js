@@ -17,29 +17,30 @@ export default class UpdateRoleIcons extends BaseMigrationScript {
     const oldImage =
       "systems/cyberpunk-red-core/icons/compendium/default/Default_Role.svg";
     if (doc.type === "role" && doc.img === oldImage) {
-      if (doc.name === "Exec") {
+      const name = doc.flags?.babele?.originalName ?? doc.name;
+      if (name === "Exec") {
         doc.img = "systems/cyberpunk-red-core/icons/compendium/roles/exec.svg";
-      } else if (doc.name === "Fixer") {
+      } else if (name === "Fixer") {
         doc.img = "systems/cyberpunk-red-core/icons/compendium/roles/fixer.svg";
-      } else if (doc.name === "Lawman") {
+      } else if (name === "Lawman") {
         doc.img =
           "systems/cyberpunk-red-core/icons/compendium/roles/lawman.svg";
-      } else if (doc.name === "Media") {
+      } else if (name === "Media") {
         doc.img = "systems/cyberpunk-red-core/icons/compendium/roles/media.svg";
-      } else if (doc.name === "Medtech") {
+      } else if (name === "Medtech") {
         doc.img =
           "systems/cyberpunk-red-core/icons/compendium/roles/medtech.svg";
-      } else if (doc.name === "Netrunner") {
+      } else if (name === "Netrunner") {
         doc.img =
           "systems/cyberpunk-red-core/icons/compendium/roles/netrunner.svg";
-      } else if (doc.name === "Nomad") {
+      } else if (name === "Nomad") {
         doc.img = "systems/cyberpunk-red-core/icons/compendium/roles/nomad.svg";
-      } else if (doc.name === "Rockerboy") {
+      } else if (name === "Rockerboy") {
         doc.img =
           "systems/cyberpunk-red-core/icons/compendium/roles/rockerboy.svg";
-      } else if (doc.name === "Solo") {
+      } else if (name === "Solo") {
         doc.img = "systems/cyberpunk-red-core/icons/compendium/roles/solo.svg";
-      } else if (doc.name === "Tech") {
+      } else if (name === "Tech") {
         doc.img = "systems/cyberpunk-red-core/icons/compendium/roles/tech.svg";
       }
     }
