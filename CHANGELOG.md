@@ -2,6 +2,14 @@
 
 # Changelog
 
+## Version 0.93.0-ptbr.4
+
+### Changes
+
+- Rename the system title to `Cyberpunk RED v13 - PTBR` (the package id stays `cyberpunk-red-core`)
+- Rename the compendium folders to `Cyberpunk RED: Básico` and `Cyberpunk RED: Outros`
+- Require the Babele module in the release manifest, so Foundry offers to install it with the system
+
 ## Version 0.93.0-ptbr.3
 
 ### Bug Fixes
