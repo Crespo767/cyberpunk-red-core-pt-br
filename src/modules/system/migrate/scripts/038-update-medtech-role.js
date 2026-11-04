@@ -29,6 +29,7 @@ export default class UpdateMedtechRole extends BaseMigrationScript {
           hasRoll: false,
           isSituational: false,
           multiplier: 0.5,
+          name: ability.name,
           onByDefault: false,
           rank: abilityRank,
           skill: "--",
