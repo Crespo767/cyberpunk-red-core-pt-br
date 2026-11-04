@@ -6,12 +6,12 @@
   "entries": {
     "Armored Chassis": {
       "name": "Chassi Blindado",
-      "description": "<p>Can be applied to all vehicles. Armors the vehicle to SP13. Doesn't affect the glass.</p>",
+      "description": "<p>Pode ser aplicado a todos os veículos. Blinda o veículo com PP 13. Não afeta os vidros.</p>",
       "dvTable": ""
     },
     "AV-4 Engine Upgrade": {
       "name": "Melhoria de Motor AV-4",
-      "description": "<p>Can be applied to all land vehicles. Adds Aerodyne thrusters to the vehicle, allowing flight. While flying the vehicle has a narrative speed of 200MPH / 322KPH, and a combat speed of 40. The vehicle must be piloted using the Pilot Air Vehicle skill while mid-air.</p>",
+      "description": "<p>Pode ser aplicada a todos os veículos terrestres. Adiciona propulsores Aerodyne ao veículo, permitindo que ele voe. Durante o voo, o veículo tem velocidade narrativa de 200 mph / 322 km/h e velocidade de combate 40. Enquanto estiver no ar, o veículo deve ser pilotado usando a habilidade Piloto Aéreo.</p>",
       "dvTable": ""
     },
     "Backup Drive": {
@@ -21,7 +21,7 @@
     },
     "Bayonet": {
       "name": "Baioneta",
-      "description": "<p>An old idea that still works just as good; lets you use your gun as a light melee weapon. While attached, the weapon can't be concealed under clothing.</p>",
+      "description": "<p>Uma ideia antiga que continua funcionando muito bem: permite usar sua arma de fogo como arma corpo a corpo leve. Enquanto estiver acoplada, a arma não pode ser escondida sob a roupa.</p>",
       "dvTable": ""
     },
     "Bulletproof Glass": {
@@ -31,17 +31,17 @@
     },
     "Combat Plow": {
       "name": "Arado de Combate",
-      "description": "<p>Can be applied to all land and sea vehicles, except Bikes and Jetskies. When you ram something with the front of your vehicle, your vehicle doesn't take damage and nobody inside suffers from the Whiplash critical injury. You deal 2d6 additional ramming damage if your vehicle was boosted by NOS on the turn you ram the object.&nbsp;</p>",
+      "description": "<p>Pode ser aplicado a todos os veículos terrestres e aquáticos, exceto motos e motos aquáticas. Ao colidir com algo usando a frente do veículo, seu veículo não sofre dano e ninguém dentro dele sofre o Ferimento Crítico Lesão Cervical. Você causa 2d6 de dano adicional de colisão se o veículo tiver sido impulsionado por NOS no turno em que colidir com o objeto.</p>",
       "dvTable": ""
     },
     "Communications Center": {
       "name": "Central de Comunicações",
-      "description": "<p>Can be applied to all vehicles. Touchscreen console that functions as an Agent, along with a storage unit containing 6 <strong>Radio Communicators</strong>, 6 <strong>Scrambler/Descramblers</strong>, a <strong>Radio Scanner/Music Player</strong>, a <strong>Homing tracer</strong> with 6 tracers, and an <strong>Audio Recorder</strong>.</p>",
+      "description": "<p>Pode ser aplicada a todos os veículos. Um console com tela sensível ao toque que funciona como um Agente, acompanhado de um compartimento contendo 6 <strong>comunicadores de rádio</strong>, 6 <strong>codificadores/decodificadores</strong>, um <strong>scanner de rádio/reprodutor de música</strong>, um <strong>localizador</strong> com 6 rastreadores e um <strong>gravador de áudio</strong>.</p>",
       "dvTable": ""
     },
     "Deployable Spike Strip": {
       "name": "Faixa de Pregos Retrátil",
-      "description": "<p>Can be applied to all groundcars. As an Action, the driver can deploy a spike strip. While deployed, any closely trailing vehicles with tires must make a DV17 Drive Land Vehicle Check. On a failure, their vehicle takes 4d6 damage as if hitting a weak point. Replacement spike strips cost 10eb.&nbsp;</p>\n<p>You may install this upgrade multiple times, each upgrade increases the amount of spike strips that can be deployed before the system requires reloading, and it cannot be reloaded while the vehicle is moving.</p>",
+      "description": "<p>Pode ser aplicada a todos os carros. Como uma Ação, o motorista pode lançar uma faixa de pregos. Enquanto ela estiver lançada, qualquer veículo com pneus que venha logo atrás deve fazer um teste de VD 17 de Direção de Veículo Terrestre. Em caso de falha, o veículo sofre 4d6 de dano como se atingisse um ponto fraco. Faixas de reposição custam 10 eb.</p>\n<p>Você pode instalar esta melhoria várias vezes; cada instalação aumenta a quantidade de faixas de pregos que podem ser lançadas antes de o sistema precisar ser recarregado. Ele não pode ser recarregado enquanto o veículo estiver em movimento.</p>",
       "dvTable": ""
     },
     "DNA Lock": {
@@ -101,7 +101,7 @@
     },
     "Enhanced Interface Plug Integration": {
       "name": "Integração Aprimorada de Conectores de Interface",
-      "description": "<p>Can be applied to all bikes. While using Interface Plugs to drive this vehicle, if you have a REF 8 or higher and you, a passenger, or your bike are the target of an attack, you can attempt to dodge as you would on foot. If you dodge for a passenger, that becomes their defence.&nbsp;</p>",
+      "description": "<p>Pode ser aplicada a todas as motos. Enquanto usa Conectores de Interface para conduzir este veículo, se você tiver REF 8 ou mais e você, um passageiro ou sua moto forem alvo de um ataque, poderá tentar esquivar-se como faria a pé. Se você se esquivar por um passageiro, esse resultado será a defesa dele.</p>",
       "dvTable": ""
     },
     "Extended Magazine (Assault Rifle)": {
@@ -156,7 +156,7 @@
     },
     "Grenade Launcher Underbarrel": {
       "name": "Lançador de Granadas",
-      "description": "<p>Functions like a standard grenade launcher, but with a magazine size of 1. Requires 2 hands to use, and takes up 2 attachment slots. While attached, the weapon can't be concealed under clothing.</p>\n<p>Note that the weapon inherits any modifiers from the gun it is attached to, such as other attachments and quality.</p>",
+      "description": "<p>Funciona como um lançador de granadas padrão, mas com capacidade de carregador 1. Exige 2 mãos para uso e ocupa 2 espaços de acessórios. Enquanto estiver acoplado, a arma não pode ser escondida sob a roupa.</p>\n<p>Observe que a arma herda quaisquer modificadores da arma de fogo à qual está acoplada, como os de outros acessórios e de qualidade.</p>",
       "dvTable": "DV Lançador de Granadas"
     },
     "Hardened Circuitry": {
@@ -166,7 +166,7 @@
     },
     "Heavy Chassis": {
       "name": "Chassi Pesado",
-      "description": "<p>Can be applied to all vehicles except Bikes, Jetskis and Gyrocopters. Adds 20 SDP to the vehicle. This doesn't affect the glass, and vehicle can now tow up to 10 tons.&nbsp;</p>",
+      "description": "<p>Pode ser aplicado a todos os veículos, exceto motos, motos aquáticas e girocópteros. Adiciona 20 PV Estrutural ao veículo. Isso não afeta os vidros, e o veículo passa a poder rebocar até 10 toneladas.</p>",
       "dvTable": ""
     },
     "Housing Capacity": {
@@ -176,7 +176,7 @@
     },
     "Hover Upgrade": {
       "name": "Melhoria de Flutuação",
-      "description": "<p>Can be applied to all land vehicles. Adds fans onto the vehicle that allow it to traverse water at a narrative speed of 15 MPH/ 24KPH, and a combat speed of 10.</p>",
+      "description": "<p>Pode ser aplicada a todos os veículos terrestres. Adiciona ventiladores ao veículo que permitem atravessar a água enquanto ele paira, com velocidade narrativa de 15 mph / 24 km/h e velocidade de combate 10.</p>",
       "dvTable": ""
     },
     "Infrared Nightvision Scope": {
@@ -191,12 +191,12 @@
     },
     "KRASH Barrier": {
       "name": "Barreira KRASH",
-      "description": "<p>Cyberdeck is immune to effects that force the Netrunner to Jack Out (safely or unsafely).</p>",
+      "description": "<p>O Console é imune a efeitos que forçam o Netrunner a se desconectar, com ou sem segurança.</p>",
       "dvTable": ""
     },
     "NOS": {
       "name": "NOS",
-      "description": "<p>Can be applied to all vehicles. Adds a tank of nitrous oxide to the vehicle. Allows you to use your Action to use an additional Move Action while driving.&nbsp;</p>\n<p>You may install this upgrade multiple times, each upgrade adds an additional tank and each tank may be used once per day.</p>",
+      "description": "<p>Pode ser aplicado a todos os veículos. Adiciona um tanque de óxido nitroso ao veículo. Permite usar sua Ação para realizar uma Ação de Movimento adicional enquanto dirige.</p>\n<p>Você pode instalar esta melhoria várias vezes; cada instalação adiciona um tanque, e cada tanque pode ser usado uma vez por dia.</p>",
       "dvTable": ""
     },
     "Onboard Flamethrower": {
@@ -206,17 +206,17 @@
     },
     "Onboard Machine Gun": {
       "name": "Metralhadora de Bordo",
-      "description": "<p>Can be applied to all vehicles. An <strong>Assault Rifle </strong>with a 30 round capacity and only capable of Autofire, that can be mounted facing the front of the vehicle. The driver may fire it using an Action, cannot be reloaded while driving and cannot accept weapon attachments.&nbsp;</p>\n<p>You may install this upgrade multiple times.</p>",
+      "description": "<p>Pode ser instalada em todos os veículos. Um <strong>Rifle de Assalto</strong> com capacidade para 30 balas e capaz apenas de Fogo Automático, que pode ser montado voltado para a frente do veículo. O motorista pode dispará-lo com uma Ação; ele não pode ser recarregado enquanto o veículo estiver em movimento nem receber acessórios de arma.</p>\n<p>Você pode instalar esta melhoria várias vezes.</p>",
       "dvTable": ""
     },
     "Onboard Melee Weapon": {
       "name": "Arma Corpo a Corpo de Bordo",
-      "description": "<p>Can be applied to all land and sea vehicles. A <strong>Very Heavy Melee Weapon&nbsp;</strong>that can be mounted facing the front, side or back of the vehicle. The driver may attack with it using an Action. The weapon cannot be removed.&nbsp;</p>\n<p>You may install this upgrade multiple times.</p>",
+      "description": "<p>Pode ser instalada em todos os veículos terrestres e aquáticos. Uma <strong>arma corpo a corpo muito pesada</strong> que pode ser montada voltada para a frente, a lateral ou a traseira do veículo. O motorista pode atacar com ela usando uma Ação. A arma não pode ser removida.</p>\n<p>Você pode instalar esta melhoria várias vezes.</p>",
       "dvTable": ""
     },
     "Onboard Rocket Pod": {
       "name": "Lançador de Foguetes de Bordo",
-      "description": "<p>Can be applied to all vehicles except Bikes, Jetskis and Gyrocopters. A <strong>Rocket Launcher&nbsp;</strong>with a drum of three rockets, that can be mounted facing the front of the vehicle. The driver may fire it using an Action. It cannot be reloaded while driving, and cannot accept weapon attachments.&nbsp;</p>\n<p>You may install this upgrade multiple times. <strong>Requires Heavy Chassis</strong>.</p>",
+      "description": "<p>Pode ser instalado em todos os veículos, exceto motos, motos aquáticas e girocópteros. Um <strong>Lançador de Foguetes</strong> com um carregador tambor de três foguetes, que pode ser montado voltado para a frente do veículo. O motorista pode dispará-lo com uma Ação. Ele não pode ser recarregado enquanto o veículo estiver em movimento nem receber acessórios de arma.</p>\n<p>Você pode instalar esta melhoria várias vezes. <strong>Exige Chassi Pesado</strong>.</p>",
       "dvTable": ""
     },
     "Range Upgrade": {
@@ -226,7 +226,7 @@
     },
     "Seating Upgrade": {
       "name": "Melhoria de Assentos",
-      "description": "<p>Can be applied to all vehicles. Adds two seats to the vehicle. These can be installed as an external sidecar, they may also be installed as ejector seats with removable parachutes.</p>\n<p>Can be taken multiple times with the exception of Bikes, Jetskis and Gyrocopters.</p>",
+      "description": "<p>Pode ser aplicada a todos os veículos. Adiciona dois assentos ao veículo. Eles podem ser instalados como um sidecar externo ou como assentos ejetáveis com paraquedas removíveis.</p>\n<p>Pode ser adquirida várias vezes, exceto para motos, motos aquáticas e girocópteros.</p>",
       "dvTable": ""
     },
     "Security Upgrade": {
@@ -236,7 +236,7 @@
     },
     "Shotgun Underbarrel": {
       "name": "Escopeta de barro",
-      "description": "<p>Functions like a standard shotgun, but with a magazine size of 2. Requires 2 hands to use, and takes up 2 attachment slots. While attached, the weapon can't be concealed under clothing.</p>\n<p>Note that the weapon inherits any modifiers from the gun it is attached to, such as other attachments and quality.</p>",
+      "description": "<p>Funciona como uma espingarda padrão, mas com capacidade de carregador 2. Exige 2 mãos para uso e ocupa 2 espaços de acessórios. Enquanto estiver acoplada, a arma não pode ser escondida sob a roupa.</p>\n<p>Observe que a arma herda quaisquer modificadores da arma de fogo à qual está acoplada, como os de outros acessórios e de qualidade.</p>",
       "dvTable": "DV Espingarda (Cartuchos de Espingarda)"
     },
     "Smartgun Link": {
@@ -251,12 +251,12 @@
     },
     "Sniping Scope": {
       "name": "Escopo Sniping",
-      "description": "<p>Allows you to see detail up to 800m/yds. +1 to Single Shot/Aimed Shots for targets greater than 50m/yds.&nbsp;</p>",
+      "description": "<p>Permite enxergar detalhes a até 800 m/jardas. Concede +1 a Tiros Únicos/Tiros Mirados contra alvos a mais de 50 m/jardas.</p>",
       "dvTable": ""
     },
     "Vehicle Heavy Weapon Mount": {
       "name": "Suporte Veicular para Arma Pesada",
-      "description": "<p>Can be applied to all vehicles except Bikes, Jetskis and Gyrocopters. One of the vehicles seats becomes a swivel mount for any two-handed ranged weapon. A passenger may fire the weapon using an Action. The passenger can reload the weapon. The weapon can be removed or reinstalled using an Action.&nbsp;</p>\n<p>The first time this upgrade is taken, included is a <strong>Tsunami Arms Helix</strong>,&nbsp; <strong>Rhinemetall EMG-86 Railgun</strong>, or <strong>Militech \"Cowboy\" U-56 Grenade Launcher</strong>. If the vehicle has the Bulletproof Glass upgrade, the gunner is protected by the same glass.&nbsp;</p>\n<p>You may install this upgrade multiple times if the vehicle has the Housing Capacity upgrade. <strong>Requires Heavy Chassis</strong>.</p>",
+      "description": "<p>Pode ser instalado em todos os veículos, exceto motos, motos aquáticas e girocópteros. Um dos assentos do veículo se transforma em um suporte giratório para qualquer arma de ataque à distância que use duas mãos. Um passageiro pode disparar a arma usando uma Ação. O passageiro pode recarregar a arma. Ela pode ser removida ou reinstalada com uma Ação.</p>\n<p>Na primeira vez que esta melhoria é adquirida, ela inclui uma <strong>Tsunami Arms Helix</strong>, uma <strong>Rhinemetall EMG-86 Railgun</strong> ou um <strong>Lançador de Granadas Militech \"Cowboy\" U-56</strong>. Se o veículo tiver a melhoria Vidro à Prova de Balas, o atirador ficará protegido pelo mesmo vidro.</p>\n<p>Você pode instalar esta melhoria várias vezes se o veículo tiver a melhoria Capacidade de Moradia. <strong>Exige Chassi Pesado</strong>.</p>",
       "dvTable": ""
     }
   }

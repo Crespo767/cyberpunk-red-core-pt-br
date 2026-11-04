@@ -18,12 +18,12 @@
     },
     "Battleglove": {
       "name": "Luva de Batalha",
-      "description": "<p>An exotic heavy gauntlet, that covers your hand and forearm. Provides three option slots. Refer to the full item description on pg. 347.</p>",
+      "description": "<p>Uma manopla pesada exótica que cobre sua mão e seu antebraço. Oferece três espaços para opções.</p>\n",
       "dvTable": ""
     },
     "Smart Glasses": {
       "name": "Óculos Inteligentes",
-      "description": "<p>Eyewear with two options slots for cybereye options.</p>",
+      "description": "<p>Óculos com dois espaços para opções de olho cibernético.</p>\n",
       "dvTable": ""
     },
     "Agent": {

@@ -4,43 +4,43 @@
   "entries": {
     "Antibiotic": {
       "name": "Antibiótico",
-      "description": "<p>If a target has started the natural healing process injecting them with Antibiotic will cause them to heal an additional 2 Hit Points per day for a week. This effect does not stack.</p>"
+      "description": "<p>Se o alvo já tiver iniciado o processo de cura natural, uma injeção de Antibiotic faz com que recupere 2 Pontos de Vida adicionais por dia durante uma semana. Esse efeito não é cumulativo.</p>\n"
     },
     "Black Lace": {
       "name": "Laço Negro",
-      "description": "<p><strong>Primary Effect</strong></p>\n<p>Dose lasts 24 hours.</p>\n<ul>\n<li>The user rolls 2d6 Humanity Loss which is returned if they pass the Secondary Effect save</li>\n<li>The user ignores Seriously Wounded wound states for the duration</li>\n</ul>\n<p><br><strong>Secondary Effect (DV17)</strong></p>\n<p>When the dose wears off, the user rolls WILL + Resist Torture/Drugs + 1d10 against Secondary DV.</p>\n<ul>\n<li>On Fail Humanity loss is not returned</li>\n<li>Unless experiencing the primary effect, REF -2</li>\n</ul>"
+      "description": "<p><strong>Efeito Primário</strong></p>\n<p>A dose dura 24 horas.</p>\n<ul>\n<li>O usuário rola 2d6 de Perda de Humanidade, que é recuperada se ele passar no teste do Efeito Secundário.</li>\n<li>O usuário ignora o estado Seriamente Ferido durante a duração do efeito.</li>\n</ul>\n<p><strong>Efeito Secundário (VD17)</strong></p>\n<p>Quando a dose perde o efeito, o usuário rola <strong>VONT + Resistir Tortura/Drogas + 1d10 contra a VD secundária</strong>.</p>\n<ul>\n<li>Em caso de falha, a Humanidade perdida não é recuperada.</li>\n<li>REF -2, a menos que esteja sob o Efeito Primário.</li>\n</ul>\n"
     },
     "Blue Glass": {
       "name": "Vidro Azul",
-      "description": "<p><strong>Primary Effect</strong></p>\n<p>Dose lasts 4 hours.</p>\n<ul>\n<li>The GM may occasionally tell the user that they are seeing swirls of colours. When this happens the user loses their action on a single turn</li>\n</ul>\n<p><strong>Secondary Effect (DV15)</strong></p>\n<ul>\n<li>The GM may occasionally tell the user that they are seeing swirls of colours. When this happens the user loses their action on a single turn</li>\n</ul>"
+      "description": "<p><strong>Efeito Primário</strong></p>\n<p>A dose dura 4 horas.</p>\n<ul>\n<li>O Mestre pode ocasionalmente informar ao usuário que ele vê redemoinhos de cores. Quando isso acontece, o usuário perde sua ação em um turno.</li>\n</ul>\n<p><strong>Efeito Secundário (VD15)</strong></p>\n<ul>\n<li>O Mestre pode ocasionalmente informar ao usuário que ele vê redemoinhos de cores. Quando isso acontece, o usuário perde sua ação em um turno.</li>\n</ul>\n"
     },
     "Boost": {
       "name": "Acelerar",
-      "description": "<p><strong>Primary Effect</strong></p>\n<p>Dose lasts 24 hours.</p>\n<ul>\n<li>The user has INT +2 for the duration</li>\n</ul>\n<p><strong>Secondary Effect (DV17)</strong></p>\n<ul>\n<li>INT -2</li>\n</ul>"
+      "description": "<p><strong>Efeito Primário</strong></p>\n<p>A dose dura 24 horas.</p>\n<ul>\n<li>O usuário recebe INT +2 durante a duração do efeito.</li>\n</ul>\n<p><strong>Efeito Secundário (VD17)</strong></p>\n<ul>\n<li>INT -2</li>\n</ul>\n"
     },
     "Rapidetox": {
       "name": "Rapidetox",
-      "description": "<p>Injecting a target with Rapidetox will eliminate the effects of any drugs, poisons, or intoxicants they are currently affected by.</p>"
+      "description": "<p>Uma injeção de Rapidetox elimina os efeitos de quaisquer drogas, venenos ou substâncias intoxicantes que estejam afetando o alvo.</p>\n"
     },
     "Smash": {
       "name": "Esmagar",
-      "description": "<p><strong>Primary Effect</strong></p>\n<p>Dose lasts 4 hours.</p>\n<ul>\n<li>The user feels happy and satisfied</li>\n<li>+2 to Dance / Contortionist / Conversation / Human Perception / Persuasion / Acting</li>\n</ul>\n<p><strong>Secondary Effect (DV15)</strong></p>\n<ul>\n<li>-2 to Dance / Contortionist / Conversation / Human Perception / Persuasion / Acting</li>\n<li>GM will tell your when you crave more Smash. Roleplay accordingly.</li>\n</ul>"
+      "description": "<p><strong>Efeito Primário</strong></p>\n<p>A dose dura 4 horas.</p>\n<p>O usuário se sente feliz e satisfeito e recebe um modificador temporário de +2 nas seguintes habilidades:</p>\n<ul>\n<li>Dança</li>\n<li>Contorcionismo</li>\n<li>Conversa</li>\n<li>Percepção Humana</li>\n<li>Persuasão</li>\n<li>Atuação</li>\n</ul>\n<p><strong>Efeito Secundário (VD15)</strong></p>\n<p>O usuário fica viciado em Smash.</p>\n<p>Enquanto estiver viciado, o usuário sofre um modificador de -2 nas seguintes habilidades:</p>\n<ul>\n<li>Dança</li>\n<li>Contorcionismo</li>\n<li>Conversa</li>\n<li>Percepção Humana</li>\n<li>Persuasão</li>\n<li>Atuação</li>\n</ul>\n<p>O Mestre informará quando você sentir vontade de consumir mais Smash. Interprete de acordo.</p>\n"
     },
     "Speedheal": {
       "name": "Speedheal",
-      "description": "<p>Injecting a target with Speedheal immediately causes them to heal HP equal to their BODY plus their WILL. This effect does not work on Mortally Wounded targets, and can only be used on a target once per day.</p>"
+      "description": "<p>Uma injeção de Speedheal faz o alvo recuperar imediatamente uma quantidade de PV igual à soma de CORPO e VONT. Esse efeito não funciona em alvos Mortalmente Feridos e só pode ser usado uma vez por dia em cada alvo.</p>\n"
     },
     "Stim": {
       "name": "Stim",
-      "description": "<p>Injecting a target with Stim causes them to ignore all penalties from being Seriously Wounded for one hour. It can only be used on a target once per day.</p>"
+      "description": "<p>Uma injeção de Stim faz o alvo ignorar todas as penalidades por estar Seriamente Ferido durante uma hora. Só pode ser usada uma vez por dia em cada alvo.</p>\n"
     },
     "Surge": {
       "name": "Surge",
-      "description": "<p>Injecting a target with Surge causes them to be immune to sleep deprivation for 24 hours. It can only be used on a target once per week.</p>"
+      "description": "<p>Uma injeção de Surge torna o alvo imune à privação de sono por 24 horas. Só pode ser usada uma vez por semana em cada alvo.</p>\n"
     },
     "Synthcoke": {
       "name": "Sintetizadorcoque",
-      "description": "<p><strong>Primary Effect</strong></p>\n<p>Dose lasts 4 hours.</p>\n<ul>\n<li>+1 REF by 1 point for the duration</li>\n<li>The user feels paranoid occasionally</li>\n</ul>\n<p><strong>Secondary Effect (DV15)</strong></p>\n<ul>\n<li>-2 REF unless under ther Primary Effect</li>\n<li>GM will tell you when when you crave mor Synthcoke. Roleplay Acordingly</li>\n</ul>"
+      "description": "<p><strong>Efeito Primário</strong></p>\n<p>A dose dura 4 horas.</p>\n<ul>\n<li>REF +1 durante a duração do efeito.</li>\n<li>O usuário se sente paranoico ocasionalmente.</li>\n</ul>\n<p><strong>Efeito Secundário (VD15)</strong></p>\n<ul>\n<li>REF -2, a menos que esteja sob o Efeito Primário.</li>\n<li>O Mestre informará quando você sentir vontade de consumir mais Synthcoke. Interprete de acordo.</li>\n</ul>\n"
     }
   }
 }
