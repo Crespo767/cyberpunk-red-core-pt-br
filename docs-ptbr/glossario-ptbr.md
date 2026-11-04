@@ -43,44 +43,48 @@ A comparação ignora diferenças apenas de maiúsculas e flexão de número.
 
 ## Perícias
 
-| Termo EN         | Tradução atual no pt-BR.json (exemplo de chave)                | Termo de referência PT-BR | Proposta           | Status        |
-| ---------------- | -------------------------------------------------------------- | -------------------- | ------------------ | ------------- |
-| Skill            | Habilidade (`CPR.global.generic.skill`)                        | Habilidade           | Habilidade         | consistente   |
-| Accounting       | Contabilidade (`CPR.global.itemType.skill.accounting`)         | Contabilidade        | Contabilidade      | consistente   |
-| Acting           | Atuação (`CPR.global.itemType.skill.acting`)                   | Atuação              | Atuação            | consistente   |
-| Athletics        | Atletismo (`CPR.global.itemType.skill.athletics`)              | Atletismo            | Atletismo          | consistente   |
-| Brawling         | Briga (`CPR.global.itemType.skill.brawling`)                   | Briga                | Briga              | consistente   |
-| Concentration    | Concentração (`CPR.global.itemType.skill.concentration`)       | Concentração         | Concentração       | consistente   |
-| Conversation     | Conversa (`CPR.global.itemType.skill.conversation`)            | Conversa             | Conversa           | consistente   |
-| Criminology      | Criminologia (`CPR.global.itemType.skill.criminology`)         | Criminologia         | Criminologia       | consistente   |
-| Cryptography     | Criptografia (`CPR.global.itemType.skill.cryptography`)        | Criptografia         | Criptografia       | consistente   |
-| Dance            | Dança (`CPR.global.itemType.skill.dance`)                      | Dança                | Dança              | consistente   |
-| Deduction        | Dedução (`CPR.global.itemType.skill.deduction`)                | Dedução              | Dedução            | consistente   |
-| Demolitions      | Demolições (`CPR.global.itemType.skill.demolitions`)           | Demolições           | Demolições         | consistente   |
-| Evasion          | Evasão (`CPR.global.itemType.skill.evasion`)                   | Evasão               | Evasão             | consistente   |
-| First Aid        | Primeiros Socorros (`CPR.global.itemType.skill.firstAid`)      | Primeiros Socorros   | Primeiros Socorros | consistente   |
-| Heavy Weapons    | Armas Pesadas (`CPR.global.itemType.skill.heavyWeapons`)       | Armas Pesadas        | Armas Pesadas      | consistente   |
-| Human Perception | Percepção Humana (`CPR.global.itemType.skill.humanPerception`) | Percepção Humana     | Percepção Humana   | consistente   |
-| Perception       | Percepção (`CPR.global.itemType.skill.perception`)             | Percepção            | Percepção          | consistente   |
-| Persuasion       | Persuasão (`CPR.global.itemType.skill.persuasion`)             | Persuasão            | Persuasão          | consistente   |
-| Stealth          | Furtividade (`CPR.global.itemType.skill.stealth`)              | Furtividade          | Furtividade        | consistente   |
-| Trading          | Trocas (`CPR.global.itemType.skill.trading`)                   | Negociação           | Trocas             | decidido (D8) |
-| Weaponstech      | Armeiro (`CPR.global.itemType.skill.weaponstech`)              | Armeiro              | Armeiro            | consistente   |
+| Termo EN         | Tradução atual no pt-BR.json (exemplo de chave)                                        | Termo de referência PT-BR | Proposta           | Status         |
+| ---------------- | -------------------------------------------------------------------------------------- | -------------------- | ------------------ | -------------- |
+| Base             | Base (`CPR.characterSheet.rightPanke.skills.base`)                                     | —                    | Base               | igual em PT-BR |
+| Total            | Total (`CPR.mookSheet.skills.total`)                                                   | —                    | Total              | igual em PT-BR |
+| Mod / MOD        | Mod (`CPR.mookSheet.skills.mod`); MOD (`CPR.characterSheet.rightPane.skills.skillMod`) | —                    | Mod / MOD          | igual em PT-BR |
+| Skill            | Habilidade (`CPR.global.generic.skill`)                                                | Habilidade           | Habilidade         | consistente    |
+| Accounting       | Contabilidade (`CPR.global.itemType.skill.accounting`)                                 | Contabilidade        | Contabilidade      | consistente    |
+| Acting           | Atuação (`CPR.global.itemType.skill.acting`)                                           | Atuação              | Atuação            | consistente    |
+| Athletics        | Atletismo (`CPR.global.itemType.skill.athletics`)                                      | Atletismo            | Atletismo          | consistente    |
+| Brawling         | Briga (`CPR.global.itemType.skill.brawling`)                                           | Briga                | Briga              | consistente    |
+| Concentration    | Concentração (`CPR.global.itemType.skill.concentration`)                               | Concentração         | Concentração       | consistente    |
+| Conversation     | Conversa (`CPR.global.itemType.skill.conversation`)                                    | Conversa             | Conversa           | consistente    |
+| Criminology      | Criminologia (`CPR.global.itemType.skill.criminology`)                                 | Criminologia         | Criminologia       | consistente    |
+| Cryptography     | Criptografia (`CPR.global.itemType.skill.cryptography`)                                | Criptografia         | Criptografia       | consistente    |
+| Dance            | Dança (`CPR.global.itemType.skill.dance`)                                              | Dança                | Dança              | consistente    |
+| Deduction        | Dedução (`CPR.global.itemType.skill.deduction`)                                        | Dedução              | Dedução            | consistente    |
+| Demolitions      | Demolições (`CPR.global.itemType.skill.demolitions`)                                   | Demolições           | Demolições         | consistente    |
+| Evasion          | Evasão (`CPR.global.itemType.skill.evasion`)                                           | Evasão               | Evasão             | consistente    |
+| First Aid        | Primeiros Socorros (`CPR.global.itemType.skill.firstAid`)                              | Primeiros Socorros   | Primeiros Socorros | consistente    |
+| Heavy Weapons    | Armas Pesadas (`CPR.global.itemType.skill.heavyWeapons`)                               | Armas Pesadas        | Armas Pesadas      | consistente    |
+| Human Perception | Percepção Humana (`CPR.global.itemType.skill.humanPerception`)                         | Percepção Humana     | Percepção Humana   | consistente    |
+| Perception       | Percepção (`CPR.global.itemType.skill.perception`)                                     | Percepção            | Percepção          | consistente    |
+| Persuasion       | Persuasão (`CPR.global.itemType.skill.persuasion`)                                     | Persuasão            | Persuasão          | consistente    |
+| Stealth          | Furtividade (`CPR.global.itemType.skill.stealth`)                                      | Furtividade          | Furtividade        | consistente    |
+| Trading          | Trocas (`CPR.global.itemType.skill.trading`)                                           | Negociação           | Trocas             | decidido (D8)  |
+| Weaponstech      | Armeiro (`CPR.global.itemType.skill.weaponstech`)                                      | Armeiro              | Armeiro            | consistente    |
 
 ## Combate
 
-| Termo EN         | Tradução atual no pt-BR.json (exemplo de chave)           | Termo de referência PT-BR | Proposta          | Status        |
-| ---------------- | --------------------------------------------------------- | -------------------- | ----------------- | ------------- |
-| ROF              | Cadência de tiro (`CPR.itemSheet.weapon.rof`)             | ROF                  | Cadência de tiro  | decidido (D8) |
-| SP               | PP (`CPR.global.itemType.armor.sp`)                       | SP                   | PP                | decidido (D8) |
-| HP               | PV (`CPR.global.generic.hitpointsShort`)                  | Pontos de Vida       | PV                | consistente   |
-| DV               | VD (`CPR.itemSheet.criticalInjury.dv`)                    | DV                   | VD                | decidido (D8) |
-| Autofire         | Fogo Automático (`CPR.effectSheet.combat.stats.autofire`) | Fogo automático      | Fogo Automático   | consistente   |
-| Suppressive Fire | Fogo Supressivo (`CPR.rolls.suppressiveFire`)             | Fogo Supressivo      | Fogo Supressivo   | consistente   |
-| Ablation         | Avariar (`CPR.global.generic.ablation`)                   | Ablação              | Avariar           | decidido (D8) |
-| Critical Injury  | Ferimento Crítico (`TYPES.Item.criticalInjury`)           | Ferimento Crítico    | Ferimento Crítico | consistente   |
-| Damage           | Dano (`CPR.global.generic.damage`)                        | Dano                 | Dano              | consistente   |
-| Armor            | Armadura (`TYPES.Item.armor`)                             | Armadura             | Armadura          | consistente   |
+| Termo EN         | Tradução atual no pt-BR.json (exemplo de chave)            | Termo de referência PT-BR | Proposta          | Status        |
+| ---------------- | ---------------------------------------------------------- | -------------------- | ----------------- | ------------- |
+| ROF              | Cadência de tiro (`CPR.itemSheet.weapon.rof`)              | ROF                  | Cadência de tiro  | decidido (D8) |
+| SP               | PP (`CPR.global.itemType.armor.sp`)                        | SP                   | PP                | decidido (D8) |
+| SDP              | PV Estrutural (`CPR.characterSheet.rightPane.vehicle.sdp`) | —                    | PV Estrutural     | consistente   |
+| HP               | PV (`CPR.global.generic.hitpointsShort`)                   | Pontos de Vida       | PV                | consistente   |
+| DV               | VD (`CPR.itemSheet.criticalInjury.dv`)                     | DV                   | VD                | decidido (D8) |
+| Autofire         | Fogo Automático (`CPR.effectSheet.combat.stats.autofire`)  | Fogo automático      | Fogo Automático   | consistente   |
+| Suppressive Fire | Fogo Supressivo (`CPR.rolls.suppressiveFire`)              | Fogo Supressivo      | Fogo Supressivo   | consistente   |
+| Ablation         | Avariar (`CPR.global.generic.ablation`)                    | Ablação              | Avariar           | decidido (D8) |
+| Critical Injury  | Ferimento Crítico (`TYPES.Item.criticalInjury`)            | Ferimento Crítico    | Ferimento Crítico | consistente   |
+| Damage           | Dano (`CPR.global.generic.damage`)                         | Dano                 | Dano              | consistente   |
+| Armor            | Armadura (`TYPES.Item.armor`)                              | Armadura             | Armadura          | consistente   |
 
 ## Netrunning
 
@@ -90,6 +94,10 @@ A comparação ignora diferenças apenas de maiúsculas e flexão de número.
 | NET Architecture | Arquitetura de Rede (`CPR.global.itemTypes.netArchitecture`) | Arquitetura NET      | Arquitetura de Rede | decidido (D8)    |
 | Program          | Programa (`TYPES.Item.program`)                              | Programa             | Programa            | consistente      |
 | Black ICE        | Black ICE (`TYPES.Actor.blackIce`)                           | Black ICE            | Black ICE           | manter em inglês |
+| Kraken           | Kraken (`CPR.netArchitecture.floor.options.blackIce.kraken`) | —                    | Kraken              | manter em inglês |
+| Liche            | Liche (`CPR.netArchitecture.floor.options.blackIce.liche`)   | —                    | Liche               | manter em inglês |
+| Balron           | Balron (`CPR.netArchitecture.floor.options.demon.balron`)    | —                    | Balron              | manter em inglês |
+| Efreet           | Efreet (`CPR.netArchitecture.floor.options.demon.efreet`)    | —                    | Efreet              | manter em inglês |
 | Demon            | Demônio (`TYPES.Actor.demon`)                                | Demônio              | Demônio             | consistente      |
 | REZ              | REZ (`CPR.global.generic.rez`)                               | REZ                  | REZ                 | decidido (D8)    |
 | PER              | PER (`CPR.global.blackIce.stats.per`)                        | PER                  | PER                 | manter em inglês |
@@ -112,12 +120,14 @@ A comparação ignora diferenças apenas de maiúsculas e flexão de número.
 
 ## Interface
 
-| Termo EN  | Tradução atual no pt-BR.json (exemplo de chave) | Termo de referência PT-BR | Proposta  | Status        |
-| --------- | ----------------------------------------------- | -------------------- | --------- | ------------- |
-| Install   | Instalar (`CPR.global.generic.install`)         | Instalar             | Instalar  | consistente   |
-| Ledger    | Abrir Registro (`CPR.ledger.ledgerOpen`)        | Registro             | Registro  | consistente   |
-| Mook      | Capanga (`TYPES.Actor.mook`)                    | NPC                  | Capanga   | decidido (D8) |
-| Container | Contêiner (`TYPES.Actor.container`)             | Contêiner            | Contêiner | consistente   |
+| Termo EN      | Tradução atual no pt-BR.json (exemplo de chave) | Termo de referência PT-BR | Proposta      | Status           |
+| ------------- | ----------------------------------------------- | -------------------- | ------------- | ---------------- |
+| Tokens        | Tokens (`CPR.migration.docType.tokens`)         | —                    | Tokens        | igual em PT-BR   |
+| Cyberpunk RED | Cyberpunk RED (`CPR.module.dsn.groupName`)      | —                    | Cyberpunk RED | manter em inglês |
+| Install       | Instalar (`CPR.global.generic.install`)         | Instalar             | Instalar      | consistente      |
+| Ledger        | Abrir Registro (`CPR.ledger.ledgerOpen`)        | Registro             | Registro      | consistente      |
+| Mook          | Capanga (`TYPES.Actor.mook`)                    | NPC                  | Capanga       | decidido (D8)    |
+| Container     | Contêiner (`TYPES.Actor.container`)             | Contêiner            | Contêiner     | consistente      |
 
 ## Decisões do dono (D8)
 
