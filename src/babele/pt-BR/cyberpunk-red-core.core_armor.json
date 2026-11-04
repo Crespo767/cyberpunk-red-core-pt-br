@@ -11,20 +11,20 @@
       "description": "<p>Requer um braço e tem PV reduzidos pelo dano.</p>"
     },
     "Flak (Body)": {
-      "name": "Armadura (corpo)",
+      "name": "Antiestilhaço (Corpo)",
       "description": "<p>Armadura chapada de metal para resistir aos golpes mais poderosos. -4 a REF, DES e MOVE.</p>"
     },
     "Flak (Head)": {
-      "name": "Armadura (cabeça)",
+      "name": "Antiestilhaço (Cabeça)",
       "description": "<p>Armadura chapada de metal para resistir aos acertos mais poderosos. -4 para REF, DES e MOVE.</p>"
     },
     "Heavy Armorjack (Body)": {
-      "name": "Colete Pesado",
-      "description": "<p>Versão mais pesada de um colete. -2 para REF, DES e MOVE.</p>"
+      "name": "Jaqueta Blindada Pesada (Corpo)",
+      "description": "<p>Versão mais pesada de uma jaqueta blindada. -2 em REF, DES e MOVE.</p>"
     },
     "Heavy Armorjack (Head)": {
-      "name": "Capacete Pesado",
-      "description": "<p>A versão mais pesada de um capacete. -2 para REF, DES e MOVE.</p>"
+      "name": "Jaqueta Blindada Pesada (Cabeça)",
+      "description": "<p>Versão mais pesada de uma jaqueta blindada para a cabeça. -2 em REF, DES e MOVE.</p>"
     },
     "Kevlar® (Body)": {
       "name": "Kevlar® (Corpo)",
@@ -39,24 +39,24 @@
       "description": "<p>Armadura de Couro Simples. Sem penalidade de armadura.</p>"
     },
     "Leathers (Head)": {
-      "name": "Couros (Cabeça)",
+      "name": "Couro (Cabeça)",
       "description": "<p>Capacete de Couro simples para sua cabeça. Sem penalidade de armadura.</p>"
     },
     "Light Armorjack (Body)": {
-      "name": "Colete Leve",
-      "description": "<p>Versão leve de um colete. Sem penalidade de armadura.</p>"
+      "name": "Jaqueta Blindada Leve (Corpo)",
+      "description": "<p>Versão leve de uma jaqueta blindada. Sem penalidade de armadura.</p>"
     },
     "Light Armorjack (Head)": {
-      "name": "Capacete Leve",
-      "description": "<p>Versão leve de um capacete. Sem penalização de armadura.</p>"
+      "name": "Jaqueta Blindada Leve (Cabeça)",
+      "description": "<p>Versão leve de uma jaqueta blindada para a cabeça. Sem penalidade de armadura.</p>"
     },
     "Medium Armorjack (Body)": {
-      "name": "Colete Médio",
-      "description": "<p>Versão média de um colete. -2 para REF, DES e MOVE.</p>"
+      "name": "Jaqueta Blindada Média (Corpo)",
+      "description": "<p>Versão média de uma jaqueta blindada. -2 em REF, DES e MOVE.</p>"
     },
     "Medium Armorjack (Head)": {
-      "name": "Capacete Médio (cabeça)",
-      "description": "<p>A versão média de um capacete. -2 para REF, DES e MOVE.</p>"
+      "name": "Jaqueta Blindada Média (Cabeça)",
+      "description": "<p>Versão média de uma jaqueta blindada para a cabeça. -2 em REF, DES e MOVE.</p>"
     },
     "Metalgear® (Body)": {
       "name": "Metalgear® (Corpo)",
