@@ -29,7 +29,7 @@ export default class RemoveInvalidUpgrates extends BaseMigrationScript {
                 ["ammo", "itemUpgrade"].includes(actorItem.type),
             );
             const gameItem = game.items.get(item)?.toObject();
-            const itemObject = actorData ? actorDataItem : gameItem;
+            const itemObject = actorDataItem || gameItem;
 
             return itemObject;
           })
