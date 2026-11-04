@@ -1,18 +1,13 @@
 const InitializeBabeleIntegration = () => {
   /**
-   * Babele Module Integration
+   * Configure translations when the Babele module initializes.
    * https://foundryvtt.com/packages/babele
    *
    * @public
    * @memberof hookEvents
    */
-  Hooks.on("init", () => {
-    if (
-      game.modules.get("babele") !== undefined &&
-      game.modules.get("babele")?.active
-    ) {
-      Babele.get().setSystemTranslationsDir("babele");
-    }
+  Hooks.once("babele.init", (babele) => {
+    babele.setSystemTranslationsDir("babele");
   });
 };
 
