@@ -12,17 +12,18 @@ export default class SkillTypeMigration extends BaseMigrationScript {
 
   async updateItem(doc) {
     const itemName = doc.name.toLowerCase();
+    const normalizedName = itemName.replaceAll(" ", "");
 
     // Set the skill type based on the name
     if (itemName.startsWith("language")) {
       doc.system.skillType = "language";
     } else if (itemName.startsWith("science")) {
       doc.system.skillType = "science";
-    } else if (itemName.startsWith("localexpert")) {
+    } else if (normalizedName.startsWith("localexpert")) {
       doc.system.skillType = "localExpert";
-    } else if (itemName.startsWith("martialart")) {
+    } else if (normalizedName.startsWith("martialart")) {
       doc.system.skillType = "martialArt";
-    } else if (itemName.startsWith("playinstrument")) {
+    } else if (normalizedName.startsWith("playinstrument")) {
       doc.system.skillType = "playInstrument";
     } else {
       doc.system.skillType = "generic";
