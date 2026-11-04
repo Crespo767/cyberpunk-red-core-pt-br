@@ -49,3 +49,26 @@ SANDBOX
 RELATÓRIO: git status, diff completo (arquivos novos inteiros), saídas das checagens e duas mensagens de commit em
 português (spec; migração).
 ```
+
+## Tarefa 7.2: release 0.93.0-ptbr.2
+
+```text
+Você é o executor do projeto Cyberpunk RED Core (Foundry v13, PT-BR), em C:\Users\heito\Documents\Cyberpunk RED - PTBR.
+Tarefa 7.2: preparar a versão 0.93.0-ptbr.2.
+
+1. src/system.json: "version": "0.93.0-ptbr.1" -> "0.93.0-ptbr.2". Nada mais.
+2. CHANGELOG.md: no topo, antes de "## Version 0.93.0-ptbr.1", a seção "## Version 0.93.0-ptbr.2" (inglês, mesmo
+   formato), com o que mudou desde a 0.93.0-ptbr.1 (use git log --oneline 0.93.0-ptbr.1..HEAD):
+   - Bug Fixes: Vampyres (Excellent Quality: +1 to attack, concealable); Yacht minimum rooms (4); register Babele
+     translations on the babele.init hook instead of the deprecated Babele.get.
+   - Action Needed / New Features (escolha a subseção adequada do padrão do arquivo): migration 049 repairs worlds
+     already migrated by the buggy 027, 031, 036, 041 and 047 migrations; data lost by 037 and 038 cannot be
+     restored.
+3. CHANGELOG.pt-BR.md: a mesma seção em PT-BR ("## Versão 0.93.0-ptbr.2"), antes de "## Versão 0.93.0-ptbr.1",
+   seguindo docs-ptbr/glossario-ptbr.md.
+4. Formate: npx prettier --write e npx markdownlint --fix nos dois changelogs; npx markdownlint com código 0. JSON
+   válido no system.json. UTF-8.
+
+SANDBOX: .git é somente leitura (sem git add/commit). Não altere outros arquivos.
+RELATÓRIO: git diff e duas mensagens de commit em português (versão; changelogs).
+```
