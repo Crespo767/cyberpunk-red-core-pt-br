@@ -102,3 +102,10 @@ commit em português (teste; código; package.json) — ou duas, se o package.js
 
 - Commits do teste (`forkManifest`) e do script `npm run package:ptbr`. O teste falha sem o código; `test:unit` 175/175; lint 0.
 - `npm run package:ptbr` gera `dist/cyberpunk-red-core-0.93.0-ptbr.1.zip` (system.json na raiz, 1969 entradas) e `dist/system.json`, com `manifest` e `download` do GitHub Releases. Para publicar: criar o repositório, criar o release `0.93.0-ptbr.1` e anexar os dois arquivos.
+
+## Publicação (diretor, 2026-11-04, autorizada pelo dono)
+
+- Antes de publicar, a pedido do dono, o histórico foi reescrito só em `docs-ptbr/` e nas mensagens de commit para tirar as menções à tradução não oficial do livro e os caminhos locais (`%USERPROFILE%`, `<pasta dos livros>`). Código idêntico; backup local no branch `backup/antes-da-limpeza` (não publicado).
+- README com aviso de fork modificado (GPLv3, seção 5a).
+- Repositório público `Crespo767/cyberpunk-red-core-pt-br`, branch `main`; release `0.93.0-ptbr.1` com `cyberpunk-red-core-0.93.0-ptbr.1.zip` e `system.json`.
+- Verificado: o manifesto em `releases/latest/download/system.json` responde 200; o `download` dele baixa o zip, idêntico ao local, com versão `0.93.0-ptbr.1`.
