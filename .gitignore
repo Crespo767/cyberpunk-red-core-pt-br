@@ -50,3 +50,23 @@ src/packs.*
 .pi-subagents
 # Temp plan for mapping out needed tests
 .claude/skills/playwright-sheet-plan/*
+
+# Fork PT-BR: infraestrutura do projeto original que não é publicada neste repositório
+# (CI do GitLab, Crowdin, NixOS, agentes de IA e políticas de contribuição do upstream).
+# Os arquivos continuam no disco de quem já os tem; não são usados pelo build nem pelos testes.
+/.gitlab-ci.yml
+/crowdin.yml
+/Makefile
+/shell.nix
+/.envrc
+/.agents
+/AGENTS.md
+/AI_POLICY.md
+/.mcp.json
+/pyproject.toml
+/.shellcheckrc
+/.v8rrc.yaml
+/.yamllint.yaml
+/.fallowrc.json
+/CLAUDE.md
+/.claude/
