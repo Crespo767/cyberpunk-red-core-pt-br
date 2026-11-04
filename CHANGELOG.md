@@ -2,6 +2,14 @@
 
 # Changelog
 
+## Version 1.0.3
+
+### Bug Fixes
+
+- The Flak and Armor programs no longer share the Brazilian Portuguese name `Armadura`: Flak keeps its original name
+- Nomad Leathers clothing follows the other styles in Brazilian Portuguese (`Jaqueta Couro Nômade`)
+- The migration wizard no longer shows the raw `CPR.migration.app.error` key
+
 ## Version 1.0.2
 
 ### Bug Fixes

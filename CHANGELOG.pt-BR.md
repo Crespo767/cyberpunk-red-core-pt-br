@@ -2,6 +2,14 @@
 
 # Changelog
 
+## Versão 1.0.3
+
+### Correções de bugs
+
+- Os programas Flak e Armor não dividem mais o nome `Armadura`: Flak mantém o nome original
+- As roupas Nomad Leathers seguem o padrão dos outros estilos (`Jaqueta Couro Nômade`)
+- O assistente de migração não mostra mais a chave crua `CPR.migration.app.error`
+
 ## Versão 1.0.2
 
 ### Correções de bugs
