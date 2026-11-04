@@ -10,6 +10,7 @@
 - Renomear as pastas de compêndio para `Cyberpunk RED: Básico` e `Cyberpunk RED: Outros`
 - Exigir o módulo Babele no manifesto de release, para o Foundry oferecer instalá-lo junto com o sistema
 - Recomendar o módulo `pt-BR` de tradução do core, que traduz a interface do próprio Foundry
+- Corrigir nomes dos compêndios em PT-BR: armaduras (Jaqueta Blindada, Antiestilhaço, Couro), traduções literais erradas de cibernética e equipamento, e os rótulos dos compêndios de Habilidades, Registro de Alterações e Cenas
 
 ## Versão 0.93.0-ptbr.3
 

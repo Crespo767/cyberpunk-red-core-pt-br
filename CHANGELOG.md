@@ -10,6 +10,7 @@
 - Rename the compendium folders to `Cyberpunk RED: Básico` and `Cyberpunk RED: Outros`
 - Require the Babele module in the release manifest, so Foundry offers to install it with the system
 - Recommend the `pt-BR` core translation module, which translates the Foundry interface itself
+- Fix Brazilian Portuguese compendium names: armors (Jaqueta Blindada, Antiestilhaço, Couro), cyberware and gear literal mistranslations, and the Skills, Changelog and Scenes compendium labels
 
 ## Version 0.93.0-ptbr.3
 
