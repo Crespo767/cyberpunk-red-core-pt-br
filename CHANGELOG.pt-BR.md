@@ -2,6 +2,12 @@
 
 # Changelog
 
+## Versão 1.0.2
+
+### Correções de bugs
+
+- Mundos criados do zero agora gravam a versão dos dados, então as migrações novas rodam neles. Mundos já existentes rodam a migração 050 uma vez no próximo carregamento
+
 ## Versão 1.0.1
 
 ### Novidades

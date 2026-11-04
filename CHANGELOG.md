@@ -2,6 +2,12 @@
 
 # Changelog
 
+## Version 1.0.2
+
+### Bug Fixes
+
+- Worlds created from scratch now record their data model version, so new migrations run on them. Existing worlds run migration 050 once on the next load
+
 ## Version 1.0.1
 
 ### New Features
