@@ -55,7 +55,7 @@ export default class RemoveUnusedInstallFlag extends BaseMigrationScript {
         BaseMigrationScript.safeDelete(itemData, `flags.cprInstallTree`);
 
         // Recurse into nested cprInstallTree if present.
-        const childTree = itemData.flags?.cprInstallTree;
+        const childTree = ContainerUtils.getInstallTreeFlag(itemData);
         if (Array.isArray(childTree) && childTree.length > 0) {
           deleteFlag(childTree);
         }
