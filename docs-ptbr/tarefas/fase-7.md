@@ -79,3 +79,32 @@ RELATÓRIO: git diff e duas mensagens de commit em português (versão; changelo
 - Tarefa 7.2: versão `0.93.0-ptbr.2` e changelogs em inglês e PT-BR (`e23129a`, `5ad2b0b`).
 - Verificação: `test:unit` 177/177; lint 0; `test:playwright` **460/460 (59 min)**.
 - Publicação: release `0.93.0-ptbr.2` marcado como mais recente, com zip e `system.json`. O manifesto `releases/latest/download/system.json` já responde com `0.93.0-ptbr.2` e o zip baixado é idêntico ao local. Pela regra de versões do Foundry, `0.93.0-ptbr.2` é mais nova que `0.93.0-ptbr.1`, então quem instalou a primeira recebe a atualização.
+
+## Tarefa 7.3: compatibilidade a partir do Foundry 13.350
+
+Pedido do dono: o sistema deve funcionar sem erros a partir do 13.350. 260 entradas de `src/packs/` têm
+`_stats.coreVersion: "13.351"` (salvas pelo upstream numa build mais nova); no 13.350 o Foundry registra 71 erros "Documents
+from a core version newer than the running version cannot be migrated". O formato dos dados não muda entre builds do v13.
+
+```text
+Você é o executor do projeto Cyberpunk RED Core (Foundry v13, PT-BR), em %USERPROFILE%\Documents\Cyberpunk RED - PTBR.
+Tarefa 7.3: compatibilidade a partir do Foundry 13.350. NUNCA edite gulp/.
+
+1. Teste primeiro (o diretor commita antes do resto): tests/unit/pack-core-version.test.js (Vitest, sem Foundry). Ele lê
+   src/system.json (compatibility.minimum) e todos os YAML de src/packs/ (recursivo) e falha se algum
+   _stats.coreVersion for mais novo que o minimum. Compare versões como o Foundry (partes separadas por ".", numéricas
+   quando possível; "13" não é mais novo que "13.350"). Liste no erro os arquivos culpados. Use dependências já
+   existentes (veja package.json; há parser de YAML disponível? se não houver, extraia o campo com regex simples e
+   comente isso no teste).
+2. Dados: em src/packs/**/*.yaml, troque coreVersion: "13.351" por coreVersion: "13.350". Só esse campo; nada mais.
+3. src/system.json: compatibility.minimum de 13 para "13.350". Não altere verified nem maximum.
+4. Versão 0.93.0-ptbr.3: src/system.json version; seção "## Version 0.93.0-ptbr.3" no topo do CHANGELOG.md (Bug Fixes:
+   compendium documents no longer claim core 13.351, so Foundry 13.350 loads them without migration errors; minimum
+   Foundry version is now 13.350) e a mesma em PT-BR ("## Versão 0.93.0-ptbr.3") no CHANGELOG.pt-BR.md. Formate os
+   changelogs com prettier e markdownlint (código 0).
+
+SANDBOX: .git é somente leitura (sem git add/commit). Não rode npm run test:unit (spawn EPERM): use
+npx vitest run --pool=threads tests/unit/pack-core-version.test.js. Rode npm run lint e npx prettier --check no teste.
+RELATÓRIO: git status, diff do system.json e dos changelogs, contagem de YAML alterados, teste inteiro, saídas das
+checagens e mensagens de commit em português (teste; marcas dos compêndios; minimum; versão; changelogs).
+```
