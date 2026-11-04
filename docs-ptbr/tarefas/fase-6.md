@@ -48,3 +48,52 @@ RELATÓRIO: git diff dos dois arquivos, códigos de saída e duas mensagens de c
   no Windows.
 - O `CHANGELOG.pt-BR.md` não foi alterado (era do Crowdin; sem Crowdin pela D4). Pendente para o dono decidir se o
   fork mantém um changelog em PT-BR.
+
+## Correção do diagnóstico do manifesto (diretor, 2026-11-04)
+
+O `gulp/config.mjs` (vendorizado) sempre sobrescreve `url`, `manifest` e `download` no build com URLs do GitLab
+montadas a partir de variáveis do CI. Sem CI, o pacote sai com `example.com`, então não há risco de o Foundry trocar a
+tradução pela versão oficial, mas também não há atualização do fork. Pela regra de versões do Foundry
+(`foundry.utils.isNewerVersion`, comparação por partes separadas por "."), `0.93.0` não é mais nova que
+`0.93.0-ptbr.1`, mas `0.93.1` seria. Decisão D9: GitHub Releases em `Crespo767/cyberpunk-red-core-pt-br`.
+
+## Tarefa 6.2: script de empacotamento do fork
+
+```text
+Você é o executor do projeto Cyberpunk RED Core (Foundry v13, PT-BR), em %USERPROFILE%\Documents\Cyberpunk RED - PTBR.
+Tarefa 6.2. Leia CLAUDE.md, a decisão D9 em docs-ptbr/plano-migracao-v13-ptbr.md e a seção "Correção do diagnóstico
+do manifesto" em docs-ptbr/tarefas/fase-6.md. NUNCA edite gulp/ (vendorizado).
+
+OBJETIVO
+Um comando (npm run package:ptbr) que gera em dist/ o pacote de release do fork com as URLs do GitHub.
+
+PEDIDO
+1. tools/ptbr/manifest.mjs: função pura e exportada, ex.: forkManifest(manifest, { owner, repo }), que devolve uma
+   cópia do manifesto com:
+     url      = https://github.com/<owner>/<repo>
+     manifest = https://github.com/<owner>/<repo>/releases/latest/download/system.json
+     download = https://github.com/<owner>/<repo>/releases/download/<manifest.version>/<manifest.id>-<manifest.version>.zip
+   e sem alterar nenhum outro campo. Lança erro se version ou id estiverem vazios ou forem "DUMMY_VALUE".
+   Constantes do fork no mesmo arquivo: owner "Crespo767", repo "cyberpunk-red-core-pt-br".
+2. tools/ptbr/package.mjs (Node ESM, sem dependências novas; adm-zip já é devDependency):
+   a. roda "npx gulp build" com FOUNDRY_DATA_PATH apontando para dist/stage (o build vai para
+      dist/stage/Data/systems/<id>), sem tocar no foundryconfig.json;
+   b. lê o system.json gerado, aplica forkManifest e grava de volta;
+   c. grava dist/system.json (cópia do manifesto final, para anexar ao release);
+   d. gera dist/<id>-<version>.zip com o CONTEÚDO da pasta do sistema na raiz do zip (system.json na raiz, sem pasta
+      intermediária);
+   e. imprime caminho do zip, versão, url, manifest e download.
+3. package.json: script "package:ptbr": "node tools/ptbr/package.mjs"; inclua tools/ptbr no script "lint" (ao lado de
+   tools/playwright). Não altere mais nada no package.json nem no package-lock.json.
+4. Testes primeiro: tests/unit/ptbr-manifest.test.js cobrindo forkManifest (URLs certas; outros campos intactos; não
+   muta a entrada; erro com version "DUMMY_VALUE" ou vazia). O diretor commita o teste antes do código.
+
+SANDBOX
+- .git é somente leitura (sem git add/commit). Não rode npm run package:ptbr nem npm run test:unit (spawn EPERM): use
+  npx vitest run --pool=threads tests/unit/ptbr-manifest.test.js. Rode npm run lint e npx prettier --check nos
+  arquivos novos.
+- Não crie arquivos fora de tools/ptbr/, tests/unit/ptbr-manifest.test.js e package.json.
+
+RELATÓRIO: git status, diff completo (arquivos novos inteiros), saídas de vitest/lint/prettier e três mensagens de
+commit em português (teste; código; package.json) — ou duas, se o package.json fizer sentido junto com o código.
+```
