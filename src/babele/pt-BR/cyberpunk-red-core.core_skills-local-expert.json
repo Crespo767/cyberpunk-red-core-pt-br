@@ -1,61 +1,61 @@
 {
-  "label": "Skills (Local Expert)",
+  "label": "Habilidades (Especialista Local)",
   "mapping": {},
   "entries": {
     "Local Expert (Badlands)": {
-      "name": "Local Expert (Badlands)",
+      "name": "Especialista Local (Badlands)",
       "description": ""
     },
     "Local Expert (Little China)": {
-      "name": "Local Expert (Little China)",
+      "name": "Especialista Local (Little China)",
       "description": ""
     },
     "Local Expert (Little Europe)": {
-      "name": "Local Expert (Little Europe)",
+      "name": "Especialista Local (Little Europe)",
       "description": ""
     },
     "Local Expert (Morro Rock)": {
-      "name": "Local Expert (Morro Rock)",
+      "name": "Especialista Local (Morro Rock)",
       "description": ""
     },
     "Local Expert (New Westbrook)": {
-      "name": "Local Expert (New Westbrook)",
+      "name": "Especialista Local (New Westbrook)",
       "description": ""
     },
     "Local Expert (Norcal Military Base)": {
-      "name": "Local Expert (Norcal Military Base)",
+      "name": "Especialista Local (Base Militar de Norcal)",
       "description": ""
     },
     "Local Expert (Old Combat Zone)": {
-      "name": "Local Expert (Old Combat Zone)",
+      "name": "Especialista Local (Antiga Zona de Combate)",
       "description": ""
     },
     "Local Expert (Old Corp Center)": {
-      "name": "Local Expert (Old Corp Center)",
+      "name": "Especialista Local (Antigo Centro Corporativo)",
       "description": ""
     },
     "Local Expert (Old Japan Town)": {
-      "name": "Local Expert (Old Japan Town)",
+      "name": "Especialista Local (Old Japan Town)",
       "description": ""
     },
     "Local Expert (South Night City)": {
-      "name": "Local Expert (South Night City)",
+      "name": "Especialista Local (Sul de Night City)",
       "description": ""
     },
     "Local Expert (The Glen)": {
-      "name": "Local Expert (The Glen)",
+      "name": "Especialista Local (The Glen)",
       "description": ""
     },
     "Local Expert (University District)": {
-      "name": "Local Expert (University District)",
+      "name": "Especialista Local (Distrito Universitário)",
       "description": ""
     },
     "Local Expert (Upper Marina)": {
-      "name": "Local Expert (Upper Marina)",
+      "name": "Especialista Local (Upper Marina)",
       "description": ""
     },
     "Local Expert (Watson)": {
-      "name": "Local Expert (Watson)",
+      "name": "Especialista Local (Watson)",
       "description": ""
     }
   }

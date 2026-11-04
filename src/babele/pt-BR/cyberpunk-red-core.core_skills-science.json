@@ -1,37 +1,37 @@
 {
-  "label": "Skills (Science)",
+  "label": "Habilidades (Ciência)",
   "mapping": {},
   "entries": {
     "Science (Anthropology)": {
-      "name": "Science (Anthropology)",
+      "name": "Ciência (Antropologia)",
       "description": ""
     },
     "Science (Biology)": {
-      "name": "Science (Biology)",
+      "name": "Ciência (Biologia)",
       "description": ""
     },
     "Science (Chemistry)": {
-      "name": "Science (Chemistry)",
+      "name": "Ciência (Química)",
       "description": ""
     },
     "Science (Geology)": {
-      "name": "Science (Geology)",
+      "name": "Ciência (Geologia)",
       "description": ""
     },
     "Science (History)": {
-      "name": "Science (History)",
+      "name": "Ciência (História)",
       "description": ""
     },
     "Science (Mathematics)": {
-      "name": "Science (Mathematics)",
+      "name": "Ciência (Matemática)",
       "description": ""
     },
     "Science (Physics)": {
-      "name": "Science (Physics)",
+      "name": "Ciência (Física)",
       "description": ""
     },
     "Science (Zoology)": {
-      "name": "Science (Zoology)",
+      "name": "Ciência (Zoologia)",
       "description": ""
     }
   }

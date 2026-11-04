@@ -1,21 +1,21 @@
 {
-  "label": "Skills (Martial Arts)",
+  "label": "Habilidades (Artes Marciais)",
   "mapping": {},
   "entries": {
     "Martial Arts (Aikido)": {
-      "name": "Martial Arts (Aikido)",
+      "name": "Artes Marciais (Aikido)",
       "description": ""
     },
     "Martial Arts (Judo)": {
-      "name": "Martial Arts (Judo)",
+      "name": "Artes Marciais (Judô)",
       "description": ""
     },
     "Martial Arts (Karate)": {
-      "name": "Martial Arts (Karate)",
+      "name": "Artes Marciais (Caratê)",
       "description": ""
     },
     "Martial Arts (Taekwondo)": {
-      "name": "Martial Arts (Taekwondo)",
+      "name": "Artes Marciais (Taekwondo)",
       "description": ""
     }
   }
