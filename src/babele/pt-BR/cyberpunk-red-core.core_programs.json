@@ -19,7 +19,7 @@
       "description": "<p>+2 para Capa verificações enquanto Rezzed.</p>"
     },
     "Flak": {
-      "name": "Armadura",
+      "name": "Flak",
       "description": "<p>Os ataques de não Black ICE contra você são reduzidos a 0 enquanto Carregado. Apenas 1 cópia pode ser Carregada de cada vez. Cada cópia tem 1 uso por Invasão.</p>"
     },
     "Hellbolt": {
