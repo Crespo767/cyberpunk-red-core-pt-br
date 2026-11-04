@@ -2,6 +2,13 @@
 
 # Changelog
 
+## Versão 0.93.0-ptbr.3
+
+### Correções de bugs
+
+- Documentos dos compêndios não indicam mais o core 13.351, permitindo que o Foundry 13.350 os carregue sem erros de migração
+- A versão mínima do Foundry agora é 13.350
+
 ## Versão 0.93.0-ptbr.2
 
 ### Novidades

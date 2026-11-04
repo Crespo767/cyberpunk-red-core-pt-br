@@ -2,6 +2,13 @@
 
 # Changelog
 
+## Version 0.93.0-ptbr.3
+
+### Bug Fixes
+
+- Compendium documents no longer claim core 13.351, so Foundry 13.350 loads them without migration errors
+- The minimum Foundry version is now 13.350
+
 ## Version 0.93.0-ptbr.2
 
 ### New Features
