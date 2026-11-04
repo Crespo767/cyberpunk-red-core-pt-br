@@ -26,7 +26,7 @@ Limites do sandbox verificados em 2026-11-03:
 - `npx vitest run --pool=threads` roda, exceto `tests/unit/playwright-harness-config.test.js`, que usa
   `process.chdir()` (não suportado em worker threads). O diretor roda esse arquivo e o Playwright fora do sandbox.
 - Resultado da Tarefa 1.1 (verificado pelo diretor fora do sandbox): build 0, lint 0 (6 avisos de TODO do upstream),
-  prettier 0, stylelint 0 depois do commit `47deae7`, `test:unit` 164/164.
+  prettier 0, stylelint 0 depois do commit `4a8aef8`, `test:unit` 164/164.
 
 ## Licença do Foundry (antes da Tarefa 1.2)
 
@@ -169,7 +169,7 @@ RELATÓRIO (devolva exatamente isto)
 
 ### Resultado da Tarefa 1.2 (diretor, 2026-11-03)
 
-- Commits `d2caa28` (testes) e `d9c216c` (mudança). Os 3 testes novos falham sem a mudança; com ela, `test:unit`
+- Commits `6551140` (testes) e `00596e0` (mudança). Os 3 testes novos falham sem a mudança; com ela, `test:unit`
   167/167. Lint e prettier com código 0.
 - `FOUNDRY_NODE_PATH` com o executável do Foundry **não funciona**: com `ELECTRON_RUN_AS_NODE=1`, o Foundry 13.350 para
   na inicialização com `TypeError ... Cannot read properties of undefined (reading 'exports')` em
@@ -190,7 +190,7 @@ tools/playwright/bin/generate-schemas.mjs, tests/unit/playwright-harness-config.
 tests/unit/playwright-foundry-flows.test.js.
 
 CONTEXTO (verificado pelo diretor)
-- O commit d9c216c criou o campo browserChannel em resolveHarnessConfig (PLAYWRIGHT_BROWSER_CHANNEL) e o usa em
+- O commit 00596e0 criou o campo browserChannel em resolveHarnessConfig (PLAYWRIGHT_BROWSER_CHANNEL) e o usa em
   playwright.config.mjs. Mas o setup global e os fluxos abrem o navegador direto e ignoram o canal:
     tests/playwright/setup.mjs:41          chromium.launch({ args: ["--no-sandbox"] })
     tools/playwright/flows/foundry-flows.mjs:77   chromium.launch(mode === "test" ? { args: [...] } : undefined)
@@ -234,7 +234,7 @@ RELATÓRIO (devolva exatamente isto)
 
 ### Resultado da Tarefa 1.2b e da suíte Playwright (diretor, 2026-11-03)
 
-- Commits `f49f1fe` (testes) e `3b678aa` (mudança). Os 5 testes novos falham sem a mudança; com ela, `test:unit`
+- Commits `8ee8e9b` (testes) e `08b0cbd` (mudança). Os 5 testes novos falham sem a mudança; com ela, `test:unit`
   172/172. Lint e prettier com código 0.
 - `npm run test:playwright` no Windows, com `PLAYWRIGHT_BROWSER_CHANNEL=chrome` e o Node 24.21.0 do sistema (sem
   `FOUNDRY_NODE_PATH`): **413 passed (55,9 min)**, 0 falhas, 0 flaky. Nenhuma falha a classificar em (W), (F) ou (I).

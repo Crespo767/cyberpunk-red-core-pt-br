@@ -12,13 +12,13 @@ Fora de escopo nesta etapa: reescrever o livro, publicar o sistema, ou alterar o
 
 ## 2. Caminhos
 
-| Item                         | Caminho                                                                              | Observação                                                                                                                   |
-| ---------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| Item                         | Caminho                                                                             | Observação                                                                                                                   |
+| ---------------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | Código-fonte (dev)           | `%USERPROFILE%\Downloads\fvtt-cyberpunk-red-core-dev\fvtt-cyberpunk-red-core-dev`   | Download do GitLab (branch `dev`). **Não é repositório git** (não há `.git`).                                                |
 | Sistema instalado no Foundry | `%USERPROFILE%\Documents\FoundryVTT\Data\systems\cyberpunk-red-core`                | Versão **v0.92.4**, compatibilidade **12**. Não sobrescrever antes de o build passar.                                        |
 | Foundry VTT (aplicativo)     | `%USERPROFILE%\Documents\FoundryVTT\App`                                            | Versão 13.350.0, Build 350.                                                                                                  |
 | Dados do Foundry             | `%USERPROFILE%\Documents\FoundryVTT\Data`                                           | Mundos reais existentes: `teste`, `teste-claude`, `curse-of-strahd`, `cos-shadowdark-testes` e outros. Não usar para testes. |
-| Livros                       | `<pasta dos livros>`                                            | Veja a seção 6.                                                                                                              |
+| Livros                       | `<pasta dos livros>`                                                                | Veja a seção 6.                                                                                                              |
 | Este documento               | `%USERPROFILE%\Documents\Cyberpunk RED - PTBR\docs-ptbr\plano-migracao-v13-ptbr.md` | Ver D7.                                                                                                                      |
 | Projeto de trabalho          | `%USERPROFILE%\Documents\Cyberpunk RED - PTBR\`                                     | Repositório git (branch `main`).                                                                                             |
 | Dados de teste do Foundry    | `%USERPROFILE%\Documents\FoundryVTT-test-data`                                      | `dataPath` do `foundryconfig.json`.                                                                                          |
@@ -103,11 +103,11 @@ Cada fase tem um critério de aceite. O diretor Opus só aprova a fase quando o 
 - `npm install`.
 - **Aceite:** `npm install` sem erro; `git status` limpo no commit base.
 - **Status: CONCLUÍDA (2026-11-03).**
-  - Commit base `c15bb95`: `git archive HEAD` comparado com o download por `diff -rq`, sem diferença (2669 arquivos).
+  - Commit base `be1dd86`: `git archive HEAD` comparado com o download por `diff -rq`, sem diferença (2669 arquivos).
     `core.autocrlf=false` no repositório, para não converter quebras de linha. `.vscode/extensions.json` e
     `src/icons/compendium/gear/foodstick.svg` foram incluídos com `git add -f`, porque o `.gitignore` do upstream os
     ignora (`.vscode/` e `**/foo*`).
-  - Commit `c0878df`: sincroniza `package-lock.json` com `package.json` (`@playwright/test` fixo em `1.61.1`); nenhuma
+  - Commit `b96c594`: sincroniza `package-lock.json` com `package.json` (`@playwright/test` fixo em `1.61.1`); nenhuma
     versão instalada muda.
   - Node v24.21.0, npm 11.19.0. `npm install` com código 0. O npm não rodou os scripts de instalação de `classic-level` e
     `unrs-resolver`; os dois carregam com os binários pré-compilados (testado gravar/ler LevelDB com `classic-level`

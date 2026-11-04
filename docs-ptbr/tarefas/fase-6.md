@@ -21,7 +21,7 @@ Tarefa 6.1 (fechamento). Leia CLAUDE.md, o topo de CHANGELOG.md e docs-ptbr/plan
 1. src/system.json: troque "version": "DUMMY_VALUE" por "version": "0.93.0-ptbr.1". Não altere outros campos.
 2. CHANGELOG.md (em inglês, no mesmo estilo e formato das seções existentes): acrescente no topo, antes de
    "## Version 0.93", uma seção "## Version 0.93.0-ptbr.1" com subseções no padrão do arquivo, descrevendo o que este
-   fork mudou em relação ao 0.93 do upstream. Use o git log (git log --oneline c15bb95..HEAD) e os documentos em
+   fork mudou em relação ao 0.93 do upstream. Use o git log (git log --oneline be1dd86..HEAD) e os documentos em
    docs-ptbr/ como fonte. Itens esperados:
    - Brazilian Portuguese: interface translation completed (src/lang/pt-BR.json), terminology decisions (role names
      kept in English, REZ, Mook = Capanga), Babele compendium translations completed and corrected;
@@ -40,7 +40,7 @@ RELATÓRIO: git diff dos dois arquivos, códigos de saída e duas mensagens de c
 
 ## Resultado da Fase 6 (diretor, 2026-11-04)
 
-- Commits `1f686eb` (versão `0.93.0-ptbr.1` no `src/system.json`) e `d6bb4bd` (seção 0.93.0-ptbr.1 no `CHANGELOG.md`).
+- Commits `8993b79` (versão `0.93.0-ptbr.1` no `src/system.json`) e `f172d22` (seção 0.93.0-ptbr.1 no `CHANGELOG.md`).
 - Build: `npx gulp build` 0; manifesto gerado com versão `0.93.0-ptbr.1` e compatibilidade 13/13/13.
 - Pacote: `dist/cyberpunk-red-core-0.93.0-ptbr.1.zip` (62 MB, 1969 entradas, inclui `lang/pt-BR.json` e os arquivos
   Babele PT-BR). `dist/` fica fora do git. Não instalado no Foundry real.

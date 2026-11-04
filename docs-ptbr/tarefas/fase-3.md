@@ -156,12 +156,12 @@ RELATÓRIO (devolva exatamente isto)
 
 ## Resultado da Fase 3 (diretor, 2026-11-04)
 
-- Tarefa 3.1: rascunho do glossário (`1d34cee`). Tarefa 3.2: glossário final com a D8 (`7849032`) e 22 valores
-  existentes alinhados à D8 (`1c8cb1b`).
+- Tarefa 3.1: rascunho do glossário (`885023c`). Tarefa 3.2: glossário final com a D8 (`e53d951`) e 22 valores
+  existentes alinhados à D8 (`cda11e1`).
 - Tarefa 3.3: 5 lotes (A a E) em paralelo, cada um num patch em `tmp-traducao/`, validados e aplicados pelo diretor.
   O validador conferiu, em todas as 667 chaves, placeholders, tags HTML, espaços nas pontas e "??": 0 problemas.
-  Commit `f673ed4` (623 valores traduzidos). Lote Z: 3 erros de sentido corrigidos (`0c057d8`). Ajustes finais:
-  SDP padronizado como "PV Estrutural" (`29bf902`) e glossário completo (`c27dca2`).
+  Commit `3e79e36` (623 valores traduzidos). Lote Z: 3 erros de sentido corrigidos (`7255ef6`). Ajustes finais:
+  SDP padronizado como "PV Estrutural" (`e5378e1`) e glossário completo (`19b7d56`).
 - Estado final: 1426 chaves; 41 valores iguais ao inglês, todos listados no glossário (siglas, nomes de papéis,
   nomes próprios, Base/Total/Mod/Tokens).
 - Validação: `npm run prettier` 0; `test:unit` 172/172; mundo novo no Foundry 13.350 com idioma PT-BR: fichas de

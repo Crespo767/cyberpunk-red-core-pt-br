@@ -85,7 +85,7 @@ Regras específicas por lote (o diretor insere em `<REGRAS_DO_LOTE>`):
 
 ## Resultado da Tarefa 4.1 (diretor, 2026-11-04)
 
-- Commits `eab2819` (A), `ce9ddc6` (B), `211d25e` (C), `f230090` (D) e `acea622` (E). Strings iguais ao `en`: de 460
+- Commits `88ae3b1` (A), `3379458` (B), `9039e45` (C), `d715f44` (D) e `8725ef4` (E). Strings iguais ao `en`: de 460
   para 176 (sobram números e "N/A" das tabelas DV, nomes próprios das tabelas NET, papéis em inglês e marcas).
 - Checagem do diretor: estrutura igual ao HEAD; links `@UUID`/`@Compendium` preservados; sem "??". As 2 tabelas de
   autofire terminam em " (Autofire)"; nenhuma arma com `dvTable` sem tabela correspondente.
@@ -130,7 +130,7 @@ RELATÓRIO
 
 ## Resultado da Fase 4 (diretor, 2026-11-04)
 
-- Tarefa 4.2: commit `70c4176`. 162 descrições antigas em inglês traduzidas a partir do `en` atual. Detecção do diretor
+- Tarefa 4.2: commit `5080e43`. 162 descrições antigas em inglês traduzidas a partir do `en` atual. Detecção do diretor
   por igualdade com o `en` e por sobreposição de palavras (>= 60%); restam só nomes próprios.
 - Tarefa 4.3: commit da padronização de nomes (qualidade "(Inferior)"/"(Excelente)", "Estrutura Linear β/∑", "Taco com
   Pregos" e erros de tradução automática em roupas e cibernética).

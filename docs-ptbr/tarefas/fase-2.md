@@ -124,9 +124,9 @@ RELATÓRIO (devolva exatamente isto)
 
 ## Resultado da Fase 2 (diretor, 2026-11-03)
 
-- Tarefa 2.0: spec `902d344` (3 falhas sem a correção) e correção `e2af96d` (`DragDrop` do namespace). Spec novo 3/3;
+- Tarefa 2.0: spec `db16b2a` (3 falhas sem a correção) e correção `7f6a67c` (`DragDrop` do namespace). Spec novo 3/3;
   specs de atores com arrastar e soltar 118/118.
-- Tarefa 2.1: commits `d4af574` (lote A), `d4f8c6b` (B), `191314a` (C) e `fd2ed1e` (D). 20 specs novos: **30 passed,
+- Tarefa 2.1: commits `d82a6e8` (lote A), `fdd454c` (B), `208c4e2` (C) e `57b27a1` (D). 20 specs novos: **30 passed,
   7 skipped** (`test.fixme`). Lint e prettier com código 0.
 - Na revisão: o spec da 030 tinha nomes não-ASCII perdidos na gravação do sandbox (corrigido com escapes `\u`); o
   `fixme` da 034 foi removido, porque a remoção da flag antiga é da 041 por design.
@@ -195,7 +195,7 @@ RELATÓRIO (devolva exatamente isto)
 
 ## Resultado da Tarefa 2.2 (diretor, 2026-11-03)
 
-- 14 commits, de `e60918a` a `50a98ed`: para cada migração (027, 031, 036, 037, 038, 041, 047), o spec com o teste
+- 14 commits, de `6301cd0` a `fb34720`: para cada migração (027, 031, 036, 037, 038, 041, 047), o spec com o teste
   ativado e depois a correção no script.
 - Prova: com só os specs, 7 failed e 10 passed (exatamente os testes ativados); com as correções, 17 passed.
 - Regressão: lint e prettier com código 0; `test:unit` 172/172; `npm run test:playwright` completo **453 passed
