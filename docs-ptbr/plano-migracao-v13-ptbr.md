@@ -188,6 +188,11 @@ Respostas do dono (2026-11-03) e o que falta.
 - **D7. Pasta dos documentos do projeto. RESOLVIDA (2026-11-03): `docs-ptbr/`.** O `.gitignore` do upstream ignora
   `docs/`, que é a saída do jsdoc (`npm run api-docs`, ver `jsdoc.json`). Os documentos deste projeto (plano, glossário,
   relatório de cobertura) ficam em `docs-ptbr/`, que é versionada e não se mistura com a documentação gerada.
+- **D8. Terminologia PT-BR. RESOLVIDA (2026-11-03).** Papéis em inglês, como o livro (Netrunner, Fixer, Rockerboy,
+  Medtech, Lawman, Media, Tech, Solo, Nomad, Exec). Atributos com as siglas atuais do sistema (INT, REF, DES, TECH,
+  FRIEZA, VONT, SORTE, MOVE, CORPO, EMP; "LUCK (Max)" passa a "SORTE (Máx.)" por consistência). Siglas de regras do sistema (PP, PV, VD, ATQ, VEL, Cadência de Tiro), exceto
+  REZ, que fica REZ (hoje está como "RAM"). Mook = Capanga. Nas demais divergências vale o termo do sistema, salvo erro
+  claro de sentido.
 
 ## 8. Divisão de papéis (diretor e executor)
 

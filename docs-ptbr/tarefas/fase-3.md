@@ -62,3 +62,94 @@ RELATÓRIO (devolva exatamente isto)
 3. Códigos de saída de prettier e markdownlint e o resultado de uma busca por "??" no glossário.
 4. Uma mensagem de commit em português.
 ```
+
+## Decisão do dono (D8, 2026-11-03)
+
+Papéis em inglês; siglas de atributos do sistema; siglas de regras do sistema, exceto REZ, que fica REZ; Mook =
+Capanga. Nas demais divergências vale o termo do sistema, salvo erro claro de sentido. Texto completo no plano, D8.
+
+## Tarefa 3.2: glossário final e correção das traduções que contrariam a D8
+
+```text
+Você é o executor do projeto de migração do Cyberpunk RED Core para Foundry VTT v13 com tradução PT-BR. Trabalhe só em
+%USERPROFILE%\Documents\Cyberpunk RED - PTBR (branch main). Leia docs-ptbr/plano-migracao-v13-ptbr.md (decisão D8) e
+docs-ptbr/glossario-ptbr.md (rascunho que você fez).
+
+DECISÕES DO DONO (D8)
+- Papéis em inglês, como o livro: Exec, Fixer, Lawman, Media, Medtech, Netrunner, Nomad, Rockerboy, Solo, Tech.
+- Atributos: siglas atuais do sistema (INT, REF, DES, TECH, FRIEZA, VONT, SORTE, MOVE, CORPO, EMP). "LUCK (Max)" e
+  "EMP (Max)" viram "SORTE (Máx.)" e "EMP (Máx.)".
+- Siglas de regras: as do sistema (PP, PV, VD, ATQ, VEL, Cadência de Tiro...), exceto REZ, que fica "REZ" (hoje
+  aparece como "RAM", outro conceito).
+- Mook = Capanga (plural Capangas).
+- Demais divergências: fica o termo do sistema, salvo erro claro de sentido. Se achar um erro claro, liste no
+  relatório com a justificativa; não decida sozinho termos que não sejam erro claro.
+
+PEDIDO
+1. docs-ptbr/glossario-ptbr.md: aplique as decisões. Troque a seção "Termos para o dono decidir" por "Decisões do dono
+   (D8)", com o que foi decidido. Status final de cada termo: "consistente", "manter em inglês" ou "decidido (D8)".
+2. src/lang/pt-BR.json: corrija os valores JÁ TRADUZIDOS que contrariam a D8. Exemplos conhecidos:
+   CPR.global.role.lawman.name = "Advogado" -> "Lawman"; CPR.global.role.netrunner.name = "Trilha Rede" ->
+   "Netrunner"; CPR.global.generic.rez = "RAM" -> "REZ". Procure todas as ocorrências (nomes de papéis dentro de
+   frases, títulos, tooltips; "RAM" no sentido de REZ; "NPC" quando o inglês diz "Mook"), comparando cada valor do
+   pt-BR.json com o do en.json da mesma chave.
+3. Não traduza agora os valores que ainda estão idênticos ao inglês (isso é a Tarefa 3.3), exceto os que a D8 manda
+   corrigir.
+4. Preserve a estrutura e a ordem das chaves, os placeholders ({value}, {name}...), as tags HTML e o estilo de
+   escape do arquivo. Não altere en.json nem outro idioma.
+
+SANDBOX
+- .git é somente leitura: não rode git add nem git commit.
+- Valide: node -e "JSON.parse(require('fs').readFileSync('src/lang/pt-BR.json','utf8'))"; npx prettier --check
+  src/lang/pt-BR.json; npx prettier --write e npx markdownlint --fix no glossário, e npx markdownlint no glossário com
+  código 0. Grave em UTF-8 e confira que não há "??" nos dois arquivos.
+- Não crie arquivos de log no projeto nem em node_modules.
+
+RELATÓRIO (devolva exatamente isto)
+1. Tabela das chaves alteradas no pt-BR.json: chave | valor antigo | valor novo | motivo (D8 ou erro claro).
+2. Erros claros encontrados que você NÃO corrigiu por não estarem na D8 (ou "nenhum").
+3. Saídas das validações.
+4. Duas mensagens de commit em português: glossário e correções do pt-BR.json.
+```
+
+## Tarefa 3.3: traduzir os valores idênticos ao inglês (um prompt por lote)
+
+Os lotes rodam em paralelo; cada um grava um patch separado em `tmp-traducao/` (excluído do git só nesta máquina) e o
+diretor faz o merge no `pt-BR.json`. O diretor troca `<LOTE>` e `<PREFIXOS>`.
+
+```text
+Você é o executor do projeto de migração do Cyberpunk RED Core para Foundry VTT v13 com tradução PT-BR. Trabalhe só em
+%USERPROFILE%\Documents\Cyberpunk RED - PTBR (branch main). Lote <LOTE> da tradução da interface.
+
+LEIA ANTES
+- docs-ptbr/glossario-ptbr.md (glossário final, obrigatório) e a decisão D8 em docs-ptbr/plano-migracao-v13-ptbr.md.
+- src/lang/en.json e src/lang/pt-BR.json.
+
+ESCOPO DO LOTE
+Chaves cujo nome começa por: <PREFIXOS>
+Dentre elas, só as que têm no pt-BR.json valor IDÊNTICO ao do en.json.
+
+PEDIDO
+1. Grave tmp-traducao/lote-<LOTE>.json: um objeto plano { "chave.completa": "tradução" } com todas as chaves do
+   escopo. Não altere src/lang/pt-BR.json diretamente.
+2. Traduza para PT-BR seguindo o glossário e o estilo do pt-BR.json existente (tratamento "você", maiúsculas como nas
+   chaves vizinhas já traduzidas).
+3. Mantenha idêntico ao inglês apenas o que o glossário manda manter (siglas, nomes de papéis, nomes próprios,
+   jargão como Netrunner). Para cada chave que ficar igual ao inglês, liste no relatório o motivo.
+4. Preserve exatamente: placeholders ({value}, {name}, {0}...), tags e atributos HTML, entidades, quebras de linha
+   (\n) e espaços no início e no fim do texto.
+5. Não use nenhum trecho do livro. Traduza a partir da string do sistema.
+
+SANDBOX
+- .git é somente leitura: não rode git add nem git commit.
+- Valide o patch: JSON válido; todas as chaves existem no en.json; mesmo conjunto de placeholders e tags que o
+  en.json em cada chave (escreva uma checagem rápida com node e mostre a saída). Grave em UTF-8 e confira que não
+  há "??" no patch.
+- Não crie arquivos fora de tmp-traducao/.
+
+RELATÓRIO (devolva exatamente isto)
+1. Número de chaves no escopo, traduzidas e mantidas iguais ao inglês.
+2. Lista das mantidas iguais ao inglês, com o motivo de cada uma.
+3. Saída da checagem de placeholders/tags.
+4. Termos novos que não estavam no glossário e como você os traduziu.
+```
