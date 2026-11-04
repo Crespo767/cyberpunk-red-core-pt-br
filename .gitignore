@@ -70,3 +70,4 @@ src/packs.*
 /.fallowrc.json
 /CLAUDE.md
 /.claude/
+/.vscode/
