@@ -75,7 +75,7 @@ test("027 makes each legacy base skill deletable", async ({ page }) => {
   expect(out).toEqual([false, false, false, false, false, true]);
 });
 
-test.fixme("027 classifies skill names containing spaces", async ({ page }) => {
+test("027 classifies skill names containing spaces", async ({ page }) => {
   const out = await page.evaluate(async () => {
     const M = await import(
       `/systems/${game.system.id}/modules/system/migrate/scripts/027-skillType.js`
