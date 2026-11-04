@@ -1463,7 +1463,7 @@ export default class CPRActorSheet extends CPRScrollableSheetMixin(
   /**
    * Create drag-and-drop workflow handlers for this Application.
    *
-   * @returns {DragDrop[]}     An array of DragDrop handlers
+   * @returns {foundry.applications.ux.DragDrop.implementation[]} An array of DragDrop handlers
    * @private
    */
   #createDragDropHandlers() {
@@ -1477,7 +1477,7 @@ export default class CPRActorSheet extends CPRScrollableSheetMixin(
         dragover: this._onDragOver.bind(this),
         drop: this._onDrop.bind(this),
       };
-      return new DragDrop(d);
+      return new foundry.applications.ux.DragDrop.implementation(d);
     });
   }
 
