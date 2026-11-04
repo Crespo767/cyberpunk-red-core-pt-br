@@ -27,8 +27,8 @@
       "dvTable": ""
     },
     "Agent": {
-      "name": "Representante",
-      "description": "<p>AI Smartphone. +2 Pesquisa na Biblioteca, +2 Wardrobe & Estilo, dependendo da circunstância.</p>"
+      "name": "Agente",
+      "description": "<p>Smartphone com IA. +2 em Pesquisa na Biblioteca e +2 em Moda e Estilo, dependendo das circunstâncias.</p>"
     },
     "Airhypo": {
       "name": "Seringa pneumática",

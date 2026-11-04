@@ -10,7 +10,7 @@
       "dvTable": ""
     },
     "Anti-Dazzle": {
-      "name": "Antízle",
+      "name": "Antiofuscamento",
       "description": "<p>Precisa ser emparelhado. Fornece imunidade a efeitos deslumbrantes (como flashbangs).</p>",
       "dvTable": ""
     },
@@ -115,13 +115,13 @@
       "dvTable": "DV Pistola"
     },
     "Difficult Skill Chip": {
-      "name": "Ficha de Habilidade Difícil",
+      "name": "Chip de Habilidade Difícil",
       "description": "<p>Chipware. Fornece um valor de 3 para uma habilidade de (x2) específica quando instalada (a menos que a habilidade já tenha 3+). </p>",
       "dvTable": ""
     },
     "EMP Threading": {
-      "name": "Revestimento contra EMP",
-      "description": "<p>PCB efeito na pele.</p>",
+      "name": "Filamentos EMP",
+      "description": "<p>Filamentos decorativos brilhantes criam na pele um efeito de placa de circuito impresso.</p>",
       "dvTable": ""
     },
     "Enhanced Antibodies": {
@@ -155,7 +155,7 @@
       "dvTable": ""
     },
     "Grip Foot": {
-      "name": "Pé de Punho",
+      "name": "Pé de Aderência",
       "description": "<p>Fornece tração para escalar verticalmente. Deve ser emparelhado. </p>",
       "dvTable": ""
     },
@@ -225,7 +225,7 @@
       "dvTable": ""
     },
     "Light Tattoo": {
-      "name": "Tatuagem Leve",
+      "name": "Tatuagem Luminosa",
       "description": "<p>\n  Tatuagens luminosas. +2 em Moda &amp; Estilo se você tiver pelo menos três\n  instaladas.\n</p>\n",
       "dvTable": ""
     },
@@ -295,7 +295,7 @@
       "dvTable": ""
     },
     "MultiOptic Mount": {
-      "name": "Montaria Multiótica",
+      "name": "Suporte Multióptico",
       "description": "<p>\n  Permite instalar até 5 olhos cibernéticos adicionais. Os olhos adicionais são\n  vendidos &amp; instalados separadamente.\n</p>\n<blockquote>\n  <p>\n    * Instale os olhos cibernéticos básicos extras normalmente; não instale seus\n    olhos extras neste item.\n  </p>\n</blockquote>\n",
       "dvTable": ""
     },
@@ -405,7 +405,7 @@
       "dvTable": ""
     },
     "Scratchers": {
-      "name": "Arranhões",
+      "name": "Arranhadores",
       "description": "<p>As unhas afiadas são uma arma leve de Contato. Pode ser escondida. </p>",
       "dvTable": ""
     },
@@ -415,7 +415,7 @@
       "dvTable": ""
     },
     "Shift Tacts": {
-      "name": "Tactos de turno",
+      "name": "Lentes de Contato de Mudança de Cor",
       "description": "<p>Alterar a cor dos olhos. Pode ser ativado/desativado à vontade. </p>",
       "dvTable": ""
     },
@@ -425,7 +425,7 @@
       "dvTable": ""
     },
     "Skate Foot": {
-      "name": "Patinar Pé",
+      "name": "Pé com Patins",
       "description": "<p>Durante a execução, seu movimento aumenta em 6m/yds. Deve ser emparelhado. </p>",
       "dvTable": ""
     },
@@ -440,12 +440,12 @@
       "dvTable": ""
     },
     "Skinwatch": {
-      "name": "Monitoramento",
+      "name": "Relógio de Pele",
       "description": "<p>Um relógio LED em sua pele.</p>",
       "dvTable": ""
     },
     "Slice 'N Dice": {
-      "name": "Fatiar Dados",
+      "name": "Fatiar e Cortar",
       "description": "<p>Pareamento de unho que é uma arma média de combate. Pode ser ocultado. </p>",
       "dvTable": ""
     },
@@ -500,7 +500,7 @@
       "dvTable": ""
     },
     "Techhair": {
-      "name": "Tecnológico",
+      "name": "Cabelo Tecnológico",
       "description": "<p>+2 em Cuidado Pessoal com Chemskin. Muda a cor do cabelo.</p>",
       "dvTable": ""
     },
@@ -515,7 +515,7 @@
       "dvTable": ""
     },
     "Tool Hand": {
-      "name": "Mão da Ferramenta",
+      "name": "Mão-Ferramenta",
       "description": "<p>Cada dedo da mão tem uma ferramenta diferente. Ótima para Tech!</p>",
       "dvTable": ""
     },
@@ -540,7 +540,7 @@
       "dvTable": ""
     },
     "Web Foot": {
-      "name": "Pé Web",
+      "name": "Pé com Membranas",
       "description": "<p>Ajudar entre seus dedos dos pés permite que você nade. Deve ser emparelhado. </p>",
       "dvTable": ""
     },
