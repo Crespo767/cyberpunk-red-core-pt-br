@@ -88,7 +88,7 @@ test("038 leaves other roles and non-role items unchanged", async ({
   expect(result.docs).toEqual(result.before);
 });
 
-test.fixme("038 retains the name of an unrecognized Medtech ability", async ({
+test("038 retains the name of an unrecognized Medtech ability", async ({
   page,
 }) => {
   const result = await page.evaluate(async () => {
