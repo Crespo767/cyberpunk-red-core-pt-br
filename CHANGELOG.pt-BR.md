@@ -2,6 +2,32 @@
 
 # Changelog
 
+## Versão 0.93.0-ptbr.1
+
+### Novidades
+
+- Concluir a tradução da interface para português brasileiro em `src/lang/pt-BR.json`
+- Manter os nomes das Funções em inglês e REZ como REZ; traduzir Mook como Capanga
+- Concluir e corrigir as traduções dos compêndios Babele para português brasileiro
+
+### Correções de bugs
+
+- Corrigir a consulta à tabela de VD de Fogo Automático, alinhando os nomes traduzidos da tabela e das armas no Babele
+- Substituir o `DragDrop` global obsoleto nas fichas de atores pela API do namespace do Foundry
+- Migração 027: reconhecer prefixos de tipos de habilidade que contêm espaços
+- Migração 031: aguardar a conclusão das atualizações dos tiles da Arquitetura de Rede
+- Migração 036: manter os tipos de itens permitidos em uma lista plana
+- Migração 037: preservar melhorias válidas de itens do mundo
+- Migração 038: preservar nomes personalizados de habilidades de Medtech
+- Migração 041: remover flags de instalação obsoletas de estruturas aninhadas no escopo do sistema
+- Migração 047: atualizar ícones de Funções para nomes traduzidos
+
+### Infraestrutura
+
+- Adicionar testes Playwright para todas as migrações de 025 a 048
+- Adicionar suporte ao Windows no ambiente de testes Playwright com `PLAYWRIGHT_BROWSER_CHANNEL` e `FOUNDRY_NODE_PATH`
+- Corrigir o padrão de arquivos do stylelint para o cmd.exe do Windows
+
 ## Version 0.93
 
 ### Action Needed
