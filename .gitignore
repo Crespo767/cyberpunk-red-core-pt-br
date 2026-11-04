@@ -71,3 +71,4 @@ src/packs.*
 /CLAUDE.md
 /.claude/
 /.vscode/
+/schema/

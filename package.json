@@ -8,7 +8,6 @@
   },
   "license": "UNLICENSED",
   "scripts": {
-    "api-docs": "npx jsdoc -c jsdoc.json",
     "build": "npx gulp build",
     "extractPacks": "npx gulp extractPacks",
     "generateBabele": "npx gulp generateBabele",
@@ -45,7 +44,6 @@
     "chalk": "^5.6.2",
     "classic-level": "^3.0.0",
     "date-fns": "^4.4.0",
-    "docdash": "^2.0.2",
     "editorconfig-checker": "^6.1.1",
     "eslint": "^10.5.0",
     "eslint-config-prettier": "^10.1.8",
@@ -63,7 +61,6 @@
     "gulp-svgmin": "^4.1.0",
     "husky": "^9.1.7",
     "js-yaml": "^4.2.0",
-    "jsdoc": "^4.0.5",
     "jsonlint-mod": "^1.7.6",
     "lint": "^1.2.2",
     "markdown-it": "^14.2.0",
