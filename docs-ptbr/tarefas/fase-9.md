@@ -100,3 +100,16 @@ Três estados, como o dono pediu: **posse** (no inventário: nunca avisa, ex.: M
 - [x] mundo do dono: migração 051 ok (14/14 atores, versão de dados 51). Três peças receberam pré-requisitos, todas
       reconhecidas pelo nome original em inglês (sem origem no compêndio): 2 Virtualidade do Anderson e o Super Pulo da Anne
       Bonny. Todas com o pré-requisito cumprido; nenhuma peça ficou com ⚠.
+
+## Validação final (2026-11-04)
+
+- Repositório: `main` limpo e igual ao `origin/main`; releases 1.0.1 a 1.0.4 publicados, cada um com zip e
+  `system.json`. O manifesto público (`releases/latest`) aponta para 1.0.4, com Foundry mínimo 13.350, Babele 2.9.1
+  obrigatório e pt-BR recomendado.
+- Estático: Vitest 221/221, ESLint e Prettier sem apontamentos em `src/` e `tests/`, markdownlint ok, 40 JSON de
+  Babele e idiomas válidos, chaves novas presentes em en e pt-BR, sem caracteres quebrados.
+- Suíte Playwright completa da 1.0.4: 468/468.
+- Mundo do dono (Gamemaster, 1.0.4, versão de dados 51): as 15 fichas abrem em todas as abas sem erro no console;
+  nenhuma peça com pré-requisito pendente; o resumo "Pré-requisitos" aparece traduzido na ficha do item.
+- Limitações conhecidas: a edição dos pré-requisitos pela interface ficou para depois (só resumo); o ícone ⚠ aparece na
+  ficha de personagem, não na de capanga; efeitos individuais de chips não são automatizados.
