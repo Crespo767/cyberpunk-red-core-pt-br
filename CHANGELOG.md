@@ -2,6 +2,15 @@
 
 # Changelog
 
+## Version 1.0.4
+
+### New Features
+
+- Cyberware prerequisites: installing a piece without its prerequisite shows a warning and still installs it, but its effects stay suppressed and the sheet marks it until the prerequisite is met. Covers Subdermal Grip (Neural Link), Implanted Linear Frames (base BODY and Grafted Muscle and Bone Lace), paired cybereye and cyberleg options (two cybereyes or Smart Glasses, two cyberlegs) and chipware (Chipware Socket)
+- The item settings tab shows a read-only prerequisites summary
+- Talon Foot can be installed in a meat leg, up to two per character; the item setting is now `Compatible with Meat Limb`
+- Migration 051 adds the prerequisites and the Talon Foot setting to existing copies
+
 ## Version 1.0.3
 
 ### Bug Fixes

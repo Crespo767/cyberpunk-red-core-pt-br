@@ -2,6 +2,15 @@
 
 # Changelog
 
+## Versão 1.0.4
+
+### Novidades
+
+- Pré-requisitos de cibernética: instalar uma peça sem o pré-requisito mostra um aviso e instala mesmo assim, mas os efeitos dela ficam desligados e a ficha a marca até o pré-requisito ser cumprido. Vale para Empunhadura Subdermal (Neural Link), Linear Frames implantados (CORPO-base e Grafted Muscle and Bone Lace), opções em par de olho e perna (dois olhos cibernéticos ou Óculos Inteligentes, duas ciberpernas) e chipware (Soquete de Chipware)
+- A aba de configurações do item mostra um resumo dos pré-requisitos
+- Talon Foot pode ser instalado numa perna de carne, até dois por personagem; a opção do item agora é `Compatível com membro de carne`
+- A migração 051 adiciona os pré-requisitos e a opção do Talon Foot às cópias existentes
+
 ## Versão 1.0.3
 
 ### Correções de bugs
