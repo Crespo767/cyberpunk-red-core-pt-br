@@ -68,6 +68,16 @@ describe("PT-BR localization contracts", () => {
     }
     expect(missing).toEqual([]);
   });
+  it("distinguishes program damage targets even when damage formulas are equal", () => {
+    const key = "CPR.itemSheet.program.damageTo";
+    expect(parameters(pt[key])).toEqual(parameters(en[key]));
+    const labels = ["Black ICE", "Não Black ICE"].map((programType) =>
+      format(key, { programType }),
+    );
+    expect(labels[0]).not.toBe(labels[1]);
+    expect(labels[0]).toContain("Black ICE");
+    expect(labels[1]).toContain("Não Black ICE");
+  });
   it("records the purchaser in a vendor sale using the caller's parameters", () => {
     const key = "CPR.containerSheet.tradeLog.vendorSold";
     expect(parameters(pt[key])).toEqual(parameters(en[key]));
