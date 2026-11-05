@@ -147,7 +147,7 @@ export class CPRRollDialog extends HandlebarsApplicationMixin(ApplicationV2) {
       : program.damage.blackIce;
     return [
       {
-        value: standardDamage,
+        value: "standard",
         label: `${SystemUtils.Format("CPR.itemSheet.program.damageTo", {
           programType: SystemUtils.Localize(
             "CPR.itemSheet.program.nonBlackIce",
@@ -155,7 +155,7 @@ export class CPRRollDialog extends HandlebarsApplicationMixin(ApplicationV2) {
         })}: (${standardDamage})`,
       },
       {
-        value: blackIceDamage,
+        value: "blackIce",
         label: `${SystemUtils.Format("CPR.itemSheet.program.damageTo", {
           programType: SystemUtils.Localize("CPR.itemSheet.program.blackIce"),
         })}: (${blackIceDamage})`,
@@ -188,6 +188,10 @@ export class CPRRollDialog extends HandlebarsApplicationMixin(ApplicationV2) {
    */
   static #onChangeForm(event, form, formData) {
     const fd = foundry.utils.expandObject(formData.object);
+    if (fd.programDamageTarget !== undefined) {
+      this.rollData.setProgramDamageTarget(fd.programDamageTarget);
+      delete fd.programDamageTarget;
+    }
     if (typeof fd.additionalMods === "string") {
       // Replace all spaces/commas and then split into an array at each comma.
       let mods = fd.additionalMods.replace(/ +/g, ",").replace(/,+/g, ",");

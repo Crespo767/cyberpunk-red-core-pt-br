@@ -1027,7 +1027,7 @@
   "CPR.itemSheet.physical.priceHoverExplanation": "O preço inserido aqui deve ser o preço de uma única unidade do item.",
   "CPR.itemSheet.physical.priceHoverExplanationAmmo": "The price entered here should be the price of a single purchase unit of the item. The amount for a purchase unit is 1 for grenades and rockets and 10 otherwise, see p. 344 in the rulebook.",
   "CPR.itemSheet.program.blackIce": "Black ICE",
-  "CPR.itemSheet.program.damageTo": "Dano a",
+  "CPR.itemSheet.program.damageTo": "Dano a {programType}",
   "CPR.itemSheet.program.nonBlackIce": "não Black ICE",
   "CPR.itemSheet.program.programSize": "Tamanho do Programa",
   "CPR.itemSheet.providesHardening": "Fornece Proteção contra EMP",

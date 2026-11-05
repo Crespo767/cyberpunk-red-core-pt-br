@@ -888,8 +888,28 @@ export class CPRDamageRoll extends CPRRoll {
 
   setNetCombat(rollTitle) {
     this.rollTitle = rollTitle;
+    this.programDamageTarget = "standard";
     this.rollPrompt = `systems/${game.system.id}/templates/dialog/rolls/cpr-verify-program-damage-prompt.hbs`;
     this.rollCard = `systems/${game.system.id}/templates/chat/cpr-program-damage-rollcard.hbs`;
+  }
+
+  /** Keep the selected NET target distinct even when both damage formulas match. */
+  setProgramDamageTarget(target) {
+    if (!["standard", "blackIce"].includes(target)) {
+      throw new Error(`Invalid program damage target: ${target}`);
+    }
+    if (this._evaluated || target === this.programDamageTarget) return;
+    const { program } = this.rollCardExtraArgs;
+    const damage = program.system ? program.system.damage : program.damage;
+    const replacement = this.constructor.create(
+      this.rollTitle,
+      damage[target],
+      this.weaponType,
+    );
+    this.terms = replacement.terms;
+    this.resetFormula();
+    this.die = replacement.die;
+    this.programDamageTarget = target;
   }
 }
 
