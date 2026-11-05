@@ -2,6 +2,18 @@
 
 # Changelog
 
+## Versão 1.0.6
+
+### Correções de bugs
+
+- Capangas mostram e rolam uma perícia chipada mesmo quando o nível gravado é zero, preservando o nível original e níveis treinados maiores.
+- O dano de programas distingue Black ICE dos demais alvos na ficha, no diálogo e no cartão, inclusive com fórmulas iguais. Trocar o alvo rola os dados selecionados e preserva os modificadores externos.
+- Alternar Autofire num token atualiza imediatamente a tabela de VD e seus valores por alcance, inclusive ao voltar para tiro mirado e ao usar uma tabela escolhida no token.
+- A escolha de tabela de VD da arma é gravada corretamente no editor de item v13 e preservada quando outros campos são editados.
+- Registros de venda identificam o comprador; os diálogos de item, munição, registro e rolagem preservam seu contexto. Rótulos de chips são traduzidos sem alterar os identificadores das perícias, referências de localização ausentes foram resolvidas e as três mensagens de instalação auditadas foram traduzidas.
+
+O modelo de dados permanece na versão 51; nenhuma nova migração é necessária.
+
 ## Versão 1.0.5
 
 ### Novidades

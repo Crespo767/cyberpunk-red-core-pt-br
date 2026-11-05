@@ -2,6 +2,18 @@
 
 # Changelog
 
+## Version 1.0.6
+
+### Bug Fixes
+
+- Mooks list and roll a chipped skill even when its stored level is zero, preserving the original level and higher trained levels.
+- Program damage distinguishes Black ICE from other targets on sheets, dialogs and cards, including equal formulas. Changing the target rolls the selected dice and preserves external modifiers.
+- Changing Autofire on a token updates its active DV table and range values immediately, including returning to aimed fire and using a table selected on the token.
+- Weapon DV table choices save correctly in the v13 item editor and remain intact when other fields are edited.
+- Brazilian Portuguese sales records identify the purchaser; item, ammunition, ledger and roll prompts retain their context. Skill chip labels are translated without changing skill identifiers, missing localization references are resolved, and the three audited installation messages are translated.
+
+The data model remains at version 51; no new migration is required.
+
 ## Version 1.0.5
 
 ### New Features
