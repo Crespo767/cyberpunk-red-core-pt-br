@@ -97,4 +97,6 @@ Três estados, como o dono pediu: **posse** (no inventário: nunca avisa, ex.: M
 
 - [x] plano aprovado pelo dono (respostas acima)
 - [x] implementação, testes (suíte 468/468) e release 1.0.4 publicado (ok do dono em 2026-11-04)
-- [ ] conferir no mundo do dono a migração 051 e as peças que passam a mostrar ⚠
+- [x] mundo do dono: migração 051 ok (14/14 atores, versão de dados 51). Três peças receberam pré-requisitos, todas
+      reconhecidas pelo nome original em inglês (sem origem no compêndio): 2 Virtualidade do Anderson e o Super Pulo da Anne
+      Bonny. Todas com o pré-requisito cumprido; nenhuma peça ficou com ⚠.
