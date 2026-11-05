@@ -7,6 +7,7 @@
       <a class="name item-view" {{cprIndentCyberware depth}}>
         <span class="name">
           {{ cyberware.name }}
+          {{#if cyberware.system.prerequisiteWarning}}<i class="fas fa-triangle-exclamation" data-tooltip="{{cyberware.system.prerequisiteWarning}}"></i>{{/if}}
         </span>
         {{#if cyberware.system.isUpgraded }}
           <i class="text-super fa-solid fa-square-caret-up"></i>

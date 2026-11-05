@@ -982,7 +982,7 @@
   "CPR.itemSheet.cyberdeck.configureInstalledPrograms": "Configurar programas instalados",
   "CPR.itemSheet.cyberdeck.eraseProgram": "Apagar programa",
   "CPR.itemSheet.cyberware.hasOptionSlots": "Possui espaços de melhoria",
-  "CPR.itemSheet.cyberware.meatArmCompatible": "Compatível com braço de carne",
+  "CPR.itemSheet.cyberware.meatArmCompatible": "Compatível com membro de carne",
   "CPR.itemSheet.cyberware.option": "Opções",
   "CPR.itemSheet.cyberware.optionalSlots": "Espaços de melhoria",
   "CPR.itemSheet.cyberware.requiresFoundational": "Requer Base",
@@ -1426,5 +1426,13 @@
   "TYPES.Item.role": "Funções",
   "TYPES.Item.skill": "Habilidade",
   "TYPES.Item.vehicle": "Veículos",
-  "TYPES.Item.weapon": "Arma"
+  "TYPES.Item.weapon": "Arma",
+  "CPR.dialog.installCyberware.meatLeg": "Perna de carne",
+  "CPR.prerequisites.label": "Pré-requisitos",
+  "CPR.prerequisites.none": "Nenhum",
+  "CPR.prerequisites.foundational": "Peça-base instalada: {type}",
+  "CPR.prerequisites.paired": "Duas peças-base instaladas: {type}",
+  "CPR.prerequisites.cyberware": "{count}x {name} instalado(s)",
+  "CPR.prerequisites.body": "CORPO-base {value}",
+  "CPR.prerequisites.host": "Instalado em um Soquete de Chipware"
 }

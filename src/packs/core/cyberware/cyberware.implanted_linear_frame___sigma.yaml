@@ -60,6 +60,9 @@ ownership:
   default: 0
 sort: 0
 system:
+  prerequisites:
+    minBody: 6
+    cyberware: [{"id": "Lx9FSNDEIxLZ7Pyh", "name": "Grafted Muscle and Bone Lace", "count": 1}]
   ammoVariety: []
   attackmod: 0
   brand: ""

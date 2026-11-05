@@ -13,6 +13,8 @@ ownership:
   default: 0
 sort: 0
 system:
+  prerequisites:
+    host: "IJarQGKk5rPayoLT"
   ammoVariety: []
   attackmod: 0
   brand: ""

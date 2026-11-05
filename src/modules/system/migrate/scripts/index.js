@@ -25,3 +25,4 @@ export { default as UpdateRoleIcons } from "./047-update-role-icons.js";
 export { default as CorrectIconSpelling } from "./048-correct-icon-spelling.js";
 export { default as RepairBuggyMigrations } from "./049-repair-buggy-migrations.js";
 export { default as MeatArmCompatibility } from "./050-meat-arm-compatibility.js";
+export { default as CyberwarePrerequisites } from "./051-cyberware-prerequisites.js";

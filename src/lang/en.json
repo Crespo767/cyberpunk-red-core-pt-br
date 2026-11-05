@@ -982,7 +982,7 @@
   "CPR.itemSheet.cyberdeck.configureInstalledPrograms": "Configure Installed Programs",
   "CPR.itemSheet.cyberdeck.eraseProgram": "Erase program",
   "CPR.itemSheet.cyberware.hasOptionSlots": "Has option slots",
-  "CPR.itemSheet.cyberware.meatArmCompatible": "Compatible with Meat Arm",
+  "CPR.itemSheet.cyberware.meatArmCompatible": "Compatible with Meat Limb",
   "CPR.itemSheet.cyberware.option": "Option",
   "CPR.itemSheet.cyberware.optionalSlots": "Option slots",
   "CPR.itemSheet.cyberware.requiresFoundational": "Requires Foundational",
@@ -1426,5 +1426,13 @@
   "TYPES.Item.role": "Role",
   "TYPES.Item.skill": "Skill",
   "TYPES.Item.vehicle": "Vehicle",
-  "TYPES.Item.weapon": "Weapon"
+  "TYPES.Item.weapon": "Weapon",
+  "CPR.dialog.installCyberware.meatLeg": "Meat Leg",
+  "CPR.prerequisites.label": "Prerequisites",
+  "CPR.prerequisites.none": "None",
+  "CPR.prerequisites.foundational": "Installed foundational {type}",
+  "CPR.prerequisites.paired": "Two installed foundational {type} pieces",
+  "CPR.prerequisites.cyberware": "{count}x {name} installed",
+  "CPR.prerequisites.body": "Base BODY {value}",
+  "CPR.prerequisites.host": "Installed in a Chipware Socket"
 }

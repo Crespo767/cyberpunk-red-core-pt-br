@@ -52,7 +52,16 @@
     "armor": {},
     "clothing": {},
     "criticalInjury": {},
-    "cyberware": { "meatArmCompatible": false },
+    "cyberware": {
+      "meatArmCompatible": false,
+      "prerequisites": {
+        "foundationalTypes": [],
+        "paired": false,
+        "cyberware": [],
+        "minBody": 0,
+        "host": ""
+      }
+    },
     "cyberdeck": {},
     "drug": {},
     "gear": {},

@@ -1,3 +1,4 @@
+import { getCyberwarePending } from "../prerequisites-foundry.js";
 import LOGGER from "../../utils/cpr-logger.js";
 import SystemUtils from "../../utils/cpr-systemUtils.js";
 
@@ -194,6 +195,12 @@ const Effects = function Effects() {
    * @returns {Bool}
    */
   this.areEffectsSuppressed = function areEffectsSuppressed() {
+    if (
+      this.type === "cyberware" &&
+      this.actor &&
+      getCyberwarePending(this).length
+    )
+      return true;
     switch (this.system.usage) {
       case "carried":
         return this.system.equipped === "owned";

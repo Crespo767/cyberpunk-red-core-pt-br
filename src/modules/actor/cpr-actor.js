@@ -1,3 +1,7 @@
+import {
+  getCyberwarePending,
+  formatPrerequisites,
+} from "../item/prerequisites-foundry.js";
 import CPR from "../system/config.js";
 import CPRChat from "../chat/cpr-chat.js";
 import CPRCharacterActorSheet from "./sheet/cpr-character-sheet.js";
@@ -518,13 +522,13 @@ export default class CPRActor extends Actor {
     );
 
     const hasMeatArmSpace = () =>
-      item.system.type === "cyberArm" &&
+      ["cyberArm", "cyberLeg"].includes(item.system.type) &&
       item.system.meatArmCompatible &&
       this.itemTypes.cyberware.filter(
         (cw) =>
           cw.system.isInstalled &&
           !cw.system.isFoundational &&
-          cw.system.type === "cyberArm" &&
+          cw.system.type === item.system.type &&
           cw.system.installedIn[0] === this.id,
       ).length < 2;
 
@@ -572,7 +576,11 @@ export default class CPRActor extends Actor {
     if (!item.system.isFoundational && hasMeatArmSpace()) {
       compatibleTargetCyberware.push({
         _id: this.id,
-        name: SystemUtils.Localize("CPR.dialog.installCyberware.meatArm"),
+        name: SystemUtils.Localize(
+          item.system.type === "cyberLeg"
+            ? "CPR.dialog.installCyberware.meatLeg"
+            : "CPR.dialog.installCyberware.meatArm",
+        ),
       });
     }
     // Get all other cyberware installed in this one.
@@ -637,6 +645,12 @@ export default class CPRActor extends Actor {
         ? this
         : this.getOwnedItem(formData.foundationalId);
 
+    if (getCyberwarePending(item, target).length) {
+      SystemUtils.DisplayMessage(
+        "warn",
+        `${SystemUtils.Localize("CPR.prerequisites.label")}: ${formatPrerequisites(item, true, target)}`,
+      );
+    }
     const installationSuccess = await target.installItems([item]);
     if (installationSuccess)
       await this.loseHumanityValue(
