@@ -431,7 +431,7 @@
     },
     "Skill Chip": {
       "name": "Chip de Habilidade",
-      "description": "<p>Chipware.</p>\n<p>Define uma Habilidade como 3, a menos que ela já seja &gt;3*.</p>\n<p><em>* Não há suporte; a Habilidade deve ser modificada manualmente.</em></p>\n",
+      "description": "<p>Chipware.</p>\n<p>Define uma Habilidade como 3, a menos que ela já seja &gt;3.</p>\n",
       "dvTable": ""
     },
     "Skin Weave": {

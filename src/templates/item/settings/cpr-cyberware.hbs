@@ -1,7 +1,20 @@
-<li class="item flexrow">
-  <div class="setting-name">{{localize "CPR.prerequisites.label"}}</div>
-  <div class="setting-value">{{item.system.prerequisiteSummary}}</div>
-</li>
+{{#if editable}}
+<li class="item flexrow"><div class="setting-name">{{localize "CPR.prerequisites.types"}}</div><div class="setting-value">
+  {{#each prerequisiteTypes}}<label><input type="checkbox" data-prerequisite-type="{{value}}" {{#if checked}}checked{{/if}}/> {{localize label}}</label>{{/each}}
+</div></li>
+<li class="item flexrow"><label class="setting-name" for="prereq-paired">{{localize "CPR.prerequisites.pairedLabel"}}</label><div class="setting-value"><input id="prereq-paired" type="checkbox" name="system.prerequisites.paired" {{#if item.system.prerequisites.paired}}checked{{/if}}/></div></li>
+<li class="item flexrow"><div class="setting-name">{{localize "CPR.prerequisites.minBody"}}</div><div class="setting-value"><input type="number" min="0" name="system.prerequisites.minBody" value="{{item.system.prerequisites.minBody}}"/></div></li>
+<li class="item flexrow"><div class="setting-name">{{localize "CPR.prerequisites.hostLabel"}}</div><div class="setting-value"><select name="system.prerequisites.host"><option value="" {{#unless item.system.prerequisites.host}}selected{{/unless}}>{{localize "CPR.prerequisites.any"}}</option><option value="IJarQGKk5rPayoLT" {{#if item.system.prerequisites.host}}selected{{/if}}>{{localize "CPR.prerequisites.socket"}}</option></select></div></li>
+<li class="item flexrow prerequisite-drop"><div class="setting-name">{{localize "CPR.prerequisites.items"}}<br/>{{localize "CPR.prerequisites.drop"}}</div><div class="setting-value">
+  {{#each item.system.prerequisites.cyberware}}<div><input class="prerequisite-entry" data-index="{{@index}}" data-field="name" type="text" value="{{name}}"/><input class="prerequisite-entry" data-index="{{@index}}" data-field="count" type="number" min="1" value="{{count}}"/><button type="button" class="prerequisite-remove" data-index="{{@index}}">{{localize "CPR.prerequisites.remove"}}</button></div>{{/each}}
+  <button type="button" class="prerequisite-add">{{localize "CPR.prerequisites.add"}}</button>
+</div></li>
+{{else}}
+<li class="item flexrow"><div class="setting-name">{{localize "CPR.prerequisites.label"}}</div><div class="setting-value">{{item.system.prerequisiteSummary}}</div></li>
+{{/if}}
+{{#if isSkillChip}}
+<li class="item flexrow"><div class="setting-name">{{localize "CPR.prerequisites.chippedSkill"}}</div><div class="setting-value">{{#if editable}}<select name="system.chippedSkill"><option value=""></option>{{selectOptions chippedSkills selected=item.system.chippedSkill}}</select>{{else}}{{item.system.chippedSkill}}{{/if}}</div></li>
+{{/if}}
 {{!-- Cyberware Item Setting --}}
 {{!-- Type Setting --}}
 <li class="item flexrow">

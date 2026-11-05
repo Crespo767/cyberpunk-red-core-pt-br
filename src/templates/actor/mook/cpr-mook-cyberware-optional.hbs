@@ -7,7 +7,7 @@
                  {{localize "CPR.mookSheet.items.shiftClickToInstallorUninstall"}}"
    data-item-id="{{cyberware._id}}"
    data-foundational-id="{{cyberware.system.installedIn.[0]}}">
-  {{~cyberware.name}}{{#unless @last}},{{/unless~}}
+  {{~cyberware.name}}{{#if cyberware.system.prerequisiteWarning}} <i class="fas fa-triangle-exclamation" data-tooltip="{{cyberware.system.prerequisiteWarning}}"></i>{{/if}}{{#unless @last}},{{/unless~}}
 </a>
 {{~#if (cprCompare cyberware.type "===" "cyberware")}}
   {{~#if (cprCompare cyberware.system.hasInstalled)~}}

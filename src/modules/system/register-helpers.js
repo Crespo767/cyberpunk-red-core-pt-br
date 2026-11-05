@@ -13,6 +13,9 @@ export default function registerHandlebarsHelpers() {
   /**
    * Run a comparison given a stringified operator and 2 operands. Returns true or false.
    */
+  Handlebars.registerHelper("cprEffectiveSkillLevel", (skill, actor) =>
+    actor.getSkillLevel(skill.name),
+  );
   Handlebars.registerHelper("cprCompare", (v1, operator, v2) => {
     switch (operator) {
       case "==":

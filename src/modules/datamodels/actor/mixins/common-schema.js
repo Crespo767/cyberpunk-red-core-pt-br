@@ -123,7 +123,7 @@ export default class CommonSchema extends CPRSystemDataModel {
       }, 0);
 
       output[SystemUtils.slugify(skill.name)] = {
-        level: skill.system.level,
+        level: this.parent.getSkillLevel(skill.name),
         stat: this.parent.system.stats[skill.system.stat].value,
         mods: skillMods,
       };

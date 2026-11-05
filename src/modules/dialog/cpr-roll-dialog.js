@@ -320,7 +320,7 @@ export class CPRRoleRollDialog extends CPRRollDialog {
           a.name > b.name ? 1 : -1,
         )[0];
         data.rollData.skillName = firstSkill.name;
-        data.rollData.skillValue = firstSkill.system.level;
+        data.rollData.skillValue = this.actor.getSkillLevel(firstSkill.name);
         data.rollData.statName = firstSkill.system.stat;
         data.rollData.statValue = this.actor.getStat(this.rollData.statName);
       }
@@ -349,7 +349,7 @@ export class CPRRoleRollDialog extends CPRRollDialog {
       (s) => s.name === event.currentTarget.value,
     );
 
-    this.rollData.skillValue = skill.system.level;
+    this.rollData.skillValue = this.actor.getSkillLevel(skill.name);
     this.rollData.statName = skill.system.stat;
     this.rollData.statValue = this.actor.getStat(this.rollData.statName);
 

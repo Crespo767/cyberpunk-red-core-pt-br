@@ -32,7 +32,7 @@
                          <br/>
                          {{localize "CPR.mookSheet.items.shiftClickToInstallorUninstall"}}"
            data-item-id="{{foundation._id}}">
-          {{~foundation.name~}}{{~#unless (cprCompare optionals.length ">" 0)~}}{{~#unless @last~}},{{~/unless~}}{{~/unless~}}
+          {{~foundation.name~}}{{#if foundation.system.prerequisiteWarning}} <i class="fas fa-triangle-exclamation" data-tooltip="{{foundation.system.prerequisiteWarning}}"></i>{{/if}}{{~#unless (cprCompare optionals.length ">" 0)~}}{{~#unless @last~}},{{~/unless~}}{{~/unless~}}
         </a>
       </span>
     {{~/if}}

@@ -1434,5 +1434,16 @@
   "CPR.prerequisites.paired": "Duas peças-base instaladas: {type}",
   "CPR.prerequisites.cyberware": "{count}x {name} instalado(s)",
   "CPR.prerequisites.body": "CORPO-base {value}",
-  "CPR.prerequisites.host": "Instalado em um Soquete de Chipware"
+  "CPR.prerequisites.host": "Instalado em um Soquete de Chipware",
+  "CPR.prerequisites.types": "Tipos de peça-base exigidos",
+  "CPR.prerequisites.pairedLabel": "Exige par",
+  "CPR.prerequisites.items": "Cibernéticas exigidas (nome em inglês)",
+  "CPR.prerequisites.add": "Adicionar",
+  "CPR.prerequisites.remove": "Remover",
+  "CPR.prerequisites.minBody": "CORPO-base mínimo",
+  "CPR.prerequisites.hostLabel": "Hospedeiro exigido",
+  "CPR.prerequisites.any": "Qualquer",
+  "CPR.prerequisites.socket": "Soquete de Chipware",
+  "CPR.prerequisites.chippedSkill": "Perícia do chip",
+  "CPR.prerequisites.drop": "Arraste uma cibernética aqui"
 }

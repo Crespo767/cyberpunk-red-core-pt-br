@@ -125,7 +125,7 @@ export default class CPRMookActorSheet extends CPRActorSheet {
       const skillRef = {
         id: s.id,
         name: s.name,
-        level: s.system.level,
+        level: this.actor.getSkillLevel(s.name),
         stat: this.actor.system.stats[s.system.stat].value,
         mod: this.actor.bonuses[SystemUtils.slugify(s.name)],
       };

@@ -1434,5 +1434,16 @@
   "CPR.prerequisites.paired": "Two installed foundational {type} pieces",
   "CPR.prerequisites.cyberware": "{count}x {name} installed",
   "CPR.prerequisites.body": "Base BODY {value}",
-  "CPR.prerequisites.host": "Installed in a Chipware Socket"
+  "CPR.prerequisites.host": "Installed in a Chipware Socket",
+  "CPR.prerequisites.types": "Required foundational types",
+  "CPR.prerequisites.pairedLabel": "Required in pairs",
+  "CPR.prerequisites.items": "Required cyberware (English name)",
+  "CPR.prerequisites.add": "Add",
+  "CPR.prerequisites.remove": "Remove",
+  "CPR.prerequisites.minBody": "Minimum base BODY",
+  "CPR.prerequisites.hostLabel": "Required host",
+  "CPR.prerequisites.any": "Any",
+  "CPR.prerequisites.socket": "Chipware Socket",
+  "CPR.prerequisites.chippedSkill": "Chipped skill",
+  "CPR.prerequisites.drop": "Drop cyberware here"
 }

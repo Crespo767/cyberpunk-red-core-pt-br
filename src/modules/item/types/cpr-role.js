@@ -40,7 +40,7 @@ export default class CPRRoleItem extends CPRItem {
           (i) => skillName === i.name,
         );
         if (skillObject !== undefined) {
-          skillValue = skillObject.system.level;
+          skillValue = actor.getSkillLevel(skillObject.name);
         } else {
           SystemUtils.DisplayMessage(
             "error",
@@ -75,7 +75,7 @@ export default class CPRRoleItem extends CPRItem {
           (i) => skillName === i.name,
         );
         if (skillObject !== undefined) {
-          skillValue = skillObject.system.level;
+          skillValue = actor.getSkillLevel(skillObject.name);
         } else {
           SystemUtils.DisplayMessage(
             "error",

@@ -1,3 +1,5 @@
+import { effectiveSkillLevel } from "../item/skill-chip.js";
+import { matchesCoreCyberware } from "../item/prerequisites.js";
 import {
   getCyberwarePending,
   formatPrerequisites,
@@ -735,7 +737,26 @@ export default class CPRActor extends Actor {
     const skillList = this.itemTypes.skill.filter((s) => s.name === skillName);
     if (skillList.length > 0) {
       const relevantSkill = skillList[0];
-      return parseInt(relevantSkill.system.level, 10);
+      const name =
+        relevantSkill.flags?.babele?.originalName || relevantSkill.name;
+      const chips = this.itemTypes.cyberware.map((chip) => {
+        const host = this.items.get(chip.system.installedIn?.[0]);
+        return {
+          name: chip.name,
+          flags: chip.flags,
+          _stats: chip._stats,
+          system: {
+            chippedSkill: chip.system.chippedSkill,
+            isInstalled: chip.system.isInstalledInActor,
+          },
+          pending:
+            !matchesCoreCyberware(host, {
+              id: "IJarQGKk5rPayoLT",
+              name: "Chipware Socket",
+            }) || getCyberwarePending(chip).length > 0,
+        };
+      });
+      return effectiveSkillLevel(relevantSkill.system.level, name, chips);
     }
     return 0;
   }

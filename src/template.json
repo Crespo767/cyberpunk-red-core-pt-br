@@ -53,6 +53,7 @@
     "clothing": {},
     "criticalInjury": {},
     "cyberware": {
+      "chippedSkill": "",
       "meatArmCompatible": false,
       "prerequisites": {
         "foundationalTypes": [],

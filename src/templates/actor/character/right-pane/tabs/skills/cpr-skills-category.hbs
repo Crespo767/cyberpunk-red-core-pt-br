@@ -92,9 +92,10 @@
                  type="text"
                  data-item-prop="system.level"
                  data-dtype="Number"/>
+          {{#if (cprCompare (cprEffectiveSkillLevel skill ../actor) "!==" skill.system.level)}}<i class="fas fa-microchip skill-chip-active" data-tooltip="{{localize "CPR.prerequisites.chippedSkill"}}: {{cprEffectiveSkillLevel skill ../actor}}"></i>{{/if}}
         </div>
         <div class="item-detail skill-base text-nowrap text-center">
-          {{cprMath "sum" skill.system.level (cprGetSkillModInfo skill.name ../actor "modTotal") (lookup (cprGetProp ../actor.system.stats skill.system.stat) 'value')}}
+          {{cprMath "sum" (cprEffectiveSkillLevel skill ../actor) (cprGetSkillModInfo skill.name ../actor "modTotal") (lookup (cprGetProp ../actor.system.stats skill.system.stat) 'value')}}
         </div>
         <div class="item-detail skill-favorite text-nowrap text-center">
           <a class="item-action"

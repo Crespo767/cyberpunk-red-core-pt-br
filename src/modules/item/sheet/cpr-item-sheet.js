@@ -1,3 +1,5 @@
+import { SKILL_CHIPS } from "../skill-chip.js";
+import { matchesCoreCyberware } from "../prerequisites.js";
 import LOGGER from "../../utils/cpr-logger.js";
 import CPR from "../../system/config.js";
 import { CPRRoll } from "../../rolls/cpr-rolls.js";
@@ -104,6 +106,29 @@ export default class CPRItemSheet extends CPRScrollableSheetMixin(ItemSheetV2) {
         const worldSkills = game.items.filter((i) => i.type === "skill");
         cprData.relativeSkills = coreSkills.concat(worldSkills);
       }
+    }
+
+    if (itemType === "cyberware") {
+      const chip = SKILL_CHIPS.find((entry) =>
+        matchesCoreCyberware(this.item, entry),
+      );
+      if (chip) {
+        cprData.isSkillChip = true;
+        cprData.chippedSkills = (this.item.actor?.itemTypes.skill || [])
+          .filter((skill) => skill.system.difficulty === chip.difficulty)
+          .map((skill) => ({
+            value: skill.flags?.babele?.originalName || skill.name,
+            label: skill.name,
+          }));
+      }
+      cprData.prerequisiteTypes = Object.entries(CPR.cyberwareTypes).map(
+        ([value, label]) => ({
+          value,
+          label,
+          checked:
+            this.item.system.prerequisites.foundationalTypes.includes(value),
+        }),
+      );
     }
 
     if (mixins.includes("attackable")) {
@@ -475,6 +500,79 @@ export default class CPRItemSheet extends CPRScrollableSheetMixin(ItemSheetV2) {
         input.addEventListener("focusin", () => input.select()),
       );
 
+    on("[data-prerequisite-type]", "change", async (event) => {
+      const types = Array.from(
+        this.item.system.prerequisites.foundationalTypes,
+      );
+      const type = event.currentTarget.dataset.prerequisiteType;
+      await this.item.update({
+        "system.prerequisites.foundationalTypes": event.currentTarget.checked
+          ? [...types, type]
+          : types.filter((entry) => entry !== type),
+      });
+    });
+    on(".prerequisite-add", "click", async (event) => {
+      event.preventDefault();
+      const entries = this.item.system.prerequisites.cyberware.map((entry) => ({
+        ...entry,
+      }));
+      entries.push({ id: "", name: "", count: 1 });
+      await this.item.update({ "system.prerequisites.cyberware": entries });
+    });
+    on(".prerequisite-remove", "click", async (event) => {
+      event.preventDefault();
+      const index = Number(event.currentTarget.dataset.index);
+      await this.item.update({
+        "system.prerequisites.cyberware":
+          this.item.system.prerequisites.cyberware.filter(
+            (entry, i) => i !== index,
+          ),
+      });
+    });
+    on(".prerequisite-entry", "change", async (event) => {
+      const input = event.currentTarget;
+      const entries = this.item.system.prerequisites.cyberware.map((entry) => ({
+        ...entry,
+      }));
+      const entry = entries[Number(input.dataset.index)];
+      if (input.dataset.field === "name") {
+        entry.name = input.value;
+        entry.id = "";
+      } else entry.count = Math.max(1, Number(input.value) || 1);
+      await this.item.update({ "system.prerequisites.cyberware": entries });
+    });
+    on(".prerequisite-drop", "dragover", (event) => event.preventDefault());
+    on(".prerequisite-drop", "drop", async (event) => {
+      event.preventDefault();
+      let data;
+      try {
+        data = JSON.parse(event.dataTransfer.getData("text/plain"));
+      } catch {
+        return;
+      }
+      if (data.type !== "Item" || !data.uuid) return;
+      const item = await fromUuid(data.uuid);
+      if (!item || item.type !== "cyberware") return;
+      const sources = [
+        item.uuid,
+        item._stats?.compendiumSource,
+        item._stats?.sourceId,
+        item.flags?.core?.sourceId,
+      ];
+      const source = sources.find((value) =>
+        value?.startsWith("Compendium.cyberpunk-red-core.core_cyberware."),
+      );
+      const id = source ? source.split(".").at(-1) : "";
+      const entries = this.item.system.prerequisites.cyberware.map((entry) => ({
+        ...entry,
+      }));
+      entries.push({
+        id,
+        name: item.flags?.babele?.originalName || item.name,
+        count: 1,
+      });
+      await this.item.update({ "system.prerequisites.cyberware": entries });
+    });
     on(".item-checkbox", "click", (event) => this._itemCheckboxToggle(event));
     on(".item-multi-option", "click", (event) => this._itemMultiOption(event));
     on(".source-action", "click", (event) => this._sourceAction(event));
