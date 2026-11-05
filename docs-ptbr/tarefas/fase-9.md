@@ -60,12 +60,23 @@ O sistema exige uma peça-base instalada do mesmo tipo e controla os espaços. I
 5. **Compêndio:** preencher `prerequisites` nos YAML dos 17 itens da tabela.
 6. **Migração 051:** preenche o campo nas cópias existentes, por origem no compêndio ou nome em inglês (como a 050).
 7. **Localização:** chaves novas em `en.json` e `pt-BR.json`.
+8. **Funcionamento (efeitos):** `areEffectsSuppressed()` da cibernética passa a suprimir os efeitos ativos de uma peça
+   instalada cujos pré-requisitos não estão cumpridos (ex.: CORPO do Linear Frame sem o Grafted Muscle). O CORPO
+   mínimo é avaliado sobre o valor-base (`_source`), para o próprio Linear Frame não satisfazer a sua exigência.
+9. **Ficha do personagem:** na aba de cibernética, a peça instalada com pré-requisito pendente ganha um ícone de aviso
+   com a lista no tooltip.
+10. **Talon Foot em perna de carne:** a lógica do braço de carne (1.0.1) passa a valer também para `cyberLeg`: alvo
+    "Perna de carne", até 2 por personagem. Reaproveita o campo `meatArmCompatible` (nome interno mantido para não
+    exigir outra migração; o rótulo vira "Compatível com membro de carne"). Talon Foot recebe o campo no YAML e na 051.
+
+Três estados, como o dono pediu: **posse** (no inventário: nunca avisa, ex.: Memory Chip como armazenamento externo),
+**instalação** (avisa e deixa instalar) e **funcionamento** (efeitos suprimidos enquanto falta o pré-requisito).
 
 ## Testes (antes da correção, em commits separados)
 
 - Vitest: avaliação pura (cada tipo de pendência, com e sem cumprir; Óculos Inteligentes contando como par).
 - Playwright: Empunhadura Subdermal sem Neural Link mostra o aviso e instala; com Neural Link, sem aviso. Linear Frame
-  Σ com CORPO 5 avisa. Um chip direto no Neural Link avisa; no Soquete, não.
+  Σ com CORPO 5 avisa e o efeito de CORPO fica suprimido. Talon Foot instala em perna de carne. Um chip direto no Neural Link avisa; no Soquete, não.
 - Playwright: migração 051 (origem core, nome em inglês, item alheio intocado, idempotência).
 
 ## Commits
@@ -74,13 +85,15 @@ O sistema exige uma peça-base instalada do mesmo tipo e controla os espaços. I
 2. Testes Playwright de instalação e da 051 → campo, migração, instalação, ficha, YAML, localização.
 3. Versão 1.0.4 e changelogs. Suíte completa, pacote, release (ok do dono), conferência no mundo do dono.
 
-## Perguntas ao dono
+## Respostas do dono (2026-11-04)
 
-1. Talon Foot em perna de carne: a tabela da pág. 115 marca esse item como os do braço?
-2. Chipware só em Soquete de Chipware: incluir agora ou deixar para depois?
-3. Confirma aviso em vez de bloqueio?
+1. Talon Foot: sim, pode ser o único ciberimplante numa perna de carne (pág. 116, continuação da tabela).
+2. Chipware: incluir agora, só a dependência do Soquete de Chipware (que já exige Neural Link). Sem os efeitos dos
+   chips. Memory Chip como armazenamento externo não é afetado.
+3. Aviso, não bloqueio. Benefícios que dependem do pré-requisito não se aplicam enquanto ele faltar. Identificar por IDs
+   estáveis, nunca por nomes traduzidos.
 
 ## Estado
 
-- [ ] plano aprovado pelo dono
+- [x] plano aprovado pelo dono (respostas acima)
 - [ ] implementação, testes e release 1.0.4
