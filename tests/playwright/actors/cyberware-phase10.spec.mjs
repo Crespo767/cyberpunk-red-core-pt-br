@@ -2,6 +2,7 @@ import { test, expect } from "@playwright/test";
 import { gotoReadyWorld } from "../../../tools/playwright/session/world.mjs";
 import {
   closeAndReopenActorSheet,
+  chatMessageCount,
   closeDocSheet,
   closeOwnedItemSheet,
   createDocumentViaUI,
@@ -10,11 +11,18 @@ import {
   expectSheetRendered,
   openItemSettings,
   openOwnedItemSheet,
+  resolveYesNo,
   uniqueName,
+  waitForNewChatMessage,
+  yesNoDialog,
 } from "../../../tools/playwright/ui/index.mjs";
 import {
   openInstallCyberwareDialog,
   confirmInstallCyberwareDialog,
+  openMookSkillDialog,
+  mookSkillDialogRow,
+  setMookSkillDialogLevel,
+  confirmMookSkillDialog,
 } from "./mook-sheet-helpers.mjs";
 
 test("cyberware prerequisites can be edited and persist", async ({ page }) => {
@@ -129,10 +137,12 @@ async function createNeuralware(page, { name, foundational, slots = 0 }) {
         .click();
       await expect.poll(() => read("system.installedItems.allowed")).toBe(true);
     }
-    const input = sheet.locator('input[name="system.installedItems.slots"]');
-    await input.fill(String(slots));
-    await input.press("Tab");
-    await expect.poll(() => read("system.installedItems.slots")).toBe(slots);
+    await expect(async () => {
+      const input = sheet.locator('input[name="system.installedItems.slots"]');
+      await input.fill(String(slots));
+      await input.press("Tab");
+      expect(await read("system.installedItems.slots")).toBe(slots);
+    }).toPass({ timeout: 15000 });
   }
   await closeDocSheet(page, { collection: "items", id: itemId });
   return itemId;
@@ -306,4 +316,223 @@ test("the mook sheet flags cyberware with a missing prerequisite", async ({
   await expect(
     page.locator(`#${freshId} .fa-triangle-exclamation`),
   ).toHaveCount(1);
+});
+
+test("a mook lists and rolls a chipped zero-level skill without changing its stored level", async ({
+  page,
+}) => {
+  await gotoReadyWorld(page);
+  const actorId = await createDocumentViaUI(page, {
+    documentTab: "actors",
+    type: "mook",
+    name: uniqueName("chipped-mook"),
+  });
+  const readLevel = () =>
+    page.evaluate((id) => {
+      const actor = game.actors.get(id);
+      return {
+        stored: actor.itemTypes.skill.find((s) => s.name === "Athletics").system
+          .level,
+        effective: actor.getSkillLevel("Athletics"),
+      };
+    }, actorId);
+  const setLevel = async (value) => {
+    const sid = await closeAndReopenActorSheet(page, actorId);
+    const dialog = await openMookSkillDialog(page, sid);
+    await setMookSkillDialogLevel(
+      mookSkillDialogRow(dialog, "Athletics"),
+      value,
+    );
+    await confirmMookSkillDialog(dialog);
+    await expect.poll(async () => (await readLevel()).stored).toBe(value);
+  };
+  await setLevel(0);
+  for (const [name, foundational, slots, target] of [
+    ["Neural Link", true, 5, null],
+    ["Chipware Socket", false, 1, "Neural Link"],
+    ["Skill Chip", false, 0, "Chipware Socket"],
+  ]) {
+    const itemId = await createNeuralware(page, { name, foundational, slots });
+    const sheetId = await closeAndReopenActorSheet(page, actorId);
+    const dialog = await openInstallCyberwareDialog(page, {
+      itemId,
+      sheetId,
+      actorId,
+    });
+    if (target)
+      await dialog
+        .locator('select[name="foundationalId"]')
+        .selectOption({ label: target });
+    await confirmInstallCyberwareDialog(dialog);
+  }
+  const chipId = await page.evaluate(
+    (id) => game.actors.get(id).items.find((i) => i.name === "Skill Chip").id,
+    actorId,
+  );
+  await page.evaluate(
+    ({ actorId, chipId }) =>
+      game.actors.get(actorId).items.get(chipId).sheet.render(true),
+    { actorId, chipId },
+  );
+  const chipSheetId = await openOwnedItemSheet(page, {
+    actorId,
+    itemId: chipId,
+  });
+  await openItemSettings(page, chipSheetId);
+  await page
+    .locator(`#${chipSheetId} select[name="system.chippedSkill"]`)
+    .selectOption("Athletics");
+  await expect.poll(readLevel).toEqual({ stored: 0, effective: 3 });
+  await closeOwnedItemSheet(page, { actorId, itemId: chipId });
+  const previous = await page.evaluate(() =>
+    game.settings.get(game.system.id, "mookSheetSkillDisplay"),
+  );
+  try {
+    for (const [mode, value] of [
+      ["level", 3],
+      ["base", 9],
+      ["total", 9],
+    ]) {
+      await page.evaluate(
+        (v) => game.settings.set(game.system.id, "mookSheetSkillDisplay", v),
+        mode,
+      );
+      const sid = await closeAndReopenActorSheet(page, actorId);
+      const row = page
+        .locator(`#${sid} .mook-skills-content .item`)
+        .filter({ hasText: "Athletics" });
+      await expect(row).toHaveCount(1);
+      await expect(row).toContainText(`(+${value})`);
+      if (mode === "level") {
+        const messagesBefore = await chatMessageCount(page);
+        await row.locator('a[data-roll-type="skill"]').click();
+        const dialog = page.locator(".cpr.dialog");
+        await expect(dialog.locator('input[name="skillValue"]')).toHaveValue(
+          "3",
+        );
+        await dialog.locator('button[data-action="confirm"]').click();
+        await expect(dialog).toHaveCount(0);
+        const messageId = await waitForNewChatMessage(page, messagesBefore, {
+          requireRoll: true,
+        });
+        expect(
+          await page.evaluate((id) => game.messages.get(id).content, messageId),
+        ).toContain("Athletics");
+      }
+    }
+    await setLevel(5);
+    expect(await readLevel()).toEqual({ stored: 5, effective: 5 });
+    await setLevel(0);
+    const sid = await closeAndReopenActorSheet(page, actorId);
+    await page
+      .locator(`#${sid} .mook-special-content a.item-view`)
+      .filter({ hasText: "Skill Chip" })
+      .click({ modifiers: ["Shift"] });
+    await resolveYesNo(yesNoDialog(page), "yes");
+    await expect.poll(readLevel).toEqual({ stored: 0, effective: 0 });
+    const fresh = await closeAndReopenActorSheet(page, actorId);
+    await expect(
+      page
+        .locator(`#${fresh} .mook-skills-content .item`)
+        .filter({ hasText: "Athletics" }),
+    ).toHaveCount(0);
+  } finally {
+    await page.evaluate(
+      (v) => game.settings.set(game.system.id, "mookSheetSkillDisplay", v),
+      previous,
+    );
+  }
+});
+
+test("skill chip selectors localize labels without translating stored skill names", async ({
+  page,
+}) => {
+  await gotoReadyWorld(page);
+  const language = await page.evaluate(() =>
+    game.settings.get("core", "language"),
+  );
+  try {
+    await page.evaluate(() => game.settings.set("core", "language", "pt-BR"));
+    await gotoReadyWorld(page);
+    const actorId = await createDocumentViaUI(page, {
+      documentTab: "actors",
+      type: "character",
+      name: uniqueName("localized-chips"),
+    });
+    const custom = uniqueName("My custom skill");
+    const customId = await createItemViaUI(page, {
+      type: "skill",
+      name: custom,
+    });
+    await closeDocSheet(page, { collection: "items", id: customId });
+    await dropOnCharacter(page, { actorId, itemId: customId });
+    for (const [name, value, label] of [
+      ["Skill Chip", "Athletics", "Atletismo"],
+      ["Difficult Skill Chip", "Autofire", "Fogo Automático"],
+    ]) {
+      const itemId = await createNeuralware(page, {
+        name,
+        foundational: false,
+      });
+      await dropOnCharacter(page, { actorId, itemId });
+      const ownedId = await page.evaluate(
+        ({ actorId, name }) =>
+          game.actors.get(actorId).items.find((i) => i.name === name).id,
+        { actorId, name },
+      );
+      await page.evaluate(
+        ({ actorId, ownedId }) =>
+          game.actors.get(actorId).items.get(ownedId).sheet.render(true),
+        { actorId, ownedId },
+      );
+      let sid = await openOwnedItemSheet(page, { actorId, itemId: ownedId });
+      await openItemSettings(page, sid);
+      const select = page.locator(`#${sid} select[name="system.chippedSkill"]`);
+      await expect(select.locator(`option[value="${value}"]`)).toHaveText(
+        label,
+      );
+      await expect(
+        select.locator(
+          `option[value="${name === "Skill Chip" ? "Autofire" : "Athletics"}"]`,
+        ),
+      ).toHaveCount(0);
+      if (name === "Skill Chip")
+        await expect(select.locator(`option[value="${custom}"]`)).toHaveText(
+          custom,
+        );
+      await select.selectOption(value);
+      await expect
+        .poll(() =>
+          page.evaluate(
+            ({ actorId, ownedId }) =>
+              game.actors.get(actorId).items.get(ownedId).system.chippedSkill,
+            { actorId, ownedId },
+          ),
+        )
+        .toBe(value);
+      await closeOwnedItemSheet(page, { actorId, itemId: ownedId });
+      await page.evaluate(
+        ({ actorId, ownedId }) =>
+          game.actors
+            .get(actorId)
+            .items.get(ownedId)
+            .sheet.render(true, { editable: false }),
+        { actorId, ownedId },
+      );
+      sid = await openOwnedItemSheet(page, { actorId, itemId: ownedId });
+      await openItemSettings(page, sid);
+      await expect(
+        page.locator(`#${sid} select[name="system.chippedSkill"]`),
+      ).toHaveCount(0);
+      await expect(
+        page.locator(`#${sid} .item-bottom-content-section`),
+      ).toContainText(label);
+      await closeOwnedItemSheet(page, { actorId, itemId: ownedId });
+    }
+  } finally {
+    await page.evaluate(
+      (value) => game.settings.set("core", "language", value),
+      language,
+    );
+  }
 });
