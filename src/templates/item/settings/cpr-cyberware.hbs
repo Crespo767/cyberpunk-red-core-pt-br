@@ -13,7 +13,7 @@
 <li class="item flexrow"><div class="setting-name">{{localize "CPR.prerequisites.label"}}</div><div class="setting-value">{{item.system.prerequisiteSummary}}</div></li>
 {{/if}}
 {{#if isSkillChip}}
-<li class="item flexrow"><div class="setting-name">{{localize "CPR.prerequisites.chippedSkill"}}</div><div class="setting-value">{{#if editable}}<select name="system.chippedSkill"><option value=""></option>{{selectOptions chippedSkills selected=item.system.chippedSkill}}</select>{{else}}{{item.system.chippedSkill}}{{/if}}</div></li>
+<li class="item flexrow"><div class="setting-name">{{localize "CPR.prerequisites.chippedSkill"}}</div><div class="setting-value">{{#if editable}}<select name="system.chippedSkill"><option value=""></option>{{selectOptions chippedSkills selected=item.system.chippedSkill}}</select>{{else}}{{chippedSkillLabel}}{{/if}}</div></li>
 {{/if}}
 {{!-- Cyberware Item Setting --}}
 {{!-- Type Setting --}}

@@ -611,14 +611,14 @@ export default function registerHandlebarsHelpers() {
   });
 
   /**
-   * Get all skills on a mook that have a level above 0. This is used to present
+   * Get all skills on a mook that have a nonzero effective level. This presents
    * specialized skills a mook may have.
    */
-  Handlebars.registerHelper("cprGetMookSkills", (array) => {
+  Handlebars.registerHelper("cprGetMookSkills", (array, actor) => {
     const skillList = [];
     const sortedArray = SystemUtils.SortItemListByName(array);
     sortedArray.forEach((skill) => {
-      if (skill.system.level !== 0 || skill.system.skillmod > 0) {
+      if (actor.getSkillLevel(skill.name) !== 0 || skill.system.skillmod > 0) {
         skillList.push(skill);
       }
     });

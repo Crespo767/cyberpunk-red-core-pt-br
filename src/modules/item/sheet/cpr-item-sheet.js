@@ -118,8 +118,16 @@ export default class CPRItemSheet extends CPRScrollableSheetMixin(ItemSheetV2) {
           .filter((skill) => skill.system.difficulty === chip.difficulty)
           .map((skill) => ({
             value: skill.flags?.babele?.originalName || skill.name,
-            label: skill.name,
+            label: skill.system.core
+              ? SystemUtils.Localize(
+                  Handlebars.helpers.cprGetLocalizedlNameKey(skill),
+                )
+              : skill.name,
           }));
+        cprData.chippedSkillLabel =
+          cprData.chippedSkills.find(
+            (skill) => skill.value === this.item.system.chippedSkill,
+          )?.label ?? this.item.system.chippedSkill;
       }
       cprData.prerequisiteTypes = Object.entries(CPR.cyberwareTypes).map(
         ([value, label]) => ({
