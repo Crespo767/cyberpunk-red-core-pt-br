@@ -44,7 +44,9 @@ export default class CPRRoleItem extends CPRItem {
         } else {
           SystemUtils.DisplayMessage(
             "error",
-            SystemUtils.Localize("CPR.noskillbythatname"),
+            SystemUtils.Format("CPR.messages.skillNotFound", {
+              name: skillName,
+            }),
           );
         }
       } else if (cprItemData.skill === "varying") {
@@ -79,7 +81,9 @@ export default class CPRRoleItem extends CPRItem {
         } else {
           SystemUtils.DisplayMessage(
             "error",
-            SystemUtils.Localize("CPR.noskillbythatname"),
+            SystemUtils.Format("CPR.messages.skillNotFound", {
+              name: skillName,
+            }),
           );
         }
       } else if (subRoleAbility.skill === "varying") {

@@ -1,4 +1,7 @@
 {
+  "CPR.messages.rezBlackIceWithoutScene": "The linked Token does not belong to a Scene. Place it in a Scene before rezzing Black ICE.",
+  "CPR.messages.skillNotFound": "Skill '{name}' was not found on this Actor.",
+  "CPR.settings.dvRollTableCompendium.hint": "Compendium containing the weapon range DV tables.",
   "CPR.actorSheets.clearFilter": "Clear filter",
   "CPR.actorSheets.commonActions.changeAmmo": "Change Ammo",
   "CPR.actorSheets.commonActions.createNewItem": "Create new item on actor",

@@ -319,7 +319,7 @@ export default class CPRCyberdeckItem extends CPRItem {
       );
       SystemUtils.DisplayMessage(
         "error",
-        SystemUtils.Localize("CPR.rezbiwithoutscene"),
+        SystemUtils.Localize("CPR.messages.rezBlackIceWithoutScene"),
       );
       return;
     }

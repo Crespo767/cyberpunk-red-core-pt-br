@@ -20,13 +20,13 @@
   </div>
   <div class="item-detail gear-amount">
     {{~#if item.system.isHeadLocation}}
-    <span data-tooltip="{{localize "CPR.global.location.head"}} {{localize "CPR.characterSheet.rightPange.armor.sp"}}">
+    <span data-tooltip="{{localize "CPR.global.location.head"}} {{localize "CPR.global.itemType.armor.sp"}}">
       {{cprMath "subtract" (cprApplyUpgrade item item.system.headLocation.sp "headSp") item.system.headLocation.ablation}}/{{cprApplyUpgrade item item.system.headLocation.sp "headSp"}}
     </span>
     </br>
     {{/if}}
     {{~#if item.system.isBodyLocation}}
-    <span data-tooltip="{{localize "CPR.global.location.body"}} {{localize "CPR.characterSheet.rightPange.armor.sp"}}">
+    <span data-tooltip="{{localize "CPR.global.location.body"}} {{localize "CPR.global.itemType.armor.sp"}}">
       {{cprMath "subtract" (cprApplyUpgrade item item.system.bodyLocation.sp "bodySp") item.system.bodyLocation.ablation}}/{{cprApplyUpgrade item item.system.bodyLocation.sp "bodySp"}}
     </span>
     {{/if}}

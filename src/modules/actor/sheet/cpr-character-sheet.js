@@ -409,7 +409,7 @@ export default class CPRCharacterActorSheet extends CPRActorSheet {
       } else {
         SystemUtils.DisplayMessage(
           "error",
-          SystemUtils.Localize("CPR.amountnotnumber"),
+          SystemUtils.Localize("CPR.messages.amountNotNumber"),
         );
       }
     }

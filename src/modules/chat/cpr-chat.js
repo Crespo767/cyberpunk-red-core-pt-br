@@ -262,9 +262,10 @@ export default class CPRChat {
           if (!item) {
             SystemUtils.DisplayMessage(
               "warn",
-              `[${displayName}] ${SystemUtils.Localize(
-                "CPR.actormissingitem",
-              )} ${itemId}`,
+              `[${displayName}] ${SystemUtils.Format(
+                "CPR.messages.itemDoesNotExistError",
+                { itemid: itemId },
+              )}`,
             );
             return;
           }
