@@ -100,8 +100,12 @@ export default class CPRItem extends Item {
       }
     }
     if (this.type === "weapon") {
-      cprData["system.dvTable"] =
-        data["system.dvTable"] === null ? "" : data["system.dvTable"];
+      // V13 sheets submit expanded data; do not shadow it with a flat undefined key.
+      if (Object.hasOwn(data, "system.dvTable")) {
+        cprData["system.dvTable"] ??= "";
+      } else if (data.system && Object.hasOwn(data.system, "dvTable")) {
+        cprData.system.dvTable ??= "";
+      }
     }
 
     // If an AE has a usage !== "toggled", then any active effects should not be disabled
