@@ -2,6 +2,14 @@
 
 # Changelog
 
+## Version 1.0.5
+
+### New Features
+
+- Cyberware prerequisites can be edited in the item settings tab: required foundational types, paired, required cyberware (drag and drop), minimum base BODY and required host
+- Skill Chip and Difficult Skill Chip: choose the skill on the chip; while it sits in a Chipware Socket the skill counts as at least 3 on the sheet and in rolls, without changing the stored level
+- The mook sheet flags cyberware with a missing prerequisite and uses chipped skill levels
+
 ## Version 1.0.4
 
 ### New Features

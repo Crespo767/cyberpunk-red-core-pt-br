@@ -2,6 +2,14 @@
 
 # Changelog
 
+## Versão 1.0.5
+
+### Novidades
+
+- Os pré-requisitos de cibernética podem ser editados na aba de configurações do item: tipos de peça-base, par, cibernéticas exigidas (arrastar e soltar), CORPO-base mínimo e hospedeiro
+- Chip de Habilidade e Difficult Skill Chip: escolha a perícia no chip; enquanto ele estiver num Soquete de Chipware, a perícia vale no mínimo 3 na ficha e nas rolagens, sem alterar o nível gravado
+- A ficha de capanga marca cibernética com pré-requisito pendente e usa o nível de perícia dado pelo chip
+
 ## Versão 1.0.4
 
 ### Novidades

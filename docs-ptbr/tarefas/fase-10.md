@@ -50,5 +50,5 @@ Desenho dos chips de perícia:
 
 ## Estado
 
-- [ ] implementação e testes
+- [x] implementação e testes (o Codex parou no limite de uso; o diretor terminou e corrigiu)
 - [ ] suíte completa, pacote e release 1.0.5 (ok do dono)
