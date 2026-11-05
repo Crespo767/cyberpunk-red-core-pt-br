@@ -2,7 +2,7 @@
 
 # Changelog
 
-## Versão 1.0.6
+## Versão 1.0.6 <!-- Version 1.0.6 -->
 
 ### Correções de bugs
 
