@@ -1111,27 +1111,26 @@ export default class CPRActorSheet extends CPRScrollableSheetMixin(
     LOGGER.debug(`weaponID is ${weaponID}`);
     LOGGER.debug(`flag is ${flag}`);
 
-    if (this.token && firemode === "autofire") {
+    if (this.token && (firemode === "autofire" || flag === "autofire")) {
       const weapon = this.actor.items.get(weaponID);
-      const weaponDvTable = weapon?.system.dvTable ?? "";
       const currentDvTable =
-        weaponDvTable === ""
-          ? foundry.utils.getProperty(this.token.document, "flags.cprDvTable")
-          : weaponDvTable;
+        weapon?.system.dvTable ||
+        this.token.getFlag(game.system.id, "cprDvTable")?.name;
 
       if (currentDvTable) {
         const dvTableName = currentDvTable.replace(" (Autofire)", "");
         const dvTables = await SystemUtils.GetDvTables();
         const afTable = dvTables.find(
-          (table) =>
-            table.name.includes(dvTableName) && table.name.includes("Autofire"),
+          (table) => table.name === `${dvTableName} (Autofire)`,
         );
-
-        let newDvTable = currentDvTable;
         if (afTable) {
-          newDvTable = flag === firemode ? dvTableName : afTable.name;
+          const enteringAutofire =
+            firemode === "autofire" && flag !== "autofire";
+          await SystemUtils.SetDvTable(
+            this.token,
+            enteringAutofire ? afTable.name : dvTableName,
+          );
         }
-        await this.token.update({ "flags.cprDvTable": newDvTable });
       }
     }
 
