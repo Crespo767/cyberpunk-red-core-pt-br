@@ -96,4 +96,5 @@ Três estados, como o dono pediu: **posse** (no inventário: nunca avisa, ex.: M
 ## Estado
 
 - [x] plano aprovado pelo dono (respostas acima)
-- [ ] implementação, testes e release 1.0.4
+- [x] implementação, testes (suíte 468/468) e release 1.0.4 publicado (ok do dono em 2026-11-04)
+- [ ] conferir no mundo do dono a migração 051 e as peças que passam a mostrar ⚠
