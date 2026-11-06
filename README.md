@@ -14,8 +14,8 @@ Sistema de Cyberpunk RED (regras básicas) para o Foundry VTT v13, com interface
 - **Interface do sistema:** fichas, diálogos, rolagens, chat, configurações e navegador de documentos.
 - **Compêndios:** armas, munições, armaduras, roupas, cibernética, equipamento, drogas, programas, Funções, perícias,
   veículos, melhorias, lesões críticas e tabelas (via módulo Babele).
-- **Glossário próprio:** Funções em português (Trilha-Redes, Negociador, Solo...), siglas de atributos em português (INT, REF, DES,
-  TECH, FRIEZA, VONT, SORTE, MOVE, CORPO, EMP), REZ como REZ e Mook como Capanga.
+- **Glossário próprio:** Funções em português (Trilha-Redes, Negociador, Solo...), atributos em português (INT, REF, DES,
+  TECH, Moral, Resistência, SORTE, MOVE, CORPO, EMP), REZ como REZ e Mook como Capanga.
 
 ## Requisitos
 
@@ -42,6 +42,11 @@ As atualizações chegam pelo próprio Foundry. As versões publicadas ficam em
 [Releases](https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases).
 
 ## Novidades
+
+Na [versão 1.0.6.5](https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases/tag/1.0.6.5), **WILL passa a
+Resistência** e **COOL passa a Moral** em PT-BR, nas fichas, seletores, efeitos e novas rolagens. As referências
+nas descrições de Laço Negro e Speedheal também foram atualizadas nos compêndios. As chaves internas e os cálculos
+permanecem iguais; registros antigos de chat e descrições de itens já copiados para mundos não são reescritos automaticamente.
 
 Na [versão 1.0.6.4](https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases/tag/1.0.6.4), as dez Funções
 recebem nomes em português e descrições ampliadas, mantendo o nome original em inglês para consulta. As novas

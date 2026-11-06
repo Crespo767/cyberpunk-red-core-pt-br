@@ -2,6 +2,14 @@
 
 # Changelog
 
+## Version 1.0.6.5
+
+### Improvements
+
+- Rename WILL to Resistência and COOL to Moral throughout the Brazilian Portuguese interface, including character and Mook sheets, skill and Role selectors, effects, and new roll dialogs/cards.
+- Update the explicit WILL references in the Black Lace and Speedheal compendium descriptions. Internal stat keys, effect paths, values, and formulas remain unchanged.
+- Document the terminology decision in the glossary and the four-tab character sheet study. Existing chat records and world item descriptions are not rewritten automatically.
+
 ## Version 1.0.6.4
 
 ### Improvements

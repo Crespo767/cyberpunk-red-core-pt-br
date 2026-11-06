@@ -13,6 +13,7 @@ Decisões expressas do dono:
 - Documentar e avaliar a solução antes de implementar.
 - Usar exatamente quatro abas principais, nesta ordem: **Personagem > Equipamento > Cibernéticos > Histórico**.
 - Manter o termo **Função**, mesmo onde a ficha impressa usa Cargo.
+- Usar **Resistência** para WILL e **Moral** para COOL em todo o sistema, por extenso na interface. As chaves internas `will` e `cool` permanecem inalteradas.
 - Preservar os nomes internos usados pelas regras e apresentar os nomes traduzidos ao usuário.
 
 As demais escolhas deste documento são propostas para avaliação, não decisões já aprovadas.
@@ -268,7 +269,7 @@ Requisitos:
 
 - Cargo no PDF corresponde a Função por decisão do dono.
 - Habilidade de Cargo precisa ser conciliada com a apresentação atual de Talento da Função.
-- O PDF usa siglas como TEC, MOR, VON e MOV; o projeto usa TECH, FRIEZA, VONT e MOVE.
+- O PDF usa siglas como TEC, MOR, VON e MOV; o projeto mantém TECH e MOVE e, por decisão posterior do dono, passa a exibir Moral (COOL) e Resistência (WILL) por extenso.
 - A ficha impressa não tem listas dinâmicas nem todos os controles digitais de NET e efeitos.
 - A ordem e as categorias de perícias precisam seguir os dados de regras existentes; rótulos do PDF não bastam para redefini-las.
 - Alterações em imagens, marcas e textos editoriais devem ter sua origem registrada; o PDF não será adicionado ao pacote como um fundo automático por padrão.

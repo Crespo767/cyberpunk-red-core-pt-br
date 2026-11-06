@@ -197,6 +197,7 @@ Respostas do dono (2026-11-03) e o que falta.
   FRIEZA, VONT, SORTE, MOVE, CORPO, EMP; "LUCK (Max)" passa a "SORTE (Máx.)" por consistência). Siglas de regras do sistema (PP, PV, VD, ATQ, VEL, Cadência de Tiro), exceto
   REZ, que fica REZ (hoje está como "RAM"). Mook = Capanga. Nas demais divergências vale o termo do sistema, salvo erro
   claro de sentido.
+  **Atualização de atributos (2026-11-06): COOL passa a Moral e WILL passa a Resistência, por extenso em PT-BR. Esta decisão substitui FRIEZA e VONT acima; as chaves internas `cool` e `will` permanecem inalteradas.**
 - **D9. Repositório e atualizações do fork. RESOLVIDA (2026-11-04).** Repositório `Crespo767/cyberpunk-red-core-pt-br` no GitHub (ainda não criado). Atualizações pelo GitHub Releases: `manifest` = `.../releases/latest/download/system.json`, `download` = `.../releases/download/<versão>/cyberpunk-red-core-<versão>.zip`. Como o gulp vendorizado sempre sobrescreve essas URLs com as do GitLab (sem CI, `example.com`), o fork usa um script próprio de empacotamento em `tools/ptbr/`.
 - **D10. Numeração própria. RESOLVIDA (2026-11-04).** O fork deixa o esquema `0.93.0-ptbr.N` e passa a usar versões próprias em semver, começando por `1.0.0` (o que seria a `0.93.0-ptbr.4`). A base oficial (0.93) fica registrada no CHANGELOG. O Foundry considera `1.0.0` mais nova que `0.93.0-ptbr.3`, então quem já instalou recebe a atualização.
 

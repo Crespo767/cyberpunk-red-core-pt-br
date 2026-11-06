@@ -2,6 +2,14 @@
 
 # Changelog
 
+## Versão 1.0.6.5 <!-- Version 1.0.6.5 -->
+
+### Melhorias
+
+- WILL passa a Resistência e COOL passa a Moral em toda a interface em português, incluindo fichas de Personagem e Capanga, seletores de perícias e Funções, efeitos e novos diálogos/cartões de rolagem.
+- As referências explícitas a WILL nas descrições de Laço Negro e Speedheal foram atualizadas nos compêndios. As chaves internas dos atributos, caminhos de efeitos, valores e fórmulas permanecem iguais.
+- A decisão de terminologia foi registrada no glossário e no estudo da ficha de quatro abas. Registros antigos de chat e descrições de itens já copiados para mundos não são reescritos automaticamente.
+
 ## Versão 1.0.6.4 <!-- Version 1.0.6.4 -->
 
 ### Melhorias

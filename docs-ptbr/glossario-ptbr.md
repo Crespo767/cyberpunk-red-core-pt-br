@@ -11,18 +11,20 @@ A comparação ignora diferenças apenas de maiúsculas e flexão de número.
 
 ## Atributos
 
-| Termo EN | Tradução atual no pt-BR.json (exemplo de chave) | Termo de referência PT-BR | Proposta | Status           |
+Atualização aprovada em 2026-11-06: **COOL = Moral** e **WILL = Resistência**, com os nomes por extenso na interface e nas descrições de regras em PT-BR. Esta decisão substitui FRIEZA e VONT da decisão D8. As chaves internas `cool` e `will` permanecem inalteradas.
+
+| Termo EN | Tradução atual no pt-BR.json (exemplo de chave) | Termo de referência PT-BR | Proposta | Status |
 | -------- | ----------------------------------------------- | ------------------------- | -------- | ---------------- |
-| INT      | INT (`CPR.global.stats.int`)                    | INT                       | INT      | manter em inglês |
-| REF      | REF (`CPR.global.stats.ref`)                    | REF                       | REF      | manter em inglês |
-| DEX      | DES (`CPR.global.stats.dex`)                    | DEX                       | DES      | decidido (D8)    |
-| TECH     | TECH (`CPR.global.stats.tech`)                  | TECH                      | TECH     | manter em inglês |
-| COOL     | FRIEZA (`CPR.global.stats.cool`)                | LEGAL                     | FRIEZA   | decidido (D8)    |
-| WILL     | VONT (`CPR.global.stats.will`)                  | VAI                       | VONT     | decidido (D8)    |
-| LUCK     | SORTE (`CPR.global.stats.luck`)                 | SORTE                     | SORTE    | consistente      |
-| MOVE     | MOVE (`CPR.global.stats.move`)                  | MOVER                     | MOVE     | decidido (D8)    |
-| BODY     | CORPO (`CPR.global.stats.body`)                 | CORPO                     | CORPO    | consistente      |
-| EMP      | EMP (`CPR.global.stats.emp`)                    | EMP                       | EMP      | manter em inglês |
+| INT | INT (`CPR.global.stats.int`) | INT | INT | manter em inglês |
+| REF | REF (`CPR.global.stats.ref`) | REF | REF | manter em inglês |
+| DEX | DES (`CPR.global.stats.dex`) | DEX | DES | decidido (D8) |
+| TECH | TECH (`CPR.global.stats.tech`) | TECH | TECH | manter em inglês |
+| COOL | Moral (`CPR.global.stats.cool`) | LEGAL | Moral | aprovado (2026-11-06) |
+| WILL | Resistência (`CPR.global.stats.will`) | VAI | Resistência | aprovado (2026-11-06) |
+| LUCK | SORTE (`CPR.global.stats.luck`) | SORTE | SORTE | consistente |
+| MOVE | MOVE (`CPR.global.stats.move`) | MOVER | MOVE | decidido (D8) |
+| BODY | CORPO (`CPR.global.stats.body`) | CORPO | CORPO | consistente |
+| EMP | EMP (`CPR.global.stats.emp`) | EMP | EMP | manter em inglês |
 
 ## Funções
 
@@ -136,7 +138,7 @@ O termo da interface permanece **Função**. Esta decisão substitui a orientaç
 
 - **Funções (atualizado em 2026-11-06):** Executivo, Negociador, Homem da Lei, Mídia, Tecnomédico, Trilha-Redes,
   Nômade, Roqueiro, Solo e Técnico. Manter os identificadores internos e os nomes originais dos talentos em inglês.
-- **Atributos:** INT, REF, DES, TECH, FRIEZA, VONT, SORTE, MOVE, CORPO e EMP. Os valores máximos são SORTE (Máx.) e EMP (Máx.).
+- **Atributos:** INT, REF, DES, TECH, Moral, Resistência, SORTE, MOVE, CORPO e EMP. Os valores máximos são SORTE (Máx.) e EMP (Máx.).
 - **Siglas de regras:** manter as do sistema, incluindo PP, PV, VD, ATQ, VEL e Cadência de Tiro. REZ permanece REZ; não é RAM.
 - **Mook:** Capanga; plural Capangas.
 - **Demais divergências:** manter o termo do sistema, salvo erro claro de sentido; relatar esses erros com justificativa.
