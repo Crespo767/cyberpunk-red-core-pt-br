@@ -592,7 +592,8 @@ This game system (including items provided in the compendium) contains unofficia
 ## src/images/
 
 - `src/images/compendium-banner.webp` provided by Rayane Souizi "Wizi"
-- `src/images/Foundry-Background.webp` provided by Rayane Souizi "Wizi"
+- The original `src/images/Foundry-Background.webp` (replaced in this fork) was provided by Rayane Souizi "Wizi".
+- `src/images/foundry-background-ptbr.png` was generated with OpenAI image generation for this fork.
 - `src/images/Repo-Header.webp` provided by Rayane Souizi "Wizi"
 
 ## src/maps/

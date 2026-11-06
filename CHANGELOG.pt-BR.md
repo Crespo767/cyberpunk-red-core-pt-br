@@ -2,6 +2,13 @@
 
 # Changelog
 
+## Versão 1.0.6.1 <!-- Version 1.0.6.1 -->
+
+### Correções
+
+- O libWrapper passa a ser uma dependência obrigatória para o funcionamento da tradução dos compêndios pelo Babele.
+- O manifesto identifica Crespo767 como autor do fork e usa uma nova imagem para o cartão do sistema.
+
 ## Versão 1.0.6 <!-- Version 1.0.6 -->
 
 ### Correções de bugs

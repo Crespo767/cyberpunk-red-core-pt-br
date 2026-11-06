@@ -8,6 +8,11 @@ export const BABELE_REQUIREMENT = {
   compatibility: { minimum: "2.9.1" },
 };
 
+export const LIBWRAPPER_REQUIREMENT = {
+  id: "lib-wrapper",
+  type: "module",
+};
+
 export const PTBR_CORE_RECOMMENDATION = {
   id: "pt-BR",
   type: "module",
@@ -36,9 +41,13 @@ export function forkManifest(manifest, { owner, repo }) {
       ...manifest.relationships,
       requires: [
         ...(manifest.relationships?.requires ?? []).filter(
-          (requirement) => requirement.id !== BABELE_REQUIREMENT.id,
+          (requirement) =>
+            ![BABELE_REQUIREMENT.id, LIBWRAPPER_REQUIREMENT.id].includes(
+              requirement.id,
+            ),
         ),
         BABELE_REQUIREMENT,
+        LIBWRAPPER_REQUIREMENT,
       ],
       recommends: [
         ...(manifest.relationships?.recommends ?? []).filter(

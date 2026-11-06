@@ -22,6 +22,8 @@ Sistema de Cyberpunk RED (regras básicas) para o Foundry VTT v13, com interface
 - Foundry VTT v13, build **13.350 ou mais nova**.
 - Módulo **[Babele](https://foundryvtt.com/packages/babele)** (obrigatório): traduz o conteúdo dos compêndios. O
   Foundry oferece instalá-lo junto com o sistema.
+- Módulo **[libWrapper](https://foundryvtt.com/packages/lib-wrapper)** (obrigatório): necessário para o funcionamento
+  do Babele. O Foundry oferece instalá-lo junto com o sistema.
 - Módulo **[pt-BR](https://foundryvtt.com/packages/pt-BR)** (recomendado): traduz a interface do próprio Foundry
   (menus, configurações, diretórios).
 
@@ -34,7 +36,7 @@ Sistema de Cyberpunk RED (regras básicas) para o Foundry VTT v13, com interface
    https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases/latest/download/system.json
    ```
 
-3. Instale e, no mundo, ative o **Babele** e escolha o idioma **Português (Brasil)** nas configurações.
+3. Instale e, no mundo, ative o **Babele** e o **libWrapper** e escolha o idioma **Português (Brasil)** nas configurações.
 
 As atualizações chegam pelo próprio Foundry. As versões publicadas ficam em
 [Releases](https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases).

@@ -6,6 +6,35 @@ import { buildChangelog } from "./gulp/changelog.mjs";
 import { PackUtils } from "./gulp/utils/PackUtils.mjs";
 import { cprTransformEntry } from "./gulp/utils/cprPackData.mjs";
 import Config from "./gulp/config.mjs";
+import { ChangelogUtils } from "./gulp/utils/ChangelogUtils.mjs";
+import { FileUtils } from "./gulp/utils/FileUtils.mjs";
+import fs from "node:fs";
+import path from "node:path";
+import yaml from "js-yaml";
+
+// The shared generator recognizes three-part versions. Preserve four-part
+// fork releases in the generated journal without modifying the vendored code.
+const sharedGetVersion = ChangelogUtils.getVersion;
+ChangelogUtils.getVersion = (heading) => {
+  const match = heading.match(/Version\s*:? (\d+\.\d+\.\d+\.\d+)/);
+  return match ? `v${match[1]}` : sharedGetVersion(heading);
+};
+const sharedGenerateJournal = ChangelogUtils.generateChangelogJournal;
+ChangelogUtils.generateChangelogJournal = async (...args) => {
+  await sharedGenerateJournal(...args);
+  const [, , lang, outDir] = args;
+  const file = path.join(
+    outDir,
+    `journal.${FileUtils.sanitizeFilename(lang)}.yaml`,
+  );
+  const journal = yaml.load(fs.readFileSync(file, "utf8"));
+  for (const page of journal.pages) {
+    const match = page.name.match(/^v(\d+)\.(\d+)\.(\d+)\.(\d+)$/);
+    if (match)
+      page.sort = Number(match.slice(1, 4).join("")) * 100 + Number(match[4]);
+  }
+  fs.writeFileSync(file, yaml.dump(journal));
+};
 
 // DevMode defaults are project-specific, so they live here rather than in the
 // shared build system. Merged with any `devMode` block in foundryconfig.json.

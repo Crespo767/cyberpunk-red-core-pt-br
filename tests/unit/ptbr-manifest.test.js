@@ -19,6 +19,7 @@ describe("forkManifest", () => {
     type: "module",
     compatibility: { minimum: "13" },
   };
+  const libWrapper = { id: "lib-wrapper", type: "module" };
 
   it("exporta a recomendação oficial do core em PT-BR", () => {
     expect(PTBR_CORE_RECOMMENDATION).toEqual(ptbrCore);
@@ -44,18 +45,23 @@ describe("forkManifest", () => {
         "https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases/latest/download/system.json",
       download:
         "https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases/download/0.93.0-ptbr.1/cyberpunk-red-core-0.93.0-ptbr.1.zip",
-      relationships: { requires: [babele], recommends: [ptbrCore] },
+      relationships: { requires: [babele, libWrapper], recommends: [ptbrCore] },
     });
     expect(result).not.toBe(manifest);
     expect(manifest).toEqual(original);
   });
 
-  it("preserva outras relações e não duplica Babele nem a recomendação PT-BR", () => {
+  it("preserva outras relações e não duplica as dependências nem a recomendação PT-BR", () => {
     const manifest = {
       id: "sistema",
       version: "1.0",
       relationships: {
-        requires: [{ id: "outro", type: "module" }, { id: "babele" }],
+        requires: [
+          { id: "outro", type: "module" },
+          { id: "babele" },
+          { id: "lib-wrapper", manifest: "https://example.com/old.json" },
+          { id: "lib-wrapper" },
+        ],
         recommends: [
           { id: "recomendado", type: "module" },
           { id: "pt-BR", manifest: "https://example.com/old.json" },
@@ -69,7 +75,7 @@ describe("forkManifest", () => {
     const result = forkManifest(manifest, repository);
 
     expect(result.relationships).toEqual({
-      requires: [{ id: "outro", type: "module" }, babele],
+      requires: [{ id: "outro", type: "module" }, babele, libWrapper],
       recommends: [original.relationships.recommends[0], ptbrCore],
       conflicts: original.relationships.conflicts,
     });

@@ -2,6 +2,13 @@
 
 # Changelog
 
+## Version 1.0.6.1
+
+### Fixes
+
+- Require libWrapper for Babele compendium translations.
+- Identify Crespo767 as the fork author and use a new system card image.
+
 ## Version 1.0.6
 
 ### Bug Fixes
