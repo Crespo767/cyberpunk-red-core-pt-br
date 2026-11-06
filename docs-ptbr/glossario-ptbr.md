@@ -24,22 +24,25 @@ A comparação ignora diferenças apenas de maiúsculas e flexão de número.
 | BODY     | CORPO (`CPR.global.stats.body`)                 | CORPO                     | CORPO    | consistente      |
 | EMP      | EMP (`CPR.global.stats.emp`)                    | EMP                       | EMP      | manter em inglês |
 
-## Papéis
+## Funções
 
-| Termo EN     | Tradução atual no pt-BR.json (exemplo de chave) | Termo de referência PT-BR | Proposta          | Status           |
+Atualização aprovada em 2026-11-06: traduzir os nomes das dez Funções, mantendo os identificadores internos em inglês.
+O termo da interface permanece **Função**. Esta decisão substitui a orientação anterior de manter os nomes em inglês.
+
+| Termo EN | Tradução atual no pt-BR.json (exemplo de chave) | Termo de referência PT-BR | Proposta | Status |
 | ------------ | ----------------------------------------------- | ------------------------- | ----------------- | ---------------- |
-| Role         | Funções (`CPR.global.generic.role`)             | Funções                   | Função            | consistente      |
-| Role Ability | Talento da Função (`CPR.rolls.roleAbility`)     | Habilidade de Papel       | Talento da Função | decidido (D8)    |
-| Rockerboy    | Rockerboy (`CPR.global.role.rockerboy.name`)    | Rockerboy                 | Rockerboy         | decidido (D8)    |
-| Solo         | Solo (`CPR.global.role.solo.name`)              | Solo                      | Solo              | manter em inglês |
-| Netrunner    | Netrunner (`CPR.global.role.netrunner.name`)    | Netrunner                 | Netrunner         | decidido (D8)    |
-| Tech         | Tech (`CPR.global.role.tech.name`)              | Técnico                   | Tech              | decidido (D8)    |
-| Medtech      | Medtech (`CPR.global.role.medtech.name`)        | Medtech                   | Medtech           | decidido (D8)    |
-| Media        | Media (`CPR.global.role.media.name`)            | Media                     | Media             | decidido (D8)    |
-| Exec         | Exec (`CPR.global.role.exec.name`)              | Exec                      | Exec              | manter em inglês |
-| Lawman       | Lawman (`CPR.global.role.lawman.name`)          | Lawman                    | Lawman            | decidido (D8)    |
-| Fixer        | Fixer (`CPR.global.role.fixer.name`)            | Fixer                     | Fixer             | decidido (D8)    |
-| Nomad        | Nomad (`CPR.global.role.nomad.name`)            | Nômade                    | Nomad             | decidido (D8)    |
+| Role | Funções (`CPR.global.generic.role`) | Funções | Função | consistente |
+| Role Ability | Talento da Função (`CPR.rolls.roleAbility`) | Habilidade de Papel | Talento da Função | decidido (D8) |
+| Rockerboy | Roqueiro (`CPR.global.role.rockerboy.name`) | Rockerboy | Roqueiro | aprovado (2026-11-06) |
+| Solo | Solo (`CPR.global.role.solo.name`) | Solo | Solo | aprovado (2026-11-06) |
+| Netrunner | Trilha-Redes (`CPR.global.role.netrunner.name`) | Netrunner | Trilha-Redes | aprovado (2026-11-06) |
+| Tech | Técnico (`CPR.global.role.tech.name`) | Técnico | Técnico | aprovado (2026-11-06) |
+| Medtech | Tecnomédico (`CPR.global.role.medtech.name`) | Medtech | Tecnomédico | aprovado (2026-11-06) |
+| Media | Mídia (`CPR.global.role.media.name`) | Media | Mídia | aprovado (2026-11-06) |
+| Exec | Executivo (`CPR.global.role.exec.name`) | Exec | Executivo | aprovado (2026-11-06) |
+| Lawman | Homem da Lei (`CPR.global.role.lawman.name`) | Lawman | Homem da Lei | aprovado (2026-11-06) |
+| Fixer | Negociador (`CPR.global.role.fixer.name`) | Fixer | Negociador | aprovado (2026-11-06) |
+| Nomad | Nômade (`CPR.global.role.nomad.name`) | Nômade | Nômade | aprovado (2026-11-06) |
 
 ## Perícias
 
@@ -131,7 +134,8 @@ A comparação ignora diferenças apenas de maiúsculas e flexão de número.
 
 ## Decisões do dono (D8)
 
-- **Papéis:** manter em inglês: Exec, Fixer, Lawman, Media, Medtech, Netrunner, Nomad, Rockerboy, Solo e Tech.
+- **Funções (atualizado em 2026-11-06):** Executivo, Negociador, Homem da Lei, Mídia, Tecnomédico, Trilha-Redes,
+  Nômade, Roqueiro, Solo e Técnico. Manter os identificadores internos e os nomes originais dos talentos em inglês.
 - **Atributos:** INT, REF, DES, TECH, FRIEZA, VONT, SORTE, MOVE, CORPO e EMP. Os valores máximos são SORTE (Máx.) e EMP (Máx.).
 - **Siglas de regras:** manter as do sistema, incluindo PP, PV, VD, ATQ, VEL e Cadência de Tiro. REZ permanece REZ; não é RAM.
 - **Mook:** Capanga; plural Capangas.

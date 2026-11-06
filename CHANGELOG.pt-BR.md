@@ -2,6 +2,14 @@
 
 # Changelog
 
+## Versão 1.0.6.4 <!-- Version 1.0.6.4 -->
+
+### Melhorias
+
+- As dez Funções recebem nomes em português e descrições ampliadas, com o nome original em inglês para consulta.
+- Os rótulos das Funções nos efeitos também foram traduzidos. Os identificadores dos talentos e os dados de regras permanecem preservados.
+- O termo Função é mantido na interface. As novas descrições estão nos compêndios; cópias existentes em mundos não são reescritas automaticamente.
+
 ## Versão 1.0.6.3 <!-- Version 1.0.6.3 -->
 
 ### Melhorias

@@ -2,6 +2,14 @@
 
 # Changelog
 
+## Version 1.0.6.4
+
+### Improvements
+
+- All ten Roles receive Brazilian Portuguese names and expanded descriptions, retaining their original English names for reference.
+- Role labels in effects are also translated. Ability identifiers and rules data remain intact.
+- The interface continues to use Função. New descriptions apply to compendia; existing world copies are not automatically rewritten.
+
 ## Version 1.0.6.3
 
 ### Improvements
