@@ -2,6 +2,13 @@
 
 # Changelog
 
+## Versão 1.0.6.2 <!-- Version 1.0.6.2 -->
+
+### Melhorias
+
+- A configuração das Funções mostra o nome traduzido do talento principal e explica os nomes usados nas traduções e em alguns bônus.
+- O aviso de alteração de nomes foi esclarecido e a ficha de Demônio teve seu nome padronizado.
+
 ## Versão 1.0.6.1 <!-- Version 1.0.6.1 -->
 
 ### Correções

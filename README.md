@@ -43,6 +43,9 @@ As atualizações chegam pelo próprio Foundry. As versões publicadas ficam em
 
 ## Novidades
 
+Na [versão 1.0.6.2](https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases/tag/1.0.6.2), as configurações de
+Função mostram o nome traduzido do talento principal e explicam seu nome original e a associação com alguns bônus.
+
 Na [versão 1.0.6.1](https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases/tag/1.0.6.1):
 
 - O **libWrapper** passou a ser uma dependência obrigatória para a tradução dos compêndios pelo Babele.

@@ -1,11 +1,9 @@
 {{!--Item Name Settings--}}
 {{!-- Role Item Settings--}}
 <li class="item flexrow">
-  <div class="item flexrow setting-name text-nowrap"{{#if (cprCompare item.type "===" "role") }} data-tooltip="{{localize "CPR.tooltip.nameChangeWarning" }}"{{/if }}>
+  <div class="item flexrow setting-name text-nowrap" data-tooltip="{{localize "CPR.itemSheet.role.abilityIdentifierHint"}}">
     {{localize "CPR.itemSheet.role.mainAbilityName"}}
-    {{#if (cprCompare item.type "===" "role") }}
       <i class="text-smallest text-super fa-solid fa-triangle-exclamation"></i>
-    {{/if}}
     </div>
     <div class="item flexrow setting-value text-nowrap item-end">
       <input name="system.mainRoleAbility"
@@ -14,6 +12,13 @@
              type="text"/>
     </div>
   </li>
+  {{#if item.system.mainRoleAbility}}
+    <li class="item flexrow">
+      <div class="item flexrow setting-name">{{localize "CPR.itemSheet.role.abilityDisplayName"}}</div>
+      <div class="item flexrow setting-value item-end">{{localize (cprGetLocalizedlNameKey item.system.mainRoleAbility "roleAbility")}}</div>
+    </li>
+  {{/if}}
+  <li class="cpr-crit-field-hint text-smaller">{{localize "CPR.itemSheet.role.abilityIdentifierHint"}}</li>
   <li class="item flexrow">
     <div class="item flexrow setting-name text-nowrap">
       {{localize "CPR.itemSheet.role.abilityRank"}}

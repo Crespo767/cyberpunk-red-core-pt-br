@@ -2,6 +2,13 @@
 
 # Changelog
 
+## Version 1.0.6.2
+
+### Improvements
+
+- Role settings display the translated main ability name and explain how original names relate to translations and some bonuses.
+- Clarified the name-change warning and standardized the Demon sheet label in Brazilian Portuguese.
+
 ## Version 1.0.6.1
 
 ### Fixes
