@@ -43,6 +43,9 @@ As atualizações chegam pelo próprio Foundry. As versões publicadas ficam em
 
 ## Novidades
 
+Na [versão 1.0.6.3](https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases/tag/1.0.6.3), as dez Funções
+mostram uma única linha de **Talento**, com o nome traduzido, aviso explicativo e edição do nome original pelo lápis.
+
 Na [versão 1.0.6.2](https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases/tag/1.0.6.2), as configurações de
 Função mostram o nome traduzido do talento principal e explicam seu nome original e a associação com alguns bônus.
 

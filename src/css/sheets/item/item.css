@@ -344,6 +344,20 @@
   text-align: end;
 }
 
+.role-ability-name-editor {
+  width: 100%;
+  text-align: right;
+
+  summary {
+    cursor: pointer;
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
 .item-role-section {
   padding-top: 0.313rem;
 }

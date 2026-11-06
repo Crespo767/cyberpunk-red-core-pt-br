@@ -5,20 +5,23 @@
     {{localize "CPR.itemSheet.role.mainAbilityName"}}
       <i class="text-smallest text-super fa-solid fa-triangle-exclamation"></i>
     </div>
-    <div class="item flexrow setting-value text-nowrap item-end">
-      <input name="system.mainRoleAbility"
-             data-dtype="{{item.system.mainRoleAbility}}"
-             value="{{item.system.mainRoleAbility}}"
-             type="text"/>
+    <div class="item flexrow setting-value item-end">
+      {{#if editable}}
+        <details class="role-ability-name-editor">
+          <summary data-tooltip="{{localize "CPR.itemSheet.role.editAbilityIdentifier"}}">
+            {{localize (cprGetLocalizedlNameKey item.system.mainRoleAbility "roleAbility")}}
+            <i class="fas fa-pen-to-square" aria-hidden="true"></i>
+          </summary>
+          <input name="system.mainRoleAbility"
+                 aria-label="{{localize "CPR.itemSheet.role.editAbilityIdentifier"}}"
+                 value="{{item.system.mainRoleAbility}}"
+                 type="text"/>
+        </details>
+      {{else}}
+        {{localize (cprGetLocalizedlNameKey item.system.mainRoleAbility "roleAbility")}}
+      {{/if}}
     </div>
   </li>
-  {{#if item.system.mainRoleAbility}}
-    <li class="item flexrow">
-      <div class="item flexrow setting-name">{{localize "CPR.itemSheet.role.abilityDisplayName"}}</div>
-      <div class="item flexrow setting-value item-end">{{localize (cprGetLocalizedlNameKey item.system.mainRoleAbility "roleAbility")}}</div>
-    </li>
-  {{/if}}
-  <li class="cpr-crit-field-hint text-smaller">{{localize "CPR.itemSheet.role.abilityIdentifierHint"}}</li>
   <li class="item flexrow">
     <div class="item flexrow setting-name text-nowrap">
       {{localize "CPR.itemSheet.role.abilityRank"}}

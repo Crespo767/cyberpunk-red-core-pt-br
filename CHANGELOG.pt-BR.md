@@ -2,6 +2,13 @@
 
 # Changelog
 
+## Versão 1.0.6.3 <!-- Version 1.0.6.3 -->
+
+### Melhorias
+
+- As dez Funções mostram uma única linha de Talento, com o nome traduzido e a explicação no ícone de aviso.
+- O lápis abre a edição do nome original para quem tem permissão. A exibição traduzida preserva o identificador usado nas regras e nos bônus.
+
 ## Versão 1.0.6.2 <!-- Version 1.0.6.2 -->
 
 ### Melhorias

@@ -2,6 +2,13 @@
 
 # Changelog
 
+## Version 1.0.6.3
+
+### Improvements
+
+- All ten Roles display a single Ability row with the translated name and an explanatory tooltip.
+- The pencil opens original-name editing for users with permission. The translated display preserves the identifier used by rules and bonuses.
+
 ## Version 1.0.6.2
 
 ### Improvements
