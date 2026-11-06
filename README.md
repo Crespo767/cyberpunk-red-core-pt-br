@@ -1,6 +1,6 @@
 # Cyberpunk RED v13 - PTBR
 
-![Logo](src/images/Repo-Header.webp)
+![Cidade futurista sob chuva, iluminada por luzes vermelhas](src/images/foundry-background-ptbr.png)
 
 Sistema de Cyberpunk RED (regras básicas) para o Foundry VTT v13, com interface e compêndios em português do Brasil.
 
@@ -43,6 +43,12 @@ As atualizações chegam pelo próprio Foundry. As versões publicadas ficam em
 
 ## Novidades
 
+Na [versão 1.0.6.1](https://github.com/Crespo767/cyberpunk-red-core-pt-br/releases/tag/1.0.6.1):
+
+- O **libWrapper** passou a ser uma dependência obrigatória para a tradução dos compêndios pelo Babele.
+- O cartão do sistema identifica **Crespo767** como autor do fork e exibe uma nova imagem.
+- O modelo de dados permanece na versão 51; esta atualização não exige uma nova migração.
+
 As mudanças de cada versão estão no [CHANGELOG em português](CHANGELOG.pt-BR.md).
 
 ## Problemas e sugestões
@@ -54,6 +60,7 @@ independente: não relate problemas desta versão ao time do sistema original.
 
 Baseado no sistema [fvtt-cyberpunk-red-core](https://gitlab.com/cyberpunk-red-team/fvtt-cyberpunk-red-core), do
 Cyberpunk RED Team (versão 0.93). Esta é uma versão modificada, a partir de 2026-11-03, com a tradução para português
-do Brasil e correções. Os créditos do projeto original estão em [CREDITS.md](CREDITS.md).
+do Brasil e correções, mantida por [Crespo767](https://github.com/Crespo767). Os créditos do projeto original estão em
+[CREDITS.md](CREDITS.md). A imagem do cartão foi gerada para este fork com a ferramenta de imagens da OpenAI.
 
 Licença: GPLv3, a mesma do original ([LICENCE.md](LICENCE.md)).
