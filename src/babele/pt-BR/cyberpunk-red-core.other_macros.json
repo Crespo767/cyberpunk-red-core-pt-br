@@ -1,5 +1,9 @@
 {
   "label": "Macros",
   "mapping": {},
-  "entries": {}
+  "entries": {
+    "Get EMP'd Items": {
+      "name": "Itens Afetados por PEM"
+    }
+  }
 }

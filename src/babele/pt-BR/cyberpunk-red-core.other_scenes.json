@@ -1,5 +1,12 @@
 {
   "label": "Cenas",
   "mapping": {},
-  "entries": {}
+  "entries": {
+    "Dystopian City Junction": {
+      "name": "Cruzamento da Cidade Distópica"
+    },
+    "Dystopian City Streets": {
+      "name": "Ruas da Cidade Distópica"
+    }
+  }
 }
