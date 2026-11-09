@@ -2,6 +2,12 @@
 
 # Changelog
 
+## Versão 1.0.7.1 <!-- Version 1.0.7.1 -->
+
+### Correções
+
+- O gerador de Arquitetura de Rede volta a preencher os andares pelas tabelas de rolagem quando o Babele traduz os compêndios. Ele falhava sem aviso porque procurava as tabelas pelo nome em inglês.
+
 ## Versão 1.0.7 <!-- Version 1.0.7 -->
 
 ### Melhorias

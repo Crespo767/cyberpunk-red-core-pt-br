@@ -2,6 +2,12 @@
 
 # Changelog
 
+## Version 1.0.7.1
+
+### Bug Fixes
+
+- The NET Architecture generator fills the floors from the roll tables again when Babele translates the compendia. It was failing silently because the tables were looked up by their English names.
+
 ## Version 1.0.7
 
 ### Improvements
