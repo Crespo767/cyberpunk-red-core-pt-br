@@ -22,13 +22,18 @@ export default class CPRSystemUtils {
    * @static
    * @param {String} cname - compendium name (which is not the human readable thing, that's the "label")
    * @param {String} dname - document name to look for
-   * @returns {Document} - returns a Document object with specific document searched for by name
+   * @returns {Document|undefined} - the document searched for by name, or undefined if there is none
    */
   static async GetCompendiumDoc(cname, dname) {
     const comp = game.packs.get(cname);
-    return comp.getDocument(
-      comp.index.contents.filter((i) => i.name === dname)[0]._id,
-    );
+    const entries = comp.index.contents;
+    // Babele renames index entries to the translated name, while code that looks up
+    // system documents (e.g. the NET architecture roll tables) still uses the original
+    // English name. Fall back to the name Babele recorded before translating.
+    const entry =
+      entries.find((i) => i.name === dname) ??
+      entries.find((i) => i.flags?.babele?.originalName === dname);
+    return entry ? comp.getDocument(entry._id) : undefined;
   }
 
   /**
