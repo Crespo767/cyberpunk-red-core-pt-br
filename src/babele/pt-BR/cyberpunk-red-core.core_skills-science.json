@@ -1,37 +1,37 @@
 {
-  "label": "Habilidades (Ciência)",
+  "label": "Perícias (Ciências)",
   "mapping": {},
   "entries": {
     "Science (Anthropology)": {
-      "name": "Ciência (Antropologia)",
+      "name": "Ciências (Antropologia)",
       "description": ""
     },
     "Science (Biology)": {
-      "name": "Ciência (Biologia)",
+      "name": "Ciências (Biologia)",
       "description": ""
     },
     "Science (Chemistry)": {
-      "name": "Ciência (Química)",
+      "name": "Ciências (Química)",
       "description": ""
     },
     "Science (Geology)": {
-      "name": "Ciência (Geologia)",
+      "name": "Ciências (Geologia)",
       "description": ""
     },
     "Science (History)": {
-      "name": "Ciência (História)",
+      "name": "Ciências (História)",
       "description": ""
     },
     "Science (Mathematics)": {
-      "name": "Ciência (Matemática)",
+      "name": "Ciências (Matemática)",
       "description": ""
     },
     "Science (Physics)": {
-      "name": "Ciência (Física)",
+      "name": "Ciências (Física)",
       "description": ""
     },
     "Science (Zoology)": {
-      "name": "Ciência (Zoologia)",
+      "name": "Ciências (Zoologia)",
       "description": ""
     }
   }

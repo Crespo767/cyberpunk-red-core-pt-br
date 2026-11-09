@@ -1,61 +1,61 @@
 {
-  "label": "Habilidades (Especialista Local)",
+  "label": "Perícias (Conhecimento de Área)",
   "mapping": {},
   "entries": {
     "Local Expert (Badlands)": {
-      "name": "Especialista Local (Badlands)",
+      "name": "Conhecimento de Área (Terras Baldias)",
       "description": ""
     },
     "Local Expert (Little China)": {
-      "name": "Especialista Local (Little China)",
+      "name": "Conhecimento de Área (Little China)",
       "description": ""
     },
     "Local Expert (Little Europe)": {
-      "name": "Especialista Local (Little Europe)",
+      "name": "Conhecimento de Área (Little Europe)",
       "description": ""
     },
     "Local Expert (Morro Rock)": {
-      "name": "Especialista Local (Morro Rock)",
+      "name": "Conhecimento de Área (Morro Rock)",
       "description": ""
     },
     "Local Expert (New Westbrook)": {
-      "name": "Especialista Local (New Westbrook)",
+      "name": "Conhecimento de Área (New Westbrook)",
       "description": ""
     },
     "Local Expert (Norcal Military Base)": {
-      "name": "Especialista Local (Base Militar de Norcal)",
+      "name": "Conhecimento de Área (Base Militar de Norcal)",
       "description": ""
     },
     "Local Expert (Old Combat Zone)": {
-      "name": "Especialista Local (Antiga Zona de Combate)",
+      "name": "Conhecimento de Área (Antiga Zona de Combate)",
       "description": ""
     },
     "Local Expert (Old Corp Center)": {
-      "name": "Especialista Local (Antigo Centro Corporativo)",
+      "name": "Conhecimento de Área (Antigo Centro Corporativo)",
       "description": ""
     },
     "Local Expert (Old Japan Town)": {
-      "name": "Especialista Local (Old Japan Town)",
+      "name": "Conhecimento de Área (Antiga Japantown)",
       "description": ""
     },
     "Local Expert (South Night City)": {
-      "name": "Especialista Local (Sul de Night City)",
+      "name": "Conhecimento de Área (Sul de Night City)",
       "description": ""
     },
     "Local Expert (The Glen)": {
-      "name": "Especialista Local (The Glen)",
+      "name": "Conhecimento de Área (Glen)",
       "description": ""
     },
     "Local Expert (University District)": {
-      "name": "Especialista Local (Distrito Universitário)",
+      "name": "Conhecimento de Área (Distrito Universitário)",
       "description": ""
     },
     "Local Expert (Upper Marina)": {
-      "name": "Especialista Local (Upper Marina)",
+      "name": "Conhecimento de Área (Upper Marina)",
       "description": ""
     },
     "Local Expert (Watson)": {
-      "name": "Especialista Local (Watson)",
+      "name": "Conhecimento de Área (Watson)",
       "description": ""
     }
   }
