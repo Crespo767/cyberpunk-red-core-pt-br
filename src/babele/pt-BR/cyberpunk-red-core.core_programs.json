@@ -4,63 +4,63 @@
   "entries": {
     "Armor": {
       "name": "Armadura",
-      "description": "<p>Reduz o dano cerebral em 4 enquanto Carregado. Limite de 1 cópia Carregada por vez. Cada cópia tem 1 uso por Invasão.</p>"
+      "description": "<p>Reduz em 4 o dano cerebral enquanto Ativado. Só 1 cópia Ativada por vez; cada cópia tem 1 uso por Invasão.</p>"
     },
     "Banhammer": {
       "name": "Banhammer",
-      "description": "<p>Causa 3d6 REZ a dano não-Preto ou 2d6 Rez ao Elixir Negro. </p>"
+      "description": "<p>Causa 3d6 de REZ a programas que não são Black ICE, ou 2d6 de REZ a Black ICE.</p>"
     },
     "DeckKRASH": {
       "name": "DeckKRASH",
-      "description": "<p>Força o Trilha Rede a Desconectar de forma insegura. </p>"
+      "description": "<p>Força o Trilha-Redes a se desplugar sem segurança.</p>"
     },
     "Eraser": {
-      "name": "Eraser",
-      "description": "<p>+2 para Capa verificações enquanto Rezzed.</p>"
+      "name": "Apagador",
+      "description": "<p>+2 em testes de Camuflar enquanto Ativado.</p>"
     },
     "Flak": {
-      "name": "Flak",
-      "description": "<p>Os ataques de não Black ICE contra você são reduzidos a 0 enquanto Carregado. Apenas 1 cópia pode ser Carregada de cada vez. Cada cópia tem 1 uso por Invasão.</p>"
+      "name": "Antiestilhaço",
+      "description": "<p>Ataques de programas que não são Black ICE contra você são reduzidos a 0 enquanto Ativado. Só 1 cópia Ativada por vez; 1 uso por Invasão.</p>"
     },
     "Hellbolt": {
       "name": "Hellbolt",
-      "description": "<p>2d6 de dano direto ao cérebro do Trilha Rede. O alvo pega fogo se o console não tiver isolamento elétrico. </p>"
+      "description": "<p>2d6 de dano direto ao cérebro do Trilha-Redes. O equipamento dele pega fogo se não tiver Fiação Isolada.</p>"
     },
     "Nervescrub": {
       "name": "Nervescrub",
-      "description": "<p>Por 1 hora, diminui o INT, REF e DES por 1d6 (min. 1).</p>"
+      "description": "<p>Reduz INT, REF e DES do Trilha-Redes em 1d6 (mínimo 1) por 1 hora.</p>"
     },
     "Poison Flatline": {
       "name": "Poison Flatline",
-      "description": "<p>Destrui um gelo fora do preto no baralho inimigo aleAtoriamente.</p>"
+      "description": "<p>Destrói, ao acaso, um programa que não seja Black ICE no ciberdeque inimigo.</p>"
     },
     "See Ya": {
-      "name": "See Ya",
-      "description": "<p>+2 para os Verificadores de Descobridor enquanto Rezido.</p>"
+      "name": "Até Mais",
+      "description": "<p>+2 em testes de Mapear enquanto Ativado.</p>"
     },
     "Shield": {
       "name": "Escudo",
-      "description": "<p>O primeiro ataque ao cérebro de um Programa ICE não Negro é interrompido. Apenas 1 cópia pode ser Rezada de cada vez. Cada cópia tem 1 uso por Invasão.</p>"
+      "description": "<p>Detém o primeiro ataque bem-sucedido de dano cerebral de um programa que não seja Black ICE. Só 1 cópia Ativada por vez; 1 uso por Invasão.</p>"
     },
     "Speedy Gonzalvez": {
-      "name": "Veloz Gonzalvez",
-      "description": "<p>+2 a Velocidade enquanto Rezido.</p>"
+      "name": "Speedy Gonzalvez",
+      "description": "<p>+2 em Velocidade enquanto Ativado.</p>"
     },
     "Superglue": {
-      "name": "Super-cola",
-      "description": "<p>O Trilha Rede não pode continuar a descer na REDE local ou Desconectar com segurança por 1d6 turnos. Uso limitado de 1 por Invasão.</p>"
+      "name": "Supercola",
+      "description": "<p>O Trilha-Redes não pode avançar na Rede local nem se desplugar com segurança por 1d6 rodadas. 1 uso por Invasão.</p>"
     },
     "Sword": {
       "name": "Espada",
-      "description": "<p>Causa dano 3d6 REZ ao Elixir Negro ou 2d6 Rez ao Elixir não-Negro. </p>"
+      "description": "<p>Causa 3d6 de REZ a Black ICE, ou 2d6 de REZ a programas que não são Black ICE.</p>"
     },
     "Vrizzbolt": {
       "name": "Vrizzbolt",
-      "description": "<p>1d6 de dano direto ao cérebro do Trilha Rede. Abaixa o total de ações na REDE em 1 até o próximo turno. (mínimo de ações de REDE é 2)</p>"
+      "description": "<p>1d6 de dano direto ao cérebro do Trilha-Redes. No próximo turno dele, o total de ações na Rede cai em 1 (mínimo 2).</p>"
     },
     "Worm": {
-      "name": "Minhoca",
-      "description": "<p>+2 para as verificações da porta de trás enquanto Quebrado.</p>"
+      "name": "Verme",
+      "description": "<p>+2 em testes de Entrada Indireta enquanto Ativado.</p>"
     }
   }
 }
