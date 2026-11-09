@@ -78,6 +78,23 @@ describe("PT-BR localization contracts", () => {
     expect(labels[0]).toContain("Black ICE");
     expect(labels[1]).toContain("Não Black ICE");
   });
+  it("orders the role abilities heading naturally in Portuguese", () => {
+    const key = "CPR.characterSheet.bottomPane.role.abilitiesOf";
+    // Other locales fall back to the English pattern, which keeps their
+    // existing "{role} {abilities}" order and wording.
+    expect(parameters(en[key])).toEqual(["abilities", "role"]);
+    expect(format(key, { role: "Executivo", abilities: "Talentos" })).toBe(
+      "Talentos de Executivo",
+    );
+    const template = readFileSync(
+      new URL(
+        "../../src/templates/actor/character/bottom-pane/cpr-role-tab.hbs",
+        import.meta.url,
+      ),
+      "utf8",
+    );
+    expect(template).toContain(key);
+  });
   it("records the purchaser in a vendor sale using the caller's parameters", () => {
     const key = "CPR.containerSheet.tradeLog.vendorSold";
     expect(parameters(pt[key])).toEqual(parameters(en[key]));
