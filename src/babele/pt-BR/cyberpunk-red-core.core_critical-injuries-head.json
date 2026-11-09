@@ -1,50 +1,50 @@
 {
-  "label": "Ferimentos Críticos (Cabeça)",
+  "label": "Lesões Críticas (Cabeça)",
   "mapping": {},
   "entries": {
     "Brain Injury": {
-      "name": "Lesão no cérebro",
-      "description": "<p>-2 em ações.</p>\n"
+      "name": "Lesão Cerebral",
+      "description": "<p>Sofre −2 em todas as ações. A penalidade-base do Teste de Morte aumenta em 1.</p>"
     },
     "Broken Jaw": {
       "name": "Mandíbula Quebrada",
-      "description": "<p>-4 em ações de fala.</p>\n"
+      "description": "<p>Sofre −4 em todas as ações que dependam da fala.</p>"
     },
     "Concussion": {
       "name": "Concussão",
-      "description": "<p>-2 em todas as ações.</p>\n"
+      "description": "<p>Sofre −2 em todas as ações.</p>"
     },
     "Cracked Skull": {
       "name": "Crânio Rachado",
-      "description": "<p>\n  Triplica o dano aos PV em tiros mirados na cabeça (em vez de dobrar\n  o dano normalmente).\n</p>\n"
+      "description": "<p>Tiros Mirados na cabeça multiplicam por 3, em vez de 2, o dano que ultrapassar o PP. A penalidade-base do Teste de Morte aumenta em 1.</p>"
     },
     "Crushed Windpipe": {
       "name": "Traqueia Esmagada",
-      "description": "<p>Não pode falar.</p>\n"
+      "description": "<p>Não consegue falar. A penalidade-base do Teste de Morte aumenta em 1.</p>"
     },
     "Damaged Ear": {
       "name": "Orelha Danificada",
-      "description": "<p>\n  Se você se mover mais de 4 m/jardas em um turno, não poderá se mover no próximo turno. -2\n  em Percepção baseada na audição.\n</p>\n"
+      "description": "<p>Se percorrer mais de 4 m a pé em um turno, não poderá realizar uma Ação de Movimento no turno seguinte. Sofre −2 nos testes de Percepção que envolvam a audição.</p>"
     },
     "Damaged Eye": {
       "name": "Olho Danificado",
-      "description": "<p>-2 em ataques à distância e Percepção (Visão).</p>\n"
+      "description": "<p>Sofre −2 nos ataques à distância e nos testes de Percepção que dependam da visão.</p>"
     },
     "Foreign Object (H)": {
-      "name": "Objeto Estranho (H)",
-      "description": "<p>Sofra dano crítico no fim do turno se você se mover a pé mais de 4 m/jardas.</p>\n"
+      "name": "Objeto Estranho (Cabeça)",
+      "description": "<p>Ao final de cada turno em que se deslocar mais de 4 m a pé, sofre de novo o Dano Adicional desta lesão (5) direto nos PV, sem desgastar a armadura.</p>"
     },
     "Lost Ear": {
       "name": "Orelha Perdida",
-      "description": "<p>\n  Orelha removida. Se você se mover mais de 4 m/jardas em um turno, não poderá se mover no próximo turno. -4\n  em Percepção baseada na audição.\n</p>\n"
+      "description": "<p>Perde a orelha afetada. Se percorrer mais de 4 m a pé em um turno, não poderá realizar uma Ação de Movimento no turno seguinte. Sofre −4 nos testes de Percepção que envolvam a audição. A penalidade-base do Teste de Morte aumenta em 1.</p>"
     },
     "Lost Eye": {
       "name": "Olho Perdido",
-      "description": "<p>Olho removido. -4 em ataques à distância e Percepção baseada na visão.</p>\n"
+      "description": "<p>Perde o olho afetado. Sofre −4 nos ataques à distância e nos testes de Percepção que dependam da visão. A penalidade-base do Teste de Morte aumenta em 1.</p>"
     },
     "Whiplash": {
       "name": "Lesão Cervical",
-      "description": "<p>Nenhum outro efeito além de aumentar em 1 a penalidade base da Salva de Morte.</p>\n"
+      "description": "<p>A penalidade-base do Teste de Morte aumenta em 1; não há outro efeito mecânico.</p>"
     }
   }
 }

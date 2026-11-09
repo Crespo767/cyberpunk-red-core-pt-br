@@ -1,50 +1,50 @@
 {
-  "label": "Ferimentos Críticos (Corpo)",
+  "label": "Lesões Críticas (Corpo)",
   "mapping": {},
   "entries": {
     "Broken Arm": {
       "name": "Braço Quebrado",
-      "description": "<p>Braço inutilizável. Solte o que estava segurando.</p>\n"
+      "description": "<p>O braço afetado fica inutilizável. Solte imediatamente qualquer objeto que estiver segurando com a mão desse braço.</p>"
     },
     "Broken Leg": {
       "name": "Perna Quebrada",
-      "description": "<p>-4 MOVE (mínimo de 1 MOVE).</p>\n"
+      "description": "<p>Sofre −4 em MOV (mínimo de 1).</p>"
     },
     "Broken Ribs": {
       "name": "Costelas Quebradas",
-      "description": "<p>Sofra dano crítico no fim do turno se você se mover a pé mais de 4 m/jardas.</p>\n"
+      "description": "<p>Ao final de cada turno em que se deslocar mais de 4 m a pé, sofre de novo o Dano Adicional desta lesão (5) direto nos PV, sem desgastar a armadura.</p>"
     },
     "Collapsed Lung": {
-      "name": "Pulmão Comprometido",
-      "description": "<p>-2 MOVE (mínimo de 1 MOVE).</p>\n"
+      "name": "Pulmão Colapsado",
+      "description": "<p>Sofre −2 em MOV (mínimo de 1). A penalidade-base do Teste de Morte aumenta em 1.</p>"
     },
     "Crushed Fingers": {
       "name": "Dedos Esmagados",
-      "description": "<p>-4 em ações com as mãos.</p>\n"
+      "description": "<p>Sofre −4 em todas as ações que envolvam a mão afetada.</p>"
     },
     "Dismembered Arm": {
       "name": "Braço Desmembrado",
-      "description": "<p>Braço removido; solte o que estava segurando.</p>\n"
+      "description": "<p>O braço é perdido. Solte imediatamente qualquer objeto que estiver segurando com a mão desse braço. A penalidade-base do Teste de Morte aumenta em 1.</p>"
     },
     "Dismembered Hand": {
       "name": "Mão Desmembrada",
-      "description": "<p>Mão removida; solte o que estava segurando.</p>\n"
+      "description": "<p>A mão é perdida. Solte imediatamente qualquer objeto que estiver segurando com ela. A penalidade-base do Teste de Morte aumenta em 1.</p>"
     },
     "Dismembered Leg": {
       "name": "Perna Desmembrada",
-      "description": "<p>Perna removida. Não pode esquivar. -6 MOVE (mínimo de 1 MOVE).</p>\n"
+      "description": "<p>A perna é perdida. Sofre −6 em MOV (mínimo de 1) e não pode se esquivar de ataques. A penalidade-base do Teste de Morte aumenta em 1.</p>"
     },
     "Foreign Object": {
       "name": "Objeto Estranho",
-      "description": "<p>Sofra dano crítico no fim do turno se você se mover a pé mais de 4 m/jardas.</p>\n"
+      "description": "<p>Ao final de cada turno em que se deslocar mais de 4 m a pé, sofre de novo o Dano Adicional desta lesão (5) direto nos PV, sem desgastar a armadura.</p>"
     },
     "Spinal Injury": {
-      "name": "Lesão na Espinha",
-      "description": "<p>No próximo turno: sem ação, apenas movimento.</p>\n"
+      "name": "Lesão na Coluna",
+      "description": "<p>No próximo turno, não pode realizar uma Ação, mas ainda pode realizar a Ação de Movimento. A penalidade-base do Teste de Morte aumenta em 1.</p>"
     },
     "Torn Muscle": {
       "name": "Músculo Rasgado",
-      "description": "<p>-2 em ataques corpo a corpo.</p>\n"
+      "description": "<p>Sofre −2 em ataques corpo a corpo.</p>"
     }
   }
 }
