@@ -1,30 +1,30 @@
 {
-  "label": "Armadura",
+  "label": "Armaduras",
   "mapping": {},
   "entries": {
     "Bodyweight Suit": {
-      "name": "Macacão especializado",
-      "description": "<p>Macacão reforçado, peça única. Pode armazenar um Console e suporta plugs de interface. Obrigatório ser usado nos espaços de Corpo e Cabeça. +1 de espaços para Hardwares no Console equipado. Sem penalidade de armadura</p>"
+      "name": "Traje Bodyweight",
+      "description": "<p>Traje blindado justo de Trilha-Redes, peça única: sempre ocupa Cabeça e Corpo e não pode ser comprado separado. Guarda um Ciberdeque e dá suporte aos Plugues de Interface. Acrescenta 1 espaço só para Hardware ao Ciberdeque conectado. Sem penalidade de armadura.</p>"
     },
     "Bullet Proof Shield": {
-      "name": "Escudo à prova de bala",
+      "name": "Escudo à Prova de Balas",
       "description": "<p>Requer um braço e tem PV reduzidos pelo dano.</p>"
     },
     "Flak (Body)": {
       "name": "Antiestilhaço (Corpo)",
-      "description": "<p>Armadura chapada de metal para resistir aos golpes mais poderosos. -4 a REF, DES e MOVE.</p>"
+      "description": "<p>Armadura com placas de metal para resistir aos golpes mais fortes. −4 em REF, DES e MOV.</p>"
     },
     "Flak (Head)": {
       "name": "Antiestilhaço (Cabeça)",
-      "description": "<p>Armadura chapada de metal para resistir aos acertos mais poderosos. -4 para REF, DES e MOVE.</p>"
+      "description": "<p>Proteção com placas de metal para a cabeça. −4 em REF, DES e MOV.</p>"
     },
     "Heavy Armorjack (Body)": {
       "name": "Jaqueta Blindada Pesada (Corpo)",
-      "description": "<p>Versão mais pesada de uma jaqueta blindada. -2 em REF, DES e MOVE.</p>"
+      "description": "<p>Versão mais pesada de uma jaqueta blindada. −2 em REF, DES e MOV.</p>"
     },
     "Heavy Armorjack (Head)": {
       "name": "Jaqueta Blindada Pesada (Cabeça)",
-      "description": "<p>Versão mais pesada de uma jaqueta blindada para a cabeça. -2 em REF, DES e MOVE.</p>"
+      "description": "<p>Versão mais pesada de uma jaqueta blindada para a cabeça. −2 em REF, DES e MOV.</p>"
     },
     "Kevlar® (Body)": {
       "name": "Kevlar® (Corpo)",
@@ -40,7 +40,7 @@
     },
     "Leathers (Head)": {
       "name": "Couro (Cabeça)",
-      "description": "<p>Capacete de Couro simples para sua cabeça. Sem penalidade de armadura.</p>"
+      "description": "<p>Proteção simples de couro para a cabeça. Sem penalidade de armadura.</p>"
     },
     "Light Armorjack (Body)": {
       "name": "Jaqueta Blindada Leve (Corpo)",
@@ -52,27 +52,27 @@
     },
     "Medium Armorjack (Body)": {
       "name": "Jaqueta Blindada Média (Corpo)",
-      "description": "<p>Versão média de uma jaqueta blindada. -2 em REF, DES e MOVE.</p>"
+      "description": "<p>Versão média de uma jaqueta blindada. −2 em REF, DES e MOV.</p>"
     },
     "Medium Armorjack (Head)": {
       "name": "Jaqueta Blindada Média (Cabeça)",
-      "description": "<p>Versão média de uma jaqueta blindada para a cabeça. -2 em REF, DES e MOVE.</p>"
+      "description": "<p>Versão média de uma jaqueta blindada para a cabeça. −2 em REF, DES e MOV.</p>"
     },
     "Metalgear® (Body)": {
       "name": "Metalgear® (Corpo)",
-      "description": "<p>\n  A armadura mais pesada e poderosa em circulação. -4 em REF, DES e MOVE.\n</p>\n"
+      "description": "<p>\n  A armadura mais pesada e poderosa em circulação. −4 em REF, DES e MOV.\n</p>\n"
     },
     "Metalgear® (Head)": {
       "name": "Metalgear® (Cabeça)",
-      "description": "<p>\n  A armadura mais pesada e poderosa em circulação. Protege a cabeça. -4 em REF,\n  DES e MOVE.\n</p>\n"
+      "description": "<p>A armadura mais pesada e poderosa em circulação. Protege a cabeça. −4 em REF, DES e MOV.</p>"
     },
     "Skin Weave": {
       "name": "Trama de Pele",
       "description": "<p>Item de armadura para a cibernética Trama de Pele.</p>\n"
     },
     "Subdermal Armor": {
-      "name": "Armadura Subdermal",
-      "description": "<p>Item de armadura para a cibernética Armadura Subdermal.</p>\n"
+      "name": "Armadura Subdérmica",
+      "description": "<p>Item de armadura da cibernética Armadura Subdérmica.</p>"
     }
   }
 }
