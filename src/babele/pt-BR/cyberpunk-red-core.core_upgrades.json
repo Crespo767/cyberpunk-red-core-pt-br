@@ -11,12 +11,12 @@
     },
     "AV-4 Engine Upgrade": {
       "name": "Melhoria de Motor AV-4",
-      "description": "<p>Pode ser aplicada a todos os veículos terrestres. Adiciona propulsores Aerodyne ao veículo, permitindo que ele voe. Durante o voo, o veículo tem velocidade narrativa de 200 mph / 322 km/h e velocidade de combate 40. Enquanto estiver no ar, o veículo deve ser pilotado usando a habilidade Piloto Aéreo.</p>",
+      "description": "<p>Pode ser aplicada a todos os veículos terrestres. Adiciona propulsores Aerodyne ao veículo, permitindo que ele voe. Durante o voo, o veículo tem velocidade narrativa de 322 km/h (200 mph) e velocidade de combate 40. Enquanto estiver no ar, o veículo deve ser pilotado usando a habilidade Piloto Aéreo.</p>",
       "dvTable": ""
     },
     "Backup Drive": {
-      "name": "Unidade de backup",
-      "description": "<p>\n  Salva programas que não sejam Black ICE quando são destruídos. Esses programas podem ser\n  reinstalados por um Netrunner como uma ação física.\n</p>\n",
+      "name": "Unidade de Backup",
+      "description": "<p>\n  Salva programas que não sejam Black ICE quando são destruídos. Esses programas podem ser\n  reinstalados por um Trilha-Redes como uma Ação no espaço físico.\n</p>\n",
       "dvTable": ""
     },
     "Bayonet": {
@@ -40,128 +40,128 @@
       "dvTable": ""
     },
     "Deployable Spike Strip": {
-      "name": "Faixa de Pregos Retrátil",
-      "description": "<p>Pode ser aplicada a todos os carros. Como uma Ação, o motorista pode lançar uma faixa de pregos. Enquanto ela estiver lançada, qualquer veículo com pneus que venha logo atrás deve fazer um teste de VD 17 de Direção de Veículo Terrestre. Em caso de falha, o veículo sofre 4d6 de dano como se atingisse um ponto fraco. Faixas de reposição custam 10 eb.</p>\n<p>Você pode instalar esta melhoria várias vezes; cada instalação aumenta a quantidade de faixas de pregos que podem ser lançadas antes de o sistema precisar ser recarregado. Ele não pode ser recarregado enquanto o veículo estiver em movimento.</p>",
+      "name": "Tira de Espinhos Retrátil",
+      "description": "<p>Pode ser aplicada a todos os carros. Como uma Ação, o motorista pode lançar uma tira de espinhos. Enquanto ela estiver lançada, qualquer veículo com pneus que venha logo atrás deve fazer um teste de VD 17 de Direção de Veículo Terrestre. Em caso de falha, o veículo sofre 4d6 de dano como se atingisse um ponto fraco. Faixas de reposição custam 10 eb.</p>\n<p>Você pode instalar esta melhoria várias vezes; cada instalação aumenta a quantidade de faixas de pregos que podem ser lançadas antes de o sistema precisar ser recarregado. Ele não pode ser recarregado enquanto o veículo estiver em movimento.</p>",
       "dvTable": ""
     },
     "DNA Lock": {
       "name": "Fechadura de DNA",
-      "description": "<p>\n  Usa biometria para bloquear o Console. Exige um teste de\n  <strong>VD17 de Eletrônicos/Tecnologia de Segurança</strong> para ser violado.\n</p>\n",
+      "description": "<p>\n  Usa biometria para bloquear o Ciberdeque. Exige um teste de\n  <strong>VD17 de Tecnologia Eletrônica/de Segurança</strong> para ser violado.\n</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Assault Rifle)": {
-      "name": "Carregador Tambor (Rifle de Assalto)",
-      "description": "<p>Aumenta a capacidade do carregador para 45 balas.</p>\n",
+      "name": "Pente Tambor (Fuzil de Assalto)",
+      "description": "<p>Aumenta a capacidade do pente para 45 balas.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Grenade Launcher)": {
-      "name": "Carregador Tambor (Lançador de Granadas)",
-      "description": "<p>Aumenta a capacidade do carregador para 6 granadas.</p>\n",
+      "name": "Pente Tambor (Lança-granadas)",
+      "description": "<p>Aumenta a capacidade do pente para 6 granadas.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Heavy Pistol)": {
-      "name": "Carregador Tambor (Pistola Pesada)",
-      "description": "<p>Aumenta a capacidade do carregador para 28 balas.</p>\n",
+      "name": "Pente Tambor (Pistola Pesada)",
+      "description": "<p>Aumenta a capacidade do pente para 28 balas.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Heavy SMG)": {
-      "name": "Carregador Tambor (Submetralhadora Pesada)",
-      "description": "<p>Aumenta a capacidade do carregador para 60 balas.</p>\n",
+      "name": "Pente Tambor (Submetralhadora Pesada)",
+      "description": "<p>Aumenta a capacidade do pente para 60 balas.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Medium Pistol)": {
-      "name": "Carregador Tambor (Pistola Média)",
-      "description": "<p>Aumenta a capacidade do carregador para 36 balas.</p>\n",
+      "name": "Pente Tambor (Pistola Média)",
+      "description": "<p>Aumenta a capacidade do pente para 36 balas.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Rocket Launcher)": {
-      "name": "Carregador Tambor (Lançador de Foguetes)",
-      "description": "<p>Aumenta a capacidade do carregador para 3 foguetes. Isso dá uma bela explosão.</p>\n",
+      "name": "Pente Tambor (Lança-foguetes)",
+      "description": "<p>Aumenta a capacidade do pente para 3 foguetes. Isso dá uma bela explosão.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Shotgun)": {
-      "name": "Carregador Tambor (Espingarda)",
-      "description": "<p>Aumenta a capacidade do carregador para 16 cartuchos.</p>\n",
+      "name": "Pente Tambor (Escopeta)",
+      "description": "<p>Aumenta a capacidade do pente para 16 cartuchos.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (SMG)": {
-      "name": "Carregador Tambor (Submetralhadora)",
-      "description": "<p>Aumenta a capacidade do carregador para 50 balas.</p>\n",
+      "name": "Pente Tambor (Submetralhadora)",
+      "description": "<p>Aumenta a capacidade do pente para 50 balas.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Sniper Rifle)": {
-      "name": "Carregador Tambor (Rifle de Precisão)",
-      "description": "<p>Aumenta a capacidade do carregador para 12 balas.</p>\n",
+      "name": "Pente Tambor (Fuzil de Precisão)",
+      "description": "<p>Aumenta a capacidade do pente para 12 balas.</p>\n",
       "dvTable": ""
     },
     "Drum Magazine (Very Heavy Pistol)": {
-      "name": "Carregador Tambor (Pistola Muito Pesada)",
-      "description": "<p>Aumenta a capacidade do carregador para 28 balas.</p>\n",
+      "name": "Pente Tambor (Pistola Muito Pesada)",
+      "description": "<p>Aumenta a capacidade do pente para 28 balas.</p>\n",
       "dvTable": ""
     },
     "Enhanced Interface Plug Integration": {
-      "name": "Integração Aprimorada de Conectores de Interface",
-      "description": "<p>Pode ser aplicada a todas as motos. Enquanto usa Conectores de Interface para conduzir este veículo, se você tiver REF 8 ou mais e você, um passageiro ou sua moto forem alvo de um ataque, poderá tentar esquivar-se como faria a pé. Se você se esquivar por um passageiro, esse resultado será a defesa dele.</p>",
+      "name": "Integração Aprimorada de Plugues de Interface",
+      "description": "<p>Pode ser aplicada a todas as motos. Enquanto usa Plugues de Interface para conduzir este veículo, se você tiver REF 8 ou mais e você, um passageiro ou sua moto forem alvo de um ataque, poderá tentar esquivar-se como faria a pé. Se você se esquivar por um passageiro, esse resultado será a defesa dele.</p>",
       "dvTable": ""
     },
     "Extended Magazine (Assault Rifle)": {
-      "name": "Carregador Estendido (Rifle de Assalto)",
-      "description": "<p>Aumenta a capacidade do carregador para 35 balas.</p>\n",
+      "name": "Pente Estendido (Fuzil de Assalto)",
+      "description": "<p>Aumenta a capacidade do pente para 35 balas.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (Grenade Launcher)": {
-      "name": "Carregador Estendido (Lançador de Granadas)",
-      "description": "<p>Aumenta a capacidade do carregador para 4 granadas.</p>\n",
+      "name": "Pente Estendido (Lança-granadas)",
+      "description": "<p>Aumenta a capacidade do pente para 4 granadas.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (Heavy Pistol)": {
-      "name": "Carregador Estendido (Pistola Pesada)",
-      "description": "<p>Aumenta a capacidade do carregador para 14 balas.</p>\n",
+      "name": "Pente Estendido (Pistola Pesada)",
+      "description": "<p>Aumenta a capacidade do pente para 14 balas.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (Heavy SMG)": {
-      "name": "Carregador Estendido (Submetralhadora Pesada)",
-      "description": "<p>Aumenta a capacidade do carregador para 50 balas.</p>\n",
+      "name": "Pente Estendido (Submetralhadora Pesada)",
+      "description": "<p>Aumenta a capacidade do pente para 50 balas.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (Medium Pistol)": {
-      "name": "Carregador Estendido (Pistola Média)",
-      "description": "<p>Aumenta a capacidade do carregador para 18 balas.</p>\n",
+      "name": "Pente Estendido (Pistola Média)",
+      "description": "<p>Aumenta a capacidade do pente para 18 balas.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (Rocket Launcher)": {
-      "name": "Carregador Estendido (Lançador de Foguetes)",
-      "description": "<p>Aumenta a capacidade do carregador para 2 foguetes.</p>\n",
+      "name": "Pente Estendido (Lança-foguetes)",
+      "description": "<p>Aumenta a capacidade do pente para 2 foguetes.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (Shotgun)": {
-      "name": "Carregador Estendido (Espingarda)",
-      "description": "<p>Aumenta a capacidade do carregador para 8 cartuchos.</p>\n",
+      "name": "Pente Estendido (Escopeta)",
+      "description": "<p>Aumenta a capacidade do pente para 8 cartuchos.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (SMG)": {
-      "name": "Carregador Estendido (Submetralhadora)",
-      "description": "<p>Aumenta a capacidade do carregador para 40 balas.</p>\n",
+      "name": "Pente Estendido (Submetralhadora)",
+      "description": "<p>Aumenta a capacidade do pente para 40 balas.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (Sniper Rifle)": {
-      "name": "Carregador Estendido (Rifle de Precisão)",
-      "description": "<p>Aumenta a capacidade do carregador para 8 balas.</p>\n",
+      "name": "Pente Estendido (Fuzil de Precisão)",
+      "description": "<p>Aumenta a capacidade do pente para 8 balas.</p>\n",
       "dvTable": ""
     },
     "Extended Magazine (Very Heavy Pistol)": {
-      "name": "Carregador Estendido (Pistola Muito Pesada)",
-      "description": "<p>Aumenta a capacidade do carregador para 14 balas.</p>\n",
+      "name": "Pente Estendido (Pistola Muito Pesada)",
+      "description": "<p>Aumenta a capacidade do pente para 14 balas.</p>\n",
       "dvTable": ""
     },
     "Grenade Launcher Underbarrel": {
-      "name": "Lançador de Granadas",
-      "description": "<p>Funciona como um lançador de granadas padrão, mas com capacidade de carregador 1. Exige 2 mãos para uso e ocupa 2 espaços de acessórios. Enquanto estiver acoplado, a arma não pode ser escondida sob a roupa.</p>\n<p>Observe que a arma herda quaisquer modificadores da arma de fogo à qual está acoplada, como os de outros acessórios e de qualidade.</p>",
+      "name": "Lança-granadas Sob o Cano",
+      "description": "<p>Funciona como um lança-granadas padrão, mas com capacidade de pente 1. Exige 2 mãos para uso e ocupa 2 espaços de acessórios. Enquanto estiver acoplado, a arma não pode ser escondida sob a roupa.</p>\n<p>Observe que a arma herda quaisquer modificadores da arma de fogo à qual está acoplada, como os de outros acessórios e de qualidade.</p>",
       "dvTable": "VD Lança-granadas"
     },
     "Hardened Circuitry": {
       "name": "Circuito Endurecido",
-      "description": "<p>O Console não pode ser desativado ou destruído pelos efeitos de EMP.&nbsp;</p>",
+      "description": "<p>O Ciberdeque não pode ser desativado nem destruído por efeitos de PEM.</p>",
       "dvTable": ""
     },
     "Heavy Chassis": {
@@ -176,22 +176,22 @@
     },
     "Hover Upgrade": {
       "name": "Melhoria de Flutuação",
-      "description": "<p>Pode ser aplicada a todos os veículos terrestres. Adiciona ventiladores ao veículo que permitem atravessar a água enquanto ele paira, com velocidade narrativa de 15 mph / 24 km/h e velocidade de combate 10.</p>",
+      "description": "<p>Pode ser aplicada a todos os veículos terrestres. Adiciona ventiladores ao veículo que permitem atravessar a água enquanto ele paira, com velocidade narrativa de 24 km/h (15 mph) e velocidade de combate 10.</p>",
       "dvTable": ""
     },
     "Infrared Nightvision Scope": {
-      "name": "Escopo Infravermelho de Noite",
-      "description": "<p>Reduz as penalizações contra alvos na escuridão, fumaça/nevoa para 0.</p>",
+      "name": "Mira de Visão Noturna Infravermelha",
+      "description": "<p>Reduz a 0 as penalidades contra alvos no escuro ou em fumaça/neblina.</p>",
       "dvTable": ""
     },
     "Insulated Wiring": {
       "name": "Fiação Isolada",
-      "description": "<p>O Console e as roupas do usuário não podem pegar fogo.&nbsp;</p>",
+      "description": "<p>O Ciberdeque e as roupas do usuário não pegam fogo.</p>",
       "dvTable": ""
     },
     "KRASH Barrier": {
       "name": "Barreira KRASH",
-      "description": "<p>O Console é imune a efeitos que forçam o Netrunner a se desconectar, com ou sem segurança.</p>",
+      "description": "<p>O Ciberdeque é imune a efeitos que forçam o Trilha-Redes a se desplugar, com ou sem segurança.</p>",
       "dvTable": ""
     },
     "NOS": {
@@ -206,7 +206,7 @@
     },
     "Onboard Machine Gun": {
       "name": "Metralhadora de Bordo",
-      "description": "<p>Pode ser instalada em todos os veículos. Um <strong>Rifle de Assalto</strong> com capacidade para 30 balas e capaz apenas de Fogo Automático, que pode ser montado voltado para a frente do veículo. O motorista pode dispará-lo com uma Ação; ele não pode ser recarregado enquanto o veículo estiver em movimento nem receber acessórios de arma.</p>\n<p>Você pode instalar esta melhoria várias vezes.</p>",
+      "description": "<p>Pode ser instalada em todos os veículos. Um <strong>Fuzil de Assalto</strong> com capacidade para 30 balas e capaz apenas de Fogo Automático, que pode ser montado voltado para a frente do veículo. O motorista pode dispará-lo com uma Ação; ele não pode ser recarregado enquanto o veículo estiver em movimento nem receber acessórios de arma.</p>\n<p>Você pode instalar esta melhoria várias vezes.</p>",
       "dvTable": ""
     },
     "Onboard Melee Weapon": {
@@ -215,13 +215,13 @@
       "dvTable": ""
     },
     "Onboard Rocket Pod": {
-      "name": "Lançador de Foguetes de Bordo",
-      "description": "<p>Pode ser instalado em todos os veículos, exceto motos, motos aquáticas e girocópteros. Um <strong>Lançador de Foguetes</strong> com um carregador tambor de três foguetes, que pode ser montado voltado para a frente do veículo. O motorista pode dispará-lo com uma Ação. Ele não pode ser recarregado enquanto o veículo estiver em movimento nem receber acessórios de arma.</p>\n<p>Você pode instalar esta melhoria várias vezes. <strong>Exige Chassi Pesado</strong>.</p>",
+      "name": "Lança-foguetes de Bordo",
+      "description": "<p>Pode ser instalado em todos os veículos, exceto motos, motos aquáticas e girocópteros. Um <strong>Lança-foguetes</strong> com um pente tambor de três foguetes, que pode ser montado voltado para a frente do veículo. O motorista pode dispará-lo com uma Ação. Ele não pode ser recarregado enquanto o veículo estiver em movimento nem receber acessórios de arma.</p>\n<p>Você pode instalar esta melhoria várias vezes. <strong>Exige Chassi Pesado</strong>.</p>",
       "dvTable": ""
     },
     "Range Upgrade": {
       "name": "Melhoria de Alcance",
-      "description": "<p>O Console pode se conectar a pontos de até 8m/yds de distância (em vez de 6m/yds).</p>",
+      "description": "<p>O Ciberdeque se conecta a Pontos de Acesso a até 8 m (em vez de 6 m).</p>",
       "dvTable": ""
     },
     "Seating Upgrade": {
@@ -231,17 +231,17 @@
     },
     "Security Upgrade": {
       "name": "Melhoria de Segurança",
-      "description": "<p>\n  Pode ser aplicada a todos os veículos. Adiciona fechaduras de DNA que exigem a\n  biometria correta ou um teste de VD 17 de Eletrônicos/Tecnologia de Segurança.\n  Se não for destravado, o veículo sofre dano como se atingido por um bastão de choque.\n</p>\n<p>\n  Além disso, enquanto parado, o veículo fica camuflado e exige um teste de\n  <strong>VD17 de Percepção</strong> para ser visto. O veículo deve permanecer\n  parado por um minuto para ativar a camuflagem.\n</p>\n",
+      "description": "<p>\n  Pode ser aplicada a todos os veículos. Adiciona fechaduras de DNA que exigem a\n  biometria correta ou um teste de VD 17 de Tecnologia Eletrônica/de Segurança.\n  Se não for destravado, o veículo sofre dano como se atingido por um bastão de choque.\n</p>\n<p>\n  Além disso, enquanto parado, o veículo fica camuflado e exige um teste de\n  <strong>VD17 de Percepção</strong> para ser visto. O veículo deve permanecer\n  parado por um minuto para ativar a camuflagem.\n</p>\n",
       "dvTable": ""
     },
     "Shotgun Underbarrel": {
-      "name": "Espingarda Sob o Cano",
-      "description": "<p>Funciona como uma espingarda padrão, mas com capacidade de carregador 2. Exige 2 mãos para uso e ocupa 2 espaços de acessórios. Enquanto estiver acoplada, a arma não pode ser escondida sob a roupa.</p>\n<p>Observe que a arma herda quaisquer modificadores da arma de fogo à qual está acoplada, como os de outros acessórios e de qualidade.</p>",
+      "name": "Escopeta Sob o Cano",
+      "description": "<p>Funciona como uma escopeta padrão, mas com capacidade de pente 2. Exige 2 mãos para uso e ocupa 2 espaços de acessórios. Enquanto estiver acoplada, a arma não pode ser escondida sob a roupa.</p>\n<p>Observe que a arma herda quaisquer modificadores da arma de fogo à qual está acoplada, como os de outros acessórios e de qualidade.</p>",
       "dvTable": "VD Escopeta (Balote)"
     },
     "Smartgun Link": {
-      "name": "Link Smartgun",
-      "description": "<p>Transforma arma em \"Smartgun\". Consulte todas as regras especificadas na configuração por exemplo. 344 antes de usar.&nbsp;</p>",
+      "name": "Link Inteligente",
+      "description": "<p>Transforma a arma em Arma Inteligente.</p>",
       "dvTable": ""
     },
     "Smuggling Upgrade": {
@@ -250,13 +250,13 @@
       "dvTable": ""
     },
     "Sniping Scope": {
-      "name": "Mira de Precisão",
-      "description": "<p>Permite enxergar detalhes a até 800 m/jardas. Concede +1 a Tiros Únicos/Tiros Mirados contra alvos a mais de 50 m/jardas.</p>",
+      "name": "Mira Longa",
+      "description": "<p>Permite ver detalhes a até 800 m. +1 em Tiros Únicos/Tiros Mirados contra alvos a mais de 50 m.</p>",
       "dvTable": ""
     },
     "Vehicle Heavy Weapon Mount": {
       "name": "Suporte Veicular para Arma Pesada",
-      "description": "<p>Pode ser instalado em todos os veículos, exceto motos, motos aquáticas e girocópteros. Um dos assentos do veículo se transforma em um suporte giratório para qualquer arma de ataque à distância que use duas mãos. Um passageiro pode disparar a arma usando uma Ação. O passageiro pode recarregar a arma. Ela pode ser removida ou reinstalada com uma Ação.</p>\n<p>Na primeira vez que esta melhoria é adquirida, ela inclui uma <strong>Tsunami Arms Helix</strong>, uma <strong>Rhinemetall EMG-86 Railgun</strong> ou um <strong>Lançador de Granadas Militech \"Cowboy\" U-56</strong>. Se o veículo tiver a melhoria Vidro à Prova de Balas, o atirador ficará protegido pelo mesmo vidro.</p>\n<p>Você pode instalar esta melhoria várias vezes se o veículo tiver a melhoria Capacidade de Moradia. <strong>Exige Chassi Pesado</strong>.</p>",
+      "description": "<p>Pode ser instalado em todos os veículos, exceto motos, motos aquáticas e girocópteros. Um dos assentos do veículo se transforma em um suporte giratório para qualquer arma de ataque à distância que use duas mãos. Um passageiro pode disparar a arma usando uma Ação. O passageiro pode recarregar a arma. Ela pode ser removida ou reinstalada com uma Ação.</p>\n<p>Na primeira vez que esta melhoria é adquirida, ela inclui uma <strong>Tsunami Arms Helix</strong>, uma <strong>Rhinemetall EMG-86 Railgun</strong> ou um <strong>Lança-granadas Militech \"Cowboy\" U-56</strong>. Se o veículo tiver a melhoria Vidro à Prova de Balas, o atirador ficará protegido pelo mesmo vidro.</p>\n<p>Você pode instalar esta melhoria várias vezes se o veículo tiver a melhoria Capacidade de Moradia. <strong>Exige Chassi Pesado</strong>.</p>",
       "dvTable": ""
     }
   }
