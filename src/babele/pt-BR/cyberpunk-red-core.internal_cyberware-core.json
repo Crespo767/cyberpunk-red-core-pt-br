@@ -1,21 +1,21 @@
 {
-  "label": "Cibernética (Básica)",
+  "label": "Cibernéticos (Básicos)",
   "mapping": {
     "dvTable": "system.dvTable"
   },
   "entries": {
     "External (7 Option Slots)": {
-      "name": "Externa (7 espaços para opções)",
+      "name": "Cibernéticos Externos (7 espaços para opções)",
       "description": "",
       "dvTable": ""
     },
     "Fashionware (7 Option Slots)": {
-      "name": "Cibernética de Moda (7 espaços para opções)",
+      "name": "Equipamento de Moda (7 espaços para opções)",
       "description": "",
       "dvTable": ""
     },
     "Internal (7 Option Slots)": {
-      "name": "Interna (7 espaços para opções)",
+      "name": "Cibernéticos Internos (7 espaços para opções)",
       "description": "",
       "dvTable": ""
     }
