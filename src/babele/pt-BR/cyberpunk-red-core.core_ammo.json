@@ -4,223 +4,223 @@
   "entries": {
     "Arrow (Armor-Piercing)": {
       "name": "Flecha (Perfurante)",
-      "description": "<p>Double ablation to armor.</p>"
+      "description": "<p>Quando avaria a armadura, avaria 2 pontos de PP em vez de 1.</p>"
     },
     "Arrow (Basic)": {
       "name": "Flecha (Básica)",
-      "description": "<p>Basic ammo, nothing special.</p>"
+      "description": "<p>Munição comum, sem efeito especial.</p>"
     },
     "Arrow (Biotoxin)": {
       "name": "Flecha (Biotoxina)",
-      "description": "<p>Não causa dano imediato. Se for atingido, faça um teste de <strong>Resistir Tortura/Drogas VD15</strong>. Em caso de falha, sofre 3d6 de dano aos PV. Não avaria a armadura.</p>\n"
+      "description": "<p>O ataque não causa dano imediato. O alvo orgânico atingido faz um teste de Resistir à Tortura/Drogas (VD 15). Se falhar, perde 3d6 PV diretamente. A armadura não é avariada.</p>"
     },
     "Arrow (Expansive)": {
       "name": "Flecha (Expansiva)",
-      "description": "<p>Se a vítima tirar o Ferimento Crítico Objeto Estranho (veja pág. 187), ela também rola um segundo Ferimento Crítico diferente. O segundo Ferimento Crítico não causa dano adicional.</p>\n"
+      "description": "<p>Se o ataque causar a lesão crítica Objeto Estranho, role outra lesão crítica até obter um resultado diferente. A segunda lesão crítica não causa dano adicional.</p>"
     },
     "Arrow (Incendiary)": {
       "name": "Flecha (Incendiária)",
-      "description": "<p>Se causar dano ao alvo, ele pega fogo. O alvo sofre 2 de dano aos PV ao final de seu turno, a menos que use uma ação para apagar as chamas. O efeito não é cumulativo.</p>\n"
+      "description": "<p>Se o ataque causar dano ao alvo, ele pega fogo. Até gastar uma ação para apagar as chamas, o alvo perde 2 PV ao final de cada turno. Esse efeito não é cumulativo.</p>"
     },
     "Arrow (Poison)": {
       "name": "Flecha (Veneno)",
-      "description": "<p>Não causa dano imediato. Se atingir um alvo orgânico, ele faz um teste de <strong>Resistir Tortura/Drogas VD13</strong>. Em caso de falha, sofre 2d6 de dano aos PV. Não avaria a armadura.</p>\n"
+      "description": "<p>Não causa dano imediato. Um alvo orgânico atingido faz um teste de Resistir à Tortura/Drogas (VD 13). Se falhar, perde 2d6 PV diretamente. A armadura não é avariada.</p>"
     },
     "Arrow (Rubber)": {
       "name": "Flecha (Borracha)",
-      "description": "<p>Não causa Ferimento Crítico nem avaria a armadura. Deixa o alvo com no mínimo 1 PV. Conta como munição Básica para armas exóticas.</p>\n"
+      "description": "<p>Não causa lesões críticas nem avaria a armadura. Se o dano deixaria um alvo com mais de 1 PV abaixo de 0, ele fica com 1 PV. Conta como munição básica para armas exóticas.</p>"
     },
     "Arrow (Sleep)": {
-      "name": "Flecha (Sono)",
-      "description": "<p>Não causa dano. Se atingir um alvo orgânico, ele faz um teste de <strong>Resistir Tortura/Drogas VD13</strong>. Se falhar, cai no chão (veja pág. 169) e fica inconsciente por 1 minuto. Pode ser acordado por dano ou por outra pessoa que use uma ação para tocá-lo ou sacudi-lo.</p>\n"
+      "name": "Flecha (Sonífera)",
+      "description": "<p>Não causa dano. Um alvo orgânico atingido faz um teste de Resistir à Tortura/Drogas (VD 13). Se falhar, fica caído e inconsciente por 1 minuto. Pode ser acordado por dano ou por outra pessoa que gaste uma ação para tocá-lo ou sacudi-lo.</p>"
     },
     "Arrow (Smart)": {
       "name": "Flecha (Inteligente)",
-      "description": "<p>Requer a cibernética Escopo de Alvo; caso contrário, não dispara. Se errar um ataque único por 4 ou menos, faça uma segunda rolagem de ataque contra a mesma VD usando 1d10+10 (em vez do atributo normal). É possível adicionar SORTE. O alvo pode esquivar da segunda rolagem normalmente, se puder fazê-lo.</p>\n"
+      "description": "<p>Exige o implante Mira de Precisão; sem ele, a munição não dispara. Se um ataque em tiro único errar por 4 ou menos, faça uma segunda rolagem contra a mesma VD: 1d10 + 10, sem somar o atributo ou a perícia usuais. Pode-se somar SORTE. O alvo pode se esquivar dessa segunda rolagem, se tiver essa capacidade.</p>"
     },
     "Battery Pack": {
-      "name": "Pacote de Bateria",
-      "description": "<p>Uma bateria recarregável (em 1 hora), usada com frequência em armas exóticas. Contém 8 disparos e pode ser recarregada.</p>\n"
+      "name": "Bateria Recarregável",
+      "description": "<p>Bateria recarregável usada principalmente em armas exóticas. Possui carga para 8 disparos e leva 1 hora para recarregar.</p>"
     },
     "Grenade (Armor-Piercing)": {
       "name": "Granada (Perfurante)",
-      "description": "<p>Double ablation to armor. </p>"
+      "description": "<p>Quando avaria a armadura, avaria 2 pontos de PP em vez de 1.</p>"
     },
     "Grenade (Biotoxin)": {
       "name": "Granada (Biotoxina)",
-      "description": "<p>Não causa dano imediato. Se for atingido, faça um teste de <strong>Resistir Tortura/Drogas VD15</strong>. Em caso de falha, sofre 3d6 de dano aos PV. Não avaria a armadura.</p>\n"
+      "description": "<p>O ataque não causa dano imediato. O alvo orgânico atingido faz um teste de Resistir à Tortura/Drogas (VD 15). Se falhar, perde 3d6 PV diretamente. A armadura não é avariada.</p>"
     },
     "Grenade (EMP)": {
-      "name": "Granada (Pulso eletromagnético)",
-      "description": "<p>Se for atingido, faça um <strong>teste de Cibertech VD15</strong>. Em caso de falha, 2 peças de cibernética ou dispositivos eletrônicos carregados (à escolha do Mestre) param de funcionar por 1 minuto. Membros cibernéticos ficam pendurados sem firmeza, como um braço orgânico desmembrado; veja pág. 187.</p>\n"
+      "name": "Granada (PEM)",
+      "description": "<p>Não causa dano. O alvo atingido faz um teste de Cibertecnologia (VD 15). Em caso de falha, o Mestre escolhe duas peças de cibernética ou dispositivos eletrônicos carregados que param de funcionar por 1 minuto. Cibermembros afetados ficam inertes, como membros de carne decepados que ainda estão presos ao corpo.</p>"
     },
     "Grenade (Flashbang)": {
-      "name": "Granada (Luz e som)",
-      "description": "<p>Não causa dano. Se for atingido, faça um teste de <strong>Resistir Tortura/Drogas VD15</strong>. Em caso de falha, sofre os Ferimentos Críticos Olho Danificado e Orelha Danificada (veja pág. 188) por 1 minuto. Não causa dano crítico.</p>\n"
+      "name": "Granada (Luz e Som)",
+      "description": "<p>Não causa dano. O alvo atingido faz um teste de Resistir à Tortura/Drogas (VD 15). Se falhar, sofre as lesões críticas Olho Danificado e Orelha Danificada por 1 minuto, sem dano adicional pelas lesões críticas.</p>"
     },
     "Grenade (Incendiary)": {
       "name": "Granada (Incendiária)",
-      "description": "<p>Se causar dano ao alvo, ele pega fogo. O alvo sofre 2 de dano aos PV ao final de seu turno, a menos que use uma ação para apagar as chamas. O efeito não é cumulativo.</p>\n"
+      "description": "<p>Se o ataque causar dano ao alvo, ele pega fogo. Até gastar uma ação para apagar as chamas, o alvo perde 2 PV ao final de cada turno. Esse efeito não é cumulativo.</p>"
     },
     "Grenade (Poison)": {
       "name": "Granada (Veneno)",
-      "description": "<p>Não causa dano imediato. Se atingir um alvo orgânico, ele faz um teste de <strong>Resistir Tortura/Drogas VD13</strong>. Em caso de falha, sofre 2d6 de dano aos PV. Não avaria a armadura.</p>\n"
+      "description": "<p>Não causa dano imediato. Um alvo orgânico atingido faz um teste de Resistir à Tortura/Drogas (VD 13). Se falhar, perde 2d6 PV diretamente. A armadura não é avariada.</p>"
     },
     "Grenade (Sleep)": {
-      "name": "Granada (Sono)",
-      "description": "<p>Não causa dano. Se atingir um alvo orgânico, ele faz um teste de <strong>Resistir Tortura/Drogas VD13</strong>. Se falhar, cai no chão (veja pág. 169) e fica inconsciente por 1 minuto. Pode ser acordado por dano ou por outra pessoa que use uma ação para tocá-lo ou sacudi-lo.</p>\n"
+      "name": "Granada (Sonífera)",
+      "description": "<p>Não causa dano. Um alvo orgânico atingido faz um teste de Resistir à Tortura/Drogas (VD 13). Se falhar, fica caído e inconsciente por 1 minuto. Pode ser acordado por dano ou por outra pessoa que gaste uma ação para tocá-lo ou sacudi-lo.</p>"
     },
     "Grenade (Smoke)": {
       "name": "Granada (Fumaça)",
-      "description": "<p>Não causa dano. Preenche uma área de 10 m/jardas por 10 m/jardas com fumaça por 1 minuto. Tarefas prejudicadas pela fumaça sofrem penalidade de -4.</p>\n"
+      "description": "<p>Não causa dano. Cria uma área de fumaça de 10 m × 10 m durante 1 minuto. Testes prejudicados pela fumaça sofrem penalidade de -4.</p>"
     },
     "Grenade (Teargas)": {
-      "name": "Granada (Gás lacrimogêneo)",
-      "description": "<p>Não causa dano. Alvos atingidos com olhos orgânicos fazem um teste de <strong>Resistir Tortura/Drogas VD13</strong>. Em caso de falha, sofrem o Ferimento Crítico Olho Danificado (veja pág. 188) por 1 minuto. Não causa dano crítico adicional.</p>\n"
+      "name": "Granada (Gás Lacrimogêneo)",
+      "description": "<p>Não causa dano. Alvos atingidos que possuam olhos orgânicos fazem um teste de Resistir à Tortura/Drogas (VD 13). Se falharem, sofrem a lesão crítica Olho Danificado por 1 minuto, sem dano crítico adicional.</p>"
     },
     "Heavy Pistol (Armor-Piercing)": {
       "name": "Munição de Pistola Pesada (Perfurante)",
-      "description": "<p>Double ablation to armor. </p>"
+      "description": "<p>Quando avaria a armadura, avaria 2 pontos de PP em vez de 1.</p>"
     },
     "Heavy Pistol (Basic)": {
       "name": "Munição de Pistola Pesada (Básica)",
-      "description": "<p>Basic ammo, nothing special.</p>"
+      "description": "<p>Munição comum, sem efeito especial.</p>"
     },
     "Heavy Pistol (Expansive)": {
       "name": "Munição de Pistola Pesada (Expansiva)",
-      "description": "<p>Se a vítima tirar o Ferimento Crítico Objeto Estranho (veja pág. 187), ela também rola um segundo Ferimento Crítico diferente. O segundo Ferimento Crítico não causa dano adicional.</p>\n"
+      "description": "<p>Se o ataque causar a lesão crítica Objeto Estranho, role outra lesão crítica até obter um resultado diferente. A segunda lesão crítica não causa dano adicional.</p>"
     },
     "Heavy Pistol (Incendiary)": {
       "name": "Munição de Pistola Pesada (Incendiária)",
-      "description": "<p>Se causar dano ao alvo, ele pega fogo. O alvo sofre 2 de dano aos PV ao final de seu turno, a menos que use uma ação para apagar as chamas. O efeito não é cumulativo.</p>\n"
+      "description": "<p>Se o ataque causar dano ao alvo, ele pega fogo. Até gastar uma ação para apagar as chamas, o alvo perde 2 PV ao final de cada turno. Esse efeito não é cumulativo.</p>"
     },
     "Heavy Pistol (Rubber)": {
       "name": "Munição de Pistola Pesada (Borracha)",
-      "description": "<p>Não causa Ferimento Crítico nem avaria a armadura. Deixa o alvo com no mínimo 1 PV. Conta como munição Básica para armas exóticas.</p>\n"
+      "description": "<p>Não causa lesões críticas nem avaria a armadura. Se o dano deixaria um alvo com mais de 1 PV abaixo de 0, ele fica com 1 PV. Conta como munição básica para armas exóticas.</p>"
     },
     "Heavy Pistol (Smart)": {
       "name": "Munição de Pistola Pesada (Inteligente)",
-      "description": "<p>Requer a cibernética Escopo de Alvo; caso contrário, não dispara. Se errar um ataque único por 4 ou menos, faça uma segunda rolagem de ataque contra a mesma VD usando 1d10+10 (em vez do atributo normal). É possível adicionar SORTE. O alvo pode esquivar da segunda rolagem normalmente, se puder fazê-lo.</p>\n"
+      "description": "<p>Exige o implante Mira de Precisão; sem ele, a munição não dispara. Se um ataque em tiro único errar por 4 ou menos, faça uma segunda rolagem contra a mesma VD: 1d10 + 10, sem somar o atributo ou a perícia usuais. Pode-se somar SORTE. O alvo pode se esquivar dessa segunda rolagem, se tiver essa capacidade.</p>"
     },
     "Medium Pistol (Armor-Piercing)": {
       "name": "Munição de Pistola Média (Perfurante)",
-      "description": "<p>Double ablation to armor. </p>"
+      "description": "<p>Quando avaria a armadura, avaria 2 pontos de PP em vez de 1.</p>"
     },
     "Medium Pistol (Basic)": {
       "name": "Munição de Pistola Média (Básica)",
-      "description": "<p>Basic ammo, nothing special.</p>"
+      "description": "<p>Munição comum, sem efeito especial.</p>"
     },
     "Medium Pistol (Expansive)": {
       "name": "Munição de Pistola Média (Expansiva)",
-      "description": "<p>Se a vítima tirar o Ferimento Crítico Objeto Estranho (veja pág. 187), ela também rola um segundo Ferimento Crítico diferente. O segundo Ferimento Crítico não causa dano adicional.</p>\n"
+      "description": "<p>Se o ataque causar a lesão crítica Objeto Estranho, role outra lesão crítica até obter um resultado diferente. A segunda lesão crítica não causa dano adicional.</p>"
     },
     "Medium Pistol (Incendiary)": {
       "name": "Munição de Pistola Média (Incendiária)",
-      "description": "<p>Se causar dano ao alvo, ele pega fogo. O alvo sofre 2 de dano aos PV ao final de seu turno, a menos que use uma ação para apagar as chamas. O efeito não é cumulativo.</p>\n"
+      "description": "<p>Se o ataque causar dano ao alvo, ele pega fogo. Até gastar uma ação para apagar as chamas, o alvo perde 2 PV ao final de cada turno. Esse efeito não é cumulativo.</p>"
     },
     "Medium Pistol (Rubber)": {
       "name": "Munição de Pistola Média (Borracha)",
-      "description": "<p>Não causa Ferimento Crítico nem avaria a armadura. Deixa o alvo com no mínimo 1 PV. Conta como munição Básica para armas exóticas.</p>\n"
+      "description": "<p>Não causa lesões críticas nem avaria a armadura. Se o dano deixaria um alvo com mais de 1 PV abaixo de 0, ele fica com 1 PV. Conta como munição básica para armas exóticas.</p>"
     },
     "Medium Pistol (Smart)": {
       "name": "Munição de Pistola Média (Inteligente)",
-      "description": "<p>Requer a cibernética Escopo de Alvo; caso contrário, não dispara. Se errar um ataque único por 4 ou menos, faça uma segunda rolagem de ataque contra a mesma VD usando 1d10+10 (em vez do atributo normal). É possível adicionar SORTE. O alvo pode esquivar da segunda rolagem normalmente, se puder fazê-lo.</p>\n"
+      "description": "<p>Exige o implante Mira de Precisão; sem ele, a munição não dispara. Se um ataque em tiro único errar por 4 ou menos, faça uma segunda rolagem contra a mesma VD: 1d10 + 10, sem somar o atributo ou a perícia usuais. Pode-se somar SORTE. O alvo pode se esquivar dessa segunda rolagem, se tiver essa capacidade.</p>"
     },
     "Paintball (Acid)": {
-      "name": "Bola de tinta (Ácido)",
-      "description": "<p>Projéteis de paintball cheios de ácido. Não causam dano, mas avariam a armadura em 1 PP ao atingir o alvo*.</p>\n<p><em>*Ainda não há suporte para esse efeito, portanto é necessário reduzir a armadura manualmente ao atingir o alvo.</em></p>\n"
+      "name": "Bola de Paintball (Ácida)",
+      "description": "<p>Projétil de paintball com ácido. Não causa dano aos PV, mas avaria a armadura em 1 ponto de PP ao atingir o alvo. A avaria não é automática: reduza a armadura manualmente.</p>"
     },
     "Paintball (Basic)": {
-      "name": "Bola de tinta (Básico)",
-      "description": "<p>Bolhas de tinta comuns que não causam dano. Mas incomodam.</p>\n"
+      "name": "Bola de Paintball (Básica)",
+      "description": "<p>Projétil de paintball comum. Não causa dano.</p>"
     },
     "Rifle (Armor-Piercing)": {
-      "name": "Munição de Rifle (Perfurante)",
-      "description": "<p>Double ablation to armor. </p>"
+      "name": "Munição de Fuzil (Perfurante)",
+      "description": "<p>Quando avaria a armadura, avaria 2 pontos de PP em vez de 1.</p>"
     },
     "Rifle (Basic)": {
-      "name": "Munição de Rifle (Básica)",
-      "description": "<p>Basic ammo, nothing special.</p>"
+      "name": "Munição de Fuzil (Básica)",
+      "description": "<p>Munição comum, sem efeito especial.</p>"
     },
     "Rifle (Expansive)": {
-      "name": "Munição de Rifle (Expansiva)",
-      "description": "<p>Se a vítima tirar o Ferimento Crítico Objeto Estranho (veja pág. 187), ela também rola um segundo Ferimento Crítico diferente. O segundo Ferimento Crítico não causa dano adicional.</p>\n"
+      "name": "Munição de Fuzil (Expansiva)",
+      "description": "<p>Se o ataque causar a lesão crítica Objeto Estranho, role outra lesão crítica até obter um resultado diferente. A segunda lesão crítica não causa dano adicional.</p>"
     },
     "Rifle (Incendiary)": {
-      "name": "Munição de Rifle (Incendiária)",
-      "description": "<p>Se causar dano ao alvo, ele pega fogo. O alvo sofre 2 de dano aos PV ao final de seu turno, a menos que use uma ação para apagar as chamas. O efeito não é cumulativo.</p>\n"
+      "name": "Munição de Fuzil (Incendiária)",
+      "description": "<p>Se o ataque causar dano ao alvo, ele pega fogo. Até gastar uma ação para apagar as chamas, o alvo perde 2 PV ao final de cada turno. Esse efeito não é cumulativo.</p>"
     },
     "Rifle (Rubber)": {
-      "name": "Munição de Rifle (Borracha)",
-      "description": "<p>Não causa Ferimento Crítico nem avaria a armadura. Deixa o alvo com no mínimo 1 PV. Conta como munição Básica para armas exóticas.</p>\n"
+      "name": "Munição de Fuzil (Borracha)",
+      "description": "<p>Não causa lesões críticas nem avaria a armadura. Se o dano deixaria um alvo com mais de 1 PV abaixo de 0, ele fica com 1 PV. Conta como munição básica para armas exóticas.</p>"
     },
     "Rifle (Smart)": {
-      "name": "Munição de Rifle (Inteligente)",
-      "description": "<p>Requer a cibernética Escopo de Alvo; caso contrário, não dispara. Se errar um ataque único por 4 ou menos, faça uma segunda rolagem de ataque contra a mesma VD usando 1d10+10 (em vez do atributo normal). É possível adicionar SORTE. O alvo pode esquivar da segunda rolagem normalmente, se puder fazê-lo.</p>\n"
+      "name": "Munição de Fuzil (Inteligente)",
+      "description": "<p>Exige o implante Mira de Precisão; sem ele, a munição não dispara. Se um ataque em tiro único errar por 4 ou menos, faça uma segunda rolagem contra a mesma VD: 1d10 + 10, sem somar o atributo ou a perícia usuais. Pode-se somar SORTE. O alvo pode se esquivar dessa segunda rolagem, se tiver essa capacidade.</p>"
     },
     "Rocket (Armor-Piercing)": {
       "name": "Foguete (Perfurante)",
-      "description": "<p>Double ablation to armor. </p>"
+      "description": "<p>Quando avaria a armadura, avaria 2 pontos de PP em vez de 1.</p>"
     },
     "Rocket (Smart)": {
       "name": "Foguete (Inteligente)",
-      "description": "<p>Requer a cibernética Escopo de Alvo; caso contrário, não dispara. Se errar um ataque único por 4 ou menos, faça uma segunda rolagem de ataque contra a mesma VD usando 1d10+10 (em vez do atributo normal). É possível adicionar SORTE. O alvo pode esquivar da segunda rolagem normalmente, se puder fazê-lo.</p>\n"
+      "description": "<p>Exige o implante Mira de Precisão; sem ele, a munição não dispara. Se um ataque em tiro único errar por 4 ou menos, faça uma segunda rolagem contra a mesma VD: 1d10 + 10, sem somar o atributo ou a perícia usuais. Pode-se somar SORTE. O alvo pode se esquivar dessa segunda rolagem, se tiver essa capacidade.</p>"
     },
     "Shotgun Shell (Basic)": {
-      "name": "Cartucho de Espingarda (Básico)",
-      "description": "<p>Basic ammo, nothing special.</p>"
+      "name": "Cartucho de Escopeta (Básico)",
+      "description": "<p>Munição comum, sem efeito especial.</p>"
     },
     "Shotgun Shell (Incendiary)": {
-      "name": "Cartucho de Espingarda (Incendiário)",
-      "description": "<p>Se causar dano ao alvo, ele pega fogo. O alvo sofre 2 de dano aos PV ao final de seu turno, a menos que use uma ação para apagar as chamas. O efeito não é cumulativo.</p>\n"
+      "name": "Cartucho de Escopeta (Incendiário)",
+      "description": "<p>Se o ataque causar dano ao alvo, ele pega fogo. Até gastar uma ação para apagar as chamas, o alvo perde 2 PV ao final de cada turno. Esse efeito não é cumulativo.</p>"
     },
     "Shotgun Slug (Armor-Piercing)": {
-      "name": "Balote de Espingarda (Perfurante)",
-      "description": "<p>Double ablation to armor. </p>"
+      "name": "Balote de Escopeta (Perfurante)",
+      "description": "<p>Quando avaria a armadura, avaria 2 pontos de PP em vez de 1.</p>"
     },
     "Shotgun Slug (Basic)": {
-      "name": "Balote de Espingarda (Básico)",
-      "description": "<p>Basic ammo, nothing special.</p>"
+      "name": "Balote de Escopeta (Básico)",
+      "description": "<p>Munição comum, sem efeito especial.</p>"
     },
     "Shotgun Slug (Expansive)": {
-      "name": "Balote de Espingarda (Expansivo)",
-      "description": "<p>Se a vítima tirar o Ferimento Crítico Objeto Estranho (veja pág. 187), ela também rola um segundo Ferimento Crítico diferente. O segundo Ferimento Crítico não causa dano adicional.</p>\n"
+      "name": "Balote de Escopeta (Expansivo)",
+      "description": "<p>Se o ataque causar a lesão crítica Objeto Estranho, role outra lesão crítica até obter um resultado diferente. A segunda lesão crítica não causa dano adicional.</p>"
     },
     "Shotgun Slug (Incendiary)": {
-      "name": "Balote de Espingarda (Incendiário)",
-      "description": "<p>Se causar dano ao alvo, ele pega fogo. O alvo sofre 2 de dano aos PV ao final de seu turno, a menos que use uma ação para apagar as chamas. O efeito não é cumulativo.</p>\n"
+      "name": "Balote de Escopeta (Incendiário)",
+      "description": "<p>Se o ataque causar dano ao alvo, ele pega fogo. Até gastar uma ação para apagar as chamas, o alvo perde 2 PV ao final de cada turno. Esse efeito não é cumulativo.</p>"
     },
     "Shotgun Slug (Rubber)": {
-      "name": "Balote de Espingarda (Borracha)",
-      "description": "<p>Não causa Ferimento Crítico nem avaria a armadura. Deixa o alvo com no mínimo 1 PV. Conta como munição Básica para armas exóticas.</p>\n"
+      "name": "Balote de Escopeta (Borracha)",
+      "description": "<p>Não causa lesões críticas nem avaria a armadura. Se o dano deixaria um alvo com mais de 1 PV abaixo de 0, ele fica com 1 PV. Conta como munição básica para armas exóticas.</p>"
     },
     "Shotgun Slug (Smart)": {
-      "name": "Balote de Espingarda (Inteligente)",
-      "description": "<p>Requer a cibernética Escopo de Alvo; caso contrário, não dispara. Se errar um ataque único por 4 ou menos, faça uma segunda rolagem de ataque contra a mesma VD usando 1d10+10 (em vez do atributo normal). É possível adicionar SORTE. O alvo pode esquivar da segunda rolagem normalmente, se puder fazê-lo.</p>\n"
+      "name": "Balote de Escopeta (Inteligente)",
+      "description": "<p>Exige o implante Mira de Precisão; sem ele, a munição não dispara. Se um ataque em tiro único errar por 4 ou menos, faça uma segunda rolagem contra a mesma VD: 1d10 + 10, sem somar o atributo ou a perícia usuais. Pode-se somar SORTE. O alvo pode se esquivar dessa segunda rolagem, se tiver essa capacidade.</p>"
     },
     "Very Heavy Pistol (Armor-Piercing)": {
       "name": "Munição de Pistola Muito Pesada (Perfurante)",
-      "description": "<p>Double ablation to armor. </p>"
+      "description": "<p>Quando avaria a armadura, avaria 2 pontos de PP em vez de 1.</p>"
     },
     "Very Heavy Pistol (Basic)": {
       "name": "Munição de Pistola Muito Pesada (Básica)",
-      "description": "<p>Basic ammo, nothing special.</p>"
+      "description": "<p>Munição comum, sem efeito especial.</p>"
     },
     "Very Heavy Pistol (Expansive)": {
       "name": "Munição de Pistola Muito Pesada (Expansiva)",
-      "description": "<p>Se a vítima tirar o Ferimento Crítico Objeto Estranho (veja pág. 187), ela também rola um segundo Ferimento Crítico diferente. O segundo Ferimento Crítico não causa dano adicional.</p>\n"
+      "description": "<p>Se o ataque causar a lesão crítica Objeto Estranho, role outra lesão crítica até obter um resultado diferente. A segunda lesão crítica não causa dano adicional.</p>"
     },
     "Very Heavy Pistol (Incendiary)": {
       "name": "Munição de Pistola Muito Pesada (Incendiária)",
-      "description": "<p>Se causar dano ao alvo, ele pega fogo. O alvo sofre 2 de dano aos PV ao final de seu turno, a menos que use uma ação para apagar as chamas. O efeito não é cumulativo.</p>\n"
+      "description": "<p>Se o ataque causar dano ao alvo, ele pega fogo. Até gastar uma ação para apagar as chamas, o alvo perde 2 PV ao final de cada turno. Esse efeito não é cumulativo.</p>"
     },
     "Very Heavy Pistol (Rubber)": {
       "name": "Munição de Pistola Muito Pesada (Borracha)",
-      "description": "<p>Não causa Ferimento Crítico nem avaria a armadura. Deixa o alvo com no mínimo 1 PV. Conta como munição Básica para armas exóticas.</p>\n"
+      "description": "<p>Não causa lesões críticas nem avaria a armadura. Se o dano deixaria um alvo com mais de 1 PV abaixo de 0, ele fica com 1 PV. Conta como munição básica para armas exóticas.</p>"
     },
     "Very Heavy Pistol (Smart)": {
       "name": "Munição de Pistola Muito Pesada (Inteligente)",
-      "description": "<p>Requer a cibernética Escopo de Alvo; caso contrário, não dispara. Se errar um ataque único por 4 ou menos, faça uma segunda rolagem de ataque contra a mesma VD usando 1d10+10 (em vez do atributo normal). É possível adicionar SORTE. O alvo pode esquivar da segunda rolagem normalmente, se puder fazê-lo.</p>\n"
+      "description": "<p>Exige o implante Mira de Precisão; sem ele, a munição não dispara. Se um ataque em tiro único errar por 4 ou menos, faça uma segunda rolagem contra a mesma VD: 1d10 + 10, sem somar o atributo ou a perícia usuais. Pode-se somar SORTE. O alvo pode se esquivar dessa segunda rolagem, se tiver essa capacidade.</p>"
     }
   }
 }
