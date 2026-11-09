@@ -29,7 +29,10 @@ command: |-
       // Apply to Actor
       actor.update({"system.derivedStats.hp.value": currentHp + hpGain});
 
-      message = `<strong>${token.document.name}</strong><p>Used a Speedheal and regained <b>${hpGain}</b> HP.</p>`;
+      const message = game.i18n.format("CPR.macro.speedheal.used", {
+        actor: token.document.name,
+        hp: hpGain,
+      });
       ChatMessage.create({ content: message });
     }
   });

@@ -1097,6 +1097,7 @@
   "CPR.macro.invalidRollType": "Você especificou um tipo de rolagem inválido para a macro:",
   "CPR.macro.itemMissing": "Certifique-se de selecionar o ator que possui um item ou perícia chamado(a):",
   "CPR.macro.noTokenSelected": "Aviso: nenhum token selecionado!",
+  "CPR.macro.speedheal.used": "<strong>{actor}</strong><p>Usou um Speedheal e recuperou <b>{hp}</b> PV.</p>",
   "CPR.macro.emp.hasMultipleItems": "<strong>{actor}</strong><p>Quando o PEM dispara, seus itens <b>{item1}</b> e <b>{item2}</b> ficam inoperantes por 1 minuto.</p>",
   "CPR.macro.emp.hasSingleItem": "<strong>{actor}</strong><p>Quando o PEM dispara, seu item <b>{item}</b> fica inoperante por 1 minuto.</p>",
   "CPR.macro.emp.hasNoItems": "<strong>{actor}</strong><p>Não tem itens afetados por PEM. O PEM dispara sem efeito.</p>",
