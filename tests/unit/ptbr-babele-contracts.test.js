@@ -36,6 +36,19 @@ describe("PT-BR critical injury tables", () => {
   });
 });
 
+describe("PT-BR drug effects", () => {
+  // CPRDrug.snort() enables the effect whose name equals system.consumed, so
+  // a translated effect name needs the matching translated consumed value.
+  const drugs = Object.entries(load("core_drugs").entries).filter(
+    ([, entry]) => entry.effects,
+  );
+
+  it.each(drugs)("%s consumes one of its translated effects", (_, drug) => {
+    const effects = Object.values(drug.effects).map((effect) => effect.name);
+    expect(effects).toContain(drug.consumed);
+  });
+});
+
 describe("PT-BR DV tables", () => {
   // Weapons store the translated table name; Autofire appends a literal
   // " (Autofire)" to it (cpr-loadable.js, cpr-actor-sheet.js).
