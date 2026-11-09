@@ -78,6 +78,20 @@ describe("PT-BR localization contracts", () => {
     expect(labels[0]).toContain("Black ICE");
     expect(labels[1]).toContain("Não Black ICE");
   });
+  it("localizes the Speedheal macro chat message", () => {
+    const key = "CPR.macro.speedheal.used";
+    const macro = readFileSync(
+      new URL(
+        "../../src/packs/other/macros/macro.speedheal.yaml",
+        import.meta.url,
+      ),
+      "utf8",
+    );
+    expect(macro).toContain(key);
+    expect(macro).not.toMatch(/Used a Speedheal/);
+    expect(parameters(en[key])).toEqual(["actor", "hp"]);
+    expect(parameters(pt[key])).toEqual(["actor", "hp"]);
+  });
   it("orders the role abilities heading naturally in Portuguese", () => {
     const key = "CPR.characterSheet.bottomPane.role.abilitiesOf";
     // Other locales fall back to the English pattern, which keeps their
