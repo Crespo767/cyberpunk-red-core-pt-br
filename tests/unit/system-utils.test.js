@@ -72,6 +72,70 @@ describe("CPRSystemUtils.slugify", () => {
   });
 });
 
+describe("CPRSystemUtils.GetCompendiumDoc", () => {
+  const stubPack = (entries) => {
+    const pack = {
+      index: { contents: entries },
+      getDocument: vi.fn(async (id) => ({ id })),
+    };
+    vi.stubGlobal("game", { ...game, packs: { get: () => pack } });
+    return pack;
+  };
+
+  it("finds a document by its current name", async () => {
+    stubPack([{ _id: "a", name: "First Two Floors (The Lobby)" }]);
+
+    expect(
+      await SystemUtils.GetCompendiumDoc(
+        "pack",
+        "First Two Floors (The Lobby)",
+      ),
+    ).toEqual({ id: "a" });
+  });
+
+  it("finds a Babele-translated document by its original name", async () => {
+    stubPack([
+      {
+        _id: "a",
+        name: "Todos os Outros Andares (Básico)",
+        flags: { babele: { originalName: "All Other Floors (Basic)" } },
+      },
+      {
+        _id: "b",
+        name: "Primeiros Dois Andares (O Saguão)",
+        flags: { babele: { originalName: "First Two Floors (The Lobby)" } },
+      },
+    ]);
+
+    expect(
+      await SystemUtils.GetCompendiumDoc(
+        "pack",
+        "First Two Floors (The Lobby)",
+      ),
+    ).toEqual({ id: "b" });
+  });
+
+  it("prefers the current name over another entry's original name", async () => {
+    stubPack([
+      { _id: "a", name: "Outro", flags: { babele: { originalName: "Smash" } } },
+      { _id: "b", name: "Smash" },
+    ]);
+
+    expect(await SystemUtils.GetCompendiumDoc("pack", "Smash")).toEqual({
+      id: "b",
+    });
+  });
+
+  it("returns undefined when no document matches", async () => {
+    const pack = stubPack([{ _id: "a", name: "Asp" }]);
+
+    expect(await SystemUtils.GetCompendiumDoc("pack", "Missing")).toBe(
+      undefined,
+    );
+    expect(pack.getDocument).not.toHaveBeenCalled();
+  });
+});
+
 describe("CPRSystemUtils.Localize / Format", () => {
   it("Localize delegates to game.i18n.localize", () => {
     // The shim echoes the key back.
