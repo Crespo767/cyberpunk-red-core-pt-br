@@ -332,7 +332,7 @@
     "Popup Grenade Launcher": {
       "name": "Lança-granadas Retrátil",
       "description": "<p>Lança-granadas retrátil, ocultável, de disparo único. Não é possível segurar outro objeto nessa mão quando está acionado. Incompatível com melhorias, exceto @UUID[Compendium.cyberpunk-red-core.core_upgrades.Item.BC8S1sdK0QGdyHNC]{Link Inteligente}.</p>",
-      "dvTable": "VD Lançador de Granadas"
+      "dvTable": "VD Lança-granadas"
     },
     "Popup Melee Weapon": {
       "name": "Arma Corpo a Corpo Retrátil",

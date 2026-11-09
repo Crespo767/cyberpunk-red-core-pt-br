@@ -3,7 +3,7 @@
   "mapping": {},
   "entries": {
     "DV Assault Rifle": {
-      "name": "VD Rifle de Assalto",
+      "name": "VD Fuzil de Assalto",
       "results": [
         {
           "0-6": "17",
@@ -18,7 +18,7 @@
       ]
     },
     "DV Assault Rifle (Autofire)": {
-      "name": "VD Rifle de Assalto (Autofire)",
+      "name": "VD Fuzil de Assalto (Autofire)",
       "results": [
         {
           "0-6": "22",
@@ -63,7 +63,7 @@
       ]
     },
     "DV Grenade Launcher": {
-      "name": "VD Lançador de Granadas",
+      "name": "VD Lança-granadas",
       "results": [
         {
           "0-6": "16",
@@ -123,7 +123,7 @@
       ]
     },
     "DV Shotgun (Slug)": {
-      "name": "VD Espingarda (Balote)",
+      "name": "VD Escopeta (Balote)",
       "results": [
         {
           "0-6": "13",
@@ -138,7 +138,7 @@
       ]
     },
     "DV SMG": {
-      "name": "VD SMG",
+      "name": "VD Submetralhadora",
       "results": [
         {
           "0-6": "15",
@@ -153,7 +153,7 @@
       ]
     },
     "DV SMG (Autofire)": {
-      "name": "VD SMG (Autofire)",
+      "name": "VD Submetralhadora (Autofire)",
       "results": [
         {
           "0-6": "20",
@@ -168,7 +168,7 @@
       ]
     },
     "DV Sniper Rifle": {
-      "name": "VD Rifle de Precisão",
+      "name": "VD Fuzil de Precisão",
       "results": [
         {
           "0-6": "30",
