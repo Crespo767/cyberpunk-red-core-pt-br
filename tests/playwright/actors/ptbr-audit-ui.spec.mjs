@@ -86,7 +86,7 @@ test("PT-BR item, ammunition, ledger and roll prompts retain their context", asy
     ".eurobucks-open-ledger",
   );
   await expect(ledger.locator(".window-title")).toHaveText(
-    "Registro de Riqueza / Edinhos",
+    "Registro de Dinheiro",
   );
   await closeLedgerWindow(page);
   await page.locator(`#${sheetId} a[data-tab="skills"]`).click();
@@ -102,7 +102,7 @@ test("PT-BR item, ammunition, ledger and roll prompts retain their context", asy
     )
     .click();
   const roll = page.locator(".cpr.dialog");
-  await expect(roll).toContainText("Rolando para 'Atletismo', Choomba!");
+  await expect(roll).toContainText("Rolando para 'Atletismo', Tchumba!");
   await expect(roll).not.toContainText("{rollTitle}");
   await roll.locator('button[data-action="cancel"]').click();
 });
