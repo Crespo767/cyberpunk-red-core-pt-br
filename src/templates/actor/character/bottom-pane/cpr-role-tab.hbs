@@ -11,7 +11,7 @@
                 <span class="item-name role-name text-nowrap text-padding-left-smallest"
                       id="roleTab-{{role}}">
                   <a class="item-edit">
-                    {{localize (cprGetLocalizedlNameKey role)}} {{localize "CPR.characterSheet.bottomPane.role.abilities"}}
+                    {{localize "CPR.characterSheet.bottomPane.role.abilitiesOf" role=(localize (cprGetLocalizedlNameKey role)) abilities=(localize "CPR.characterSheet.bottomPane.role.abilities")}}
                   </a>
                   <a class="item-action" data-action-type="delete">
                     <i class="fas fa-trash-can"

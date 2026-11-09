@@ -182,6 +182,7 @@
   "CPR.characterSheet.bottomPane.lifepath.valuedPossession": "Posse Mais Valiosa",
   "CPR.characterSheet.bottomPane.reputation": "Reputação",
   "CPR.characterSheet.bottomPane.role.abilities": "Talentos",
+  "CPR.characterSheet.bottomPane.role.abilitiesOf": "Talentos de {role}",
   "CPR.characterSheet.bottomPane.role.noRolesWarning": "Não há funções definidas, arraste uma para o personagem.",
   "CPR.characterSheet.bottomPane.role.rank": "Graduação",
   "CPR.characterSheet.leftPane.calculateMaxHp": "Clique para recalcular e definir o máximo de HP para este personagem",
