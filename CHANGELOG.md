@@ -2,6 +2,18 @@
 
 # Changelog
 
+## Version 1.0.7 (in preparation)
+
+### Improvements
+
+- The Brazilian Portuguese interface follows the official Brazilian character sheet and Cyberpunk 2077: stats INT, REF, DES, TEC, MOR, VON, SORTE, MOV, CORPO and EMP (full name in the tooltip), Perícia, Teste de Morte, Gravemente Ferido, Lesões Críticas, Pontos de Melhoria, Alcunha, Graduação, Ciberdeque, NPC (formerly Capanga) and Tchum/Tchumba. WILL no longer shares the name Resistência with the Endurance skill.
+- All core compendia were reviewed against the book and Cyberpunk 2077: Roles (Fixer becomes Canal), Critical Injuries, Drugs (including effect names), Ammo, Cyberware, Clothing, Weapons, Armor, Gear, Upgrades, Programs, Vehicles and Skills. Dozens of broken or untranslated descriptions were fixed.
+- The Roles tab heading reads "Talentos de {Função}" in Portuguese, and the Speedheal macro posts its chat message in the game language.
+
+### Action Needed
+
+- Items already dragged into sheets and worlds keep their old names; Babele only translates the compendia. Drag an item again from its compendium to use the new name. Effects granting bonuses to language, local-expert or science skills must use the name shown on the sheet.
+
 ## Version 1.0.6.5
 
 ### Improvements

@@ -2,6 +2,18 @@
 
 # Changelog
 
+## Versão 1.0.7 (em preparação) <!-- Version 1.0.7 (in preparation) -->
+
+### Melhorias
+
+- A interface em português segue a ficha oficial brasileira e o Cyberpunk 2077: atributos INT, REF, DES, TEC, MOR, VON, SORTE, MOV, CORPO e EMP (nome completo na dica), Perícia, Teste de Morte, Gravemente Ferido, Lesões Críticas, Pontos de Melhoria, Alcunha, Graduação, Ciberdeque, NPC (antes Capanga) e Tchum/Tchumba. WILL deixa de se chamar Resistência, que é o nome da perícia.
+- Todos os compêndios principais foram revisados com o livro e o Cyberpunk 2077: Funções (Fixer passa a Canal), Lesões Críticas, Drogas (incluindo os nomes dos efeitos), Munição, Cibernética, Roupas, Armas, Armaduras, Equipamento, Melhorias, Programas, Veículos e Perícias. Dezenas de descrições quebradas ou em inglês foram corrigidas.
+- O título da aba de Funções passa a "Talentos de {Função}" e a macro Speedheal envia a mensagem no idioma do jogo.
+
+### Ação necessária
+
+- Itens já arrastados para fichas e mundos mantêm os nomes antigos; o Babele só traduz os compêndios. Para usar os nomes novos, arraste o item de novo do compêndio. Efeitos que deem bônus a perícias de idiomas, bairros ou ciências precisam usar o nome que está na ficha.
+
 ## Versão 1.0.6.5 <!-- Version 1.0.6.5 -->
 
 ### Melhorias
