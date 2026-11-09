@@ -2,7 +2,7 @@
 
 # Changelog
 
-## Versão 1.0.7 (em preparação) <!-- Version 1.0.7 (in preparation) -->
+## Versão 1.0.7 <!-- Version 1.0.7 -->
 
 ### Melhorias
 

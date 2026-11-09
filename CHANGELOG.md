@@ -2,7 +2,7 @@
 
 # Changelog
 
-## Version 1.0.7 (in preparation)
+## Version 1.0.7
 
 ### Improvements
 
