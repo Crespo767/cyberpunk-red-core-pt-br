@@ -1258,6 +1258,7 @@
   "CPR.netArchitecture.generation.floorFormattingError": "O nome do andar não se encaixa no formato desejado. Use um número seguido diretamente por uma letra pequena se desejado, por exemplo, 4, 4a ou 6c.",
   "CPR.netArchitecture.generation.noFloorError": "Os Itens parecem não ter quaisquer andares especificados!",
   "CPR.netArchitecture.generation.noGMError": "Erro: Você não tem permissão de GM. Nenhuma geração de cena permitida!",
+  "CPR.netArchitecture.generation.noRollTableError": "As tabelas de rolagem da Arquitetura de Rede não foram encontradas no compêndio configurado.",
   "CPR.netArchitecture.generation.noSceneError": "A cena personalizada não existe!",
   "CPR.netArchitecture.generation.useRolltables": "Usar tabelas de rolagem para preencher a Arquitetura de Rede",
   "CPR.progress.default": "Progresso",

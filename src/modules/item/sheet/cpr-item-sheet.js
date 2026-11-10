@@ -813,6 +813,13 @@ export default class CPRItemSheet extends CPRScrollableSheetMixin(ItemSheetV2) {
       tableSetting,
       "All Other Floors (".concat(formData.difficulty.capitalize(), ")"),
     );
+    if (!lobby || !other) {
+      SystemUtils.DisplayMessage(
+        "warn",
+        SystemUtils.Localize("CPR.netArchitecture.generation.noRollTableError"),
+      );
+      return;
+    }
     const numberOfFloorsRoll = CPRRoll.create(
       SystemUtils.Localize("CPR.rolls.roll"),
       "3d6",
