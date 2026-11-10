@@ -2,6 +2,12 @@
 
 # Changelog
 
+## Version 1.0.7.3
+
+### Bug Fixes
+
+- Generating a scene from a NET Architecture no longer makes the new scene the active one for every player, and no longer logs an error in the console. The scene opens for the GM only, and the "generation is done" notice shows again.
+
 ## Version 1.0.7.2
 
 ### Bug Fixes

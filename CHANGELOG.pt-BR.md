@@ -2,6 +2,12 @@
 
 # Changelog
 
+## Versão 1.0.7.3 <!-- Version 1.0.7.3 -->
+
+### Correções
+
+- Gerar uma cena a partir de uma Arquitetura de Rede não torna mais a cena nova a ativa para todos os jogadores, nem registra erro no console. A cena abre só para o GM e o aviso de geração concluída volta a aparecer.
+
 ## Versão 1.0.7.2 <!-- Version 1.0.7.2 -->
 
 ### Correções
