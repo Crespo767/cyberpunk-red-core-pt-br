@@ -136,6 +136,40 @@ describe("CPRSystemUtils.GetCompendiumDoc", () => {
   });
 });
 
+describe("CPRSystemUtils.FormatDvLabel", () => {
+  it("keeps the English label for untranslated tables", () => {
+    vi.spyOn(game.i18n, "localize").mockReturnValue("DV");
+
+    expect(SystemUtils.FormatDvLabel("17", "DV Assault Rifle")).toBe(
+      "DV: 17 Assault Rifle",
+    );
+  });
+
+  it("uses the localized abbreviation and strips it from translated tables", () => {
+    vi.spyOn(game.i18n, "localize").mockReturnValue("VD");
+
+    expect(SystemUtils.FormatDvLabel("17", "VD Fuzil de Assalto")).toBe(
+      "VD: 17 Fuzil de Assalto",
+    );
+  });
+
+  it("strips the English prefix from untranslated tables in other languages", () => {
+    vi.spyOn(game.i18n, "localize").mockReturnValue("VD");
+
+    expect(SystemUtils.FormatDvLabel("15", "DV Custom Table")).toBe(
+      "VD: 15 Custom Table",
+    );
+  });
+
+  it("leaves table names without a prefix untouched", () => {
+    vi.spyOn(game.i18n, "localize").mockReturnValue("VD");
+
+    expect(SystemUtils.FormatDvLabel("13", "Minha Tabela")).toBe(
+      "VD: 13 Minha Tabela",
+    );
+  });
+});
+
 describe("CPRSystemUtils.Localize / Format", () => {
   it("Localize delegates to game.i18n.localize", () => {
     // The shim echoes the key back.
