@@ -359,8 +359,12 @@ export default class CPRNetArchItem extends CPRItem {
       sceneName,
     );
     const sceneData = foundry.utils.duplicate(scene);
-    sceneData.id = null;
+    delete sceneData._id;
     sceneData.name = newName;
+    // Never create the copy as the active scene: that would switch every player to it
+    // and redraw the canvas while the floor tiles are still being created, which makes
+    // Foundry throw. The generator views the scene for the GM once it is done.
+    sceneData.active = false;
     await Scene.createDocuments([sceneData]);
     this.scene = game.scenes.find((f) => f.name === newName);
   }
