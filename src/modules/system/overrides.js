@@ -1,3 +1,5 @@
+import SystemUtils from "../utils/cpr-systemUtils.js";
+
 export default function overrideRulerFunctions() {
   // Patch the ruler class prototype directly rather than a live instance from
   // `canvas.controls.ruler` — the latter is null when no scene is active (the
@@ -29,7 +31,7 @@ export default function overrideRulerFunctions() {
         }
 
         if (DV) {
-          context.dvLabel = `DV: ${DV} ${dvTableFlag.name.replace(/^DV /, "")}`;
+          context.dvLabel = SystemUtils.FormatDvLabel(DV, dvTableFlag.name);
         }
       }
     }

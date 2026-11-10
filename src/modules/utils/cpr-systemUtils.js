@@ -280,6 +280,24 @@ export default class CPRSystemUtils {
     return tableList;
   }
 
+  /**
+   * Build the DV label shown on the ruler, e.g. "DV: 17 Assault Rifle". The table name
+   * carries the DV abbreviation as a prefix, in English or in the game language when the
+   * compendium is translated, so both are stripped to avoid repeating it.
+   *
+   * @param {String|Number} dv - the DV for the measured distance
+   * @param {String} tableName - name of the DV table set on the token
+   * @returns {String}
+   */
+  static FormatDvLabel(dv, tableName) {
+    const abbreviation = CPRSystemUtils.Localize("CPR.global.generic.dv");
+    const prefix = [abbreviation, "DV"].find((p) =>
+      tableName.startsWith(`${p} `),
+    );
+    const shortName = prefix ? tableName.slice(prefix.length + 1) : tableName;
+    return `${abbreviation}: ${dv} ${shortName}`;
+  }
+
   static async SetDvTable(token, tableName) {
     // Accept both a rendered Token and its TokenDocument (including inactive scenes).
     const tokenDocument = token.document ?? token;
