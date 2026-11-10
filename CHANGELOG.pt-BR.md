@@ -2,6 +2,15 @@
 
 # Changelog
 
+## Versão 1.0.7.2 <!-- Version 1.0.7.2 -->
+
+### Correções
+
+- Fechar a ficha de personagem logo depois de abri-la não registra mais um erro no console.
+- O VD mostrado na régua usa a sigla do idioma do jogo e não a repete quando as tabelas de VD estão traduzidas (aparecia "DV: 17 VD Fuzil de Assalto").
+- O gerador de Arquitetura de Rede avisa quando as tabelas de rolagem não estão no compêndio configurado, em vez de falhar sem aviso.
+- O diálogo de dificuldade da Arquitetura de Rede usa VD em todas as opções, o campo de busca da ficha foi traduzido e o compêndio interno de perícias passa a se chamar Perícias.
+
 ## Versão 1.0.7.1 <!-- Version 1.0.7.1 -->
 
 ### Correções

@@ -2,6 +2,15 @@
 
 # Changelog
 
+## Version 1.0.7.2
+
+### Bug Fixes
+
+- Closing a character sheet right after opening it no longer logs an error in the console.
+- The DV shown on the ruler uses the game language abbreviation and no longer repeats it when the DV tables are translated (it read "DV: 17 VD Fuzil de Assalto" in Portuguese).
+- The NET Architecture generator warns when the roll tables are missing from the configured compendium instead of failing silently.
+- Brazilian Portuguese: the NET Architecture difficulty dialog uses VD in every option, the character sheet search field is translated, and the internal skills compendium is labelled Perícias.
+
 ## Version 1.0.7.1
 
 ### Bug Fixes
