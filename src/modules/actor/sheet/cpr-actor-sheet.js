@@ -365,6 +365,8 @@ export default class CPRActorSheet extends CPRScrollableSheetMixin(
     // (AppV1 did this from render hooks; AppV2 fires those per concrete class,
     // so the sheets drive it from _onRender instead.)
     window.requestAnimationFrame(() => {
+      // The sheet may have been closed before this frame ran.
+      if (!this.element) return;
       CPRSheetUtils.setCssClassWidth(this.element, ".type-tag");
       const nameInput = this.element.querySelector('input[name="name"]');
       if (nameInput) CPRSheetUtils.adjustFontSizeToFit(nameInput);
